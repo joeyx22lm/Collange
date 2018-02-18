@@ -1,1 +1,9 @@
 version '1.0.0'
+
+task clean {
+    // Nothing to clean in web project.
+}
+
+task build {
+    // Nothing to build in web project.
+}

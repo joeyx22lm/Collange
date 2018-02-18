@@ -1,2 +1,16 @@
 group 'com.joeyorlando'
 version '1.0.0'
+
+task clean {
+    // Nothing to clean in root project.
+}
+
+task build {
+    // Nothing to build in root project.
+}
+
+allprojects {
+    // Define heroku build process.
+    task stage(dependsOn: ['build', 'clean'])
+    build.mustRunAfter clean
+}
