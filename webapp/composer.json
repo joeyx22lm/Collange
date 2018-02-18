@@ -1,0 +1,12 @@
+{
+    "name": "ucf-cecs-cop4331/collange",
+    "description": "COP4331 Project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Joseph Orlando",
+            "email": "josephorlando11@gmail.com"
+        }
+    ],
+    "require": {}
+}

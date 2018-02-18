@@ -1,0 +1,2 @@
+rootProject.name = 'collange'
+include 'worker-imagify', 'webapp'
