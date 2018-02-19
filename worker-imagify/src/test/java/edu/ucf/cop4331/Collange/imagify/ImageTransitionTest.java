@@ -37,6 +37,7 @@ public class ImageTransitionTest {
                 in.setRed(red);
                 in.setGreen(green);
                 in.setBlue(blue);
+                System.out.println("Red: " + red + " Green: " + green + " Blue: " + blue);
                 return in;
             }
             return null;

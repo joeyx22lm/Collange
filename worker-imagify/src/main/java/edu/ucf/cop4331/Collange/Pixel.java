@@ -13,12 +13,16 @@ public class Pixel {
         this.blue = blue;
     }
 
+    public int minimum(int x, int y){
+        return (x > y ? y : x);
+    }
+
     public int getRed() {
         return red;
     }
 
     public void setRed(int red) {
-        this.red = Math.min(red, 255);
+        this.red = minimum(red, 255);
     }
 
     public int getGreen() {
@@ -26,7 +30,7 @@ public class Pixel {
     }
 
     public void setGreen(int green) {
-        this.green = Math.min(green, 255);
+        this.green = minimum(green, 255);
     }
 
     public int getBlue() {
@@ -34,7 +38,7 @@ public class Pixel {
     }
 
     public void setBlue(int blue) {
-        this.blue = Math.min(blue, 255);
+        this.blue = minimum(blue, 255);
     }
 
     @Override
