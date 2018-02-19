@@ -2,7 +2,7 @@
 /*
  * Copyright 2017 Joseph Orlando.
  */
-class Database {
+class DBSession {
     private static $session = null;
 
     // Connect using a ConnectionURL, as such: setSession('mysql://user:pass@hostname/dbname');
@@ -54,6 +54,13 @@ class Database {
     }
 }
 class DBObject {
+    /**
+     * Convert a raw or JSON-encoded array to
+     * an object of the given class name.
+     * @param $class
+     * @param $data
+     * @return null
+     */
     public static function build($class, $data){
         if(!empty($class)){
             // Handle JSON string as data.

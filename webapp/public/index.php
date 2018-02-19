@@ -1,4 +1,8 @@
 <?php
+// Load the Collange application bootstrapper.
+require_once('../Application.php');
+
+// Handle login requests.
 if(isset($_POST['u']) && !empty($_POST['u']) && isset($_POST['p']) && !empty($_POST['p'])){
     // Redirect to the application homepage.
     header("Location: home.php");
