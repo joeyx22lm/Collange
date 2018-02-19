@@ -39,7 +39,6 @@ class TestUtility {
         if($WorkingDirectory == null || self::loadAllTests($WorkingDirectory)){
             foreach(get_declared_classes() as $testclass){
                 if(is_subclass_of($testclass, 'UnitTest')){
-                    echo 'Initialized ' . $testclass;
                     call_user_func($testclass .'::runTest');
                 }
             }
