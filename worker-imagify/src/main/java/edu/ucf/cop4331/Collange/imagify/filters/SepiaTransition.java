@@ -13,24 +13,24 @@ public class SepiaTransition extends ImageTransition {
     @Override
     public Pixel transform(Pixel in){
         if(in != null){
-            // Perform transformations while ensuring
-            // that the RGB values don't exceed 255.
-            int red = Math.min((int)(
+            // Calculate color transformations.
+            int red = (int)(
                 0.393*in.getRed()+
                 0.769*in.getGreen()+
                 0.189*in.getBlue()
-            ), 255);
-            int green = Math.min((int)(
+            );
+            int green = (int)(
                 0.349*in.getRed()+
                 0.686*in.getGreen()+
                 0.168*in.getBlue()
-            ), 255);
-            int blue = Math.min((int)(
+            );
+            int blue = (int)(
                 0.272*in.getRed()+
                 0.534*in.getGreen()+
                 0.131*in.getBlue()
-            ), 255);
+            );
 
+            // Apply color transformations.
             in.setRed(red);
             in.setGreen(green);
             in.setBlue(blue);

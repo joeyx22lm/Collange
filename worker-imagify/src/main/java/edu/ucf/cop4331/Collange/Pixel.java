@@ -18,7 +18,7 @@ public class Pixel {
     }
 
     public void setRed(int red) {
-        this.red = red;
+        this.red = Math.min(red, 255);
     }
 
     public int getGreen() {
@@ -26,7 +26,7 @@ public class Pixel {
     }
 
     public void setGreen(int green) {
-        this.green = green;
+        this.green = Math.min(green, 255);
     }
 
     public int getBlue() {
@@ -34,7 +34,7 @@ public class Pixel {
     }
 
     public void setBlue(int blue) {
-        this.blue = blue;
+        this.blue = Math.min(blue, 255);
     }
 
     @Override

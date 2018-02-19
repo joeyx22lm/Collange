@@ -14,9 +14,9 @@ public class ImageTransitionTest {
         Pixel pxl = new Pixel(150, 200, 500);
 
         // The expected new pixel RBG values.
-        int expectedRed = Math.min((int)(pxl.getRed()*0.25), 255);
-        int expectedGreen = Math.min((int)(pxl.getGreen()*0.50), 255);
-        int expectedBlue = Math.min((int)(pxl.getBlue()*0.75), 255);
+        int expectedRed = (int)(pxl.getRed()*0.25);
+        int expectedGreen = (int)(pxl.getGreen()*0.50);
+        int expectedBlue = 255;
 
         // Apply the filter unto the original pixel.
         filter.transform(pxl);
@@ -31,9 +31,9 @@ public class ImageTransitionTest {
             if (in != null) {
                 // Perform transformations while ensuring
                 // that the RGB values don't exceed 255.
-                int red = Math.min((int)(0.25 * in.getRed()), 255);
-                int green = Math.min((int)(0.50 * in.getGreen()), 255);
-                int blue = Math.min((int)(0.75 * in.getBlue()), 255);
+                int red = (int)(0.25 * in.getRed());
+                int green = (int)(0.50 * in.getGreen());
+                int blue = (int)(0.75 * in.getBlue());
                 in.setRed(red);
                 in.setGreen(green);
                 in.setBlue(blue);
