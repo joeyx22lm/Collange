@@ -8,19 +8,31 @@ class DBSession {
     // Connect using a ConnectionURL, as such: setSession('mysql://user:pass@hostname/dbname');
     // Connect using connection parameters, as such: setSession('hostname', 'user', 'pass', 'dbname');
     public static function setSession($host='', $user='', $pass='', $dbname=''){
-        if(empty($dbname) && !empty($host)){
-            // Connect URL given.
-            $UrlParts = parse_url($host);
-            if(!empty($UrlParts)){
-                return self::setSession($UrlParts['host'], $UrlParts['user'], $UrlParts['pass'], str_replace('/', '', $UrlParts['path']));
+        if(!empty($host)){
+            // Handle a ConnectionURL.
+            if(empty($user) || empty($pass) || empty($dbname)){
+                // Connect URL given.
+                $UrlParts = parse_url($host);
+                if(!empty($UrlParts)){
+                    return self::setSession($UrlParts['host'], $UrlParts['user'], $UrlParts['pass'], str_replace('/', '', $UrlParts['path']));
+                }
             }
-        }else{
-            self::$session = new mysqli($host, $user, $pass, $dbname);
-            if(self::$session != null && empty(self::$session->connect_error)){
-                return true;
+
+            // Handle explicit connection parameters.
+            else{
+                self::$session = new mysqli($host, $user, $pass, $dbname);
+                if(self::$session != null && empty(self::$session->connect_error)){
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
+        if(empty($dbname) && !empty($host)){
+
+        }else{
+
+        }
+
     }
 
     public static function getSession(){

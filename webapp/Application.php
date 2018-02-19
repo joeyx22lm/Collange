@@ -1,7 +1,7 @@
 <?php
 /* MySQL Database Configuration */
 require_once('lib/database.php');
-Database::setSession($_ENV['JAWSDB_MARIA_URL']);
+DBSession::setSession($_ENV['JAWSDB_MARIA_URL']);
 
 /* User object */
 require_once('lib/user.php');
