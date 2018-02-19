@@ -53,4 +53,18 @@ class Database {
         return $Arr;
     }
 }
+class DBObject {
+    public static function build($class, $data){
+        if(!empty($class)){
+            // Handle JSON string as data.
+            if(!is_array($data)){
+                return self::build(json_decode($data, true));
+            }
+            $ret = new $class();
+            foreach ($data as $key => $value) $ret->{$key} = $value;
+            return $ret;
+        }
+        return null;
+    }
+}
 ?>

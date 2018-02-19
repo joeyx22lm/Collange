@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+if(isset($_POST['u']) && !empty($_POST['u']) && isset($_POST['p']) && !empty($_POST['p'])){
+    // Redirect to the application homepage.
+    header("Location: home.php");
+    die();
+}
+?><!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">

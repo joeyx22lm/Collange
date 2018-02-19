@@ -11,7 +11,7 @@ class UserUtil {
         return null;
     }
 }
-class User {
+class User extends DBObject {
     private $fname;
     private $lname;
     private $email;
@@ -36,12 +36,7 @@ class User {
      * @return User
      */
     public static function build($data){
-        if(!is_array($data)){
-            return self::build(json_decode($data, true));
-        }
-        $ret = new User();
-        foreach ($data as $key => $value) $ret->{$key} = $value;
-        return $ret;
+        return parent::build('User', $data);
     }
 }
 ?>
