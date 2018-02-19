@@ -14,7 +14,7 @@ if(isset($_GET['runTests'])){
 
     // Import all tests from the current directory
     // and execute them.
-    TestUtility::runAllTests(__DIR__);
+    TestUtility::runAllTests(__DIR__ . '/test');
 
     // Stop further execution. This protects
     // against using TestUtility in production code.
