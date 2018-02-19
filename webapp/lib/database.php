@@ -73,7 +73,7 @@ class DBObject {
      * @param $data
      * @return null
      */
-    public static function build($class, $data){
+    public static function build($data, $class){
         if(!empty($class)){
             // Handle JSON string as data.
             if(!is_array($data)){

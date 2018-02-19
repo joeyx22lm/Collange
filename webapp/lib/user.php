@@ -35,8 +35,8 @@ class User extends DBObject {
      * @param $data (string or array)
      * @return User
      */
-    public static function build($data){
-        return parent::build('User', $data);
+    public static function build($data, $class='User'){
+        return parent::build($class, $data);
     }
 }
 ?>
