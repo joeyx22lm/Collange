@@ -5,7 +5,7 @@ class DatabaseTest extends UnitTest {
     protected function TestInjectionSanitizeArrayInput(){
         $UNSAFE_VALUE = "joey' OR 1=1";
         $Dirty = array('username'=>$UNSAFE_VALUE);
-        $Clean = Database::sanitizeArrayValues($Dirty);
+        $Clean = DBSession::sanitizeArrayValues($Dirty);
         if($Clean['username'] == $UNSAFE_VALUE) {
             return false;
         }
@@ -16,7 +16,7 @@ class DatabaseTest extends UnitTest {
     protected function TestInjectionSanitizeJSONInput() {
         $UNSAFE_VALUE = "joey' OR 1=1";
         $Dirty = array('username'=>$UNSAFE_VALUE);
-        $CleanJSON = Database::sanitizeArrayValues(json_encode($Dirty));
+        $CleanJSON = DBSession::sanitizeArrayValues(json_encode($Dirty));
         if($CleanJSON['username'] == $UNSAFE_VALUE) {
             return false;
         }
@@ -27,7 +27,7 @@ class DatabaseTest extends UnitTest {
     protected function TestInjectionSanitizeOriginalPointer(){
         $UNSAFE_VALUE = "joey' OR 1=1";
         $Dirty = array('username'=>$UNSAFE_VALUE);
-        Database::sanitizeArrayValues($Dirty);
+        DBSession::sanitizeArrayValues($Dirty);
         if($Dirty['username'] == $UNSAFE_VALUE) {
             return false;
         }
