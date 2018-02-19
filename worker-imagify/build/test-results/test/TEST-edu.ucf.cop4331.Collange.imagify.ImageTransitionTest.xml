@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.ucf.cop4331.Collange.imagify.ImageTransitionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-02-19T05:50:20" hostname="JoeyMBP.jaela.orlandowest.io" time="0.001">
+  <properties/>
+  <testcase name="testTransformPixel" classname="edu.ucf.cop4331.Collange.imagify.ImageTransitionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
