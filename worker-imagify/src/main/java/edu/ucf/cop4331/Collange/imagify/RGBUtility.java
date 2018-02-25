@@ -19,4 +19,13 @@ public class RGBUtility {
     public static int getOpaqueRGB(int rgb, double opacity){
         return (int)(((rgb-255)*opacity)+255);
     }
+    public static int getBrightness(int red, int green, int blue){
+        int r = (red/255);
+        int g = (green/255);
+        int b = (blue/255);
+        return (int)Math.ceil((((Math.max(r, Math.max(g, b)) + Math.min(r, Math.min(g, b))) / 2) * 100));
+    }
+    public static int getBrightness(int rgb){
+        return getBrightness(getRed(rgb), getGreen(rgb), getBlue(rgb));
+    }
 }
