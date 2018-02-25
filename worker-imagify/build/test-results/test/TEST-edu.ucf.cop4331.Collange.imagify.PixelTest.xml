@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.ucf.cop4331.Collange.imagify.PixelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-19T06:20:01" hostname="JoeyMBP.jaela.orlandowest.io" time="0.002">
+<testsuite name="edu.ucf.cop4331.Collange.imagify.PixelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-25T17:16:30" hostname="JoeyMBP.jaela.orlandowest.io" time="0.001">
   <properties/>
-  <testcase name="testRed" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.001"/>
+  <testcase name="testRed" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.0"/>
   <testcase name="testGreen" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.0"/>
   <testcase name="testBlue" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

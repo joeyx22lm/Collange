@@ -1,41 +1,31 @@
 package edu.ucf.cop4331.Collange.imagify.filters;
 
-import edu.ucf.cop4331.Collange.Pixel;
-import edu.ucf.cop4331.Collange.imagify.ImageTransition;
+import edu.ucf.cop4331.Collange.imagify.Pixel;
+import edu.ucf.cop4331.Collange.imagify.RGBTransition;
 
-/**
- * Sepia Transition:
- * tr = 0.393R + 0.769G + 0.189B
- * tg = 0.349R + 0.686G + 0.168B
- * tb = 0.272R + 0.534G + 0.131B
- */
-public class SepiaTransition extends ImageTransition {
+public class SepiaTransition extends RGBTransition {
     @Override
-    public Pixel transform(Pixel in){
-        if(in != null){
-            // Calculate color transformations.
-            int red = (int)(
-                0.393*in.getRed()+
-                0.769*in.getGreen()+
-                0.189*in.getBlue()
-            );
-            int green = (int)(
-                0.349*in.getRed()+
-                0.686*in.getGreen()+
-                0.168*in.getBlue()
-            );
-            int blue = (int)(
-                0.272*in.getRed()+
-                0.534*in.getGreen()+
-                0.131*in.getBlue()
-            );
-
-            // Apply color transformations.
-            in.setRed(red);
-            in.setGreen(green);
-            in.setBlue(blue);
-            return in;
-        }
-        return null;
+    protected Pixel filterPixel(Pixel pxl, int width, int height){
+        int red = (int)(
+            0.393*pxl.getRed()+
+            0.769*pxl.getGreen()+
+            0.189*pxl.getBlue()
+        );
+        int green = (int)(
+            0.349*pxl.getRed()+
+            0.686*pxl.getGreen()+
+            0.168*pxl.getBlue()
+        );
+        int blue = (int)(
+            0.272*pxl.getRed()+
+            0.534*pxl.getGreen()+
+            0.131*pxl.getBlue()
+        );
+        pxl.setRed(red);
+        pxl.setGreen(green);
+        pxl.setBlue(blue);
+        return pxl;
     }
 }
+
+

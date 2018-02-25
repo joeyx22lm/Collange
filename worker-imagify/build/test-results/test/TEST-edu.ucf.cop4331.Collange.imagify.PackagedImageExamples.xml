@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.ucf.cop4331.Collange.imagify.PackagedImageExamples" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-02-25T17:16:34" hostname="JoeyMBP.jaela.orlandowest.io" time="33.08">
+  <properties/>
+  <testcase name="applyFiltersOnExamples" classname="edu.ucf.cop4331.Collange.imagify.PackagedImageExamples" time="33.08"/>
+  <system-out><![CDATA[	applyFiltersOnExamples(bliss-240x320.jpg): Sepia Filter - 36ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Grayscale Filter - 12ms
+	applyFiltersOnExamples(bliss-240x320.jpg): White Filter - 14ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Red Filter - 11ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Green Filter - 8ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Blue Filter - 8ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Empty Filter - 7ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Opacity Filter - 8ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Striped Filter - 7ms
+	applyFiltersOnExamples(bliss-240x320.jpg): CheckerBoard Filter - 8ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Horizontal Mirror Filter - 10ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Italian Flag Filter - 8ms
+	applyFiltersOnExamples(bliss-240x320.jpg): French Flag Filter - 164ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Color Blend Filter - 9ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Zombie Color Filter - 9ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Gold Color Filter - 7ms
+	applyFiltersOnExamples(bliss-240x320.jpg): Dithering Filter - 13ms
+	applyFiltersOnExamples(bliss-240x320.jpg): No Even Numbered Pixels Filter - 7ms
+applyFiltersOnExamples(bliss-240x320.jpg) - Best: 7ms  Worst: 164ms  Avg: 19ms
+
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Sepia Filter - 502ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Grayscale Filter - 417ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): White Filter - 488ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Red Filter - 461ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Green Filter - 336ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Blue Filter - 347ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Empty Filter - 217ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Opacity Filter - 222ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Striped Filter - 354ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): CheckerBoard Filter - 446ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Horizontal Mirror Filter - 466ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Italian Flag Filter - 225ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): French Flag Filter - 469ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Color Blend Filter - 352ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Zombie Color Filter - 223ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Gold Color Filter - 460ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): Dithering Filter - 239ms
+	applyFiltersOnExamples(bliss-1920x1200.jpg): No Even Numbered Pixels Filter - 215ms
+applyFiltersOnExamples(bliss-1920x1200.jpg) - Best: 215ms  Worst: 502ms  Avg: 357ms
+
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Sepia Filter - 912ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Grayscale Filter - 882ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): White Filter - 871ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Red Filter - 867ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Green Filter - 873ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Blue Filter - 857ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Empty Filter - 862ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Opacity Filter - 890ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Striped Filter - 849ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): CheckerBoard Filter - 884ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Horizontal Mirror Filter - 1093ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Italian Flag Filter - 880ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): French Flag Filter - 895ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Color Blend Filter - 876ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Zombie Color Filter - 878ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Gold Color Filter - 875ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): Dithering Filter - 961ms
+	applyFiltersOnExamples(bliss-3840x2400.jpg): No Even Numbered Pixels Filter - 865ms
+applyFiltersOnExamples(bliss-3840x2400.jpg) - Best: 849ms  Worst: 1093ms  Avg: 892ms
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

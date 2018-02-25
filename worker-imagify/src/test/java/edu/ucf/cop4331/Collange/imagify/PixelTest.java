@@ -1,6 +1,5 @@
 package edu.ucf.cop4331.Collange.imagify;
 
-import edu.ucf.cop4331.Collange.Pixel;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +12,7 @@ public class PixelTest {
 
     @Before
     public void setUp(){
-        this.pxl = new Pixel(RED_VALUE, GREEN_VALUE, BLUE_VALUE);
+        this.pxl = new Pixel(0, 0, RED_VALUE, GREEN_VALUE, BLUE_VALUE);
     }
 
     @Test

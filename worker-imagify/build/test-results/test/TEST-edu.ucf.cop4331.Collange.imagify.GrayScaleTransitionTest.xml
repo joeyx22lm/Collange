@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-02-25T17:16:30" hostname="JoeyMBP.jaela.orlandowest.io" time="4.189">
+  <properties/>
+  <testcase name="runBigTest" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="4.189"/>
+  <testcase name="runTestTwo" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.0"/>
+  <testcase name="runTest" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.0"/>
+  <system-out><![CDATA[RGBTransitionTest.testMockImageRGBTransition(5000, 5000): 25000000 Pixels were filtered in 158 ms.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
