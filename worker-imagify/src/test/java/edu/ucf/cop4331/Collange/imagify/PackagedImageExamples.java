@@ -15,7 +15,9 @@ public class PackagedImageExamples {
     private static final String[] packagedExamples = {
         "bliss-240x320.jpg",
         "bliss-1920x1200.jpg",
-        "bliss-3840x2400.jpg"
+        "bliss-3840x2400.jpg",
+        "370z.jpg",
+        "avatar.jpg"
     };
 
     @Test

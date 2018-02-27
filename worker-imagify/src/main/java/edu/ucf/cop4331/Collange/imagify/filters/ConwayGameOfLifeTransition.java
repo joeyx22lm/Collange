@@ -47,7 +47,8 @@ public class ConwayGameOfLifeTransition extends RGBTransition {
             }
 
             // Die of underpopulation. Die of overpopulation.
-            if (liveNeighborCount < 2 || liveNeighborCount > 3) {
+            //if (liveNeighborCount < 2 || liveNeighborCount > 3) {
+            if (liveNeighborCount < 1 || liveNeighborCount > 5) {       // Slightly adjusted rules to make it look better visually.
                 pxl.setRed(0);
                 pxl.setGreen(0);
                 pxl.setBlue(0);

@@ -26,7 +26,7 @@ public class Pixel {
     }
 
     public void setRed(int red) {
-        this.red = minimum(red, 255);
+        this.red = minimum((red < 0 ? 0 : red), 255);
     }
 
     public int getGreen() {
@@ -34,7 +34,7 @@ public class Pixel {
     }
 
     public void setGreen(int green) {
-        this.green = minimum(green, 255);
+        this.green = minimum((green < 0 ? 0 : green), 255);
     }
 
     public int getBlue() {
@@ -42,7 +42,7 @@ public class Pixel {
     }
 
     public void setBlue(int blue) {
-        this.blue = minimum(blue, 255);
+        this.blue = minimum((blue < 0 ? 0 : blue), 255);
     }
 
     public int getRGB(){
