@@ -29,8 +29,8 @@ public class GrayScaleTransitionTest {
 
     @Test
     public void runBigTest(){
-        int width = 5000;
-        int height = 5000;
+        int width = 1000;
+        int height = 1000;
         // Build an image of size (width x height).
         Pixel[][] image = new Pixel[width][height];
         long count = 0;
