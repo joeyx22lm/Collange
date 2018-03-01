@@ -3,7 +3,8 @@
 if(isset($_POST['login'])){
     $Users = User::getAll(array('email'=>$_POST['email']));
     if($Users != null && sizeof($Users) == 1){
-        die('We found your user!');
+        header("Location: home.php");
+        die();
     }
     die('We didn\'t find your user :(');
 }
