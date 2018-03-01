@@ -74,14 +74,18 @@ class DBObject {
      * @return null
      */
     public static function build($data, $class){
-        if(!empty($class)){
-            // Handle JSON string as data.
-            if(!is_array($data)){
-                return self::build(json_decode($data, true));
+        if(!empty($class) && !empty($data)){
+            // Handle array as data.
+            if(is_array($data)){
+                $ret = new $class();
+                foreach ($data as $key => $value) $ret->{$key} = $value;
+                return $ret;
             }
-            $ret = new $class();
-            foreach ($data as $key => $value) $ret->{$key} = $value;
-            return $ret;
+
+            // Handle JSON string as data.
+            else{
+                return self::build(json_decode($data, true), $class);
+            }
         }
         return null;
     }

@@ -17,7 +17,7 @@ class DatabaseTest extends UnitTest {
         $UNSAFE_VALUE = "joey' OR 1=1";
         $Dirty = array('username'=>$UNSAFE_VALUE);
         $CleanJSON = DBSession::sanitizeArrayValues(json_encode($Dirty));
-        if($CleanJSON['username'] == $UNSAFE_VALUE) {
+        if(empty($CleanJSON) || !is_array($CleanJSON) || !isset($CleanJSON['username']) || $CleanJSON['username'] == $UNSAFE_VALUE) {
             return false;
         }
         return true;

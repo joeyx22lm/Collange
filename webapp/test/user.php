@@ -7,7 +7,11 @@ class UserTest extends UnitTest {
             'email'=>'jdoe@example.com',
             'password'=>'password_hash_goes_here'
         );
-        return User::build($UserArr);
+        $BuildUser = User::build($UserArr);
+        if($BuildUser == null){
+            return false;
+        }
+        return true;
     }
     protected function TestBuildUser(){
         $UserArr = array(
@@ -17,6 +21,9 @@ class UserTest extends UnitTest {
             'password'=>'password_hash_goes_here'
         );
         $BuildUser = User::build($UserArr);
+        if($BuildUser == null){
+            return false;
+        }
         if($BuildUser->getName() != $UserArr['fname'] . ' ' . $UserArr['lname']){
             return false;
         }
@@ -36,6 +43,9 @@ class UserTest extends UnitTest {
             'password'=>'password_hash_goes_here'
         );
         $BuildUser = User::build($UserArr);
+        if($BuildUser == null){
+            return false;
+        }
         if($BuildUser->getName() != $UserArr['fname'] . ' ' . $UserArr['lname']){
             return false;
         }

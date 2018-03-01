@@ -12,10 +12,10 @@ class UserUtil {
     }
 }
 class User extends DBObject {
-    private $fname;
-    private $lname;
-    private $email;
-    private $password;
+    protected $fname;
+    protected $lname;
+    protected $email;
+    protected $password;
 
     public function getName($reverse=false){
         return UserUtil::formatName($this->fname, $this->lname, $reverse);
@@ -36,7 +36,7 @@ class User extends DBObject {
      * @return User
      */
     public static function build($data, $class='User'){
-        return parent::build($class, $data);
+        return parent::build($data, $class);
     }
 }
 ?>
