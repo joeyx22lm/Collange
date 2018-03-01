@@ -86,15 +86,13 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="143" column="13" lean-forward="false" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+            <state relative-caret-position="382">
+              <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
               <folding>
                 <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
-                <marker date="1519941621323" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
-                <marker date="1519941621323" expanded="true" signature="4145:4160" ph="SELECT * FRO... " />
-                <marker date="1519941621323" expanded="true" signature="4145:4190" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1519941621323" expanded="true" signature="4145:4287" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
-                <marker date="1519941621323" expanded="true" signature="4230:4245" ph="SELECT * FRO... " />
+                <marker date="1519941767958" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
+                <marker date="1519941767958" expanded="true" signature="4127:4211" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
+                <marker date="1519941767958" expanded="true" signature="4156:4201" ph="SELECT * FRO... ${static::$tableName}" />
               </folding>
             </state>
           </provider>
@@ -1136,7 +1134,7 @@
       <workItem from="1519578839662" duration="3214000" />
       <workItem from="1519700227874" duration="4216000" />
       <workItem from="1519748637088" duration="3969000" />
-      <workItem from="1519933918274" duration="6977000" />
+      <workItem from="1519933918274" duration="7125000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1208,11 +1206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519941344482</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changes: a song by Tupac.">
+      <created>1519941627227</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519941627227</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55021000" />
+    <option name="totallyTimeSpent" value="55169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1001" extended-state="6" />
@@ -1699,15 +1704,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="143" column="13" lean-forward="false" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+        <state relative-caret-position="382">
+          <caret line="145" column="45" lean-forward="true" selection-start-line="145" selection-start-column="45" selection-end-line="145" selection-end-column="45" />
           <folding>
             <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
-            <marker date="1519941621323" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
-            <marker date="1519941621323" expanded="true" signature="4145:4160" ph="SELECT * FRO... " />
-            <marker date="1519941621323" expanded="true" signature="4145:4190" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1519941621323" expanded="true" signature="4145:4287" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
-            <marker date="1519941621323" expanded="true" signature="4230:4245" ph="SELECT * FRO... " />
+            <marker date="1519941767958" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
+            <marker date="1519941767958" expanded="true" signature="4127:4211" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
+            <marker date="1519941767958" expanded="true" signature="4156:4201" ph="SELECT * FRO... ${static::$tableName}" />
           </folding>
         </state>
       </provider>

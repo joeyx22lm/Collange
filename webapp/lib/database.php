@@ -142,8 +142,7 @@ class DBObject {
             foreach($arr as $field=>$value){
                 $params .= (empty($params) ? '' : ', ') . "`$field`='$value'";
             }
-            die('SELECT * FROM `'.static::$tableName.'` WHERE '.$params);
-            $Q = $x->query("SELECT * FROM `"+static::$tableName+"` WHERE " . $params);
+            $Q = $x->query('SELECT * FROM `'.static::$tableName.'` WHERE '.$params);
             if($Q != null && $Q->num_rows > 0){
                 $ret = array();
                 while($result = $Q->fetch_array()) $ret[] = $result;
