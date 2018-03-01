@@ -1,13 +1,14 @@
 package edu.ucf.cop4331.Collange.imagify;
 
 import edu.ucf.cop4331.Collange.imagify.filters.*;
+import edu.ucf.cop4331.Collange.imagify.filters.color.blend.ZombieRedTransition;
+import edu.ucf.cop4331.Collange.imagify.filters.color.blend.GoldTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.WhiteTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.RedTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.GreenTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.BlueTransition;
+import edu.ucf.cop4331.Collange.imagify.filters.color.SolidBlueTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.blend.ColorMidpointTransition;
-import edu.ucf.cop4331.Collange.imagify.filters.color.blend.ZombieRedTransition;
-import edu.ucf.cop4331.Collange.imagify.filters.color.blend.GoldTransition;
 
 public enum RGBTransitions {
     SepiaTransition("Sepia Filter", SepiaTransition.class),
@@ -35,7 +36,8 @@ public enum RGBTransitions {
     NoEvenNumberTransition("No Even Numbered Pixels Filter", NoEvenNumberTransition.class),
     ConwayGameOfLifeTransition("Conway Game of Life Filter", ConwayGameOfLifeTransition.class),
     EightBitColorTransition("EightBitColorTransition", EightBitColorTransition.class),
-    CumulativeAverageTransition("Cumulative Average Filter", CumulativeAverageTransition.class);
+    CumulativeAverageTransition("Cumulative Average Filter", CumulativeAverageTransition.class),
+    SolidBlueTransition("Solid Blue Filter", SolidBlueTransition.class);
 
     private String name;
     private Class<? extends RGBTransition> clazz;
