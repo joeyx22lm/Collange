@@ -32,5 +32,13 @@ class User extends DBObject {
     public function getPassword(){
         return $this->password;
     }
+
+    public static function get($x, $y=null){
+        return parent::get($x, $y);
+    }
+
+    public static function getAll($x, $y=null){
+        return parent::getAll($x, $y);
+    }
 }
 ?>

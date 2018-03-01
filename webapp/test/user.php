@@ -13,6 +13,9 @@ class UserTest extends UnitTest {
         }
         return true;
     }
+    protected function TestUserGetAll(){
+        User::getAll(array(), array('email'=>'test@example.com'));
+    }
     protected function TestBuildUser(){
         $UserArr = array(
             'fname'=>'John',
