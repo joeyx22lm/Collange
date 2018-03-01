@@ -144,7 +144,9 @@ class DBObject {
             }
             $Q = $x->query("SELECT * FROM `"+static::$tableName+"` WHERE " . $params);
             if($Q != null && $Q->num_rows > 0){
-                return $Q->fetch_array();
+                $ret = array();
+                while($result = $Q->fetch_array()) $ret[] = $result;
+                return $ret;
             }
         }
 
