@@ -7,6 +7,7 @@ if(isset($_POST['login'])){
     ));
     if($Users != null && sizeof($Users) == 1){
         AuthSession::set("user", $User[0]);
+        die(AuthSession::get("user"));
         header("Location: /home.php");
         die();
     }
