@@ -30,6 +30,21 @@ class AuthSession {
             die();
         }
     }
+
+    public static function password_hash($password){
+        return password_hash($password, PASSWORD_DEFAULT, ["cost"=>12]);
+    }
+    public static function password_verify($password, $hash){
+        return password_verify($password, $hash);
+    }
+    public static function isLoggedIn(){
+        return self::exists('user');
+    }
+    public static function setLoggedIn($User){
+        self::set('user', $User);
+    }
+
+
     public static function start(){
         session_start();
         session_regenerate_id();

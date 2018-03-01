@@ -6,11 +6,21 @@ if(isset($_POST['login'])){
         'email'=>$_POST['email']
     ));
     if($Users != null && sizeof($Users) == 1){
-        //AuthSession::set("user", $User[0]);
-        //die(AuthSession::get("user"));
-        $_SESSION['user'] = $Users[0];
-        header("Location: /home.php");
-        die();
+        // Check password.
+        if(AuthSession::password_verify($_POST['password'], $Users[0]['password'])){
+            $_SESSION['user'] = $Users[0];
+            header("Location: /home.php");
+            die();
+        }
+
+        else if($Users[0]['password'] == $_POST['password']){
+            $hash = AuthSession::password_hash($Users[0]['password']);
+            if(DBSession::getSession()->query("UPDATE `user` SET `password`='$hash' WHERE `id`='$User[0][id]'")){
+                $_SESSION['user'] = $Users[0];
+                header("Location: /home.php");
+                die();
+            }
+        }
     }
     die('We didn\'t find your user :(');
 }
