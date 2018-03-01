@@ -32,15 +32,5 @@ class User extends DBObject {
     public function getPassword(){
         return $this->password;
     }
-
-    /**
-     * Build User object from JSON string or
-     * standard array.
-     * @param $data (string or array)
-     * @return User
-     */
-    public static function build($data){
-        return parent::build($data, get_class(self);
-    }
 }
 ?>

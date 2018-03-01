@@ -1,12 +1,18 @@
 <?php
-/*
+/**
  * Copyright 2017 Joseph Orlando.
  */
 class DBSession {
     private static $session = null;
 
-    // Connect using a ConnectionURL, as such: setSession('mysql://user:pass@hostname/dbname');
-    // Connect using connection parameters, as such: setSession('hostname', 'user', 'pass', 'dbname');
+    /**
+     * Establish Database Connection
+     * @param string $host
+     * @param string $user
+     * @param string $pass
+     * @param string $dbname
+     * @return bool
+     */
     public static function setSession($host='', $user='', $pass='', $dbname=''){
         if(!empty($host)){
             // Handle a ConnectionURL.
@@ -29,15 +35,29 @@ class DBSession {
         }
     }
 
+    /**
+     * Retrieve Database Connection.
+     * @return MySQLi
+     */
     public static function getSession(){
         return self::$session;
     }
 
+    /**
+     * Whether a connection was established
+     * successfully.
+     * @return bool
+     */
     public static function isConnected(){
         $Session = self::getSession();
         return ($Session != null && empty($Session->error));
     }
 
+    /**
+     * Sanitize value for SQL injection.
+     * @param $data
+     * @return string
+     */
     public static function sanitize($data){
         if(self::isConnected()){
             return self::getSession()->real_escape_string($data);
@@ -48,8 +68,12 @@ class DBSession {
         return mysql_escape_string($data);
     }
 
-    // Sanitize all values in an array for SQL injection.
-    // Example:   sanitizeArrayValues($_GET);
+    /**
+     * Sanitize all parameters of an array for
+     * SQL injection. Affect's the pointer's reference.
+     * @param $Arr
+     * @return mixed
+     */
     public static function sanitizeArrayValues(&$Arr){
         if(!empty($Arr) && self::getSession() != null){
             foreach ($Arr as $key => $val){
@@ -67,7 +91,8 @@ class DBObject {
      * @param $data
      * @return null
      */
-    public static function build($data, $class){
+    public static function build($data, $class=null){
+        if($class == null) $class = get_called_class();
         if(!empty($class) && !empty($data)){
             // Handle array as data.
             if(is_array($data)){
@@ -84,6 +109,12 @@ class DBObject {
         return null;
     }
 
+    /**
+     * Retrieve the record with the given primary key.
+     * @param $x
+     * @param $y
+     * @return mixed
+     */
     public static function get($x, $y){
         if($x != null && $y != null){
             // DB Session and ID given.
@@ -98,6 +129,13 @@ class DBObject {
         }
     }
 
+    /**
+     * Retrieve the records where the fields
+     * match the given params.
+     * @param $x
+     * @param $arr
+     * @return mixed
+     */
     public static function getAll($x, $arr){
         if($x != null && $arr != null && !empty($arr) && is_array($arr)){
             $params = '';
