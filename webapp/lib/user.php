@@ -12,6 +12,10 @@ class UserUtil {
     }
 }
 class User extends DBObject {
+    protected static $tableName='user';     // Table is `user`
+    protected static $tablePKName='id';     // Primary Key field is `id`
+    protected static $tablePKType='i';      // Primary Key is an integer.
+
     protected $fname;
     protected $lname;
     protected $email;
@@ -35,8 +39,8 @@ class User extends DBObject {
      * @param $data (string or array)
      * @return User
      */
-    public static function build($data, $class='User'){
-        return parent::build($data, $class);
+    public static function build($data){
+        return parent::build($data, get_class(self);
     }
 }
 ?>

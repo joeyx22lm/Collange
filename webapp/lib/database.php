@@ -27,12 +27,6 @@ class DBSession {
             }
             return false;
         }
-        if(empty($dbname) && !empty($host)){
-
-        }else{
-
-        }
-
     }
 
     public static function getSession(){
@@ -88,6 +82,37 @@ class DBObject {
             }
         }
         return null;
+    }
+
+    public static function get($x, $y){
+        if($x != null && $y != null){
+            // DB Session and ID given.
+            $Q = $x->query("SELECT * FROM `"+static::$tableName+"` WHERE `"+static::$tablePKName+"`='$y'");
+            if($Q != null && $Q->num_rows > 0){
+                return $Q->fetch_array();
+            }
+        }
+
+        else if($x != null){
+            return self::get(DBSession::getSession(), $x);
+        }
+    }
+
+    public static function getAll($x, $arr){
+        if($x != null && $arr != null && !empty($arr) && is_array($arr)){
+            $params = '';
+            foreach($arr as $field=>$value){
+                $params .= (empty($params) ? '' : ', ') . "`$field`='$value'";
+            }
+            $Q = $x->query("SELECT * FROM `"+static::$tableName+"` WHERE " . $params);
+            if($Q != null && $Q->num_rows > 0){
+                return $Q->fetch_array();
+            }
+        }
+
+        else if($x != null){
+            return self::getAll(DBSession::getSession(), $x);
+        }
     }
 }
 ?>

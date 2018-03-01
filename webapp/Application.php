@@ -3,6 +3,14 @@
 require_once('lib/database.php');
 DBSession::setSession($_ENV['JAWSDB_MARIA_URL']);
 
+// Sanitize any incoming data.
+if(isset($_GET) && !empty($_GET)){
+    DBSession::sanitizeArrayValues($_GET);
+}
+if(isset($_POST) && !empty($_POST)){
+    DBSession::sanitizeArrayValues($_POST);
+}
+
 /* User object */
 require_once('lib/user.php');
 
