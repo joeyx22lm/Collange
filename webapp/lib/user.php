@@ -12,9 +12,9 @@ class UserUtil {
     }
 }
 class User extends DBObject {
-    protected static $tableName='user';     // Table is `user`
-    protected static $tablePKName='id';     // Primary Key field is `id`
-    protected static $tablePKType='i';      // Primary Key is an integer.
+    protected static $tableName='user';     // DB Table is `user`
+    protected static $tablePKName='id';     // DB Primary Key field is `id`
+    protected static $tablePKType='i';      // DB Primary Key is an integer.
 
     protected $fname;
     protected $lname;

@@ -51,7 +51,7 @@ if(isset($_POST['login'])){
               </div>
               <div class="row">
                 <div class="col-6">
-                  <button type="button" name="login" class="btn btn-primary px-4">Login</button>
+                  <input type="submit" name="login" class="btn btn-primary px-4" value="Login"/>
                 </div>
                 <div class="col-6 text-right">
                   <button type="button" class="btn btn-link px-0">Forgot password?</button>
