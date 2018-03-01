@@ -1,10 +1,5 @@
-<!--
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.10
- * @link http://coreui.io
- * Copyright (c) 2018 creativeLabs Łukasz Holeczek
- * @license MIT
- -->
+<?php require_once('../Application.php');?>
+<?php AuthSession::protect(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
