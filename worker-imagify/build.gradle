@@ -23,3 +23,7 @@ jar {
         attributes 'Main-Class': 'edu.ucf.cop4331.Collange.HerokuWorkerActivity'
     }
 }
+
+stage {
+
+}

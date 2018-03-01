@@ -34,7 +34,8 @@ public enum RGBTransitions {
     DitheringTransition("Dithering Filter", DitheringTransition.class),
     NoEvenNumberTransition("No Even Numbered Pixels Filter", NoEvenNumberTransition.class),
     ConwayGameOfLifeTransition("Conway Game of Life Filter", ConwayGameOfLifeTransition.class),
-    EightBitColorTransition("EightBitColorTransition", EightBitColorTransition.class);
+    EightBitColorTransition("EightBitColorTransition", EightBitColorTransition.class),
+    CumulativeAverageTransition("Cumulative Average Filter", CumulativeAverageTransition.class);
 
     private String name;
     private Class<? extends RGBTransition> clazz;

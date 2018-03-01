@@ -2,8 +2,532 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-breadcrumb.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-card.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-cards.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-carousel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-collapse.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-forms.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-jumbotron.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-list-group.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-navbar.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-navs.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-pagination.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-popovers.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-progress.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-scrollspy.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-switches.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-tables.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-tabs.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/base-tooltips.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/buttons-button-group.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/buttons-buttons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/buttons-dropdowns.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/buttons-social-buttons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/charts.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/colors.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/icons-flags.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/icons-font-awesome.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/icons-simple-line-icons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/notifications-alerts.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/notifications-badge.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/notifications-modals.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/old/blank.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/old/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/pages-404.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/pages-500.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/pages-register.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/typography.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/widgets.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.java" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/collange.iml" afterPath="$PROJECT_DIR$/.idea/modules/collange.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/webapp.iml" afterPath="$PROJECT_DIR$/.idea/modules/webapp.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.java" afterPath="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.java" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/404.php" afterPath="$PROJECT_DIR$/webapp/public/old/404.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/basic-table.html" afterPath="$PROJECT_DIR$/webapp/public/old/basic-table.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/blank.html" afterPath="$PROJECT_DIR$/webapp/public/blank.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/CHANGELOG.md" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/Gruntfile.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/Gruntfile.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/README.md" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/README.md" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap-theme.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/js/bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/dist/js/npm.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/dist/js/npm.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/.jshintrc" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/.jshintrc" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/bs-commonjs-generator.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/bs-glyphicons-data-generator.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/bs-lessdoc-parser.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/bs-raw-files-generator.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/configBridge.json" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/configBridge.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/grunt/sauce_browsers.yml" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/grunt/sauce_browsers.yml" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/affix.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/affix.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/alert.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/alert.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/button.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/button.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/carousel.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/carousel.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/collapse.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/collapse.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/dropdown.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/dropdown.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/modal.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/modal.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/popover.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/popover.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/scrollspy.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/scrollspy.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/tab.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/tab.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/js/transition.js" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/js/transition.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/alerts.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/badges.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/badges.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/bootstrap.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/breadcrumbs.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/button-groups.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/buttons.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/carousel.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/close.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/code.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/component-animations.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/dropdowns.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/forms.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/glyphicons.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/glyphicons.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/grid.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/input-groups.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/input-groups.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/jumbotron.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/jumbotron.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/labels.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/labels.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/list-group.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/list-group.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/media.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/media.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/alerts.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/alerts.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/background-variant.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/background-variant.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/border-radius.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/border-radius.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/buttons.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/buttons.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/center-block.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/center-block.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/clearfix.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/clearfix.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/forms.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/forms.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/gradients.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/gradients.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/grid-framework.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/grid.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/grid.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/hide-text.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/hide-text.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/image.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/image.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/labels.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/labels.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/list-group.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/list-group.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/nav-divider.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/opacity.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/opacity.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/pagination.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/pagination.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/panels.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/panels.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/progress-bar.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/reset-filter.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/reset-text.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/reset-text.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/resize.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/resize.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/responsive-visibility.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/size.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/size.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/tab-focus.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/table-row.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/table-row.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/text-emphasis.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/text-overflow.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/modals.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/navbar.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/navs.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/normalize.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/normalize.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/pager.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/pagination.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/panels.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/panels.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/popovers.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/print.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/print.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/progress-bars.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/responsive-embed.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/responsive-embed.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/responsive-utilities.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/scaffolding.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/tables.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/theme.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/theme.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/thumbnails.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/tooltip.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/type.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/utilities.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/less/wells.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/bootstrap/package.json" afterPath="$PROJECT_DIR$/webapp/public/old/bootstrap/package.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/animate.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/animate.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/colors/default.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/colors/default.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/linea-icons/linea.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/linea-icons/linea.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/css/material-design-iconic-font.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/css/material-design-iconic-font.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/css/materialdesignicons.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/css/materialdesignicons.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" afterPath="$PROJECT_DIR$/webapp/public/old/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/login.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/login.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/spinners.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/spinners.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/style.css" afterPath="$PROJECT_DIR$/webapp/public/old/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/fontawesome.html" afterPath="$PROJECT_DIR$/webapp/public/old/fontawesome.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/home.php" afterPath="$PROJECT_DIR$/webapp/public/old/home.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/index.php" afterPath="$PROJECT_DIR$/webapp/public/index.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/custom.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/custom.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/custom.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/custom.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/dashboard1.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/dashboard1.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/jquery.slimscroll.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/jquery.slimscroll.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/login.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/login.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/morris-data.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/morris-data.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/toastr.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/toastr.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/js/waves.js" afterPath="$PROJECT_DIR$/webapp/public/old/js/waves.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/colors/default.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/colors/default.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/common.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/common.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/.bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/.bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/.gitignore" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/.npmignore" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/.npmignore" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/HELP-US-OUT.txt" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/FontAwesome.otf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/fontawesome-webfont-old.ttf" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/fontawesome-webfont-old.ttf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/animated.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/animated.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/bordered-pulled.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/core.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/extras.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/extras.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/fixed-width.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/font-awesome.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/icons.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/larger.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/list.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/path.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/rotated-flipped.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/spinning.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/stacked.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_animated.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_animated.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_bordered-pulled.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_core.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_extras.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_extras.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_fixed-width.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_larger.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_list.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_mixins.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_path.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_rotated-flipped.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_spinning.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_spinning.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_stacked.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/icons/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/webapp/public/old/less/icons/font-awesome/scss/font-awesome.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/pages.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/pages.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/responsive.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/responsive.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/sidebar-nav.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/sidebar-nav.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/spinners.css" afterPath="$PROJECT_DIR$/webapp/public/old/less/spinners.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/style.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/style.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/variables.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/less/widgets.less" afterPath="$PROJECT_DIR$/webapp/public/old/less/widgets.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/map-google.html" afterPath="$PROJECT_DIR$/webapp/public/old/map-google.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist-init.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist-init.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist-init.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist-init.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/chartist.min.js.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/chartist.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/scss/chartist.scss" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/scss/chartist.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-js/dist/scss/settings/_chartist-settings.scss" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-js/dist/scss/settings/_chartist-settings.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/.gitignore" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/CHANGELOG.md" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/Gruntfile.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/Gruntfile.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/LICENSE" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/README.md" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/README.md" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/dist/LICENSE" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/dist/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/package.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/package.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/src/css/chartist-plugin-tooltip.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/src/css/chartist-plugin-tooltip.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/src/css/chartist-plugin-tooltip.css.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/src/css/chartist-plugin-tooltip.css.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/src/scripts/chartist-plugin-tooltip.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/src/scripts/chartist-plugin-tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/src/scss/chartist-plugin-tooltip.scss" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/src/scss/chartist-plugin-tooltip.scss" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/aliases.yml" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/aliases.yml" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/clean.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/clean.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/copy.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/copy.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/jasmine.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/jasmine.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/jshint.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/jshint.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/sass.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/sass.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/uglify.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/uglify.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/tasks/umd.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/tasks/umd.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/test/.jshintrc" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/test/.jshintrc" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/test/runner.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/test/runner.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/chartist-plugin-tooltip-master/test/spec/spec-tooltip.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/chartist-plugin-tooltip-master/test/spec/spec-tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/counterup/jquery.counterup.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/counterup/jquery.counterup.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/gmaps.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/gmaps.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/gmaps.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/gmaps.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/gmaps.min.js.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/gmaps.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/jquery.gmaps.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/jquery.gmaps.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.controls.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.controls.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.core.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.core.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.events.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.events.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.geofences.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.geofences.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.geometry.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.geometry.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.layers.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.layers.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.map_types.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.map_types.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.markers.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.markers.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.native_extensions.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.native_extensions.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.overlays.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.overlays.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.routes.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.routes.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.static.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.static.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.streetview.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.streetview.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.styles.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.styles.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/gmaps/lib/gmaps.utils.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/gmaps/lib/gmaps.utils.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/.bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/dist/jquery.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/dist/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/dist/jquery.min.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/jsonp.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/load.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/parseJSON.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/parseXML.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/script.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/var/nonce.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/var/rquery.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/ajax/xhr.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/attributes.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/attributes/attr.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/attributes/classes.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/attributes/prop.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/attributes/support.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/attributes/val.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/callbacks.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/core.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/core/access.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/core/init.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/core/parseHTML.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/core/ready.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/core/var/rsingleTag.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/addGetHookIf.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/curCSS.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/defaultDisplay.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/support.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/swap.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/var/cssExpand.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/var/getStyles.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/var/getStyles.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/var/isHidden.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/var/rmargin.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/css/var/rnumnonpx.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/data.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/data/Data.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/data/accepts.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/data/var/data_priv.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/data/var/data_priv.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/data/var/data_user.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/data/var/data_user.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/deferred.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/deprecated.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/dimensions.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/effects.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/effects/Tween.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/effects/animatedSelector.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/event.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/event/ajax.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/event/alias.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/event/support.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/exports/amd.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/exports/global.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/intro.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/jquery.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/manipulation.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/manipulation/_evalUrl.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/manipulation/support.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/manipulation/var/rcheckableType.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/offset.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/outro.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/outro.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/queue.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/queue/delay.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/selector-native.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/selector-sizzle.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/selector.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/selector.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/serialize.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/sizzle/dist/sizzle.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/sizzle/dist/sizzle.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/sizzle/dist/sizzle.min.map" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/traversing.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/traversing/findFilter.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/traversing/var/rneedsContext.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/arr.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/class2type.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/concat.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/hasOwn.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/indexOf.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/pnum.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/push.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/rnotwhite.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/slice.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/strundefined.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/support.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/var/toString.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/jquery/src/wrap.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/.bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/.bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/.gitignore" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/.travis.yml" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/Gruntfile.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/Gruntfile.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/README.md" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/README.md" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/bower.travis.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/bower.travis.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/_template.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/_template.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/area-as-line.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/area-as-line.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/area.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/area.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/bar-colors.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/bar-colors.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/bar-no-axes.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/bar-no-axes.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/bar.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/bar.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/days.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/days.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/decimal-custom-hover.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/decimal-custom-hover.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/diagonal-xlabels-bar.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/diagonal-xlabels-bar.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/diagonal-xlabels.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/diagonal-xlabels.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/donut-colors.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/donut-colors.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/donut-formatter.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/donut-formatter.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/donut.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/donut.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/dst.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/dst.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/events.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/events.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/goals.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/goals.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/lib/example.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/lib/example.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/lib/example.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/lib/example.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/months-no-smooth.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/months-no-smooth.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/negative.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/negative.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/no-grid.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/no-grid.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/non-continuous.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/non-continuous.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/non-date.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/non-date.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/quarters.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/quarters.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/resize.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/resize.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/stacked_bars.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/stacked_bars.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/timestamps.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/timestamps.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/updating.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/updating.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/weeks.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/weeks.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/examples/years.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/examples/years.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/less/morris.core.less" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/less/morris.core.less" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.area.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.area.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.bar.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.bar.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.donut.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.donut.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.grid.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.grid.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.hover.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.hover.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/lib/morris.line.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/lib/morris.line.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/morris.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/morris.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/morris.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/morris.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/morris.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/morris.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/package.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/package.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/area/area_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/area/area_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/bar/bar_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/bar/bar_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/bar/colours.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/bar/colours.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/commas_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/commas_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/donut/donut_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/donut/donut_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/grid/auto_grid_lines_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/grid/auto_grid_lines_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/grid/set_data_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/grid/set_data_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/grid/y_label_format_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/grid/y_label_format_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/hover_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/hover_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/label_series_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/label_series_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/line/line_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/line/line_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/pad_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/pad_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/lib/parse_time_spec.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/lib/parse_time_spec.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/specs.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/specs.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/support/placeholder.coffee" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/support/placeholder.coffee" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/examples.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/examples.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/exemplary/area0.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/exemplary/area0.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/exemplary/bar0.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/exemplary/bar0.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/exemplary/line0.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/exemplary/line0.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/exemplary/stacked_bar0.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/exemplary/stacked_bar0.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/run.sh" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/run.sh" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/test.html" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/test.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/morrisjs/spec/viz/visual_specs.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/morrisjs/spec/viz/visual_specs.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/.bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/.bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/Gruntfile.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/Gruntfile.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/LICENSE" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/README.md" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/README.md" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/bower.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/bower.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/dist/sidebar-nav.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/dist/sidebar-nav.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/dist/sidebar-nav.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/dist/sidebar-nav.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/package.json" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/package.json" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/src/metisMenu.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/src/metisMenu.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/sidebar-nav/src/metisMenu.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/sidebar-nav/src/metisMenu.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/toast-master/css/jquery.toast.css" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/toast-master/css/jquery.toast.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/toast-master/js/jquery.toast.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/toast-master/js/jquery.toast.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/jquery.waypoints.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/jquery.waypoints.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/jquery.waypoints.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/jquery.waypoints.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/noframework.waypoints.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/noframework.waypoints.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/noframework.waypoints.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/noframework.waypoints.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/shortcuts/infinite.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/shortcuts/infinite.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/shortcuts/infinite.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/shortcuts/infinite.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/shortcuts/inview.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/shortcuts/inview.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/shortcuts/inview.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/shortcuts/inview.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/shortcuts/sticky.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/shortcuts/sticky.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/shortcuts/sticky.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/shortcuts/sticky.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/waypoints.debug.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/waypoints.debug.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/zepto.waypoints.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/zepto.waypoints.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/bower_components/waypoints/lib/zepto.waypoints.min.js" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/bower_components/waypoints/lib/zepto.waypoints.min.js" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/admin-logo-dark.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/admin-logo-dark.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/admin-logo.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/admin-logo.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/admin-text-dark.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/admin-text-dark.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/admin-text.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/admin-text.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/favicon.png" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/favicon.png" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/large/img1.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/large/img1.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/arijit.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/arijit.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/genu.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/genu.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/govinda.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/govinda.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/hritik.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/hritik.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/pawandeep.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/pawandeep.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/ritesh.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/ritesh.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/sonu.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/sonu.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/plugins/images/users/varun.jpg" afterPath="$PROJECT_DIR$/webapp/public/old/plugins/images/users/varun.jpg" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/profile.html" afterPath="$PROJECT_DIR$/webapp/public/old/profile.html" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build.gradle" afterPath="$PROJECT_DIR$/worker-imagify/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/RGBTransitions.class" afterPath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/RGBTransitions.class" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/libs/worker-imagify-1.0.0.jar" afterPath="$PROJECT_DIR$/worker-imagify/build/libs/worker-imagify-1.0.0.jar" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -46,48 +570,15 @@
       <file leaf-file-name="RGBTransitions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="36" column="86" lean-forward="false" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+            <state relative-caret-position="555">
+              <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2346#2347#0" expanded="true" />
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2411#2412#0" expanded="true" />
-                <element signature="e#2492#2493#0" expanded="true" />
+                <element signature="e#2443#2444#0" expanded="true" />
+                <element signature="e#2470#2471#0" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
+                <element signature="e#2589#2590#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EightBitColorTransition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/EightBitColorTransition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RGBUtility.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBUtility.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="65" />
-              <folding>
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConwayGameOfLifeTransition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/ConwayGameOfLifeTransition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -95,36 +586,71 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JedisHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java">
+      <file leaf-file-name="CumulativeAverageTransition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#2439#2440#0" expanded="true" />
-                <element signature="e#2473#2474#0" expanded="true" />
-                <element signature="e#2508#2509#0" expanded="true" />
-                <element signature="e#2544#2545#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HerokuWorkerActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/HerokuWorkerActivity.java">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/public/old/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="443">
+              <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="81" lean-forward="true" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/Application.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,27 +660,17 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="57" lean-forward="true" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+              <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrayScaleTransitionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GrayScaleTransitionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileSystemHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/FileSystemHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="690">
+              <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -197,13 +713,13 @@
     <option name="myGradleHomes">
       <map>
         <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0" />
-        <entry key="$PROJECT_DIR$/worker-imagify" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0" />
+        <entry key="$PROJECT_DIR$/webapp" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
         <entry key="$PROJECT_DIR$" value="4.0" />
-        <entry key="$PROJECT_DIR$/worker-imagify" value="4.0" />
+        <entry key="$PROJECT_DIR$/webapp" value="4.0" />
       </map>
     </option>
     <option name="availableProjects">
@@ -235,14 +751,22 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="worker-imagify" />
-              <option name="path" value="$PROJECT_DIR$/worker-imagify" />
+              <option name="name" value="webapp" />
+              <option name="path" value="$PROJECT_DIR$/webapp" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="worker-imagify" />
+                <option name="name" value="collange" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":webapp" />
+                <option name="path" value="$PROJECT_DIR$/webapp" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":worker-imagify" />
                 <option name="path" value="$PROJECT_DIR$/worker-imagify" />
               </ExternalProjectPojo>
             </list>
@@ -256,29 +780,8 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'collange'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'collange'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'collange'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
+                <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all buildscript dependencies declared in root project 'collange'." />
@@ -286,78 +789,13 @@
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'collange'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'collange' (some of the displayed tasks may belong to subprojects)." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'collange'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
+                <option name="description" value="Displays the components produced by root project 'collange'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
+                <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'collange'." />
@@ -365,9 +803,14 @@
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'collange'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'collange'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
@@ -375,12 +818,48 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'collange'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'collange'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'collange'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="stage" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'collange' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
@@ -388,9 +867,54 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'collange'." />
+                <option name="description" value="Runs all checks." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -467,9 +991,14 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'worker-imagify'. [incubating]" />
+                <option name="description" value="Assembles the outputs of this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="components" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
@@ -477,9 +1006,19 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'worker-imagify'." />
+                <option name="description" value="Displays all buildscript dependencies declared in project ':worker-imagify'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="projects" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
@@ -487,29 +1026,44 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'worker-imagify'. [incubating]" />
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':worker-imagify'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':worker-imagify'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':worker-imagify'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':worker-imagify'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'worker-imagify'." />
+                <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="javadoc" />
+                <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
@@ -517,7 +1071,12 @@
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'worker-imagify'. [incubating]" />
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':worker-imagify'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -527,14 +1086,28 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'worker-imagify'." />
+                <option name="description" value="Processes test resources." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="tasks" />
+                <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
+                <option name="description" value="Displays the sub-projects of project ':worker-imagify'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="init" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':worker-imagify'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="stage" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':worker-imagify'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
+                <option name="name" value="tasks" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
@@ -542,64 +1115,9 @@
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
+                <option name="description" value="Assembles test classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'worker-imagify'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'worker-imagify'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'worker-imagify'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/worker-imagify" />
-                <option name="name" value="properties" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -608,15 +1126,16 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="9114724872000" />
+        <entry key="$PROJECT_DIR$" value="9114730050000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2984879058" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2864728745" />
-        <entry key="$PROJECT_DIR$/webapp" value="9114724891000" />
+        <entry key="$PROJECT_DIR$/webapp" value="9114730069000" />
         <entry key="$PROJECT_DIR$/webapp/build.gradle" value="1404710667" />
         <entry key="$PROJECT_DIR$/webapp/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/webapp/settings.gradle" value="2780356252" />
-        <entry key="$PROJECT_DIR$/worker-imagify/build.gradle" value="1009569510" />
+        <entry key="$PROJECT_DIR$/worker-imagify" value="4557745642000" />
+        <entry key="$PROJECT_DIR$/worker-imagify/build.gradle" value="2344683226" />
         <entry key="$PROJECT_DIR$/worker-imagify/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/worker-imagify/settings.gradle" value="4130257123" />
       </map>
@@ -730,11 +1249,25 @@
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/worker-imagify">
+        <entry key="$PROJECT_DIR$/webapp">
           <value>
             <ExternalProjectBuildClasspathPojo>
               <option name="modulesBuildClasspath">
                 <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/webapp">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/webapp" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
                   <entry key="$PROJECT_DIR$/worker-imagify">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
@@ -744,7 +1277,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="worker-imagify" />
+              <option name="name" value="collange" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0/lib/gradle-script-kotlin-compiler-plugin-0.9.0.jar" />
@@ -816,8 +1349,8 @@
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0/lib/plugins/gradle-test-kit-4.0.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0-bin/3p92xsbhik5vmig8i90n16yxc/gradle-4.0/lib/plugins/gradle-ivy-4.0.jar" />
-                  <option value="$PROJECT_DIR$/worker-imagify/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/worker-imagify/buildSrc/src/main/groovy" />
+                  <option value="$PROJECT_DIR$/webapp/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/webapp/buildSrc/src/main/groovy" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -831,15 +1364,13 @@
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/worker-imagify" value="RE_IMPORT" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/RGBTransitionTest.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/RGBTransitions.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/PackageHandler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/FileSystemHandler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/ImageHandler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/WhiteOutTransition.java" />
@@ -881,13 +1412,16 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/InvertedColorTransition.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/EightBitColorTransition.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/ConwayGameOfLifeTransition.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/HerokuWorkerActivity.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.java" />
+        <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.java" />
+        <option value="$PROJECT_DIR$/webapp/lib/app.php" />
+        <option value="$PROJECT_DIR$/webapp/public/index.php" />
       </list>
     </option>
   </component>
@@ -898,9 +1432,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -918,9 +1452,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -936,158 +1469,20 @@
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
-              <item name="Collange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
-              <item name="Collange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="ucf" type="462c0819:PsiDirectoryNode" />
-              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
-              <item name="Collange" type="462c0819:PsiDirectoryNode" />
-              <item name="imagify" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -1100,17 +1495,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.ucf.cop4331.Collange.imagify" />
       <recent name="edu.ucf.cop4331.Collange.imagify.filters" />
+      <recent name="edu.ucf.cop4331.Collange.imagify" />
       <recent name="edu.ucf.cop4331.Collange.imagify.filters.color.blend" />
       <recent name="edu.ucf.cop4331.Collange.imagify.filters.colorize" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webapp/public" />
+      <recent name="$PROJECT_DIR$/webapp/public/old" />
       <recent name="$PROJECT_DIR$/webapp/public/css" />
       <recent name="$PROJECT_DIR$/webapp/public/js" />
-      <recent name="$PROJECT_DIR$/webapp/public" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1228,15 +1623,16 @@
       <workItem from="1519536152248" duration="2648000" />
       <workItem from="1519578839662" duration="3214000" />
       <workItem from="1519700227874" duration="4216000" />
-      <workItem from="1519748637088" duration="2450000" />
+      <workItem from="1519748637088" duration="3969000" />
+      <workItem from="1519933918274" duration="483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46525000" />
+    <option name="totallyTimeSpent" value="48527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="22" width="1920" height="1001" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1252,8 +1648,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27635783" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36842105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27902022" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40949228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1282,36 +1678,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/test/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/test/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/test/testutility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/SepiaTransition.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/awt/image/ColorModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3387">
-          <caret line="155" column="22" lean-forward="false" selection-start-line="155" selection-start-column="22" selection-end-line="155" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/SepiaTransitionOld.java" />
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/ImageTransitionTest.java" />
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/RGBUtilityTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1576,27 +1942,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="36" column="86" lean-forward="false" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2346#2347#0" expanded="true" />
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#2492#2493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBUtility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="65" />
           <folding>
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="false" />
+            <element signature="e#1082#1083#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1619,7 +1971,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="315">
           <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1630,14 +1982,6 @@
             <element signature="e#2508#2509#0" expanded="true" />
             <element signature="e#2544#2545#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,15 +1996,88 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="57" lean-forward="true" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        <state relative-caret-position="690">
+          <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="e#2589#2590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/old/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="81" lean-forward="true" selection-start-line="31" selection-start-column="81" selection-end-line="31" selection-end-column="81" />
           <folding />
         </state>
       </provider>
