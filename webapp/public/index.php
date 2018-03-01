@@ -2,9 +2,10 @@
 <?php AuthSession::start(); ?>
 <?php
 if(isset($_POST['login'])){
-    $Users = User::getAll(array('email'=>$_POST['email']));
+    $Users = User::getAll(array(
+        'email'=>$_POST['email']
+    ));
     if($Users != null && sizeof($Users) == 1){
-        
         AuthSession::set("user", $User[0]);
         header("Location: /home.php");
         die();
