@@ -16,7 +16,7 @@ if(isset($_POST['login'])){
         else if($Users[0]['password'] == $_POST['password']){
             $hash = AuthSession::password_hash($Users[0]['password']);
             $id = $Users[0]['id'];
-            if(DBSession::getSession()->query()){
+            if(DBSession::getSession()->query("UPDATE `user` SET `password`='$hash' WHERE `id`='$id'")){
                 $_SESSION['user'] = $Users[0];
                 header("Location: /home.php");
                 die();
