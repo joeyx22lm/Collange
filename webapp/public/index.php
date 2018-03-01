@@ -1,9 +1,10 @@
 <?php require_once('../Application.php');?>
+<?php AuthSession::start(); ?>
 <?php
 if(isset($_POST['login'])){
     $Users = User::getAll(array('email'=>$_POST['email']));
     if($Users != null && sizeof($Users) == 1){
-        header("Location: home.php");
+        header("Location: /home");
         die();
     }
     die('We didn\'t find your user :(');
