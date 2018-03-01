@@ -136,7 +136,7 @@ class DBObject {
      * @param $arr
      * @return mixed
      */
-    public static function getAll($x, $arr){
+    public static function getAll($x, $arr=null){
         if($x != null && $arr != null && !empty($arr) && is_array($arr)){
             $params = '';
             foreach($arr as $field=>$value){

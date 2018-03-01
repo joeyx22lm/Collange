@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/index.php" afterPath="$PROJECT_DIR$/webapp/public/index.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/database.php" afterPath="$PROJECT_DIR$/webapp/lib/database.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -83,15 +83,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="146" column="41" lean-forward="true" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
+            <state relative-caret-position="424">
+              <caret line="150" column="28" lean-forward="true" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
               <folding>
                 <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
-                <marker date="1519939940899" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
-                <marker date="1519939940899" expanded="true" signature="4151:4166" ph="SELECT * FRO... " />
+                <marker date="1519940859509" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
+                <marker date="1519940859509" expanded="true" signature="4156:4171" ph="SELECT * FRO... " />
               </folding>
             </state>
           </provider>
@@ -127,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="307">
               <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding>
                 <marker date="1519940583325" expanded="true" signature="304:783" ph="..." />
@@ -917,9 +917,9 @@
         <option value="$PROJECT_DIR$/webapp/test/database.php" />
         <option value="$PROJECT_DIR$/webapp/build.gradle" />
         <option value="$PROJECT_DIR$/webapp/Application.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/database.php" />
         <option value="$PROJECT_DIR$/webapp/lib/user.php" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/database.php" />
       </list>
     </option>
   </component>
@@ -1133,7 +1133,7 @@
       <workItem from="1519578839662" duration="3214000" />
       <workItem from="1519700227874" duration="4216000" />
       <workItem from="1519748637088" duration="3969000" />
-      <workItem from="1519933918274" duration="6036000" />
+      <workItem from="1519933918274" duration="6242000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1177,11 +1177,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519940157544</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changes: a song by Tupac.">
+      <created>1519940588769</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1519940588769</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54080000" />
+    <option name="totallyTimeSpent" value="54286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1001" extended-state="6" />
@@ -1630,18 +1637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="146" column="41" lean-forward="true" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
-          <folding>
-            <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
-            <marker date="1519939940899" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
-            <marker date="1519939940899" expanded="true" signature="4151:4166" ph="SELECT * FRO... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -1652,7 +1647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="307">
           <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <marker date="1519940583325" expanded="true" signature="304:783" ph="..." />
@@ -1674,6 +1669,18 @@
             <marker date="1519940583325" expanded="true" signature="2601:3004" ph="..." />
             <marker date="1519940583325" expanded="true" signature="2649:2987" ph="..." />
             <marker date="1519940583325" expanded="true" signature="2669:2968" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="150" column="28" lean-forward="true" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
+          <folding>
+            <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
+            <marker date="1519940859509" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
+            <marker date="1519940859509" expanded="true" signature="4156:4171" ph="SELECT * FRO... " />
           </folding>
         </state>
       </provider>
