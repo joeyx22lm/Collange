@@ -34,7 +34,7 @@ if(isset($_POST['login'])){
       <div class="col-md-8">
         <div class="card-group">
           <div class="card p-4">
-            <form action="index.php" method="POST" class="card-body">
+            <form method="POST" class="card-body">
               <h1>Login</h1>
               <p class="text-muted">Sign In to your account</p>
               <div class="input-group mb-3">
