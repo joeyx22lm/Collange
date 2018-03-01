@@ -16,12 +16,11 @@ if(isset($_POST['login'])){
         else if($Users[0]['password'] == $_POST['password']){
             $hash = AuthSession::password_hash($Users[0]['password']);
             $id = $User[0]['id'];
-            die("UPDATE `user` SET `password`='$hash' WHERE `id`='$id'");
-            /*if(DBSession::getSession()->query()){
+            if(DBSession::getSession()->query()){
                 $_SESSION['user'] = $Users[0];
                 header("Location: /home.php");
                 die();
-            }*/
+            }
         }
     }
     die('We didn\'t find your user :(');

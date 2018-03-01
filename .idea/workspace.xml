@@ -55,11 +55,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-              <folding>
-                <marker date="1519948552485" expanded="true" signature="642:695" ph="UPDATE `user`... " />
-              </folding>
+            <state relative-caret-position="440">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1220,7 +1218,7 @@
       <workItem from="1519700227874" duration="4216000" />
       <workItem from="1519748637088" duration="3969000" />
       <workItem from="1519933918274" duration="7247000" />
-      <workItem from="1519942037102" duration="3318000" />
+      <workItem from="1519942037102" duration="3327000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1345,7 +1343,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58609000" />
+    <option name="totallyTimeSpent" value="58618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1841,11 +1839,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-          <folding>
-            <marker date="1519948552485" expanded="true" signature="642:695" ph="UPDATE `user`... " />
-          </folding>
+        <state relative-caret-position="440">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
