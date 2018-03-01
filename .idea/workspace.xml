@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/index.php" afterPath="$PROJECT_DIR$/webapp/public/index.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,12 +65,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="440">
+              <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
               <folding>
-                <marker date="1519948240654" expanded="true" signature="638:674" ph="UPDATE `user`... " />
-                <marker date="1519948240654" expanded="true" signature="638:687" ph="UPDATE `user`... " />
-                <marker date="1519948240654" expanded="true" signature="638:700" ph="UPDATE `user`... " />
+                <marker date="1519948417165" expanded="true" signature="608:670" ph="UPDATE `user`... " />
               </folding>
             </state>
           </provider>
@@ -1196,7 +1193,7 @@
       <workItem from="1519700227874" duration="4216000" />
       <workItem from="1519748637088" duration="3969000" />
       <workItem from="1519933918274" duration="7247000" />
-      <workItem from="1519942037102" duration="3010000" />
+      <workItem from="1519942037102" duration="3181000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1321,7 +1318,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58301000" />
+    <option name="totallyTimeSpent" value="58472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1817,12 +1814,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="440">
+          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
-            <marker date="1519948240654" expanded="true" signature="638:674" ph="UPDATE `user`... " />
-            <marker date="1519948240654" expanded="true" signature="638:687" ph="UPDATE `user`... " />
-            <marker date="1519948240654" expanded="true" signature="638:700" ph="UPDATE `user`... " />
+            <marker date="1519948417165" expanded="true" signature="608:670" ph="UPDATE `user`... " />
           </folding>
         </state>
       </provider>
