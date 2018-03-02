@@ -17,13 +17,13 @@ class User extends DBObject {
     protected static $tablePKType='i';      // DB Primary Key is an integer.
 
     protected $id;
-    protected $fname;
-    protected $lname;
+    protected $firstName;
+    protected $lastName;
     protected $email;
     protected $password;
 
     public function getName($reverse=false){
-        return UserUtil::formatName($this->fname, $this->lname, $reverse);
+        return UserUtil::formatName($this->firstName, $this->lastName, $reverse);
     }
 
     public function getEmail(){
@@ -34,10 +34,26 @@ class User extends DBObject {
         return $this->password;
     }
 
+    /**
+     * Return a user with the given id.
+     * @param $x
+     * @return mixed
+     */
     public static function get($x, $y=null){
         return parent::get($x, $y);
     }
 
+    /**
+     * Return an array of users where all of the
+     * given fields match the db values.
+     *       array(
+     *             'firstName'=>'John',
+     *             'lastName'=>'Doe'
+     *       )
+     * @param $x
+     * @param null $y
+     * @return mixed
+     */
     public static function getAll($x, $y=null){
         return parent::getAll($x, $y);
     }

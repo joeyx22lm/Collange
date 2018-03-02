@@ -115,7 +115,7 @@ class DBObject {
      * @param $y
      * @return mixed
      */
-    public static function get($x, $y){
+    public static function get($x, $y=null){
         if($x != null && $y != null){
             // DB Session and ID given.
             $Q = $x->query("SELECT * FROM `"+static::$tableName+"` WHERE `"+static::$tablePKName+"`='$y'");

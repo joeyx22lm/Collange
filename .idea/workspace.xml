@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/image.php" afterPath="$PROJECT_DIR$/webapp/lib/image.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/home.php" afterPath="$PROJECT_DIR$/webapp/public/home.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/index.php" afterPath="$PROJECT_DIR$/webapp/public/index.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/database.php" afterPath="$PROJECT_DIR$/webapp/lib/database.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/user.php" afterPath="$PROJECT_DIR$/webapp/lib/user.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -82,13 +81,13 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="105" column="35" lean-forward="false" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+            <state relative-caret-position="430">
+              <caret line="122" column="41" lean-forward="true" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
               <folding>
                 <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
-                <marker date="1519941767958" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
-                <marker date="1519941767958" expanded="true" signature="4127:4211" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
-                <marker date="1519941767958" expanded="true" signature="4156:4201" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1519949477608" expanded="true" signature="3396:3411" ph="SELECT * FRO... " />
+                <marker date="1519949477608" expanded="true" signature="4132:4216" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
+                <marker date="1519949477608" expanded="true" signature="4161:4206" ph="SELECT * FRO... ${static::$tableName}" />
               </folding>
             </state>
           </provider>
@@ -104,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+            <state relative-caret-position="493">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +116,8 @@
       <file leaf-file-name="image.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/image.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="352">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -144,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -892,7 +891,6 @@
         <option value="$PROJECT_DIR$/webapp/test/database.php" />
         <option value="$PROJECT_DIR$/webapp/build.gradle" />
         <option value="$PROJECT_DIR$/webapp/test/user.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/database.php" />
         <option value="$PROJECT_DIR$/apache.conf" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CheckerBoardTransition.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/Pixel.java" />
@@ -903,10 +901,11 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
         <option value="$PROJECT_DIR$/webapp/Application.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/user.php" />
         <option value="$PROJECT_DIR$/webapp/lib/image.php" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/database.php" />
         <option value="$PROJECT_DIR$/webapp/public/home.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/user.php" />
       </list>
     </option>
   </component>
@@ -1236,7 +1235,7 @@
       <workItem from="1519700227874" duration="4216000" />
       <workItem from="1519748637088" duration="3969000" />
       <workItem from="1519933918274" duration="7247000" />
-      <workItem from="1519942037102" duration="4089000" />
+      <workItem from="1519942037102" duration="4365000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1364,11 +1363,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519949108725</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changes: a song by Tupac.">
+      <created>1519949357866</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519949357866</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59380000" />
+    <option name="totallyTimeSpent" value="59656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1806,27 +1812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="105" column="35" lean-forward="false" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
-          <folding>
-            <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
-            <marker date="1519941767958" expanded="true" signature="3391:3406" ph="SELECT * FRO... " />
-            <marker date="1519941767958" expanded="true" signature="4127:4211" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
-            <marker date="1519941767958" expanded="true" signature="4156:4201" ph="SELECT * FRO... ${static::$tableName}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/Application.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -1847,14 +1832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/icons-flags.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1863,10 +1840,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="122" column="41" lean-forward="true" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
+          <folding>
+            <element signature="n#setSession#0;n#DBSession#0;n#!!top" expanded="false" />
+            <marker date="1519949477608" expanded="true" signature="3396:3411" ph="SELECT * FRO... " />
+            <marker date="1519949477608" expanded="true" signature="4132:4216" ph="SELECT * FRO... &quot;=+static::$tableName+&quot;" />
+            <marker date="1519949477608" expanded="true" signature="4161:4206" ph="SELECT * FRO... ${static::$tableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        <state relative-caret-position="102">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
