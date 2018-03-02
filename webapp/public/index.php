@@ -8,7 +8,7 @@ if(isset($_POST['login'])){
     if($Users != null && sizeof($Users) == 1){
         // Check password.
         if(AuthSession::password_verify($_POST['password'], $Users[0]['password'])){
-            $_SESSION['user'] = $Users[0];
+            $_SESSION['user'] = User::build($Users[0]);
             header("Location: /home.php");
             die();
         }
@@ -17,7 +17,7 @@ if(isset($_POST['login'])){
             $hash = AuthSession::password_hash($Users[0]['password']);
             $id = $Users[0]['id'];
             if(DBSession::getSession()->query("UPDATE `user` SET `password`='$hash' WHERE `id`='$id'")){
-                $_SESSION['user'] = $Users[0];
+                $_SESSION['user'] = User::build($Users[0]);
                 header("Location: /home.php");
                 die();
             }

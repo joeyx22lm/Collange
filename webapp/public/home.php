@@ -1,5 +1,8 @@
 <?php require_once('../Application.php');?>
-<?php AuthSession::protect(); ?>
+<?php AuthSession::protect();
+die($_SESSION['user']->getName());
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -28,9 +28,4 @@ class Image extends DBObject {
         return parent::getAll($x, $y);
     }
 }
-
-$i = Image::getAll(array(
-    'ownerId'=>'10'
-));
-die(json_encode($i));
 ?>
