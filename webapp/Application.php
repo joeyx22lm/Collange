@@ -14,6 +14,9 @@ if(isset($_POST) && !empty($_POST)){
 /* User object */
 require_once('lib/user.php');
 
+/* Image object */
+require_once('lib/image.php');
+
 /* Application Configuration */
 require_once('lib/app.php');
 
