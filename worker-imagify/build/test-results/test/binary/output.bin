@@ -1,123 +1,123 @@
-aRGBTransitionTest.testMockImageRGBTransition(1000, 1000): 1000000 Pixels were filtered in 13 ms.
-@	applyFiltersOnExamples(bliss-240x320.jpg): Sepia Filter - 65ms
-D	applyFiltersOnExamples(bliss-240x320.jpg): Grayscale Filter - 14ms
-@	applyFiltersOnExamples(bliss-240x320.jpg): White Filter - 21ms
->	applyFiltersOnExamples(bliss-240x320.jpg): Red Filter - 21ms
-@	applyFiltersOnExamples(bliss-240x320.jpg): Green Filter - 21ms
-?	applyFiltersOnExamples(bliss-240x320.jpg): Blue Filter - 13ms
-@	applyFiltersOnExamples(bliss-240x320.jpg): Empty Filter - 11ms
-B	applyFiltersOnExamples(bliss-240x320.jpg): Opacity Filter - 14ms
-A	applyFiltersOnExamples(bliss-240x320.jpg): Striped Filter - 8ms
-F	applyFiltersOnExamples(bliss-240x320.jpg): CheckerBoard Filter - 8ms
-L	applyFiltersOnExamples(bliss-240x320.jpg): Horizontal Mirror Filter - 14ms
-G	applyFiltersOnExamples(bliss-240x320.jpg): Italian Flag Filter - 11ms
-F	applyFiltersOnExamples(bliss-240x320.jpg): French Flag Filter - 10ms
+aRGBTransitionTest.testMockImageRGBTransition(1000, 1000): 1000000 Pixels were filtered in 16 ms.
+@	applyFiltersOnExamples(bliss-240x320.jpg): Sepia Filter - 61ms
+D	applyFiltersOnExamples(bliss-240x320.jpg): Grayscale Filter - 33ms
+@	applyFiltersOnExamples(bliss-240x320.jpg): White Filter - 41ms
+>	applyFiltersOnExamples(bliss-240x320.jpg): Red Filter - 12ms
+@	applyFiltersOnExamples(bliss-240x320.jpg): Green Filter - 10ms
+?	applyFiltersOnExamples(bliss-240x320.jpg): Blue Filter - 15ms
+@	applyFiltersOnExamples(bliss-240x320.jpg): Empty Filter - 15ms
+B	applyFiltersOnExamples(bliss-240x320.jpg): Opacity Filter - 17ms
+B	applyFiltersOnExamples(bliss-240x320.jpg): Striped Filter - 15ms
+G	applyFiltersOnExamples(bliss-240x320.jpg): CheckerBoard Filter - 12ms
+L	applyFiltersOnExamples(bliss-240x320.jpg): Horizontal Mirror Filter - 16ms
+G	applyFiltersOnExamples(bliss-240x320.jpg): Italian Flag Filter - 13ms
+F	applyFiltersOnExamples(bliss-240x320.jpg): French Flag Filter - 11ms
 F	applyFiltersOnExamples(bliss-240x320.jpg): Color Blend Filter - 12ms
-G	applyFiltersOnExamples(bliss-240x320.jpg): Zombie Color Filter - 11ms
-D	applyFiltersOnExamples(bliss-240x320.jpg): Gold Color Filter - 9ms
+G	applyFiltersOnExamples(bliss-240x320.jpg): Zombie Color Filter - 10ms
+E	applyFiltersOnExamples(bliss-240x320.jpg): Gold Color Filter - 13ms
 D	applyFiltersOnExamples(bliss-240x320.jpg): Dithering Filter - 13ms
-Q	applyFiltersOnExamples(bliss-240x320.jpg): No Even Numbered Pixels Filter - 8ms
+R	applyFiltersOnExamples(bliss-240x320.jpg): No Even Numbered Pixels Filter - 11ms
 N	applyFiltersOnExamples(bliss-240x320.jpg): Conway Game of Life Filter - 54ms
-K	applyFiltersOnExamples(bliss-240x320.jpg): EightBitColorTransition - 15ms
-M	applyFiltersOnExamples(bliss-240x320.jpg): Cumulative Average Filter - 44ms
-D	applyFiltersOnExamples(bliss-240x320.jpg): Solid Blue Filter - 8ms
-NapplyFiltersOnExamples(bliss-240x320.jpg) - Best: 8ms  Worst: 65ms  Avg: 18ms
+K	applyFiltersOnExamples(bliss-240x320.jpg): EightBitColorTransition - 11ms
+L	applyFiltersOnExamples(bliss-240x320.jpg): Cumulative Average Filter - 9ms
+D	applyFiltersOnExamples(bliss-240x320.jpg): Solid Blue Filter - 9ms
+NapplyFiltersOnExamples(bliss-240x320.jpg) - Best: 9ms  Worst: 61ms  Avg: 18ms
 
-C	applyFiltersOnExamples(bliss-1920x1200.jpg): Sepia Filter - 298ms
-G	applyFiltersOnExamples(bliss-1920x1200.jpg): Grayscale Filter - 252ms
-C	applyFiltersOnExamples(bliss-1920x1200.jpg): White Filter - 253ms
-A	applyFiltersOnExamples(bliss-1920x1200.jpg): Red Filter - 229ms
-C	applyFiltersOnExamples(bliss-1920x1200.jpg): Green Filter - 298ms
-B	applyFiltersOnExamples(bliss-1920x1200.jpg): Blue Filter - 233ms
-C	applyFiltersOnExamples(bliss-1920x1200.jpg): Empty Filter - 219ms
-E	applyFiltersOnExamples(bliss-1920x1200.jpg): Opacity Filter - 347ms
-E	applyFiltersOnExamples(bliss-1920x1200.jpg): Striped Filter - 231ms
-J	applyFiltersOnExamples(bliss-1920x1200.jpg): CheckerBoard Filter - 255ms
-O	applyFiltersOnExamples(bliss-1920x1200.jpg): Horizontal Mirror Filter - 303ms
-J	applyFiltersOnExamples(bliss-1920x1200.jpg): Italian Flag Filter - 229ms
-I	applyFiltersOnExamples(bliss-1920x1200.jpg): French Flag Filter - 277ms
-I	applyFiltersOnExamples(bliss-1920x1200.jpg): Color Blend Filter - 356ms
-J	applyFiltersOnExamples(bliss-1920x1200.jpg): Zombie Color Filter - 221ms
-H	applyFiltersOnExamples(bliss-1920x1200.jpg): Gold Color Filter - 212ms
-G	applyFiltersOnExamples(bliss-1920x1200.jpg): Dithering Filter - 279ms
-U	applyFiltersOnExamples(bliss-1920x1200.jpg): No Even Numbered Pixels Filter - 300ms
-R	applyFiltersOnExamples(bliss-1920x1200.jpg): Conway Game of Life Filter - 1259ms
-N	applyFiltersOnExamples(bliss-1920x1200.jpg): EightBitColorTransition - 330ms
-P	applyFiltersOnExamples(bliss-1920x1200.jpg): Cumulative Average Filter - 342ms
-H	applyFiltersOnExamples(bliss-1920x1200.jpg): Solid Blue Filter - 206ms
-UapplyFiltersOnExamples(bliss-1920x1200.jpg) - Best: 206ms  Worst: 1259ms  Avg: 314ms
+C	applyFiltersOnExamples(bliss-1920x1200.jpg): Sepia Filter - 326ms
+G	applyFiltersOnExamples(bliss-1920x1200.jpg): Grayscale Filter - 364ms
+C	applyFiltersOnExamples(bliss-1920x1200.jpg): White Filter - 269ms
+A	applyFiltersOnExamples(bliss-1920x1200.jpg): Red Filter - 305ms
+C	applyFiltersOnExamples(bliss-1920x1200.jpg): Green Filter - 394ms
+B	applyFiltersOnExamples(bliss-1920x1200.jpg): Blue Filter - 254ms
+C	applyFiltersOnExamples(bliss-1920x1200.jpg): Empty Filter - 259ms
+E	applyFiltersOnExamples(bliss-1920x1200.jpg): Opacity Filter - 250ms
+E	applyFiltersOnExamples(bliss-1920x1200.jpg): Striped Filter - 351ms
+J	applyFiltersOnExamples(bliss-1920x1200.jpg): CheckerBoard Filter - 271ms
+O	applyFiltersOnExamples(bliss-1920x1200.jpg): Horizontal Mirror Filter - 305ms
+J	applyFiltersOnExamples(bliss-1920x1200.jpg): Italian Flag Filter - 228ms
+I	applyFiltersOnExamples(bliss-1920x1200.jpg): French Flag Filter - 230ms
+I	applyFiltersOnExamples(bliss-1920x1200.jpg): Color Blend Filter - 220ms
+J	applyFiltersOnExamples(bliss-1920x1200.jpg): Zombie Color Filter - 219ms
+H	applyFiltersOnExamples(bliss-1920x1200.jpg): Gold Color Filter - 243ms
+G	applyFiltersOnExamples(bliss-1920x1200.jpg): Dithering Filter - 248ms
+U	applyFiltersOnExamples(bliss-1920x1200.jpg): No Even Numbered Pixels Filter - 214ms
+R	applyFiltersOnExamples(bliss-1920x1200.jpg): Conway Game of Life Filter - 1378ms
+N	applyFiltersOnExamples(bliss-1920x1200.jpg): EightBitColorTransition - 241ms
+P	applyFiltersOnExamples(bliss-1920x1200.jpg): Cumulative Average Filter - 258ms
+H	applyFiltersOnExamples(bliss-1920x1200.jpg): Solid Blue Filter - 243ms
+UapplyFiltersOnExamples(bliss-1920x1200.jpg) - Best: 214ms  Worst: 1378ms  Avg: 321ms
 
-C	applyFiltersOnExamples(bliss-3840x2400.jpg): Sepia Filter - 951ms
-G	applyFiltersOnExamples(bliss-3840x2400.jpg): Grayscale Filter - 811ms
-C	applyFiltersOnExamples(bliss-3840x2400.jpg): White Filter - 831ms
-A	applyFiltersOnExamples(bliss-3840x2400.jpg): Red Filter - 822ms
-C	applyFiltersOnExamples(bliss-3840x2400.jpg): Green Filter - 892ms
-B	applyFiltersOnExamples(bliss-3840x2400.jpg): Blue Filter - 956ms
-C	applyFiltersOnExamples(bliss-3840x2400.jpg): Empty Filter - 916ms
-F	applyFiltersOnExamples(bliss-3840x2400.jpg): Opacity Filter - 1645ms
-E	applyFiltersOnExamples(bliss-3840x2400.jpg): Striped Filter - 860ms
-J	applyFiltersOnExamples(bliss-3840x2400.jpg): CheckerBoard Filter - 853ms
-P	applyFiltersOnExamples(bliss-3840x2400.jpg): Horizontal Mirror Filter - 1051ms
-J	applyFiltersOnExamples(bliss-3840x2400.jpg): Italian Flag Filter - 863ms
-J	applyFiltersOnExamples(bliss-3840x2400.jpg): French Flag Filter - 1261ms
-J	applyFiltersOnExamples(bliss-3840x2400.jpg): Color Blend Filter - 1077ms
-J	applyFiltersOnExamples(bliss-3840x2400.jpg): Zombie Color Filter - 952ms
-H	applyFiltersOnExamples(bliss-3840x2400.jpg): Gold Color Filter - 849ms
-H	applyFiltersOnExamples(bliss-3840x2400.jpg): Dithering Filter - 1003ms
-U	applyFiltersOnExamples(bliss-3840x2400.jpg): No Even Numbered Pixels Filter - 864ms
-R	applyFiltersOnExamples(bliss-3840x2400.jpg): Conway Game of Life Filter - 4951ms
-N	applyFiltersOnExamples(bliss-3840x2400.jpg): EightBitColorTransition - 925ms
-P	applyFiltersOnExamples(bliss-3840x2400.jpg): Cumulative Average Filter - 912ms
-H	applyFiltersOnExamples(bliss-3840x2400.jpg): Solid Blue Filter - 779ms
-VapplyFiltersOnExamples(bliss-3840x2400.jpg) - Best: 779ms  Worst: 4951ms  Avg: 1137ms
+D	applyFiltersOnExamples(bliss-3840x2400.jpg): Sepia Filter - 1013ms
+G	applyFiltersOnExamples(bliss-3840x2400.jpg): Grayscale Filter - 955ms
+C	applyFiltersOnExamples(bliss-3840x2400.jpg): White Filter - 921ms
+B	applyFiltersOnExamples(bliss-3840x2400.jpg): Red Filter - 1020ms
+C	applyFiltersOnExamples(bliss-3840x2400.jpg): Green Filter - 874ms
+B	applyFiltersOnExamples(bliss-3840x2400.jpg): Blue Filter - 893ms
+C	applyFiltersOnExamples(bliss-3840x2400.jpg): Empty Filter - 870ms
+E	applyFiltersOnExamples(bliss-3840x2400.jpg): Opacity Filter - 961ms
+E	applyFiltersOnExamples(bliss-3840x2400.jpg): Striped Filter - 871ms
+J	applyFiltersOnExamples(bliss-3840x2400.jpg): CheckerBoard Filter - 906ms
+P	applyFiltersOnExamples(bliss-3840x2400.jpg): Horizontal Mirror Filter - 1146ms
+J	applyFiltersOnExamples(bliss-3840x2400.jpg): Italian Flag Filter - 984ms
+I	applyFiltersOnExamples(bliss-3840x2400.jpg): French Flag Filter - 901ms
+I	applyFiltersOnExamples(bliss-3840x2400.jpg): Color Blend Filter - 928ms
+K	applyFiltersOnExamples(bliss-3840x2400.jpg): Zombie Color Filter - 1038ms
+H	applyFiltersOnExamples(bliss-3840x2400.jpg): Gold Color Filter - 941ms
+H	applyFiltersOnExamples(bliss-3840x2400.jpg): Dithering Filter - 1022ms
+U	applyFiltersOnExamples(bliss-3840x2400.jpg): No Even Numbered Pixels Filter - 904ms
+R	applyFiltersOnExamples(bliss-3840x2400.jpg): Conway Game of Life Filter - 5624ms
+O	applyFiltersOnExamples(bliss-3840x2400.jpg): EightBitColorTransition - 1153ms
+Q	applyFiltersOnExamples(bliss-3840x2400.jpg): Cumulative Average Filter - 1059ms
+H	applyFiltersOnExamples(bliss-3840x2400.jpg): Solid Blue Filter - 935ms
+VapplyFiltersOnExamples(bliss-3840x2400.jpg) - Best: 870ms  Worst: 5624ms  Avg: 1178ms
 
-8	applyFiltersOnExamples(370z.jpg): Sepia Filter - 285ms
-<	applyFiltersOnExamples(370z.jpg): Grayscale Filter - 282ms
-8	applyFiltersOnExamples(370z.jpg): White Filter - 273ms
-6	applyFiltersOnExamples(370z.jpg): Red Filter - 294ms
-8	applyFiltersOnExamples(370z.jpg): Green Filter - 297ms
-7	applyFiltersOnExamples(370z.jpg): Blue Filter - 298ms
-8	applyFiltersOnExamples(370z.jpg): Empty Filter - 280ms
-:	applyFiltersOnExamples(370z.jpg): Opacity Filter - 316ms
-:	applyFiltersOnExamples(370z.jpg): Striped Filter - 260ms
-?	applyFiltersOnExamples(370z.jpg): CheckerBoard Filter - 284ms
-D	applyFiltersOnExamples(370z.jpg): Horizontal Mirror Filter - 353ms
-?	applyFiltersOnExamples(370z.jpg): Italian Flag Filter - 285ms
->	applyFiltersOnExamples(370z.jpg): French Flag Filter - 308ms
->	applyFiltersOnExamples(370z.jpg): Color Blend Filter - 338ms
-?	applyFiltersOnExamples(370z.jpg): Zombie Color Filter - 305ms
-=	applyFiltersOnExamples(370z.jpg): Gold Color Filter - 284ms
-<	applyFiltersOnExamples(370z.jpg): Dithering Filter - 331ms
-J	applyFiltersOnExamples(370z.jpg): No Even Numbered Pixels Filter - 302ms
-G	applyFiltersOnExamples(370z.jpg): Conway Game of Life Filter - 1755ms
-C	applyFiltersOnExamples(370z.jpg): EightBitColorTransition - 308ms
-E	applyFiltersOnExamples(370z.jpg): Cumulative Average Filter - 325ms
-=	applyFiltersOnExamples(370z.jpg): Solid Blue Filter - 286ms
-JapplyFiltersOnExamples(370z.jpg) - Best: 260ms  Worst: 1755ms  Avg: 365ms
+8	applyFiltersOnExamples(370z.jpg): Sepia Filter - 391ms
+<	applyFiltersOnExamples(370z.jpg): Grayscale Filter - 316ms
+8	applyFiltersOnExamples(370z.jpg): White Filter - 410ms
+6	applyFiltersOnExamples(370z.jpg): Red Filter - 318ms
+8	applyFiltersOnExamples(370z.jpg): Green Filter - 320ms
+7	applyFiltersOnExamples(370z.jpg): Blue Filter - 308ms
+8	applyFiltersOnExamples(370z.jpg): Empty Filter - 323ms
+:	applyFiltersOnExamples(370z.jpg): Opacity Filter - 313ms
+:	applyFiltersOnExamples(370z.jpg): Striped Filter - 298ms
+?	applyFiltersOnExamples(370z.jpg): CheckerBoard Filter - 309ms
+D	applyFiltersOnExamples(370z.jpg): Horizontal Mirror Filter - 397ms
+?	applyFiltersOnExamples(370z.jpg): Italian Flag Filter - 323ms
+>	applyFiltersOnExamples(370z.jpg): French Flag Filter - 324ms
+>	applyFiltersOnExamples(370z.jpg): Color Blend Filter - 334ms
+?	applyFiltersOnExamples(370z.jpg): Zombie Color Filter - 362ms
+=	applyFiltersOnExamples(370z.jpg): Gold Color Filter - 314ms
+<	applyFiltersOnExamples(370z.jpg): Dithering Filter - 340ms
+J	applyFiltersOnExamples(370z.jpg): No Even Numbered Pixels Filter - 340ms
+G	applyFiltersOnExamples(370z.jpg): Conway Game of Life Filter - 1935ms
+C	applyFiltersOnExamples(370z.jpg): EightBitColorTransition - 346ms
+E	applyFiltersOnExamples(370z.jpg): Cumulative Average Filter - 354ms
+=	applyFiltersOnExamples(370z.jpg): Solid Blue Filter - 305ms
+JapplyFiltersOnExamples(370z.jpg) - Best: 298ms  Worst: 1935ms  Avg: 408ms
 
-9	applyFiltersOnExamples(avatar.jpg): Sepia Filter - 15ms
-=	applyFiltersOnExamples(avatar.jpg): Grayscale Filter - 18ms
-9	applyFiltersOnExamples(avatar.jpg): White Filter - 15ms
-7	applyFiltersOnExamples(avatar.jpg): Red Filter - 19ms
-9	applyFiltersOnExamples(avatar.jpg): Green Filter - 13ms
-8	applyFiltersOnExamples(avatar.jpg): Blue Filter - 14ms
-9	applyFiltersOnExamples(avatar.jpg): Empty Filter - 18ms
-;	applyFiltersOnExamples(avatar.jpg): Opacity Filter - 16ms
-;	applyFiltersOnExamples(avatar.jpg): Striped Filter - 14ms
-@	applyFiltersOnExamples(avatar.jpg): CheckerBoard Filter - 14ms
-E	applyFiltersOnExamples(avatar.jpg): Horizontal Mirror Filter - 20ms
-@	applyFiltersOnExamples(avatar.jpg): Italian Flag Filter - 14ms
-?	applyFiltersOnExamples(avatar.jpg): French Flag Filter - 16ms
-?	applyFiltersOnExamples(avatar.jpg): Color Blend Filter - 15ms
-@	applyFiltersOnExamples(avatar.jpg): Zombie Color Filter - 17ms
->	applyFiltersOnExamples(avatar.jpg): Gold Color Filter - 15ms
-=	applyFiltersOnExamples(avatar.jpg): Dithering Filter - 18ms
-K	applyFiltersOnExamples(avatar.jpg): No Even Numbered Pixels Filter - 22ms
-G	applyFiltersOnExamples(avatar.jpg): Conway Game of Life Filter - 94ms
-D	applyFiltersOnExamples(avatar.jpg): EightBitColorTransition - 18ms
-F	applyFiltersOnExamples(avatar.jpg): Cumulative Average Filter - 16ms
->	applyFiltersOnExamples(avatar.jpg): Solid Blue Filter - 13ms
-HapplyFiltersOnExamples(avatar.jpg) - Best: 13ms  Worst: 94ms  Avg: 19ms
+9	applyFiltersOnExamples(avatar.jpg): Sepia Filter - 18ms
+=	applyFiltersOnExamples(avatar.jpg): Grayscale Filter - 16ms
+9	applyFiltersOnExamples(avatar.jpg): White Filter - 16ms
+7	applyFiltersOnExamples(avatar.jpg): Red Filter - 15ms
+9	applyFiltersOnExamples(avatar.jpg): Green Filter - 17ms
+8	applyFiltersOnExamples(avatar.jpg): Blue Filter - 16ms
+9	applyFiltersOnExamples(avatar.jpg): Empty Filter - 15ms
+;	applyFiltersOnExamples(avatar.jpg): Opacity Filter - 17ms
+;	applyFiltersOnExamples(avatar.jpg): Striped Filter - 17ms
+@	applyFiltersOnExamples(avatar.jpg): CheckerBoard Filter - 18ms
+E	applyFiltersOnExamples(avatar.jpg): Horizontal Mirror Filter - 19ms
+@	applyFiltersOnExamples(avatar.jpg): Italian Flag Filter - 33ms
+?	applyFiltersOnExamples(avatar.jpg): French Flag Filter - 26ms
+?	applyFiltersOnExamples(avatar.jpg): Color Blend Filter - 21ms
+@	applyFiltersOnExamples(avatar.jpg): Zombie Color Filter - 21ms
+>	applyFiltersOnExamples(avatar.jpg): Gold Color Filter - 19ms
+=	applyFiltersOnExamples(avatar.jpg): Dithering Filter - 36ms
+K	applyFiltersOnExamples(avatar.jpg): No Even Numbered Pixels Filter - 16ms
+G	applyFiltersOnExamples(avatar.jpg): Conway Game of Life Filter - 98ms
+D	applyFiltersOnExamples(avatar.jpg): EightBitColorTransition - 22ms
+F	applyFiltersOnExamples(avatar.jpg): Cumulative Average Filter - 17ms
+>	applyFiltersOnExamples(avatar.jpg): Solid Blue Filter - 16ms
+HapplyFiltersOnExamples(avatar.jpg) - Best: 15ms  Worst: 98ms  Avg: 23ms
 
 MainActivity!
 MainActivity!

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-03-01T23:25:17" hostname="JoeyMBP.local" time="0.048">
+<testsuite name="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-03-07T18:26:04" hostname="Chads-Mac.local" time="0.095">
   <properties/>
-  <testcase name="runBigTest" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.047"/>
+  <testcase name="runBigTest" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.094"/>
   <testcase name="runTestTwo" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.0"/>
-  <testcase name="runTest" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.001"/>
-  <system-out><![CDATA[RGBTransitionTest.testMockImageRGBTransition(1000, 1000): 1000000 Pixels were filtered in 13 ms.
+  <testcase name="runTest" classname="edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest" time="0.0"/>
+  <system-out><![CDATA[RGBTransitionTest.testMockImageRGBTransition(1000, 1000): 1000000 Pixels were filtered in 16 ms.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
