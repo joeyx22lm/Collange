@@ -1,1 +1,10 @@
-.gradle/*
+/build/
+*/build
+*/.eclipse
+/.nodejs/
+/.gradle/
+*.iml
+*.ids
+*.ipr
+*.iws
+/.idea/
