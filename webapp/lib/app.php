@@ -19,7 +19,6 @@ App::setStaticResource(array(
     'APP_TITLE'=>'Collange '
 ));
 
-
 class AuthSession {
     private static $connected = false;
     public static function protect(){
@@ -43,7 +42,6 @@ class AuthSession {
     public static function setLoggedIn($User){
         self::set('user', $User);
     }
-
 
     public static function start(){
         session_start();

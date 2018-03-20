@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class JedisHandler {
 
+    private static final ObjectMapper om = new ObjectMapper();
     private Jedis session;
 
     public JedisHandler(String connectURL){
@@ -36,14 +37,27 @@ public class JedisHandler {
         return this.session != null && this.session.isConnected();
     }
 
-    public QueueMessage dequeue(String queueName){
+    public <T> QueueMessage<T> dequeue(String queueName){
         if(session != null){
             List<String> msg = session.blpop(0,queueName);
             if(msg != null && msg.size() > 1){
-                return new QueueMessage(msg.get(0), msg.get(1));
+                QueueMessage<T> payload = om.readValue(msg.get(1), QueueMessage.class);
+                if(payload != null && payload.getKey() == null){
+                    payload.setKey(msg.get(0));
+                }
+                return payload;
             }
         }
         return null;
+    }
+
+    public <T> boolean enqueue(String queueName, T value, Class<T> clazz){
+        if(session != null){
+            QueueMessage<T> payload = new QueueMessage<>(null, value, clazz);
+            session.lpush(queueName, om.writeValueAsString(payload));
+            return true;
+        }
+        return false;
     }
 
     public QueueMessage dequeue(String queueName, long timeoutMs, long sleepTime){
@@ -66,21 +80,31 @@ public class JedisHandler {
         return msg;
     }
 
-    class QueueMessage {
+    class QueueMessage<T> {
         private String key;
-        private String value;
+        private T value;
+        private Class<T> clazz;
 
-        public QueueMessage(final String key, final String value){
+        public QueueMessage(final String key, final T value, final Class<T> clazz) {
             this.key = key;
             this.value = value;
+            this.clazz = clazz;
+        }
+
+        public void setKey(String key){
+            this.key = key;
         }
 
         public String getKey(){
             return key;
         }
 
-        public String getValue(){
+        public T getObject(){
             return value;
+        }
+
+        public Class<T> getObjectType(){
+            return clazz;
         }
     }
 }

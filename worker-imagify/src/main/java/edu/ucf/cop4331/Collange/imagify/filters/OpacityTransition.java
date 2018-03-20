@@ -6,6 +6,8 @@ import edu.ucf.cop4331.Collange.imagify.RGBUtility;
 
 public class OpacityTransition extends RGBTransition {
 
+    private static final double DEFAULT_OPACITY = 0.05;
+
     protected Pixel filterPixel(Pixel pxl, int width, int height, float opacity){
         if(pxl != null) {
             pxl.setRed(RGBUtility.getOpaqueRGB(pxl.getRed(), opacity));
@@ -17,6 +19,6 @@ public class OpacityTransition extends RGBTransition {
 
     @Override
     protected Pixel filterPixel(Pixel pxl, int width, int height){
-        return filterPixel(pxl, width, height, (float)0.5);
+        return filterPixel(pxl, width, height, (float)DEFAULT_OPACITY);
     }
 }

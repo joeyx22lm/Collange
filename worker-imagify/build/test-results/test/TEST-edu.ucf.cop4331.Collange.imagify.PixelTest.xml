@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.ucf.cop4331.Collange.imagify.PixelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-03-01T23:25:17" hostname="JoeyMBP.local" time="0.001">
-  <properties/>
-  <testcase name="testRed" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.0"/>
-  <testcase name="testGreen" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.0"/>
-  <testcase name="testBlue" classname="edu.ucf.cop4331.Collange.imagify.PixelTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
