@@ -12,8 +12,11 @@
     <orderEntry type="module" module-name="worker-imagify_main" />
     <orderEntry type="library" name="Gradle: redis.clients:jedis:2.0.0" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-pool2:2.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: commons-pool:commons-pool:1.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="worker-imagify_main" />

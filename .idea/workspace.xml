@@ -2,192 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileChanges/last-build.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5.1/fileHashes/fileHashes.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.5.1/taskHistory/taskHistory.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/FileSystemHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/HerokuWorkerActivity.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/JedisHandler$QueueMessage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/JedisHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/MainActivity.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/Pixel.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/RGBTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/RGBTransitionBundle.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/RGBTransitions.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/RGBUtility.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/CheckerBoardTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/ConwayGameOfLifeTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/DitheringTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/EightBitColorTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/EmptyTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/FrenchFlagTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/GrayScaleTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/HorizontalSymmetricTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/ItalianFlagTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/NoEvenNumberTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/OpacityTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/SepiaTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/StripedTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/BlackTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/BlueTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/GreenTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/RedTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/SolidBlueTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/WhiteTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/blend/ColorMidpointTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/blend/GoldTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/main/edu/ucf/cop4331/Collange/imagify/filters/color/blend/ZombieRedTransition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/MainActivityTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/imagify/PixelTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/imagify/RGBTransitionTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/imagify/RGBTransitionsTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/classes/java/test/edu/ucf/cop4331/Collange/imagify/RGBUtilityTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build.gradle" afterPath="$PROJECT_DIR$/worker-imagify/build.gradle" />
       <change beforePath="$PROJECT_DIR$/worker-imagify/build/libs/worker-imagify-1.0.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/index.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/index.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html" afterPath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_BlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_CheckerBoardFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_ColorBlendFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_ConwayGameofLifeFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_CumulativeAverageFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_DitheringFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_EightBitColorTransition.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_EmptyFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_FrenchFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_GoldColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_GrayscaleFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_GreenFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_HorizontalMirrorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_ItalianFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_NoEvenNumberedPixelsFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_OpacityFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_RedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_SepiaFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_SolidBlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_StripedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_WhiteFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/370z_ZombieColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_BlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_CheckerBoardFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_ColorBlendFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_ConwayGameofLifeFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_CumulativeAverageFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_DitheringFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_EightBitColorTransition.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_EmptyFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_FrenchFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_GoldColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_GrayscaleFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_GreenFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_HorizontalMirrorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_ItalianFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_NoEvenNumberedPixelsFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_OpacityFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_RedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_SepiaFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_SolidBlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_StripedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_WhiteFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/avatar_ZombieColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_BlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_CheckerBoardFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_ColorBlendFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_ConwayGameofLifeFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_CumulativeAverageFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_DitheringFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_EightBitColorTransition.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_EmptyFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_FrenchFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_GoldColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_GrayscaleFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_GreenFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_HorizontalMirrorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_ItalianFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_NoEvenNumberedPixelsFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_OpacityFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_RedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_SepiaFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_SolidBlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_StripedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_WhiteFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-1920x1200_ZombieColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_BlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_CheckerBoardFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_ColorBlendFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_ConwayGameofLifeFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_CumulativeAverageFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_DitheringFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_EightBitColorTransition.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_EmptyFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_FrenchFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_GoldColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_GrayscaleFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_GreenFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_HorizontalMirrorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_ItalianFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_NoEvenNumberedPixelsFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_OpacityFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_RedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_SepiaFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_SolidBlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_StripedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_WhiteFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-240x320_ZombieColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_BlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_CheckerBoardFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_ColorBlendFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_ConwayGameofLifeFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_CumulativeAverageFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_DitheringFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_EightBitColorTransition.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_EmptyFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_FrenchFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_GoldColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_GrayscaleFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_GreenFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_HorizontalMirrorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_ItalianFlagFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_NoEvenNumberedPixelsFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_OpacityFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_RedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_SepiaFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_SolidBlueFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_StripedFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_WhiteFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/resources/main/bliss-3840x2400_ZombieColorFilter.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/binary/output.bin" afterPath="" />
       <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/binary/output.bin.idx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/binary/results.bin" afterPath="$PROJECT_DIR$/worker-imagify/build/test-results/test/binary/results.bin" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/build/test-results/test/binary/results.bin" afterPath="" />
       <change beforePath="$PROJECT_DIR$/worker-imagify/build/tmp/jar/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -272,21 +119,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JedisHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JedisHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="135">
+              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
               <folding>
                 <element signature="method#JedisHandler#0;class#JedisHandler#0" expanded="false" />
-                <element signature="e#3099#3100#0" expanded="true" />
-                <element signature="e#3137#3138#0" expanded="true" />
-                <element signature="e#3170#3171#0" expanded="true" />
-                <element signature="e#3204#3205#0" expanded="true" />
-                <element signature="e#3235#3236#0" expanded="true" />
-                <element signature="e#3271#3272#0" expanded="true" />
-                <element signature="e#3313#3314#0" expanded="true" />
-                <element signature="e#3349#3350#0" expanded="true" />
+                <element signature="e#3240#3241#0" expanded="true" />
+                <element signature="e#3278#3279#0" expanded="true" />
+                <element signature="e#3311#3312#0" expanded="true" />
+                <element signature="e#3345#3346#0" expanded="true" />
+                <element signature="e#3376#3377#0" expanded="true" />
+                <element signature="e#3412#3413#0" expanded="true" />
+                <element signature="e#3454#3455#0" expanded="true" />
+                <element signature="e#3490#3491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -302,14 +149,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="79" column="27" lean-forward="true" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+            <state relative-caret-position="361">
+              <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
               <folding>
                 <marker date="1521586239787" expanded="true" signature="1269:1322" ph="UPDATE `user`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -329,16 +186,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SepiaTransition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/SepiaTransition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -801,16 +648,16 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="9116611947000" />
+        <entry key="$PROJECT_DIR$" value="9118439632000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2701339404" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2864728745" />
-        <entry key="$PROJECT_DIR$/webapp" value="9116611966000" />
+        <entry key="$PROJECT_DIR$/webapp" value="9118439651000" />
         <entry key="$PROJECT_DIR$/webapp/build.gradle" value="93391991" />
         <entry key="$PROJECT_DIR$/webapp/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/webapp/settings.gradle" value="2780356252" />
-        <entry key="$PROJECT_DIR$/worker-imagify" value="4557745642000" />
-        <entry key="$PROJECT_DIR$/worker-imagify/build.gradle" value="2344683226" />
+        <entry key="$PROJECT_DIR$/worker-imagify" value="4559573327000" />
+        <entry key="$PROJECT_DIR$/worker-imagify/build.gradle" value="2579832755" />
         <entry key="$PROJECT_DIR$/worker-imagify/gradle/wrapper/gradle-wrapper.properties" value="975608090" />
         <entry key="$PROJECT_DIR$/worker-imagify/settings.gradle" value="4130257123" />
       </map>
@@ -1039,7 +886,6 @@
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-        <entry key="$PROJECT_DIR$/webapp" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/worker-imagify" value="RE_IMPORT" />
       </map>
     </option>
@@ -1071,7 +917,6 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/HerokuWorkerActivity.java" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/GrayScaleTransitionTest.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/webapp/test/database.php" />
@@ -1094,10 +939,11 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerText.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
+        <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java" />
       </list>
     </option>
   </component>
@@ -1169,6 +1015,69 @@
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ucf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ucf" type="462c0819:PsiDirectoryNode" />
+              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ucf" type="462c0819:PsiDirectoryNode" />
+              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
+              <item name="Collange" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1322,7 +1231,7 @@
       <workItem from="1521265468024" duration="601000" />
       <workItem from="1521307742471" duration="336000" />
       <workItem from="1521331756229" duration="92000" />
-      <workItem from="1521585143858" duration="1502000" />
+      <workItem from="1521585143858" duration="2305000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1475,7 +1384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67832000" />
+    <option name="totallyTimeSpent" value="68635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1486,12 +1395,12 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.5021299" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.5042598" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.4978701" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4978701" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.49574015" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18210863" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -1523,7 +1432,8 @@
     <MESSAGE value="Changes: a song by Tupac." />
     <MESSAGE value="Implemented error messages in the login screen." />
     <MESSAGE value="Accidentially didn't clean before committing.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Accidentially didn't clean before committing.." />
+    <MESSAGE value="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1687,13 +1597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1831,14 +1734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1868,24 +1763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="method#JedisHandler#0;class#JedisHandler#0" expanded="false" />
-            <element signature="e#3099#3100#0" expanded="true" />
-            <element signature="e#3137#3138#0" expanded="true" />
-            <element signature="e#3170#3171#0" expanded="true" />
-            <element signature="e#3204#3205#0" expanded="true" />
-            <element signature="e#3235#3236#0" expanded="true" />
-            <element signature="e#3271#3272#0" expanded="true" />
-            <element signature="e#3313#3314#0" expanded="true" />
-            <element signature="e#3349#3350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1904,10 +1781,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="79" column="27" lean-forward="true" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+        <state relative-caret-position="361">
+          <caret line="78" column="55" lean-forward="false" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="55" />
           <folding>
             <marker date="1521586239787" expanded="true" signature="1269:1322" ph="UPDATE `user`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="method#JedisHandler#0;class#JedisHandler#0" expanded="false" />
+            <element signature="e#3240#3241#0" expanded="true" />
+            <element signature="e#3278#3279#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3412#3413#0" expanded="true" />
+            <element signature="e#3454#3455#0" expanded="true" />
+            <element signature="e#3490#3491#0" expanded="true" />
           </folding>
         </state>
       </provider>

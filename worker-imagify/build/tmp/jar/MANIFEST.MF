@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: edu.ucf.cop4331.Collange.HerokuWorkerActivity
-

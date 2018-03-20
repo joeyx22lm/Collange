@@ -1,9 +1,12 @@
 package edu.ucf.cop4331.Collange;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.Protocol;
+
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -37,7 +40,7 @@ public class JedisHandler {
         return this.session != null && this.session.isConnected();
     }
 
-    public <T> QueueMessage<T> dequeue(String queueName){
+    public <T> QueueMessage<T> dequeue(String queueName) throws IOException {
         if(session != null){
             List<String> msg = session.blpop(0,queueName);
             if(msg != null && msg.size() > 1){
@@ -51,7 +54,7 @@ public class JedisHandler {
         return null;
     }
 
-    public <T> boolean enqueue(String queueName, T value, Class<T> clazz){
+    public <T> boolean enqueue(String queueName, T value, Class<T> clazz) throws IOException {
         if(session != null){
             QueueMessage<T> payload = new QueueMessage<>(null, value, clazz);
             session.lpush(queueName, om.writeValueAsString(payload));
@@ -60,7 +63,7 @@ public class JedisHandler {
         return false;
     }
 
-    public QueueMessage dequeue(String queueName, long timeoutMs, long sleepTime){
+    public QueueMessage dequeue(String queueName, long timeoutMs, long sleepTime) throws IOException {
         // Sleep time must be larger than timeout time.
         if(sleepTime > timeoutMs) timeoutMs = sleepTime;
         long start = System.currentTimeMillis();
