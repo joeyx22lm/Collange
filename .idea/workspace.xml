@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/lib/ui/navbar.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/css/pages/login.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/lib/ui/head.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/css/style.css" afterPath="$PROJECT_DIR$/webapp/public/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/ui/navbar.php" afterPath="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/home.php" afterPath="$PROJECT_DIR$/webapp/public/home.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/index.php" afterPath="$PROJECT_DIR$/webapp/public/index.php" />
     </list>
@@ -48,18 +47,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FilterWorker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,13 +57,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="77" selection-end-column="11" />
+            <state relative-caret-position="119">
+              <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
               <folding>
-                <marker date="1521754580516" expanded="true" signature="1393:1446" ph="UPDATE `user`... " />
+                <marker date="1521754945925" expanded="true" signature="1393:1446" ph="UPDATE `user`... " />
               </folding>
             </state>
           </provider>
@@ -92,12 +79,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="90">
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+              <folding>
+                <marker date="1519949477608" expanded="true" signature="3396:3411" ph="SELECT * FRO... " />
+                <marker date="1519949477608" expanded="true" signature="4161:4206" ph="SELECT * FRO... ${static::$tableName}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,7 +113,7 @@
         </entry>
       </file>
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/ui/navbar.php">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
@@ -125,8 +125,18 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="40" />
+            <state relative-caret-position="270">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/ui/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -138,19 +148,6 @@
             <state relative-caret-position="604">
               <caret line="12679" column="1" lean-forward="false" selection-start-line="12679" selection-start-column="1" selection-end-line="12679" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilterWorkerQueue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#markJobComplete#0;class#FilterWorkerQueue#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -178,6 +175,8 @@
       <find>30</find>
       <find>admin@</find>
       <find>App::</find>
+      <find>getStaticResource</find>
+      <find>setStaticResource</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -186,6 +185,8 @@
       <replace>50</replace>
       <replace>70</replace>
       <replace>StaticResource::</replace>
+      <replace>get</replace>
+      <replace>set</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/worker-imagify</dir>
@@ -860,7 +861,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/NoEvenNumberTransition.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBUtility.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/AverageColorTransition.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitionBundle.java" />
@@ -906,11 +906,12 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/navbar.php" />
-        <option value="$PROJECT_DIR$/webapp/public/index.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/public/css/pages/login.css" />
+        <option value="$PROJECT_DIR$/webapp/lib/ui/head.php" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
         <option value="$PROJECT_DIR$/webapp/public/home.php" />
+        <option value="$PROJECT_DIR$/webapp/public/index.php" />
       </list>
     </option>
   </component>
@@ -968,6 +969,14 @@
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
@@ -1256,11 +1265,11 @@
       <recent name="edu.ucf.cop4331.Collange.imagify.filters.color.blend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webapp/lib/ui/component" />
       <recent name="$PROJECT_DIR$/webapp/public" />
       <recent name="$PROJECT_DIR$/webapp/public/old" />
       <recent name="$PROJECT_DIR$/webapp/public/css" />
       <recent name="$PROJECT_DIR$/webapp/public/js" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1388,7 +1397,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="2092000" />
+      <workItem from="1521752324305" duration="2391000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1593,11 +1602,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521753963150</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin">
+      <created>1521754670437</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1521754670437</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79106000" />
+    <option name="totallyTimeSpent" value="79405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -1655,13 +1671,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/CumulativeAverageTransition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/test/testutility.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1785,13 +1794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1988,17 +1990,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="62" column="4" lean-forward="false" selection-start-line="62" selection-start-column="4" selection-end-line="77" selection-end-column="11" />
-          <folding>
-            <marker date="1521754580516" expanded="true" signature="1393:1446" ph="UPDATE `user`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/ui/navbar.php">
+    <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
@@ -2006,19 +1998,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/ui/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+          <folding>
+            <marker date="1519949477608" expanded="true" signature="3396:3411" ph="SELECT * FRO... " />
+            <marker date="1519949477608" expanded="true" signature="4161:4206" ph="SELECT * FRO... ${static::$tableName}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+          <folding>
+            <marker date="1521754945925" expanded="true" signature="1393:1446" ph="UPDATE `user`... " />
+          </folding>
         </state>
       </provider>
     </entry>

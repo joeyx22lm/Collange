@@ -1,7 +1,7 @@
 <?php
 class StaticResource {
     private static $StaticResource = null;
-    public static function setStaticResource($arr, $val=null){
+    public static function set($arr, $val=null){
         if($val == null){
             self::$StaticResource = $arr;
         }
@@ -11,18 +11,21 @@ class StaticResource {
             self::$StaticResource[$arr] = $val;
         }
     }
-    public static function getStaticResource($key){
+    public static function get($key){
         return(self::$StaticResource == null ? null : self::$StaticResource[$key]);
     }
 }
-StaticResource::setStaticResource(array(
-    'APP_TITLE'=>'Collange '
+StaticResource::set(array(
+    'APP_TITLE'=>'Collange'
 ));
 
 
 class App {
     public static function buildNavbar(){
-        require(__DIR__.'/ui/navbar.php');
+        require(__DIR__.'/ui/component/navbar.php');
+    }
+    public static function buildHtmlHead($injectPageTitle=null){
+        require(__DIR__.'/ui/head.php');
     }
 }
 
