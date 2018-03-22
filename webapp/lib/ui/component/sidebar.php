@@ -14,6 +14,9 @@
                 <a class="nav-link nav-dropdown-toggle" href="/transform.php"><i class="icon-puzzle"></i> IMG400012.JPG</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
+                        <a class="nav-link no-overflow collange-full-width" href="#"> Resized Image <span class="text-muted">just now</span></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link no-overflow collange-full-width" href="#"> Applied Filter <span class="text-muted">6 mins ago</span></a>
                     </li>
                     <li class="nav-item">
