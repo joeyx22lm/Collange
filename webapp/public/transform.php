@@ -54,25 +54,12 @@
         </ol>
         <div class="container-fluid">
             <div class="animated fadeIn">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <h4 class="card-title mb-0">IMG40015.JPG</h4>
-                                <div class="small text-muted">2.4Mb</div>
-                            </div>
-                            <!--/.col-->
-                            <div class="col-sm-7 d-none d-md-block">
-                                <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
-                            </div>
-                            <!--/.col-->
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12 img-responsive" id="canvas">
-                                <img src="https://placehold.it/2300x1268&text=No+Image" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12 img-responsive" id="canvas">
+                        <img src="https://placehold.it/2300x1268&text=No+Image" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                     </div>
+                </div>
+                <div class="card">
                     <div class="card-footer">
                         <ul>
                             <li>
