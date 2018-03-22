@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" afterPath="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/resources/bliss-1920x1200.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/resources/bliss-3840x2400.jpg" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -66,34 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
-              <folding>
-                <marker date="1519949477608" expanded="true" signature="3396:3411" ph="SELECT * FRO... " />
-                <marker date="1519949477608" expanded="true" signature="4161:4206" ph="SELECT * FRO... ${static::$tableName}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/css/pages/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="123" lean-forward="false" selection-start-line="32" selection-start-column="123" selection-end-line="32" selection-end-column="123" />
+            <state relative-caret-position="555">
+              <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#header#0;n#!!top" expanded="true" />
               </folding>
@@ -101,11 +78,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="370z.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/resources/370z.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avatar.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/resources/avatar.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bliss-240x320.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/resources/bliss-240x320.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+            <state relative-caret-position="650">
+              <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -139,16 +137,6 @@
               <folding>
                 <element signature="e#38#44#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/ui/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1172,6 +1160,14 @@
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1398,7 +1394,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="3663000" />
+      <workItem from="1521752324305" duration="3721000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1638,15 +1634,21 @@
       <option name="project" value="LOCAL" />
       <updated>1521756055155</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin">
+      <created>1521756287955</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1521756287955</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80677000" />
+    <option name="totallyTimeSpent" value="80735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3565611" sideWeight="0.5063898" order="0" side_tool="true" content_ui="tabs" />
@@ -1668,7 +1670,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285068" sideWeight="0.49574015" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32748538" sideWeight="0.48722044" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18690096" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18690096" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36754966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1700,27 +1702,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/test/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/test/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/Pixel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -2061,22 +2042,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="123" lean-forward="false" selection-start-line="32" selection-start-column="123" selection-end-line="32" selection-end-column="123" />
+        <state relative-caret-position="555">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#header#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="70" column="37" lean-forward="true" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/resources/370z.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/resources/avatar.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/resources/bliss-240x320.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
