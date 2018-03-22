@@ -11,16 +11,16 @@
                 Edit Session
             </li>
             <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> IMG400012.JPG</a>
+                <a class="nav-link nav-dropdown-toggle" href="/transform.php"><i class="icon-puzzle"></i> IMG400012.JPG</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
-                        <a class="nav-link no-overflow collange-full-width" href="base-breadcrumb.html"> Applied Filter</a>
+                        <a class="nav-link no-overflow collange-full-width" href="#"> Applied Filter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-overflow collange-full-width" href="base-cards.html"> Applied Filter</a>
+                        <a class="nav-link no-overflow collange-full-width" href="#"> Applied Filter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-overflow collange-full-width" href="base-carousel.html"> Opened Image</a>
+                        <a class="nav-link no-overflow collange-full-width" href="#"> Opened Image</a>
                     </li>
                 </ul>
             </li>
