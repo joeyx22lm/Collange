@@ -81,7 +81,7 @@ if (isset($_POST['login'])) {
         ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="alert alert-danger collange-full-width">
+                <div class="alert alert-danger collange-full-width" id="loginPageError">
                     <b><?php echo $Error;?></b>
                 </div>
             </div>

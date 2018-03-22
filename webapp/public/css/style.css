@@ -12678,3 +12678,8 @@ hr.transparent {
 .collange-full-width {
   width:100%;
 }
+
+
+#loginPageError {
+  text-align:center;
+}
