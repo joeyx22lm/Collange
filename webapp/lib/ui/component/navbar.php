@@ -30,7 +30,7 @@
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="https://placehold.it/35x35" class="img-avatar" alt="<?php echo AuthSession::getUser('email');?>">
+                <img src="https://placehold.it/35x35" class="img-avatar" alt="<?php echo AuthSession::getUser()->getEmail();?>">
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-header text-center">

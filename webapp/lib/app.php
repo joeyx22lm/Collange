@@ -74,8 +74,8 @@ class AuthSession {
         }
         return null;
     }
-    public static function getUser($key){
-        return self::get('user')[$key];
+    public static function getUser(){
+        return self::get('user');
     }
 }
 ?>
