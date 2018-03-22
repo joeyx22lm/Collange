@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
     </list>
@@ -195,11 +195,8 @@
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="643">
-              <caret line="71" column="119" lean-forward="false" selection-start-line="71" selection-start-column="119" selection-end-line="71" selection-end-column="119" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <caret line="71" column="122" lean-forward="false" selection-start-line="71" selection-start-column="122" selection-end-line="71" selection-end-column="122" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1457,14 +1454,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="7770000" />
-    </task>
-    <task id="LOCAL-00006" summary="Changes: a song by Tupac.">
-      <created>1519940157544</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1519940157544</updated>
+      <workItem from="1521752324305" duration="7813000" />
     </task>
     <task id="LOCAL-00007" summary="Changes: a song by Tupac.">
       <created>1519940588769</created>
@@ -1802,11 +1792,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521760570849</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="changes">
+      <created>1521760686142</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1521760686142</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84784000" />
+    <option name="totallyTimeSpent" value="84827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2334,11 +2331,8 @@
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
-          <caret line="71" column="119" lean-forward="false" selection-start-line="71" selection-start-column="119" selection-end-line="71" selection-end-column="119" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="71" column="122" lean-forward="false" selection-start-line="71" selection-start-column="122" selection-end-line="71" selection-end-column="122" />
+          <folding />
         </state>
       </provider>
     </entry>
