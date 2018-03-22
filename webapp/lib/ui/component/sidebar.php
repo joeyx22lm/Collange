@@ -1,6 +1,11 @@
 <div class="sidebar">
     <nav class="sidebar-nav">
         <ul class="nav">
+            <?php
+            /**
+             * Begin Global Sidebar
+             */
+            ?>
             <li class="nav-item">
                 <a class="nav-link" href="/home.php"><i class="icon-speedometer"></i> Dashboard</a>
             </li>
@@ -8,8 +13,11 @@
                 <a class="nav-link" href="/library.php"><i class="icon-calculator"></i> Library</a>
             </li>
 
+
             <?php
-            // Check for active editing sessions.
+            /**
+             * Begin Editing Session Sidebar
+             */
             $EditingSessions = array(
                 array(
                     'sessionId'=>'dskjhf38ysdjkfh45',
@@ -43,8 +51,7 @@
                         )
                     )
                 )
-            );  // Test data
-
+            );  // test data
             if(!empty($EditingSessions)){
                 ?>
                 <li class="nav-title">
@@ -52,11 +59,10 @@
                 </li>
                 <?php
                 foreach($EditingSessions as $i=>$Session){
-
                     // If we are actively within the session, show the most recent events.
                     if(isset($_GET['txId']) && $_GET['txId'] == $Session['sessionId']){
                         ?>
-                        <li class="nav-item nav-dropdown">
+                        <li class="nav-item nav-dropdown open">
                             <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
                             <ul class="nav-dropdown-items">
                                 <?php
