@@ -12678,3 +12678,6 @@ hr.transparent {
 .collange-full-width {
   width: 100%;
 }
+.no-overflow {
+  overflow:hidden;
+}

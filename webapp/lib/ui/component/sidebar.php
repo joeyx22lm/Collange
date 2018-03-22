@@ -14,13 +14,13 @@
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> IMG400012.JPG</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
-                        <a class="nav-link" href="base-breadcrumb.html"><i class="icon-puzzle"></i> Applied Opacity Filter</a>
+                        <a class="nav-link no-overflow collange-full-width" href="base-breadcrumb.html"> Applied Filter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="base-cards.html"><i class="icon-puzzle"></i> Applied Blue Filter</a>
+                        <a class="nav-link no-overflow collange-full-width" href="base-cards.html"> Applied Filter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="base-carousel.html"><i class="icon-puzzle"></i> Opened Image</a>
+                        <a class="nav-link no-overflow collange-full-width" href="base-carousel.html"> Opened Image</a>
                     </li>
                 </ul>
             </li>
