@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/S3EphemeralURLHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterCompleteMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/annotation-processors.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileContent/fileContent.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
@@ -15,17 +9,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/worker-imagify/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/build.gradle" afterPath="$PROJECT_DIR$/worker-imagify/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/HerokuWorkerActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/JedisHandler.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/JedisHandler.java" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/MainActivityTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -81,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -130,19 +116,6 @@
                 <element signature="e#2618#2619#0" expanded="true" />
                 <element signature="e#2656#2657#0" expanded="true" />
                 <element signature="e#2737#2738#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DynamicRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-              <folding>
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1522#1523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -915,8 +888,6 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/filters/OpacityTransition.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerText.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
@@ -937,6 +908,8 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java" />
       </list>
     </option>
   </component>
@@ -1355,7 +1328,7 @@
       <workItem from="1521307742471" duration="336000" />
       <workItem from="1521331756229" duration="92000" />
       <workItem from="1521585143858" duration="8482000" />
-      <workItem from="1521673926502" duration="800000" />
+      <workItem from="1521673926502" duration="2135000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1511,11 +1484,25 @@
       <option name="project" value="LOCAL" />
       <updated>1521589060325</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin">
+      <created>1521681317618</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1521681317618</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin">
+      <created>1521681547870</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1521681547870</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75612000" />
+    <option name="totallyTimeSpent" value="76947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1526,12 +1513,12 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.5085197" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.5106496" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.4978701" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49574015" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.4914803" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32830524" sideWeight="0.48935038" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18370607" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -1783,13 +1770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1917,17 +1897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1522#1523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1946,10 +1915,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
           <folding />
         </state>
       </provider>
