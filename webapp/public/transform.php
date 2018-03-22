@@ -96,6 +96,13 @@
                                     <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </li>
+                            <li style="float:right">
+                                <div class="text-muted">Zoom</div>
+                                <strong>100%</strong>
+                                <div class="progress progress-xs mt-2">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
