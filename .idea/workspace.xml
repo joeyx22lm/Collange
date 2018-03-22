@@ -194,8 +194,8 @@
       <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="102" column="128" lean-forward="false" selection-start-line="102" selection-start-column="128" selection-end-line="102" selection-end-column="128" />
+            <state relative-caret-position="323">
+              <caret line="71" column="146" lean-forward="false" selection-start-line="71" selection-start-column="146" selection-end-line="71" selection-end-column="146" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1457,14 +1457,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="7873000" />
-    </task>
-    <task id="LOCAL-00008" summary="Changes: a song by Tupac.">
-      <created>1519940871772</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1519940871772</updated>
+      <workItem from="1521752324305" duration="7932000" />
     </task>
     <task id="LOCAL-00009" summary="Changes: a song by Tupac.">
       <created>1519940927464</created>
@@ -1802,11 +1795,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521760729029</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="changes">
+      <created>1521760793528</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1521760793529</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84887000" />
+    <option name="totallyTimeSpent" value="84946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2333,8 +2333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="102" column="128" lean-forward="false" selection-start-line="102" selection-start-column="128" selection-end-line="102" selection-end-column="128" />
+        <state relative-caret-position="323">
+          <caret line="71" column="146" lean-forward="false" selection-start-line="71" selection-start-column="146" selection-end-line="71" selection-end-column="146" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

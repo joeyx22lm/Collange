@@ -69,7 +69,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 img-responsive" id="canvas">
-                                <img src="https://placehold.it/2300x1268&text=No+Image" class="img" style="margin: 0 auto;width:100%;"/>
+                                <img src="https://placehold.it/2300x1268&text=No+Image" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                             </div>
                         </div>
                     </div>
