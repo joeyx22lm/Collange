@@ -70,7 +70,7 @@ if(empty($TransformSession)){
             <div class="animated fadeIn">
                 <div class="row">
                     <div class="col-lg-12 img-responsive" id="canvas">
-                        <img src="https://placehold.it/2300x1268&text=No+Image" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
+                        <img src="https://placehold.it/2300x1268&text=<?php echo urlencode(<$TransformSession['imageName']);?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                     </div>
                 </div>
                 <div class="card" style="padding:15px;">

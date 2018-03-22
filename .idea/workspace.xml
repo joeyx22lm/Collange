@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/ui/component/sidebar.php" afterPath="$PROJECT_DIR$/webapp/lib/ui/component/sidebar.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -196,11 +194,15 @@
       <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="91" />
+            <state relative-caret-position="329">
+              <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1521761870675" expanded="true" signature="2758:2835" ph="..." />
+                <marker date="1521761870675" expanded="true" signature="2791:2835" ph="..." />
+                <marker date="1521761870675" expanded="true" signature="3774:3818" ph="..." />
+                <marker date="1521761870675" expanded="true" signature="4249:4293" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1459,14 +1461,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="8906000" />
-    </task>
-    <task id="LOCAL-00014" summary="Changes: a song by Tupac.">
-      <created>1519942341845</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1519942341845</updated>
+      <workItem from="1521752324305" duration="8950000" />
     </task>
     <task id="LOCAL-00015" summary="Changes: a song by Tupac.">
       <created>1519942364075</created>
@@ -1804,11 +1799,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521761185085</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="changes">
+      <created>1521761832402</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1521761832402</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85920000" />
+    <option name="totallyTimeSpent" value="85964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2335,11 +2337,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="91" />
+        <state relative-caret-position="329">
+          <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1521761870675" expanded="true" signature="2758:2835" ph="..." />
+            <marker date="1521761870675" expanded="true" signature="2791:2835" ph="..." />
+            <marker date="1521761870675" expanded="true" signature="3774:3818" ph="..." />
+            <marker date="1521761870675" expanded="true" signature="4249:4293" ph="..." />
           </folding>
         </state>
       </provider>
