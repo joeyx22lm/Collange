@@ -68,8 +68,8 @@
                             <!--/.col-->
                         </div>
                         <div class="row">
-                            <div class="col-lg-12" id="canvas">
-
+                            <div class="col-lg-12 img-responsive" id="canvas" style="margin: 0 auto;">
+                                <img src="https://placehold.it/2300x1268&text=No+Image" class="img"/>
                             </div>
                         </div>
                     </div>
