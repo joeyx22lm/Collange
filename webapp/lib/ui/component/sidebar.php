@@ -55,7 +55,7 @@
             if(!empty($EditingSessions)){
                 ?>
                 <li class="nav-title">
-                    Edit Session
+                    Opened Images
                 </li>
                 <?php
                 foreach($EditingSessions as $i=>$Session){
