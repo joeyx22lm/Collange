@@ -21,8 +21,11 @@ StaticResource::set(array(
 
 
 class App {
-    public static function buildNavbar(){
+    public static function buildPageNavbar(){
         require(__DIR__.'/ui/component/navbar.php');
+    }
+    public static function buildPageFooter(){
+
     }
     public static function buildHtmlHead($injectPageTitle=null){
         require(__DIR__.'/ui/head.php');
@@ -67,6 +70,9 @@ class AuthSession {
             return $_SESSION[$key];
         }
         return null;
+    }
+    public static function getUser($key){
+        return self::get('user')[$key];
     }
 }
 ?>
