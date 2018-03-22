@@ -1,5 +1,5 @@
 <?php
-class App {
+class StaticResource {
     private static $StaticResource = null;
     public static function setStaticResource($arr, $val=null){
         if($val == null){
@@ -15,9 +15,16 @@ class App {
         return(self::$StaticResource == null ? null : self::$StaticResource[$key]);
     }
 }
-App::setStaticResource(array(
+StaticResource::setStaticResource(array(
     'APP_TITLE'=>'Collange '
 ));
+
+
+class App {
+    public static function buildNavbar(){
+        require(__DIR__.'/ui/navbar.php');
+    }
+}
 
 class AuthSession {
     private static $connected = false;
