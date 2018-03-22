@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" afterPath="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -191,12 +191,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="2560">
+              <caret line="291" column="22" lean-forward="false" selection-start-line="291" selection-start-column="22" selection-end-line="291" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,7 +225,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -268,6 +270,7 @@
       <find>App::</find>
       <find>getStaticResource</find>
       <find>setStaticResource</find>
+      <find>traffic &amp;</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -1000,9 +1003,9 @@
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
-        <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/component/sidebar.php" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" />
+        <option value="$PROJECT_DIR$/webapp/public/transform.php" />
       </list>
     </option>
   </component>
@@ -1453,7 +1456,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="6476000" />
+      <workItem from="1521752324305" duration="7008000" />
     </task>
     <task id="LOCAL-00001" summary="Changes: a song by Tupac.">
       <created>1519934949037</created>
@@ -1791,11 +1794,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521759237894</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="changes">
+      <created>1521759325889</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1521759325889</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83490000" />
+    <option name="totallyTimeSpent" value="84022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2302,14 +2312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="49" column="42" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -2325,6 +2327,16 @@
         <state relative-caret-position="60">
           <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2560">
+          <caret line="291" column="22" lean-forward="false" selection-start-line="291" selection-start-column="22" selection-end-line="291" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
