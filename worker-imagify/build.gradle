@@ -12,6 +12,7 @@ dependencies {
     compile group: 'redis.clients', name: 'jedis', version: '2.0.0'
     compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.0'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+    compile group: 'com.google.guava', name: 'guava', version: '23.5-jre'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
@@ -20,7 +21,7 @@ jar {
         configurations.default.collect { it.isDirectory() ? it : zipTree(it) }
     }
     manifest {
-        attributes 'Main-Class': 'edu.ucf.cop4331.Collange.HerokuWorkerActivity'
+        attributes 'Main-Class': 'edu.ucf.cop4331.Collange.MainActivity'
     }
 }
 
