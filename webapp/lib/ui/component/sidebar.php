@@ -18,47 +18,13 @@
             /**
              * Begin Editing Session Sidebar
              */
-            $EditingSessions = array(
-                array(
-                    'sessionId'=>'dskjhf38ysdjkfh45',
-                    'imageName'=>'IMG400012.JPG',
-                    'events'=>array(
-                        array(
-                            'title'=>'Resized Image',
-                            'history'=>'just now'
-                        ),
-                        array(
-                            'title'=>'Applied Filter',
-                            'history'=>'6 mins ago'
-                        ),
-                        array(
-                            'title'=>'Applied Filter',
-                            'history'=>'15 mins ago'
-                        ),
-                        array(
-                            'title'=>'Opened Image',
-                            'history'=>'42 mins ago'
-                        )
-                    )
-                ),
-                array(
-                    'sessionId'=>'8965shjfg327r78saf',
-                    'imageName'=>'IMG400015.JPG',
-                    'events'=>array(
-                        array(
-                            'title'=>'Opened Image',
-                            'history'=>'3 mins ago'
-                        )
-                    )
-                )
-            );  // test data
-            if(!empty($EditingSessions)){
+            if(TransformSessionHandler::isTransforming()){
                 ?>
                 <li class="nav-title">
                     Opened Images
                 </li>
                 <?php
-                foreach($EditingSessions as $i=>$Session){
+                foreach(TransformSessionHandler::getSessions() as $i=>$Session){
                     // If we are actively within the session, show the most recent events.
                     if(isset($_GET['txId']) && $_GET['txId'] == $Session['sessionId']){
                         ?>

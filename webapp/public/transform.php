@@ -1,5 +1,19 @@
 <?php require_once('../Application.php');?>
 <?php AuthSession::protect();
+
+
+
+
+/**
+ * Begin Loading Transformation Session
+ */
+$TransformSession = TransformSessionHandler::getSession(!isset($_GET['txId']) ? null : $_GET['txId']);
+
+// Redirect if invalid transform session.
+if(empty($TransformSession)){
+    header("Location: /library.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +57,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item">My Library</li>
             <li class="breadcrumb-item"><a href="#">Photo Album</a></li>
-            <li class="breadcrumb-item active">IMG40015.JPG</li>
+            <li class="breadcrumb-item active"><?php echo $TransformSession['imageName'];?></li>
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
                 <div class="btn-group" role="group" aria-label="Button group">
