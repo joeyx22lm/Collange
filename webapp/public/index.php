@@ -124,10 +124,7 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 
-    <!-- Bootstrap and necessary plugins -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <?php App::buildHtmlJS();?>
 
     </body>
 </html>
