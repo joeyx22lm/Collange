@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
     </list>
@@ -195,14 +195,14 @@
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="329">
-              <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
+              <caret line="72" column="91" lean-forward="true" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1521761870675" expanded="true" signature="2758:2835" ph="..." />
-                <marker date="1521761870675" expanded="true" signature="2791:2835" ph="..." />
-                <marker date="1521761870675" expanded="true" signature="3774:3818" ph="..." />
-                <marker date="1521761870675" expanded="true" signature="4249:4293" ph="..." />
+                <marker date="1521761990409" expanded="true" signature="2756:2833" ph="..." />
+                <marker date="1521761990409" expanded="true" signature="2789:2833" ph="..." />
+                <marker date="1521761990409" expanded="true" signature="3772:3816" ph="..." />
+                <marker date="1521761990409" expanded="true" signature="4247:4291" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1461,14 +1461,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="8950000" />
-    </task>
-    <task id="LOCAL-00015" summary="Changes: a song by Tupac.">
-      <created>1519942364075</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1519942364075</updated>
+      <workItem from="1521752324305" duration="9059000" />
     </task>
     <task id="LOCAL-00016" summary="Changes: a song by Tupac.">
       <created>1519942426123</created>
@@ -1806,11 +1799,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521761832402</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="changes">
+      <created>1521761876689</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1521761876689</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85964000" />
+    <option name="totallyTimeSpent" value="86073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -1829,7 +1829,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2338,14 +2338,14 @@
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
-          <caret line="72" column="81" lean-forward="false" selection-start-line="72" selection-start-column="81" selection-end-line="72" selection-end-column="81" />
+          <caret line="72" column="91" lean-forward="true" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1521761870675" expanded="true" signature="2758:2835" ph="..." />
-            <marker date="1521761870675" expanded="true" signature="2791:2835" ph="..." />
-            <marker date="1521761870675" expanded="true" signature="3774:3818" ph="..." />
-            <marker date="1521761870675" expanded="true" signature="4249:4293" ph="..." />
+            <marker date="1521761990409" expanded="true" signature="2756:2833" ph="..." />
+            <marker date="1521761990409" expanded="true" signature="2789:2833" ph="..." />
+            <marker date="1521761990409" expanded="true" signature="3772:3816" ph="..." />
+            <marker date="1521761990409" expanded="true" signature="4247:4291" ph="..." />
           </folding>
         </state>
       </provider>
