@@ -23,7 +23,7 @@ class AuthSession {
     private static $connected = false;
     public static function protect(){
         self::start();
-        if(!self::$connected || !isset($_SESSION) || empty($_SESSION) || !isset($_SESSION['user']) || empty($_SESSION['user'])){
+        if(!self::isLoggedIn()){
             // Redirect to login page.
             header("Location: /");
             die();
@@ -37,12 +37,11 @@ class AuthSession {
         return password_verify($password, $hash);
     }
     public static function isLoggedIn(){
-        return self::exists('user');
+        if(!self::$connected || !isset($_SESSION) || empty($_SESSION) || !isset($_SESSION['user']) || empty($_SESSION['user'])){
+            return false;
+        }
+        return true;
     }
-    public static function setLoggedIn($User){
-        self::set('user', $User);
-    }
-
     public static function start(){
         session_start();
         session_regenerate_id();

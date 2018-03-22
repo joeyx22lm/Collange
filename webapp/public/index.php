@@ -1,9 +1,16 @@
 <?php
 // Load the application libraries.
 require_once('../Application.php');
+
 // Initialize new or existing session.
 AuthSession::start();
 
+
+// Check if the user is already logged in.
+if(AuthSession::isLoggedIn()){
+    header("Location: /home.php");
+    die();
+}
 
 // Check whether the user has attempted to login.
 $Error = null;
