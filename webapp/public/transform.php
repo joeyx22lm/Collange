@@ -59,7 +59,7 @@
                         <img src="https://placehold.it/2300x1268&text=No+Image" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" style="padding:15px;">
                     <div class="card-footer">
                         <ul>
                             <li>
