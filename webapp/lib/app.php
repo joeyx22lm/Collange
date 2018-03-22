@@ -24,6 +24,9 @@ class App {
     public static function buildPageNavbar(){
         require(__DIR__.'/ui/component/navbar.php');
     }
+    public static function buildPageSidebar(){
+        require(__DIR__.'/ui/component/sidebar.php');
+    }
     public static function buildPageFooter(){
         require(__DIR__.'/ui/component/footer.php');
     }
