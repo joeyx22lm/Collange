@@ -437,7 +437,8 @@
         });
         uploader.on('error', function(file, msg, xhr){
             $('#processingModal').modal('hide');
-            $('#errorModal').text(msg).modal('show');
+            $('#errorMsg').text(msg);
+            $('#errorModal').modal('show');
         });
     });
 </script>
