@@ -140,12 +140,12 @@ class TransformSessionHandler {
     }
 }
 
+require_once('../../vendor/autoload.php');
 class S3Handler {
     public static $session = null;
 
     public static function getClient(){
         if(self::$session == null){
-            require_once('../../vendor/autoload.php');
             self::$session = new Aws\S3\S3Client([
                 'version'     => 'latest',
                 'region'      => 'us-east-1',
