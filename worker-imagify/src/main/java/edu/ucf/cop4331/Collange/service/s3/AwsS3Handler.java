@@ -43,7 +43,7 @@ public class AwsS3Handler {
         GetObjectRequest rangeObjectRequest = new GetObjectRequest(
                 System.getenv("AWS_S3_BUCKET"), key);
         rangeObjectRequest.setRange(0, 10); // retrieve 1st 11 bytes.
-        return session.getObject(rangeObjectRequest);
+        return getSession().getObject(rangeObjectRequest);
     }
 
     public static BufferedImage getImage(String key) {
