@@ -6,9 +6,9 @@ import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
 
 public class FilterWorker {
 
-    private static final String ENV_REDISURL = "REDIS_URL";
-    private static final String WaitingQueueRedisIdentifier = "FilterWaitingQueue";
-    private static final String CompletedQueueRedisIdentifier = "FilterCompletedQueue";
+    protected static final String ENV_REDISURL = "REDIS_URL";
+    protected static final String WaitingQueueRedisIdentifier = "FilterWaitingQueue";
+    protected static final String CompletedQueueRedisIdentifier = "FilterCompletedQueue";
 
     public static void main(String[] args){
         System.out.println("FilterWorker: Initialiing");

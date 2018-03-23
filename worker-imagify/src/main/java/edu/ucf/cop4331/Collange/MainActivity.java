@@ -17,6 +17,11 @@ public class MainActivity {
             FilterWorker.main(args);
         }
 
+        // Check whether to initialize the Filter Worker.
+        if("TestFilterWorker".equalsIgnoreCase(args[0])){
+            TestFilterWorker.main(args);
+        }
+
         // Check whether unknown arguments were given.
         else {
             System.out.println("Unrecognized arguments: "  + args[0]);
