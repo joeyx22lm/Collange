@@ -40,30 +40,31 @@ public class FilterWorker {
             FilterWorkerMessage message = jobQueue.dequeueJob(10, 1000);
             if(message == null){
                 System.out.println("FilterWorker.DEBUG: Listener timed out while waiting for messages.");
-            }else{
-                // Begin processing the message.
-                System.out.println(" FilterWorker.INFO: Listener received message\n\tTransaction ID: " + message.transactionId);
-                System.out.println("\timageId: " + message.imageId);
-                System.out.println("\ttransformation: " + message.transition + "\n");
-
-                BufferedImage img = AwsS3Handler.getImage(message.imageId);
-                if(img == null){
-                    System.out.println("Unable to retrieve image: " + message.imageId);
-                    // TODO: Mark complete w/ error.
-                    continue;
-                }
-
-                BufferedImage newImg = message.transition.getInstance().filter(img);
-                if(newImg == null){
-                    System.out.println("Unable to filter image: " + message.imageId);
-                    // TODO: Mark complete w/ error.
-                    continue;
-                }
-
-                System.out.println("Filtered Image: " + message.imageId);
             }
 
-            // If a second argument is given, run indefinitely.ß
+            // Begin processing the message.
+            System.out.println(" FilterWorker.INFO: Listener received message\n\tTransaction ID: " + message.transactionId);
+            System.out.println("\timageId: " + message.imageId);
+            System.out.println("\ttransformation: " + message.transition + "\n");
+
+            BufferedImage img = AwsS3Handler.getImage(message.imageId);
+            if(img == null){
+                System.out.println("Unable to retrieve image: " + message.imageId);
+                // TODO: Mark complete w/ error.
+                continue;
+            }
+
+            BufferedImage newImg = message.transition.getInstance().filter(img);
+            if(newImg == null){
+                System.out.println("Unable to filter image: " + message.imageId);
+                // TODO: Mark complete w/ error.
+                continue;
+            }
+
+            System.out.println("Filtered Image: " + message.imageId);
+            // TODO: Mark complete w/ success.
+
+            // If a second argument is given, run indefinitely.
             if(args == null || args.length <= 1){
                 break;
             }
