@@ -434,7 +434,7 @@
                     });
             }
             return "/api.php?uploadSignatureFailed";
-        }
+        };
         uploader.on('dragover', function(e){
             libraryView.css('opacity', '0.25');
         });
