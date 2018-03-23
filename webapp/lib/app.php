@@ -182,10 +182,7 @@ class S3Handler {
             $options,
             $expire
         );
-
-        $formAttributes = $postObject->getFormAttributes();
-        $formInputs = $postObject->getFormInputs();
-        return json_encode($postObject);
+        return json_encode(array($postObject->getFormAttributes(), $postObject->getFormInputs()));
     }
 }
 ?>
