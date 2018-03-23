@@ -380,22 +380,21 @@
     </aside>
 </div>
 
-<div class="modal" id="processingModal" tabindex="-1" role="dialog">
+<div class="modal fade" id="processingModal" tabindex="-1" role="dialog" aria-labelledby="Uploading your image" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Uploading Image</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Uploading Image</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p>Please wait while we upload your image</p>
+                ...
             </div>
         </div>
     </div>
 </div>
-
 
 <?php App::buildPageFooter();?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
