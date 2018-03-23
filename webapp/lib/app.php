@@ -168,22 +168,12 @@ class S3Handler {
     }
 
     public static function createSignedPOSTUrl($key, $mime, $expire='+30 minutes'){
-        $cmd = self::getClient()->getCommand('PutObject', array(
-            'Bucket' => StaticResource::get('ENV_AWS_S3_BUCKET'),
-            'Key' => $key,
-            'ContentType' => $mime,
-            'Body'        => '',
-            'ContentMD5'  => false
-        ));
-
         $formInputs = ['acl' => 'private'];
-
         $options = [
-            ['acl' => 'private'],
+            $formInputs,
             ['bucket' => StaticResource::get('ENV_AWS_S3_BUCKET')],
             ['starts-with', '', '']
         ];
-
         $postObject = new \Aws\S3\PostObjectV4(
             self::getClient(),
             StaticResource::get('ENV_AWS_S3_BUCKET'),
@@ -194,7 +184,7 @@ class S3Handler {
 
         $formAttributes = $postObject->getFormAttributes();
         $formInputs = $postObject->getFormInputs();
-        return json_encode(array($formAttributes, $formInputs));
+        return json_encode($postObject);
     }
 }
 ?>
