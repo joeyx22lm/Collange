@@ -172,7 +172,7 @@ class S3Handler {
         $options = [
             $formInputs,
             ['bucket' => StaticResource::get('ENV_AWS_S3_BUCKET')],
-            ['starts-with', '', '']
+            ['starts-with', $key, '']
         ];
         $postObject = new \Aws\S3\PostObjectV4(
             self::getClient(),
