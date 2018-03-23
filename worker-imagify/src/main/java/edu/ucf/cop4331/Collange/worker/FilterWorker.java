@@ -12,6 +12,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.nio.Buffer;
+import java.util.UUID;
 
 public class FilterWorker {
 
@@ -61,8 +62,17 @@ public class FilterWorker {
                 continue;
             }
 
-            System.out.println("Filtered Image: " + message.imageId);
-            // TODO: Mark complete w/ success.
+            // Upload the new revision to S3.
+            try {
+                AwsS3Handler.putImage("/filtered/"+ UUID.randomUUID()+".jpg", newImg);
+                System.out.println("Filtered Image: " + message.imageId);
+                // TODO: Mark complete w/ success.
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.out.println("Unable to upload filtered image: " + message.imageId);
+                // TODO: Mark complete w/ error.
+                continue;
+            }
 
             // If a second argument is given, run indefinitely.
             if(args == null || args.length <= 1){

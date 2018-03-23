@@ -5,9 +5,7 @@ import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import com.amazonaws.services.s3.model.GetObjectRequest;
-import com.amazonaws.services.s3.model.S3Object;
-import com.amazonaws.services.s3.model.S3ObjectInputStream;
+import com.amazonaws.services.s3.model.*;
 import com.amazonaws.util.IOUtils;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -76,5 +74,27 @@ public class AwsS3Handler {
             }
         }
         return null;
+    }
+
+    public static String putFile(String key, InputStream is, String mimeType, long bytes){
+        ObjectMetadata md = new ObjectMetadata();
+        md.setContentLength(bytes);
+        md.setContentType(mimeType);
+        PutObjectResult ret = getSession().putObject(new PutObjectRequest(
+                getBucket(), key, is, md));
+        return (ret == null ? null : ret.getETag());
+    }
+
+    /**
+     * Stores a buffered image as a JPG.
+     * @param key
+     * @param img
+     * @return
+     */
+    public static String putImage(String key, BufferedImage img) throws IOException {
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        ImageIO.write(img, "jpg", os);
+        InputStream is = new ByteArrayInputStream(os.toByteArray());
+        return putFile(key, is, "image/jpeg", os.toByteArray().length);
     }
 }
