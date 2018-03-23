@@ -50,7 +50,9 @@ public class AwsS3Handler {
         S3Object file = getFile(key);
         if(file != null && file.getObjectMetadata().getContentLength() > 0){
             try {
-                return ImageIO.read(file.getObjectContent());
+                BufferedImage ret = ImageIO.read(file.getObjectContent());
+                file.close();
+                return ret;
             } catch (IOException e) {
                 e.printStackTrace();
             }
