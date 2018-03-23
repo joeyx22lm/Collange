@@ -146,7 +146,7 @@ class S3Handler {
     public static function getClient(){
         if(self::$session == null){
             require_once('../../vendor/autoload.php');
-            self::$session = new S3Client([
+            self::$session = new Aws\S3\S3Client([
                 'version'     => 'latest',
                 'region'      => 'us-east-1',
                 'credentials' => [
