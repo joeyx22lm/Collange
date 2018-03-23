@@ -437,7 +437,7 @@
             return "/api.php?uploadSignatureFailed";
         };
 
-        var uploader = new Dropzone("div#library-view");
+        var uploader = new Dropzone("div#library-view", {url: '#'});
         uploader.on('dragover', function(e){
             libraryView.css('opacity', '0.25');
         });
