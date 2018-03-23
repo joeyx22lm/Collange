@@ -72,13 +72,13 @@ public class AwsS3Handler {
                     return ret;
                 } catch (AmazonServiceException e) {
                     System.err.println(e.getErrorMessage());
-                    System.exit(1);
+                    e.printStackTrace();
                 } catch (FileNotFoundException e) {
                     System.err.println(e.getMessage());
-                    System.exit(1);
+                    e.printStackTrace();
                 } catch (IOException e) {
                     System.err.println(e.getMessage());
-                    System.exit(1);
+                    e.printStackTrace();
                 }
             }
         } catch (Exception e) {
