@@ -39,52 +39,36 @@ public class AwsS3Handler {
     }
 
     public static S3Object getFile(String key){
-        GetObjectRequest rangeObjectRequest = new GetObjectRequest(
-                System.getenv("AWS_S3_BUCKET"), key);
-        rangeObjectRequest.setRange(0, 10);
-        S3Object obj = getSession().getObject(rangeObjectRequest);
-        if(obj == null){
-            System.out.println("AwsS3Handler.getFile("+key+"): null");
-        }else{
-            System.out.println("AwsS3Handler.getFile("+key+"): " + obj.getObjectMetadata().getContentLength() + " ("
-                + obj.getObjectMetadata().getContentType() + ", " + obj.getObjectMetadata().getContentEncoding() + ")");
+        S3Object ret = null;
+        if(key != null) {
+            GetObjectRequest rangeObjectRequest = new GetObjectRequest(
+                    System.getenv("AWS_S3_BUCKET"), key);
+            try {
+                ret = getSession().getObject(rangeObjectRequest);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+            if (ret == null) {
+                System.out.println("AwsS3Handler.getFile(" + key + "): null");
+            } else {
+                System.out.println("AwsS3Handler.getFile(" + key + "): "
+                        + ret.getObjectMetadata().getContentLength() + "B ("
+                        + ret.getObjectMetadata().getContentType() + ")");
+            }
         }
-        return obj;
+        return ret;
     }
 
     public static BufferedImage getImage(String key) {
-        try {
-            S3Object file = getFile(key);
-            if(file != null && file.getObjectMetadata().getContentLength() > 0){
-                try {
-                    File tmp = new File(key);
-                    S3ObjectInputStream s3is = file.getObjectContent();
-                    FileOutputStream fos = new FileOutputStream(tmp);
-                    byte[] read_buf = new byte[4096];
-                    int read_len = 0;
-                    while ((read_len = s3is.read(read_buf)) > 0) {
-                        fos.write(read_buf, 0, read_len);
-                    }
-                    s3is.close();
-                    fos.close();
-                    System.out.println("LOCAL."+key+": " + tmp.length());
-                    BufferedImage ret = ImageIO.read(tmp);
-                    return ret;
-                } catch (AmazonServiceException e) {
-                    System.err.println(e.getErrorMessage());
-                    e.printStackTrace();
-                } catch (FileNotFoundException e) {
-                    System.err.println(e.getMessage());
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    System.err.println(e.getMessage());
-                    e.printStackTrace();
-                }
+        S3Object obj = getFile(key);
+        if(obj != null){
+            try {
+                return ImageIO.read(obj.getObjectContent());
+            } catch (IOException e) {
+                System.out.println("AwsS3Handler.getImage(" + key + "): Unable to read Image");
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            String msg = (e.getCause() != null ? e.getCause().getMessage() : e.getMessage());
-            System.out.println("AwsS3Handler.getImage("+key+").ERROR: " + msg);
-            e.printStackTrace();
         }
         return null;
     }
