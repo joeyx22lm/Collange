@@ -421,7 +421,7 @@
     Dropzone.options.url = function(files) {
         alert('calculateFormUrl');
         if(files != undefined){
-            $.get("/api.php?signedUrl=POST&mime="+files.type, function(data) {
+            $.get("/api.php?signedUrl=POST&mime="+files[0].type, function(data) {
                 return data;
             })
             .fail(function() {
