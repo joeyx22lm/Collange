@@ -432,10 +432,16 @@
         });
         uploader.on('drop', function(e){
             $('#processingModal').modal('show');
+            alert('drop!');
+        });
+
+        uploader.on('sending', function(xhr, formData){
+            alert('uploading!');
         });
         uploader.on('queuecomplete', function(e){
             $('#processingModal').modal('hide');
             libraryView.css('opacity', '1');
+            alert('upload complete');
         });
         uploader.on('error', function(file, msg, xhr){
             $('#processingModal').modal('hide');
