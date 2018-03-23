@@ -17,9 +17,10 @@ public class FilterWorkerQueue extends JedisHandler {
 
     public FilterWorkerMessage dequeueJob(){
         try {
-            QueueMessage msg = super.dequeue(WaitingQueueRedisIdentifier);
+            QueueMessage<FilterWorkerMessage> msg = super.dequeue(WaitingQueueRedisIdentifier,
+                    FilterWorkerMessage.class);
             if(msg != null){
-                return (FilterWorkerMessage)msg.getObject();
+                return msg.getValue();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -29,10 +30,10 @@ public class FilterWorkerQueue extends JedisHandler {
 
     public FilterWorkerMessage dequeueJob(long timeoutMs, long sleepTime){
         try {
-            QueueMessage msg = super.dequeue(WaitingQueueRedisIdentifier,
-                timeoutMs, sleepTime);
+            QueueMessage<FilterWorkerMessage> msg = super.dequeue(WaitingQueueRedisIdentifier,
+                timeoutMs, sleepTime, FilterWorkerMessage.class);
             if(msg != null){
-                return (FilterWorkerMessage)msg.getObject();
+                return msg.getValue();
             }
         } catch (IOException e) {
             e.printStackTrace();

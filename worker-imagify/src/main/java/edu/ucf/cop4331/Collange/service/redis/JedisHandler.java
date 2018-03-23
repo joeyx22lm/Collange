@@ -1,5 +1,6 @@
 package edu.ucf.cop4331.Collange.service.redis;
 
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableMap;
 import redis.clients.jedis.Jedis;
@@ -8,6 +9,7 @@ import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.Protocol;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -49,10 +51,11 @@ public class JedisHandler {
         return this.session != null && this.session.isConnected();
     }
 
-    public static <T> QueueMessage deserializeQueueMessage(String json) {
+    public static <T> QueueMessage deserializeQueueMessage(String json, Class<T> clazz) {
         if(json != null && !json.isEmpty()){
             try {
-                return om.readValue(json, QueueMessage.class);
+                JavaType javaType = om.getTypeFactory().constructParametricType(QueueMessage.class, clazz);
+                return om.readValue(json, javaType);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -71,23 +74,23 @@ public class JedisHandler {
         return null;
     }
 
-    public <T> QueueMessage dequeue(String queueName) throws IOException {
+    public <T> QueueMessage dequeue(String queueName, Class<T> clazz) throws IOException {
         if(this.isConnected()){
             List<String> msg = session.blpop(0,queueName);
             if(msg != null && msg.size() > 1){
-                return deserializeQueueMessage(msg.get(1));
+                return deserializeQueueMessage(msg.get(1), clazz);
             }
         }
         return null;
     }
 
-    public QueueMessage dequeue(String queueName, long timeoutSec, long sleepTime) throws IOException {
+    public <T> QueueMessage<T> dequeue(String queueName, long timeoutSec, long sleepTime, Class<T> clazz) throws IOException {
         // Sleep time must be larger than timeout time.
         if(sleepTime > timeoutSec) timeoutSec = sleepTime;
         long start = System.currentTimeMillis();
         QueueMessage msg = null;
         while(System.currentTimeMillis() - start < timeoutSec){
-            msg = dequeue(queueName);
+            msg = dequeue(queueName, clazz);
             if(msg != null){
                 break;
             } else {
@@ -101,26 +104,26 @@ public class JedisHandler {
         return msg;
     }
 
-    public <T> boolean enqueue(String queueName, T value, Class<T> clazz) throws IOException {
+    public<T> boolean enqueue(String queueName, T value, Class<T> clazz) throws IOException {
         if(this.isConnected()){
-            QueueMessage payload = new QueueMessage(value, clazz);
+            QueueMessage payload = new QueueMessage<T>(value, clazz);
             session.lpush(queueName, om.writeValueAsString(payload));
             return true;
         }
         return false;
     }
 
-    public <T> QueueMessage getMap(String identifier, String key){
+    public<T> QueueMessage<T> getMap(String identifier, String key, Class<T> clazz){
         if(this.isConnected()){
             List<String> ret = session.hmget(identifier, key);
             if(ret != null && ret.size() > 0){
-                return deserializeQueueMessage(ret.get(0));
+                return deserializeQueueMessage(ret.get(0), clazz);
             }
         }
         return null;
     }
 
-    public <T> boolean putMap(String identifier, String key, T value, Class<T> type){
+    public<T> boolean putMap(String identifier, String key, T value, Class<T> type){
         if(this.isConnected()){
             QueueMessage msg = new QueueMessage(value, type);
             session.hmset(identifier,
@@ -130,22 +133,30 @@ public class JedisHandler {
         return false;
     }
 
-    public class QueueMessage {
-        private Object value;
-        private Class<?> clazz;
+    public static class QueueMessage<T> {
+        private T value;
+        private Class<T> clazz;
 
         public QueueMessage(){}
 
-        public QueueMessage(final Object value, final Class<?> clazz) {
+        public QueueMessage(final T value, final Class<T> clazz) {
             this.value = value;
             this.clazz = clazz;
         }
 
-        public Object getObject(){
+        public void setValue(T value){
+            this.value = value;
+        }
+
+        public void setClazz(Class<T> clazz){
+            this.clazz = clazz;
+        }
+
+        public T getValue(){
             return value;
         }
 
-        public Class<?> getObjectType(){
+        public Class<T> getClazz(){
             return clazz;
         }
     }

@@ -1,8 +1,17 @@
 package edu.ucf.cop4331.Collange.worker;
 
+import com.amazonaws.services.s3.model.S3Object;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import edu.ucf.cop4331.Collange.imagify.RGBTransitions;
 import edu.ucf.cop4331.Collange.service.redis.FilterWorkerQueue;
 import edu.ucf.cop4331.Collange.service.redis.JedisHandler;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
+import edu.ucf.cop4331.Collange.service.s3.AwsS3Handler;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.nio.Buffer;
 
 public class FilterWorker {
 
@@ -33,7 +42,21 @@ public class FilterWorker {
                 System.out.println("FilterWorker.DEBUG: Listener timed out while waiting for messages.");
             }else{
                 // Begin processing the message.
-                System.out.println("FilterWorker.INFO: Listener received message\n\tTransaction ID: " + message.transactionId);
+                System.out.println(" FilterWorker.INFO: Listener received message\n\tTransaction ID: " + message.transactionId);
+                System.out.println("\timageId: " + message.imageId);
+                System.out.println("\ttransformation: " + message.transition + "\n");
+
+                BufferedImage img = AwsS3Handler.getImage(message.imageId);
+                if(img == null){
+                    System.out.println("Unable to retrieve image: " + message.imageId);
+                }else{
+                    BufferedImage newImg = message.transition.getInstance().filter(img);
+                    if(newImg == null){
+                        System.out.println("Unable to filter image: " + message.imageId);
+                    }else{
+                        System.out.println("Filtered Image: " + message.imageId);
+                    }
+                }
             }
 
             // If a second argument is given, run indefinitely.ß

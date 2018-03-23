@@ -10,6 +10,8 @@ import edu.ucf.cop4331.Collange.imagify.filters.color.BlueTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.SolidBlueTransition;
 import edu.ucf.cop4331.Collange.imagify.filters.color.blend.ColorMidpointTransition;
 
+import java.util.Random;
+
 public enum RGBTransitions {
     SepiaTransition("Sepia Filter", SepiaTransition.class),
     GrayScaleTransition("Grayscale Filter", GrayScaleTransition.class),
@@ -65,5 +67,10 @@ public enum RGBTransitions {
             }
         }
         return null;
+    }
+
+    public static RGBTransitions getRandomTransition(){
+        int rand = new Random().nextInt(values().length);
+        return values()[rand];
     }
 }

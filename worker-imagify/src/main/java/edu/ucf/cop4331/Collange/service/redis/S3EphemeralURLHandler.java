@@ -9,7 +9,7 @@ public class S3EphemeralURLHandler extends JedisHandler {
     }
 
     public QueueMessage<String> getMap(String key){
-        return super.getMap(S3URLMapRedisIdentifier, key);
+        return super.getMap(S3URLMapRedisIdentifier, key, String.class);
     }
 
     public boolean putMap(String key, String value){
