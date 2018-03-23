@@ -58,7 +58,8 @@ public class AwsS3Handler {
                 return ret;
             }
         } catch (Exception e) {
-            System.out.println("AwsS3Handler.getImage("+key+").ERROR: " + e.getMessage());
+            String msg = (e.getCause() != null ? e.getCause().getMessage() : e.getMessage());
+            System.out.println("AwsS3Handler.getImage("+key+").ERROR: " + msg);
         }
         return null;
     }
