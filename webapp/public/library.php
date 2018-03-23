@@ -424,19 +424,6 @@
      * Start Dropzone.JS
      */
     $(document).ready(function(){
-        Dropzone.options.url = function(files) {
-            alert('calculateFormUrl');
-            if(files != undefined){
-                $.get("/api.php?signedUrl=POST&mime="+files[0].type, function(data) {
-                    return data;
-                })
-                    .fail(function() {
-                        alert( "error" );
-                    });
-            }
-            return "/api.php?uploadSignatureFailed";
-        };
-
         var uploader = new Dropzone("div#library-view", {url: '#'});
         uploader.on('dragover', function(e){
             libraryView.css('opacity', '0.25');
@@ -445,6 +432,15 @@
             libraryView.css('opacity', '1');
         });
 
+        uploader.on('', function(e){
+            $.get("/api.php?signedUrl=POST&mime="+files[0].type, function(data) {
+                alert( "uploading to: " + data );
+                uploader.option.url = data;
+            })
+            .fail(function() {
+                alert( "uploading to: nowhere" );
+            });
+        });
         uploader.on('sending', function(xhr, formData){
             alert('sending');
         });
