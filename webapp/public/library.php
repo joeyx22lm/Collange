@@ -432,7 +432,7 @@
             libraryView.css('opacity', '1');
         });
 
-        uploader.on('', function(e){
+        uploader.on('processing', function(e){
             $.get("/api.php?signedUrl=POST&mime="+files[0].type, function(data) {
                 alert( "uploading to: " + data );
                 uploader.option.url = data;
