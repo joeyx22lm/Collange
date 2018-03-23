@@ -380,11 +380,11 @@
     </aside>
 </div>
 
-<div class="modal fade" id="processingModal" tabindex="-1" role="dialog" aria-labelledby="Uploading your image" aria-hidden="true">
+<div class="modal fade" id="processingModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Uploading Image</h5>
+                <h5 class="modal-title">Uploading Image</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -396,21 +396,22 @@
     </div>
 </div>
 
-<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="Uploading your image" aria-hidden="true">
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Uploading Image</h5>
+                <h5 class="modal-title">Upload Error</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <b>Error: </b><span id="errorMsg"></span>
+                <b><span class="text-danger" id="errorMsg"></span></b>
             </div>
         </div>
     </div>
 </div>
+
 <?php App::buildPageFooter();?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
