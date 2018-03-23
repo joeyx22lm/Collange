@@ -67,6 +67,7 @@ public class AwsS3Handler {
                     }
                     s3is.close();
                     fos.close();
+                    System.out.println("LOCAL."+key+": " + tmp.length());
                     BufferedImage ret = ImageIO.read(tmp);
                     return ret;
                 } catch (AmazonServiceException e) {
