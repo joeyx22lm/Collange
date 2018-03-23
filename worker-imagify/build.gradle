@@ -25,6 +25,7 @@ jar {
     }
 }
 
-stage {
-
-}
+task stage(dependsOn: ['jar', 'build', 'clean', test])
+build.mustRunAfter clean
+test.mustRunAfter build
+jar.mustRunAfter test
