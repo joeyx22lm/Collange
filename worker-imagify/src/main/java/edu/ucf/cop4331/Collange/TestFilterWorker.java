@@ -14,10 +14,15 @@ public class TestFilterWorker extends FilterWorker {
         JedisHandler redisSession = new JedisHandler(System.getenv(FilterWorker.ENV_REDISURL));
         for(int i = 0; i < 10; i++){
             try {
-                System.out.println("TestFilterWorker: Enqueue");
-                redisSession.enqueue(FilterWorker.WaitingQueueRedisIdentifier,
+                boolean result = redisSession.enqueue(FilterWorker.WaitingQueueRedisIdentifier,
                         new FilterWorkerMessage(),
                         FilterWorkerMessage.class);
+
+                if(result){
+                    System.out.println("TestFilterWorker: Enqueued Successfully");
+                }else{
+                    System.out.println("TestFilterWorker: Enqueue Failed");
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

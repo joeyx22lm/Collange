@@ -49,7 +49,7 @@ public class JedisHandler {
         return this.session != null && this.session.isConnected();
     }
 
-    public static <T> QueueMessage<T> deserializeQueueMessage(String json) {
+    public static <T> QueueMessage deserializeQueueMessage(String json) {
         if(json != null && !json.isEmpty()){
             try {
                 return om.readValue(json, QueueMessage.class);
@@ -60,7 +60,7 @@ public class JedisHandler {
         return null;
     }
 
-    public static <T> String serializeQueueMessage(QueueMessage<T> msg) {
+    public static <T> String serializeQueueMessage(QueueMessage msg) {
         if(msg != null){
             try {
                 return om.writeValueAsString(msg);
@@ -71,7 +71,7 @@ public class JedisHandler {
         return null;
     }
 
-    public <T> QueueMessage<T> dequeue(String queueName) throws IOException {
+    public <T> QueueMessage dequeue(String queueName) throws IOException {
         if(this.isConnected()){
             List<String> msg = session.blpop(0,queueName);
             if(msg != null && msg.size() > 1){
@@ -103,14 +103,14 @@ public class JedisHandler {
 
     public <T> boolean enqueue(String queueName, T value, Class<T> clazz) throws IOException {
         if(this.isConnected()){
-            QueueMessage<T> payload = new QueueMessage<T>(value, clazz);
+            QueueMessage payload = new QueueMessage(value, clazz);
             session.lpush(queueName, om.writeValueAsString(payload));
             return true;
         }
         return false;
     }
 
-    public <T> QueueMessage<T> getMap(String identifier, String key){
+    public <T> QueueMessage getMap(String identifier, String key){
         if(this.isConnected()){
             List<String> ret = session.hmget(identifier, key);
             if(ret != null && ret.size() > 0){
@@ -122,7 +122,7 @@ public class JedisHandler {
 
     public <T> boolean putMap(String identifier, String key, T value, Class<T> type){
         if(this.isConnected()){
-            QueueMessage<T> msg = new QueueMessage<T>(value, type);
+            QueueMessage msg = new QueueMessage(value, type);
             session.hmset(identifier,
                     ImmutableMap.of(key, serializeQueueMessage(msg)));
             return true;
@@ -130,22 +130,22 @@ public class JedisHandler {
         return false;
     }
 
-    public class QueueMessage<T> {
-        private T value;
-        private Class<T> clazz;
+    public class QueueMessage {
+        private Object value;
+        private Class<?> clazz;
 
         public QueueMessage(){}
 
-        public QueueMessage(final T value, final Class<T> clazz) {
+        public QueueMessage(final Object value, final Class<?> clazz) {
             this.value = value;
             this.clazz = clazz;
         }
 
-        public T getObject(){
+        public Object getObject(){
             return value;
         }
 
-        public Class<T> getObjectType(){
+        public Class<?> getObjectType(){
             return clazz;
         }
     }

@@ -2,6 +2,8 @@ package edu.ucf.cop4331.Collange.service.redis;
 
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterCompleteMessage;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
+import edu.ucf.cop4331.Collange.worker.FilterWorker;
+
 import java.io.IOException;
 
 public class FilterWorkerQueue extends JedisHandler {
@@ -15,9 +17,9 @@ public class FilterWorkerQueue extends JedisHandler {
 
     public FilterWorkerMessage dequeueJob(){
         try {
-            QueueMessage<FilterWorkerMessage> msg = super.dequeue(WaitingQueueRedisIdentifier);
+            QueueMessage msg = super.dequeue(WaitingQueueRedisIdentifier);
             if(msg != null){
-                return msg.getObject();
+                return (FilterWorkerMessage)msg.getObject();
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -27,10 +29,10 @@ public class FilterWorkerQueue extends JedisHandler {
 
     public FilterWorkerMessage dequeueJob(long timeoutMs, long sleepTime){
         try {
-            QueueMessage<FilterWorkerMessage> msg = super.dequeue(WaitingQueueRedisIdentifier,
+            QueueMessage msg = super.dequeue(WaitingQueueRedisIdentifier,
                 timeoutMs, sleepTime);
             if(msg != null){
-                return msg.getObject();
+                return (FilterWorkerMessage)msg.getObject();
             }
         } catch (IOException e) {
             e.printStackTrace();
