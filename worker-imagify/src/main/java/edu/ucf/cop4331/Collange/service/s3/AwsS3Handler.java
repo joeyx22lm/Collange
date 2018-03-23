@@ -14,16 +14,21 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 
 public class AwsS3Handler {
+
     private static AmazonS3 session;
+
     private static String getBucket(){
         return System.getenv("AWS_S3_BUCKET");
     }
+
     private static String getAccessKey(){
         return System.getenv("AWS_KEY");
     }
+
     private static String getAccessSecret(){
         return System.getenv("AWS_SECRET");
     }
+
     protected static final AmazonS3 getSession(){
         if(session == null){
             BasicAWSCredentials creds = new BasicAWSCredentials(

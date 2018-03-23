@@ -49,14 +49,18 @@ public class FilterWorker {
                 BufferedImage img = AwsS3Handler.getImage(message.imageId);
                 if(img == null){
                     System.out.println("Unable to retrieve image: " + message.imageId);
-                }else{
-                    BufferedImage newImg = message.transition.getInstance().filter(img);
-                    if(newImg == null){
-                        System.out.println("Unable to filter image: " + message.imageId);
-                    }else{
-                        System.out.println("Filtered Image: " + message.imageId);
-                    }
+                    // TODO: Mark complete w/ error.
+                    continue;
                 }
+
+                BufferedImage newImg = message.transition.getInstance().filter(img);
+                if(newImg == null){
+                    System.out.println("Unable to filter image: " + message.imageId);
+                    // TODO: Mark complete w/ error.
+                    continue;
+                }
+
+                System.out.println("Filtered Image: " + message.imageId);
             }
 
             // If a second argument is given, run indefinitely.ß
