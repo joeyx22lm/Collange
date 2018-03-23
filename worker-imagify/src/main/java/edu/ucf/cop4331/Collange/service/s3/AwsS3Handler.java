@@ -49,16 +49,16 @@ public class AwsS3Handler {
     }
 
     public static BufferedImage getImage(String key) {
-        S3Object file = getFile(key);
-        if(file != null && file.getObjectMetadata().getContentLength() > 0){
-            try {
+        try {
+            S3Object file = getFile(key);
+            if(file != null && file.getObjectMetadata().getContentLength() > 0){
                 byte[] byteArray = IOUtils.toByteArray(file.getObjectContent());
                 file.close();
                 BufferedImage ret = ImageIO.read(new ByteArrayInputStream(byteArray));
                 return ret;
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return null;
     }
