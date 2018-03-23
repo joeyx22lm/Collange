@@ -4,6 +4,8 @@ import edu.ucf.cop4331.Collange.worker.FilterWorker;
 
 public class MainActivity {
     public static void main(String[] args) {
+        System.out.println("MainActivity: Initialiing");
+
         // Verify some runtime instructions were given.
         if(args == null || args.length == 0){
             System.out.println("Not enough arguments");

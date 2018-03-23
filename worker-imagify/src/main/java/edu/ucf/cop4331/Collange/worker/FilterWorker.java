@@ -11,6 +11,8 @@ public class FilterWorker {
     private static final String CompletedQueueRedisIdentifier = "FilterCompletedQueue";
 
     public static void main(String[] args){
+        System.out.println("FilterWorker: Initialiing");
+
         // Initialize Redis Session.
         JedisHandler redisSession = new JedisHandler(System.getenv(ENV_REDISURL));
 
