@@ -403,6 +403,7 @@
      * Start Dropzone.JS
      */
     $(document).ready(function(){
+        $('#processingModal').modal();
         var libraryView = $('#library-view');
         var uploader = new Dropzone("div#library-view", { url: "/file/post"});
 
