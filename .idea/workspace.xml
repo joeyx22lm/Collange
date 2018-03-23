@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -150,16 +145,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradlew" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/worker-imagify/gradlew">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FilterWorkerMessage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -210,11 +195,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
               <caret line="183" column="10" lean-forward="false" selection-start-line="183" selection-start-column="10" selection-end-line="183" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-275">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -241,11 +236,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestFilterWorker.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestFilterWorker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+              <caret line="31" column="92" lean-forward="false" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1027,9 +1022,9 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AWSS3Handler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AwsS3Handler.java" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" />
       </list>
     </option>
   </component>
@@ -1520,14 +1515,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="26876000" />
-    </task>
-    <task id="LOCAL-00068" summary="changes">
-      <created>1521765445511</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1521765445511</updated>
+      <workItem from="1521752324305" duration="27388000" />
     </task>
     <task id="LOCAL-00069" summary="changes">
       <created>1521765574034</created>
@@ -1865,11 +1853,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521780897444</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="changes">
+      <created>1521780990672</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1521780990672</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103890000" />
+    <option name="totallyTimeSpent" value="104402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2114,14 +2109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -2306,16 +2293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="49" lean-forward="false" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AwsS3Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -2345,6 +2322,24 @@
         <state relative-caret-position="544">
           <caret line="183" column="10" lean-forward="false" selection-start-line="183" selection-start-column="10" selection-end-line="183" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="92" lean-forward="false" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -29,7 +29,7 @@ public class TestFilterWorker extends FilterWorker {
                 try {
                     boolean result = redisSession.enqueue(FilterWorker.WaitingQueueRedisIdentifier,
                             new FilterWorkerMessage(Double.toString(new Random().nextInt()),
-                                    "avatar.png",
+                                    (new Random().nextBoolean() ? "avatar.png" : "avatar.jpg"),
                                     RGBTransitions.getRandomTransition()),
                             FilterWorkerMessage.class);
                     if(result){
