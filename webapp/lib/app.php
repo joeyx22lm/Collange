@@ -16,7 +16,10 @@ class StaticResource {
     }
 }
 StaticResource::set(array(
-    'APP_TITLE'=>'Collange'
+    'APP_TITLE'=>'Collange',
+    'ENV_AWS_S3_BUCKET'=>$_ENV['AWS_S3_BUCKET'],
+    'ENV_AWS_KEY'=>$_ENV['AWS_KEY'],
+    'ENV_AWS_SECRET'=>$_ENV['AWS_SECRET']
 ));
 
 
@@ -134,6 +137,44 @@ class TransformSessionHandler {
 
     public static function isTransforming(){
         return !empty(self::getSessions());
+    }
+}
+
+class S3Handler {
+    public static $session = null;
+
+    public static function getClient(){
+        if(self::$session == null){
+            require_once('../../vendor/autoload.php');
+            self::$session = new S3Client([
+                'version'     => 'latest',
+                'region'      => 'us-east-1',
+                'credentials' => [
+                    'key'    => StaticResource::get('ENV_AWS_KEY'),
+                    'secret' => StaticResource::get('ENV_AWS_SECRET'),
+                ],
+            ]);
+        }
+        return self::$session;
+    }
+
+    public static function createSignedGETUrl($key, $expire='+1 hour'){
+        $cmd = self::getClient()->getCommand('GetObject', [
+            'Bucket' => StaticResource::get('ENV_AWS_S3_BUCKET'),
+            'Key'    => $key
+        ]);
+        $request = self::getClient()->createPresignedRequest($cmd, $expire);
+        return $request->getUri();
+    }
+
+    public static function createSignedPOSTUrl($key, $mime, $expire='+30 minutes'){
+        return self::getClient()->getCommand('PutObject', array(
+            'Bucket' => StaticResource::get('ENV_AWS_S3_BUCKET'),
+            'Key' => $key,
+            'ContentType' => $mime,
+            'Body'        => '',
+            'ContentMD5'  => false
+        ))->createPresignedUrl($expire);
     }
 }
 ?>

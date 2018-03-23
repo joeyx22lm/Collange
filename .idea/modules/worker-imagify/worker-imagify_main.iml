@@ -21,5 +21,28 @@
     <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.0.18" level="project" />
     <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../../vendor/aws/aws-sdk-php" />
+          <root url="file://$MODULE_DIR$/../../../vendor/composer" />
+          <root url="file://$MODULE_DIR$/../../../vendor/guzzlehttp/guzzle" />
+          <root url="file://$MODULE_DIR$/../../../vendor/guzzlehttp/promises" />
+          <root url="file://$MODULE_DIR$/../../../vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../../../vendor/mtdowling/jmespath.php" />
+          <root url="file://$MODULE_DIR$/../../../vendor/psr/http-message" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../../vendor/aws/aws-sdk-php" />
+          <root url="file://$MODULE_DIR$/../../../vendor/composer" />
+          <root url="file://$MODULE_DIR$/../../../vendor/guzzlehttp/guzzle" />
+          <root url="file://$MODULE_DIR$/../../../vendor/guzzlehttp/promises" />
+          <root url="file://$MODULE_DIR$/../../../vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../../../vendor/mtdowling/jmespath.php" />
+          <root url="file://$MODULE_DIR$/../../../vendor/psr/http-message" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

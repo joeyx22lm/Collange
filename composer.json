@@ -8,5 +8,7 @@
             "email": "josephorlando11@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "aws/aws-sdk-php": "^3.52"
+    }
 }

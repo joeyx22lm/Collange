@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
     <?php App::buildHtmlHead('My Library');?>
+    <link rel="stylesheet=" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css"/>
 </head>
 <!-- BODY options, add following classes to body to change options
     // Header options
@@ -380,6 +381,6 @@
 </div>
 <?php App::buildPageFooter();?>
 <!-- Custom scripts required by this view -->
-<script src="js/views/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 </body>
 </html>
