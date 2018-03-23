@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
+      <change beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -43,23 +43,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1521762985036" expanded="true" signature="2450:2527" ph="..." />
-                <marker date="1521762985036" expanded="true" signature="2483:2527" ph="..." />
-                <marker date="1521762985036" expanded="true" signature="3466:3510" ph="..." />
-                <marker date="1521762985036" expanded="true" signature="3941:3985" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="library.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,6 +69,16 @@
                 <element signature="e#22370#22377#1#HTML" expanded="true" />
                 <element signature="e#22946#22953#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,11 +133,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="147" column="35" lean-forward="false" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+            <state relative-caret-position="313">
+              <caret line="160" column="62" lean-forward="true" selection-start-line="160" selection-start-column="62" selection-end-line="160" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostObjectV4.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/aws/aws-sdk-php/src/S3/PostObjectV4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-445">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,16 +158,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/Application.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -913,7 +906,6 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterCompleteMessage.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/DynamicRunnerTest.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/DynamicRunner.java" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/navbar.php" />
@@ -931,6 +923,7 @@
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -984,41 +977,6 @@
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-              <item name="aws-sdk-php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-              <item name="aws-sdk-php" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="aws" type="462c0819:PsiDirectoryNode" />
-              <item name="aws-sdk-php" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="S3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1047,6 +1005,24 @@
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1212,14 +1188,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="17097000" />
-    </task>
-    <task id="LOCAL-00050" summary="changes">
-      <created>1521759902024</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1521759902026</updated>
+      <workItem from="1521752324305" duration="17204000" />
     </task>
     <task id="LOCAL-00051" summary="changes">
       <created>1521760058466</created>
@@ -1557,11 +1526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521770669147</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="changes">
+      <created>1521770866452</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1521770866452</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94111000" />
+    <option name="totallyTimeSpent" value="94218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -1620,13 +1596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/RGBTransitionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/template/icons-flags.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1792,14 +1761,6 @@
             <element signature="imports" expanded="false" />
             <element signature="method#markJobComplete#0;class#FilterWorkerQueue#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2022,10 +1983,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aws/aws-sdk-php/src/S3/PostObjectV4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-445">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="147" column="35" lean-forward="false" selection-start-line="147" selection-start-column="35" selection-end-line="147" selection-end-column="35" />
+        <state relative-caret-position="313">
+          <caret line="160" column="62" lean-forward="true" selection-start-line="160" selection-start-column="62" selection-end-line="160" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
           <folding />
         </state>
       </provider>
