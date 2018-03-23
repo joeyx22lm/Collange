@@ -55,8 +55,8 @@ if(empty($TransformSession)){
     <main class="main">
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">My Library</li>
-            <li class="breadcrumb-item"><a href="#">Photo Album</a></li>
+            <li class="breadcrumb-item"><a href="/library.php">My Library</a></li>
+            <li class="breadcrumb-item"><a href="/library.php">Photo Album</a></li>
             <li class="breadcrumb-item active"><?php echo $TransformSession['imageName'];?></li>
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">

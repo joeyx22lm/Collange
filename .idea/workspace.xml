@@ -1,45 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-breadcrumb.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-breadcrumb.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-card.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-card.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-cards.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-cards.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-carousel.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-carousel.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-collapse.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-collapse.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-forms.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-forms.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-jumbotron.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-jumbotron.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-list-group.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-list-group.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-navbar.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-navbar.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-navs.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-navs.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-pagination.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-pagination.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-popovers.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-popovers.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-progress.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-progress.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-scrollspy.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-scrollspy.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-switches.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-switches.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-tables.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-tables.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-tabs.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-tabs.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/base-tooltips.html" afterPath="$PROJECT_DIR$/webapp/public/template/base-tooltips.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/blank.html" afterPath="$PROJECT_DIR$/webapp/public/template/blank.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/buttons-button-group.html" afterPath="$PROJECT_DIR$/webapp/public/template/buttons-button-group.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/buttons-buttons.html" afterPath="$PROJECT_DIR$/webapp/public/template/buttons-buttons.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/buttons-dropdowns.html" afterPath="$PROJECT_DIR$/webapp/public/template/buttons-dropdowns.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/buttons-social-buttons.html" afterPath="$PROJECT_DIR$/webapp/public/template/buttons-social-buttons.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/charts.html" afterPath="$PROJECT_DIR$/webapp/public/template/charts.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/colors.html" afterPath="$PROJECT_DIR$/webapp/public/template/colors.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/icons-flags.html" afterPath="$PROJECT_DIR$/webapp/public/template/icons-flags.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/icons-font-awesome.html" afterPath="$PROJECT_DIR$/webapp/public/template/icons-font-awesome.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/icons-simple-line-icons.html" afterPath="$PROJECT_DIR$/webapp/public/template/icons-simple-line-icons.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/notifications-alerts.html" afterPath="$PROJECT_DIR$/webapp/public/template/notifications-alerts.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/notifications-badge.html" afterPath="$PROJECT_DIR$/webapp/public/template/notifications-badge.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/notifications-modals.html" afterPath="$PROJECT_DIR$/webapp/public/template/notifications-modals.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/pages-404.html" afterPath="$PROJECT_DIR$/webapp/public/template/pages-404.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/pages-500.html" afterPath="$PROJECT_DIR$/webapp/public/template/pages-500.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/pages-register.html" afterPath="$PROJECT_DIR$/webapp/public/template/pages-register.html" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/library.php" afterPath="$PROJECT_DIR$/webapp/public/library.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/typography.html" afterPath="$PROJECT_DIR$/webapp/public/template/typography.html" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/widgets.html" afterPath="$PROJECT_DIR$/webapp/public/template/widgets.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -79,18 +44,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="80" column="58" lean-forward="true" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+            <state relative-caret-position="211">
+              <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1521762263619" expanded="true" signature="2412:2489" ph="..." />
-                <marker date="1521762263619" expanded="true" signature="2445:2489" ph="..." />
-                <marker date="1521762263619" expanded="true" signature="3428:3472" ph="..." />
-                <marker date="1521762263619" expanded="true" signature="3903:3947" ph="..." />
+                <marker date="1521762985036" expanded="true" signature="2450:2527" ph="..." />
+                <marker date="1521762985036" expanded="true" signature="2483:2527" ph="..." />
+                <marker date="1521762985036" expanded="true" signature="3466:3510" ph="..." />
+                <marker date="1521762985036" expanded="true" signature="3941:3985" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#2;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#3;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#4;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#5;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#6;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#7;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#8;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#9;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#10;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#11;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#12;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#13;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#14;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#15;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#div#16;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -852,11 +845,11 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java" />
         <option value="$PROJECT_DIR$/webapp/public/home.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
-        <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/component/sidebar.php" />
         <option value="$PROJECT_DIR$/webapp/lib/app.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/public/library.php" />
       </list>
     </option>
   </component>
@@ -928,13 +921,6 @@
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
@@ -1314,14 +1300,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="9304000" />
-    </task>
-    <task id="LOCAL-00017" summary="Changes: a song by Tupac.">
-      <created>1519947338843</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1519947338843</updated>
+      <workItem from="1521752324305" duration="10106000" />
     </task>
     <task id="LOCAL-00018" summary="Changes: a song by Tupac.">
       <created>1519949108725</created>
@@ -1659,11 +1638,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521761995875</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="changes">
+      <created>1521762355205</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1521762355205</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86318000" />
+    <option name="totallyTimeSpent" value="87120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2115,61 +2101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="43" column="55" lean-forward="false" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#3;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#1;n#div#1;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#5;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#td#4;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#td#4;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#td#4;n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#2;n#div#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#7;n#div#2;n#div#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#9;n#div#2;n#div#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#11;n#div#2;n#div#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/ui/component/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
@@ -2190,15 +2121,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="80" column="58" lean-forward="true" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+        <state relative-caret-position="211">
+          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1521762263619" expanded="true" signature="2412:2489" ph="..." />
-            <marker date="1521762263619" expanded="true" signature="2445:2489" ph="..." />
-            <marker date="1521762263619" expanded="true" signature="3428:3472" ph="..." />
-            <marker date="1521762263619" expanded="true" signature="3903:3947" ph="..." />
+            <marker date="1521762985036" expanded="true" signature="2450:2527" ph="..." />
+            <marker date="1521762985036" expanded="true" signature="2483:2527" ph="..." />
+            <marker date="1521762985036" expanded="true" signature="3466:3510" ph="..." />
+            <marker date="1521762985036" expanded="true" signature="3941:3985" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="26" selection-end-line="106" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#2;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#3;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#4;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#5;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#6;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#7;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#8;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#9;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#10;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#11;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#12;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#13;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#14;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#15;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#div#16;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
