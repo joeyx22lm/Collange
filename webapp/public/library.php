@@ -416,6 +416,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
     /**
+     * Customize Dropzone.JS
+     */
+    Dropzone.options.url = function(files) {
+        alert('calculateFormUrl');
+        if(files != undefined){
+            $.get("/api.php?signedUrl=POST&mime="+files.type, function(data) {
+                return data;
+            })
+            .fail(function() {
+                alert( "error" );
+            });
+        }
+        return "/api.php?uploadSignatureFailed";
+    }
+
+    /**
      * Start Dropzone.JS
      */
     $(document).ready(function(){
@@ -432,9 +448,7 @@
         });
 
         uploader.on('sending', function(xhr, formData){
-
-            // Obtain the signed url to upload file.
-            alert('uploading!');
+            alert('sending');
         });
         uploader.on('queuecomplete', function(e){
             $('#processingModal').modal('hide');
