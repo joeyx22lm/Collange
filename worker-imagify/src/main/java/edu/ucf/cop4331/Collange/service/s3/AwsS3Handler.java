@@ -8,9 +8,11 @@ import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
+import com.amazonaws.util.IOUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -50,8 +52,9 @@ public class AwsS3Handler {
         S3Object file = getFile(key);
         if(file != null && file.getObjectMetadata().getContentLength() > 0){
             try {
-                BufferedImage ret = ImageIO.read(file.getObjectContent());
+                byte[] byteArray = IOUtils.toByteArray(file.getObjectContent());
                 file.close();
+                BufferedImage ret = ImageIO.read(new ByteArrayInputStream(byteArray));
                 return ret;
             } catch (IOException e) {
                 e.printStackTrace();

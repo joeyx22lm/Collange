@@ -180,16 +180,16 @@
       <file leaf-file-name="AwsS3Handler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AwsS3Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="484">
+              <caret line="56" column="86" lean-forward="false" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#1001#1002#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1517,14 +1517,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="25958000" />
-    </task>
-    <task id="LOCAL-00063" summary="changes">
-      <created>1521761832402</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1521761832402</updated>
+      <workItem from="1521752324305" duration="26291000" />
     </task>
     <task id="LOCAL-00064" summary="changes">
       <created>1521761876689</created>
@@ -1862,11 +1855,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521779362369</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="changes">
+      <created>1521779983922</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1521779983922</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102972000" />
+    <option name="totallyTimeSpent" value="103305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2331,16 +2331,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AwsS3Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="484">
+          <caret line="56" column="86" lean-forward="false" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
           </folding>
         </state>
       </provider>
