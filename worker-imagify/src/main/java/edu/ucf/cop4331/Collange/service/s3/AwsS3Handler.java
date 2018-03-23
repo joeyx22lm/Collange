@@ -39,8 +39,14 @@ public class AwsS3Handler {
     public static S3Object getFile(String key){
         GetObjectRequest rangeObjectRequest = new GetObjectRequest(
                 System.getenv("AWS_S3_BUCKET"), key);
-        rangeObjectRequest.setRange(0, 10); // retrieve 1st 11 bytes.
-        return getSession().getObject(rangeObjectRequest);
+        rangeObjectRequest.setRange(0, 10);
+        S3Object obj = getSession().getObject(rangeObjectRequest);
+        if(obj == null){
+            System.out.println("AwsS3Handler.getFile("+key+"): null");
+        }else{
+            System.out.println("AwsS3Handler.getFile("+key+"): " + obj.getObjectMetadata().getContentLength());
+        }
+        return obj;
     }
 
     public static BufferedImage getImage(String key) {
