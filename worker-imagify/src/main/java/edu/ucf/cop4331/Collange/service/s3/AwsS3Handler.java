@@ -1,11 +1,13 @@
 package edu.ucf.cop4331.Collange.service.s3;
 
+import com.amazonaws.AmazonServiceException;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
+import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.amazonaws.util.IOUtils;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -54,10 +56,29 @@ public class AwsS3Handler {
         try {
             S3Object file = getFile(key);
             if(file != null && file.getObjectMetadata().getContentLength() > 0){
-                File tmp = new File("/tmp/"+key);
-                IOUtils.copy(file.getObjectContent(), new FileOutputStream(tmp));
-                BufferedImage ret = ImageIO.read(tmp);
-                return ret;
+                try {
+                    File tmp = new File(key);
+                    S3ObjectInputStream s3is = file.getObjectContent();
+                    FileOutputStream fos = new FileOutputStream(tmp);
+                    byte[] read_buf = new byte[4096];
+                    int read_len = 0;
+                    while ((read_len = s3is.read(read_buf)) > 0) {
+                        fos.write(read_buf, 0, read_len);
+                    }
+                    s3is.close();
+                    fos.close();
+                    BufferedImage ret = ImageIO.read(tmp);
+                    return ret;
+                } catch (AmazonServiceException e) {
+                    System.err.println(e.getErrorMessage());
+                    System.exit(1);
+                } catch (FileNotFoundException e) {
+                    System.err.println(e.getMessage());
+                    System.exit(1);
+                } catch (IOException e) {
+                    System.err.println(e.getMessage());
+                    System.exit(1);
+                }
             }
         } catch (Exception e) {
             String msg = (e.getCause() != null ? e.getCause().getMessage() : e.getMessage());
