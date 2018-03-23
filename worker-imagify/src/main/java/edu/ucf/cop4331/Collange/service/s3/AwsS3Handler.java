@@ -2,14 +2,11 @@ package edu.ucf.cop4331.Collange.service.s3;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.util.IOUtils;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -58,6 +55,7 @@ public class AwsS3Handler {
         } catch (Exception e) {
             String msg = (e.getCause() != null ? e.getCause().getMessage() : e.getMessage());
             System.out.println("AwsS3Handler.getImage("+key+").ERROR: " + msg);
+            e.printStackTrace();
         }
         return null;
     }
