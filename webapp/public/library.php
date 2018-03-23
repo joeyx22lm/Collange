@@ -419,8 +419,8 @@
      * Start Dropzone.JS
      */
     $(document).ready(function(){
-        $('#processingModal').modal({});
-        $('#errorModal').modal({});
+        $('#processingModal').modal();
+        $('#errorModal').modal();
         var libraryView = $('#library-view');
         var uploader = new Dropzone("div#library-view", { url: "/file/post"});
 
@@ -430,12 +430,10 @@
         uploader.on('dragleave', function(e){
             libraryView.css('opacity', '1');
         });
-        uploader.on('drop', function(e){
-            $('#processingModal').modal('show');
-            alert('drop!');
-        });
 
         uploader.on('sending', function(xhr, formData){
+
+            // Obtain the signed url to upload file.
             alert('uploading!');
         });
         uploader.on('queuecomplete', function(e){
