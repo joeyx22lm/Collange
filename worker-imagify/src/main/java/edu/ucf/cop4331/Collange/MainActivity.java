@@ -18,7 +18,7 @@ public class MainActivity {
         }
 
         // Check whether to initialize the Filter Worker.
-        if("TestFilterWorker".equalsIgnoreCase(args[0])){
+        else if("TestFilterWorker".equalsIgnoreCase(args[0])){
             TestFilterWorker.main(args);
         }
 
