@@ -11,4 +11,9 @@ task build {
 //task test(type:Exec) {
     //commandLine '/usr/bin/env php Application.php test'
 task test {
+
+}
+
+task stage {
+
 }

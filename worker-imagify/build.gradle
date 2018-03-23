@@ -25,7 +25,5 @@ jar {
     }
 }
 
-task stage(dependsOn: ['jar', 'build', 'clean', 'test'])
-build.mustRunAfter clean
-test.mustRunAfter build
-jar.mustRunAfter test
+task stage(dependsOn: ['jar', 'test', 'clean'])
+test.mustRunAfter clean

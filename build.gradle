@@ -1,6 +1,10 @@
 group 'com.joeyorlando'
 version '1.0.0'
 
+task assemble {
+    // Nothing to assemble in root project.
+}
+
 task clean {
     // Nothing to clean in root project.
 }
@@ -13,9 +17,6 @@ task test {
     // Nothing to test in root project.
 }
 
-allprojects {
-    // Define heroku build process.
-    task stage(dependsOn: ['test', 'build', 'clean'])
-    test.mustRunAfter build
-    build.mustRunAfter clean
+task stage {
+
 }
