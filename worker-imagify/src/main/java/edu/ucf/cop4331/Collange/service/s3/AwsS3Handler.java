@@ -44,7 +44,8 @@ public class AwsS3Handler {
         if(obj == null){
             System.out.println("AwsS3Handler.getFile("+key+"): null");
         }else{
-            System.out.println("AwsS3Handler.getFile("+key+"): " + obj.getObjectMetadata().getContentLength());
+            System.out.println("AwsS3Handler.getFile("+key+"): " + obj.getObjectMetadata().getContentLength() + " ("
+                + obj.getObjectMetadata().getContentType() + ", " + obj.getObjectMetadata().getContentEncoding() + ")");
         }
         return obj;
     }
