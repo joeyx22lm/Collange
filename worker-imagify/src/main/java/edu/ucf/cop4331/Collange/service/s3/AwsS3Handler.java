@@ -12,9 +12,7 @@ import com.amazonaws.util.IOUtils;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 public class AwsS3Handler {
     private static AmazonS3 session;
@@ -52,9 +50,9 @@ public class AwsS3Handler {
         try {
             S3Object file = getFile(key);
             if(file != null && file.getObjectMetadata().getContentLength() > 0){
-                byte[] byteArray = IOUtils.toByteArray(file.getObjectContent());
-                file.close();
-                BufferedImage ret = ImageIO.read(new ByteArrayInputStream(byteArray));
+                File tmp = new File("/tmp/"+key);
+                IOUtils.copy(file.getObjectContent(), new FileOutputStream(tmp));
+                BufferedImage ret = ImageIO.read(tmp);
                 return ret;
             }
         } catch (Exception e) {
