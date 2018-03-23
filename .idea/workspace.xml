@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="changes">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/collange.iml" afterPath="$PROJECT_DIR$/.idea/modules/collange.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/webapp.iml" afterPath="$PROJECT_DIR$/.idea/modules/webapp.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/worker-imagify/worker-imagify_test.iml" />
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/app.php" afterPath="$PROJECT_DIR$/webapp/lib/app.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/library.php" afterPath="$PROJECT_DIR$/webapp/public/library.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,8 +63,8 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="562">
+              <caret line="387" column="60" lean-forward="false" selection-start-line="387" selection-start-column="60" selection-end-line="387" selection-end-column="70" />
               <folding>
                 <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#image#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1336,14 +1329,7 @@
       <workItem from="1521585143858" duration="8482000" />
       <workItem from="1521673926502" duration="2135000" />
       <workItem from="1521723031441" duration="67000" />
-      <workItem from="1521752324305" duration="12131000" />
-    </task>
-    <task id="LOCAL-00019" summary="Changes: a song by Tupac.">
-      <created>1519949357866</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1519949357866</updated>
+      <workItem from="1521752324305" duration="12259000" />
     </task>
     <task id="LOCAL-00020" summary="Changes: a song by Tupac.">
       <created>1519949638417</created>
@@ -1681,11 +1667,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521763210161</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="changes">
+      <created>1521765445511</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1521765445511</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89145000" />
+    <option name="totallyTimeSpent" value="89273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -2173,8 +2166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="562">
+          <caret line="387" column="60" lean-forward="false" selection-start-line="387" selection-start-column="60" selection-end-line="387" selection-end-column="70" />
           <folding>
             <element signature="n#style#0;n#image#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#image#0;n#div#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

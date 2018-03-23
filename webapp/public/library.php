@@ -52,7 +52,7 @@
                 </div>
             </li>
         </ol>
-        <div class="container-fluid">
+        <div class="container-fluid" id="library-view">
             <div class="animated fadeIn">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
@@ -380,7 +380,12 @@
     </aside>
 </div>
 <?php App::buildPageFooter();?>
-<!-- Custom scripts required by this view -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
+<script>
+    /**
+     * Start Dropzone.JS
+     */
+    var uploader = new Dropzone("div#library-view", { url: "/file/post"});
+</script>
 </body>
 </html>
