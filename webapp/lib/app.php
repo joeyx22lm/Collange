@@ -176,10 +176,10 @@ class S3Handler {
             'ContentMD5'  => false
         ));
 
-        $formInputs = ['acl' => 'public-read'];
+        $formInputs = ['acl' => 'private'];
 
         $options = [
-            ['acl' => 'public-read'],
+            ['acl' => 'private'],
             ['bucket' => StaticResource::get('ENV_AWS_S3_BUCKET')],
             ['starts-with', '', ''],
         ];
