@@ -168,6 +168,7 @@ class S3Handler {
     }
 
     public static function createSignedPOSTUrl($key, $mime, $expire='+30 minutes'){
+        $client = self::getClient();
         $formInputs = ['acl' => 'private'];
         $options = [
             $formInputs,
@@ -175,7 +176,7 @@ class S3Handler {
             ['starts-with', $key, '']
         ];
         $postObject = new Aws\S3\PostObjectV4(
-            self::getClient(),
+            $client,
             StaticResource::get('ENV_AWS_S3_BUCKET'),
             $formInputs,
             $options,
