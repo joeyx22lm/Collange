@@ -415,15 +415,16 @@
 <?php App::buildPageFooter();?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
+    $('#processingModal').modal();
+    $('#errorModal').modal();
+    var libraryView = $('#library-view');
+
+
     /**
      * Start Dropzone.JS
      */
     $(document).ready(function(){
-        $('#processingModal').modal();
-        $('#errorModal').modal();
-        var libraryView = $('#library-view');
-        var uploader = new Dropzone("div#library-view", { url: "/file/post"});
-        uploader.options.url = function(files) {
+        Dropzone.options.url = function(files) {
             alert('calculateFormUrl');
             if(files != undefined){
                 $.get("/api.php?signedUrl=POST&mime="+files[0].type, function(data) {
@@ -435,6 +436,8 @@
             }
             return "/api.php?uploadSignatureFailed";
         };
+
+        var uploader = new Dropzone("div#library-view");
         uploader.on('dragover', function(e){
             libraryView.css('opacity', '0.25');
         });
