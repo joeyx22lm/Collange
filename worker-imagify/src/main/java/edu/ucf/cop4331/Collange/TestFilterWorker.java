@@ -12,8 +12,7 @@ public class TestFilterWorker extends FilterWorker {
 
         // Initialize Redis Session.
         JedisHandler redisSession = new JedisHandler(System.getenv(FilterWorker.ENV_REDISURL));
-        double max = (Math.random() % 14);
-        for(int i = 0; i < max; i++){
+        for(int i = 0; i < 10; i++){
             try {
                 System.out.println("TestFilterWorker: Enqueue");
                 redisSession.enqueue(FilterWorker.WaitingQueueRedisIdentifier,

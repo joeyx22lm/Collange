@@ -81,12 +81,12 @@ public class JedisHandler {
         return null;
     }
 
-    public QueueMessage dequeue(String queueName, long timeoutMs, long sleepTime) throws IOException {
+    public QueueMessage dequeue(String queueName, long timeoutSec, long sleepTime) throws IOException {
         // Sleep time must be larger than timeout time.
-        if(sleepTime > timeoutMs) timeoutMs = sleepTime;
+        if(sleepTime > timeoutSec) timeoutSec = sleepTime;
         long start = System.currentTimeMillis();
         QueueMessage msg = null;
-        while(System.currentTimeMillis() - start < timeoutMs){
+        while(System.currentTimeMillis() - start < timeoutSec){
             msg = dequeue(queueName);
             if(msg != null){
                 break;

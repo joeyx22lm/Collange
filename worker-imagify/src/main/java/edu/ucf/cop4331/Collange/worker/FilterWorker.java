@@ -28,7 +28,7 @@ public class FilterWorker {
 
         while(true) {
             // Attempt to pop a message off the queue.
-            FilterWorkerMessage message = jobQueue.dequeueJob(10000, 1000);
+            FilterWorkerMessage message = jobQueue.dequeueJob(10, 1000);
             if(message == null){
                 System.out.println("FilterWorker.DEBUG: Listener timed out while waiting for messages.");
             }else{
@@ -37,7 +37,7 @@ public class FilterWorker {
             }
 
             // If a second argument is given, run indefinitely.ß
-            if(args == null && args.length <= 1){
+            if(args == null || args.length <= 1){
                 break;
             }
         }
