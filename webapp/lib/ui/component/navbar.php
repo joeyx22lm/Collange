@@ -20,8 +20,11 @@
                 <i class="fa fa-user-circle fa-3x" style="color: black; font-size: 26px;" px"></i>
             </a>
         </li>
+        <li>
+        <button class="btn btn-danger" type="button">
+                <a href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
+        </button>
+        </li> 
     </ul>
-    <button class="btn btn-block danger" type="button">
-        <a href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
-    </button>
+    
 </header>
