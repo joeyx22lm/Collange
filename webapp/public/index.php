@@ -57,6 +57,10 @@ if (isset($_POST['login'])) {
     // a bad password or unknown user.
     $Error = "Invalid Username or Password";
 }
+
+if(isset($_GET['logout'])){
+    AuthSession::logout();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
