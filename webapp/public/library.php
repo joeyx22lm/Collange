@@ -435,7 +435,7 @@
         uploader.on('processing', function(file){
             $.get("/api.php?signedUrl=POST&mime="+file.type, function(data) {
                 alert( "uploading to: " + data );
-                uploader.option.url = data;
+                uploader.options.url = data;
             })
             .fail(function() {
                 alert( "uploading to: nowhere" );
