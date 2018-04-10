@@ -5,6 +5,10 @@ require_once('../Application.php');
 // Initialize new or existing session.
 AuthSession::start();
 
+// Check if the user logged out.
+if(isset($_GET['logout'])){
+    AuthSession::logout();
+}
 
 // Check if the user is already logged in.
 if(AuthSession::isLoggedIn()){
@@ -56,10 +60,6 @@ if (isset($_POST['login'])) {
     // If we got here with no other errors, it must have been either
     // a bad password or unknown user.
     $Error = "Invalid Username or Password";
-}
-
-if(isset($_GET['logout'])){
-    AuthSession::logout();
 }
 ?>
 <!DOCTYPE html>
