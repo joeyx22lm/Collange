@@ -417,8 +417,12 @@
 <script>
     $('#processingModal').modal();
     $('#errorModal').modal();
+
+    // Library container.
     var libraryView = $('#library-view');
 
+    // Store file upload credentials.
+    var credentials = [];
 
     /**
      * Start Dropzone.JS
@@ -437,15 +441,16 @@
         uploader.on('processing', function(file){
             $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
                 alert( "uploading to: " + data );
-                uploader.options.url = JSON.parse(data)[0]['action'];
+                credentials[file.name] = JSON.parse(data);
             })
             .fail(function() {
                 alert( "uploading to: nowhere" );
             });
         });
 
-        uploader.on('sending', function(xhr, formData){
-            alert('sending');
+        uploader.on('sending', function(file, xhr, formData){
+            alert('sending: ' + file.name);
+            alert('credentials: ' + credentials[file.name]);
         });
 
         uploader.on('queuecomplete', function(e){
