@@ -21,12 +21,8 @@
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user-circle fa-3x" style="color: black;" px"></i>
+                <i class="fa fa-user-circle fa-3x" style="color: black; font-size: 26px;" px"></i>
             </a>
         </li>
     </ul>
-    <button class="navbar-toggler aside-menu-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
 </header>

@@ -86,7 +86,7 @@ if (isset($_POST['login'])) {
                 <div class="card-group">
                     <div class="card p-4">
                         <form method="POST" class="card-body">
-                            <h1>Log in</h1>
+                            <h1>Login</h1>
                             <p class="text-muted">Sign In to your account</p>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
