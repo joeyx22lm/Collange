@@ -433,9 +433,9 @@
         });
 
         uploader.on('processing', function(file){
-            $.get("/api.php?signedUrl=POST&mime="+file.type, function(data) {
+            $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
                 alert( "uploading to: " + data );
-                uploader.options.url = data;
+                uploader.options.url = JSON.parse(data)[0]['action'];
             })
             .fail(function() {
                 alert( "uploading to: nowhere" );
