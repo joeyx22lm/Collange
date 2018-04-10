@@ -21,7 +21,7 @@
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user" style="font-size:40 px">User Image</i>
+                <i class="fa fa-user fa-4x" style="color: black;" px"></i>
             </a>
         </li>
     </ul>
