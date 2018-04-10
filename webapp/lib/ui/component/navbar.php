@@ -21,9 +21,7 @@
             </a>
         </li>
         <li>
-        <button class="btn btn-danger" type="button">
-                <a href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
-        </button>
+            <a class="btn btn-danger" href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
         </li> 
     </ul>
     
