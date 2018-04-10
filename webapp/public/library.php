@@ -425,30 +425,35 @@
      */
     $(document).ready(function(){
         var uploader = new Dropzone("div#library-view", {url: '#'});
+
         uploader.on('dragover', function(e){
             libraryView.css('opacity', '0.25');
         });
+
         uploader.on('dragleave', function(e){
             libraryView.css('opacity', '1');
         });
 
         uploader.on('processing', function(file){
-            $.get("/api.php?signedUrl=POST&mime="+file.type, function(data) {
+            $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
                 alert( "uploading to: " + data );
-                uploader.option.url = data;
+                uploader.options.url = JSON.parse(data)[0]['action'];
             })
             .fail(function() {
                 alert( "uploading to: nowhere" );
             });
         });
+
         uploader.on('sending', function(xhr, formData){
             alert('sending');
         });
+
         uploader.on('queuecomplete', function(e){
             $('#processingModal').modal('hide');
             libraryView.css('opacity', '1');
-            alert('upload complete');
+            alert('upload to: ' + uploader.options.url + ' completed successfully.');
         });
+
         uploader.on('error', function(file, msg, xhr){
             $('#processingModal').modal('hide');
             $('#errorMsg').text(msg);
