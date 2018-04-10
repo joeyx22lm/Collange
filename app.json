@@ -1,0 +1,42 @@
+{
+  "name": "Collange",
+  "scripts": {
+  },
+  "env": {
+    "AWS_KEY": {
+      "required": true
+    },
+    "AWS_S3_BUCKET": {
+      "required": true
+    },
+    "AWS_SECRET": {
+      "required": true
+    },
+    "JAWSDB_MARIA_URL": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "worker-imagify": {
+      "quantity": 1
+    },
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "jawsdb-maria",
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
