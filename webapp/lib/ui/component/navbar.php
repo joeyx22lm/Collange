@@ -21,4 +21,7 @@
             </a>
         </li>
     </ul>
+    <button class="btn btn-block danger" type="button">
+        <a href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
+    </button>
 </header>
