@@ -151,8 +151,12 @@
 <script>
     $('#processingModal').modal();
     $('#errorModal').modal();
+
+    // Library container.
     var libraryView = $('#library-view');
 
+    // Store file upload credentials.
+    var credentials = [];
 
     /**
      * Start Dropzone.JS
@@ -169,17 +173,19 @@
         });
 
         uploader.on('processing', function(file){
-            $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
-                alert( "uploading to: " + data );
-                uploader.options.url = JSON.parse(data)[0]['action'];
-            })
-            .fail(function() {
-                alert( "uploading to: nowhere" );
-            });
+            alert('processing: do nothing');
         });
 
-        uploader.on('sending', function(xhr, formData){
-            alert('sending');
+        uploader.on('sending', function(file, xhr, formData){
+            var credentials = null;
+            $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
+                alert( "uploading to: " + data);
+                credentials = JSON.parse(data);
+            }).fail(function() {
+                alert( "uploading to: nowhere" );
+            });
+            alert('sending: ' + file.name);
+            alert('credentials: ' + credentials);
         });
 
         uploader.on('queuecomplete', function(e){
