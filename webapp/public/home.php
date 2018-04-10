@@ -55,6 +55,22 @@
         </ol>
         <div class="container-fluid">
             <div class="animated fadeIn">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300"/>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300"/>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300"/>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300"/>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="card text-white bg-primary">
