@@ -12681,3 +12681,10 @@ hr.transparent {
 .no-overflow {
   overflow:hidden;
 }
+#logout-button{
+	margin-right: 10px;
+}
+#user-circle{
+	color: black;
+	font-size: 26px;
+}
