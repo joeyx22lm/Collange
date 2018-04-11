@@ -190,6 +190,7 @@
             alert('sending: ' + file.name);
             alert('credentials: ' + credentials);
             alert('credentials.this: ' + credentials[file.name][0]['action']);
+            alert('sending file to: ' + uploader.options.url);
             $.each(credentials[file.name][1], function(index, element){
                 formData.append(index, element);
             });
