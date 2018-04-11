@@ -187,6 +187,8 @@
 
         uploader.on('sending', function(file, xhr, formData){
             alert('sending: ' + file.name);
+            alert('credentials: ' + credentials);
+            alert('credentials.this: ' + credentials[file.name]);
         });
 
         uploader.on('queuecomplete', function(e){
