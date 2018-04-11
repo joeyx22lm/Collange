@@ -177,6 +177,7 @@
         });
 
         uploader.on('sending', function(file, xhr, formData){
+            alert('sending.1: ' + file.name);
             var credentials = null;
             $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
                 alert( "uploading to: " + data);
@@ -184,7 +185,7 @@
             }).fail(function() {
                 alert( "uploading to: nowhere" );
             });
-            alert('sending: ' + file.name);
+            alert('sending.2: ' + file.name);
             alert('credentials: ' + credentials);
         });
 
