@@ -2,7 +2,7 @@
  * CoreUI - Open Source Bootstrap Admin Template
  * @version v1.0.10
  * @link http://coreui.io
- * Copyright (c) 2018 creativeLabs ≈Åukasz Holeczek
+ * Copyright (c) 2018 creativeLabs ≈ukasz Holeczek
  * @license MIT
  */
 
@@ -12685,6 +12685,7 @@ hr.transparent {
 
 #our-logo {
 	height: 90%;
+}
 =======
 #logout-button{
 	margin-right: 10px !important;
