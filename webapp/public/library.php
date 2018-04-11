@@ -173,6 +173,7 @@
         });
 
         uploader.on('processing', function(file){
+            alert('processing');
             $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
                 alert( "processing - uploading to: " + data);
                 credentials[file.name] = JSON.parse(data);
@@ -182,10 +183,7 @@
         });
 
         uploader.on('sending', function(file, xhr, formData){
-            alert('sending.1: ' + file.name);
-            alert('sending.2: ' + file.name);
-            alert('credentials: ' + credentials);
-            alert('credentials.this: ' + credentials[file.name]);
+            alert('sending: ' + file.name);
         });
 
         uploader.on('queuecomplete', function(e){
