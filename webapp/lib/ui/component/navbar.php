@@ -21,7 +21,7 @@
             </a>
         </li>
         <li>
-            <a class="btn btn-danger" href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
+            <a class="btn btn-danger" href="/?logout"><i class="fa fa-sign-out"></i></a>
         </li> 
     </ul>
     
