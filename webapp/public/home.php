@@ -141,35 +141,7 @@
                     <!--/.col-->
                 </div>
                 <!--/.row-->
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <h4 class="card-title mb-0">Traffic</h4>
-                                <div class="small text-muted">November 2017</div>
-                            </div>
-                            <!--/.col-->
-                            <div class="col-sm-7 d-none d-md-block">
-                                <button type="button" class="btn btn-primary float-right"><i class="icon-cloud-download"></i></button>
-                                <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
-                                    <label class="btn btn-outline-secondary">
-                                        <input type="radio" name="options" id="option1" autocomplete="off"> Day
-                                    </label>
-                                    <label class="btn btn-outline-secondary active">
-                                        <input type="radio" name="options" id="option2" autocomplete="off" checked=""> Month
-                                    </label>
-                                    <label class="btn btn-outline-secondary">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> Year
-                                    </label>
-                                </div>
-                            </div>
-                            <!--/.col-->
-                        </div>
-                        <!--/.row-->
-                        <div class="chart-wrapper" style="height:300px;margin-top:40px;">
-                            <canvas id="main-chart" class="chart" height="300"></canvas>
-                        </div>
-                    </div>
+                
                     <div class="card-footer">
                         <ul>
                             <li>
