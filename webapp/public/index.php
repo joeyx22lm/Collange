@@ -114,7 +114,7 @@ if (isset($_POST['login'])) {
                         <div class="card-body text-center">
                             <div>
                                 <h2>Sign up</h2>
-                                <input type="button" onclick="location.href='public/register.php';" value="Register Now!" />
+                                <input type="button" onclick="location.href='register.php';" value="Register Now!" />
                             </div>
                         </div>
                     </div>
