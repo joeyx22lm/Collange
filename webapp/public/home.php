@@ -54,6 +54,20 @@
             </li>
         </ol>
 
+        <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300" class="img-responsive">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300" class="img-responsive">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300" class="img-responsive">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive">
+                        <img src="https://placehold.it/300x300" class="img-responsive">
+                    </div>
+                </div>
     </main>
 </div>
 <?php App::buildPageFooter();?>
