@@ -2,7 +2,7 @@
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <image id="our-logo" src="/img/collange.png" >
+    <image id="our-logo" src="/img/our-logo.png" >
 
 
     <!--<ul class="nav navbar-nav d-md-down-none">
