@@ -2,7 +2,7 @@
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <image src="\public\COLLANGE.PNG" />
+    <image src="\public\COLLANGE.png" >
 
 
     <!--<ul class="nav navbar-nav d-md-down-none">
