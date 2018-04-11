@@ -174,11 +174,14 @@
 
         uploader.on('processing', function(file){
             alert('processing');
-            $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
-                alert( "processing - uploading to: " + data);
-                credentials[file.name] = JSON.parse(data);
-            }).fail(function() {
-                alert( "processing - uploading to: nowhere" );
+            $.ajax({
+                type: 'GET',
+                url: "/api.php?signedKey=POST&mime="+file.type,
+                success: function(data){
+                    alert( "processing - uploading to: " + data);
+                    credentials[file.name] = JSON.parse(data);
+                },
+                async:false
             });
         });
 
