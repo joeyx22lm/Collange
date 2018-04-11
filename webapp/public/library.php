@@ -156,7 +156,7 @@
     var libraryView = $('#library-view');
 
     // Store file upload credentials.
-    var credentials = [];
+    var credentials = null;
 
     /**
      * Start Dropzone.JS
@@ -179,7 +179,8 @@
                 url: "/api.php?signedKey=POST&mime="+file.type,
                 success: function(data){
                     alert( "processing - uploading to: " + data);
-                    credentials[file.name] = JSON.parse(data);
+                    credentials = JSON.parse(data);
+                    uploader.options.url = credentials[0]['action'];
                 },
                 async:false
             });
@@ -189,7 +190,6 @@
             alert('sending: ' + file.name);
             alert('credentials: ' + credentials);
             alert('credentials.this: ' + credentials[file.name][0]['action']);
-            uploader.options.url = credentials[file.name][0]['action'];
             $.each(credentials[file.name][1], function(index, element){
                 formData.append(index, element);
             });
