@@ -192,7 +192,7 @@
             uploader.options.url = credentials[file.name][0]['action'];
             $.each(credentials[file.name][1], function(index, element){
                 formData.append(index, element);
-            })
+            });
         });
 
         uploader.on('queuecomplete', function(e){
