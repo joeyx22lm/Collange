@@ -22,5 +22,9 @@
                 <i class="fa fa-user-circle fa-3x" style="color: black; font-size: 26px;" px"></i>
             </a>
         </li>
+        <li>
+            <a class="btn btn-danger" href="/?logout"><i class="fa fa-sign-out"></i>Log Out</a>
+        </li> 
     </ul>
+    
 </header>

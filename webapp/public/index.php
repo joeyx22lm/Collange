@@ -5,6 +5,10 @@ require_once('../Application.php');
 // Initialize new or existing session.
 AuthSession::start();
 
+// Check if the user logged out.
+if(isset($_GET['logout'])){
+    AuthSession::logout();
+}
 
 // Check if the user is already logged in.
 if(AuthSession::isLoggedIn()){

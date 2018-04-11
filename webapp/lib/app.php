@@ -83,6 +83,13 @@ class AuthSession {
     public static function getUser(){
         return self::get('user');
     }
+    public static function logout(){
+        if(self::isLoggedIn()){
+            self::set('user', null);
+            $_SESSION = array();
+            unset($_SESSION);
+        }
+    }
 }
 
 class TransformSessionHandler {
