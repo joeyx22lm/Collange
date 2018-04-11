@@ -173,17 +173,20 @@
         });
 
         uploader.on('processing', function(file){
-            $.get("/api.php?signedKey=POST&mime="+file.type, function(data) {
-                alert( "processing - uploading to: " + data);
-                credentials[file.name] = JSON.parse(data);
-            }).fail(function() {
-                alert( "processing - uploading to: nowhere" );
+            alert('processing');
+            $.ajax({
+                type: 'GET',
+                url: "/api.php?signedKey=POST&mime="+file.type,
+                success: function(data){
+                    alert( "processing - uploading to: " + data);
+                    credentials[file.name] = JSON.parse(data);
+                },
+                async:false
             });
         });
 
         uploader.on('sending', function(file, xhr, formData){
-            alert('sending.1: ' + file.name);
-            alert('sending.2: ' + file.name);
+            alert('sending: ' + file.name);
             alert('credentials: ' + credentials);
             alert('credentials.this: ' + credentials[file.name]);
         });
