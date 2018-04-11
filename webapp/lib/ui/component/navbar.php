@@ -2,7 +2,9 @@
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
-   
+    <image src="\public\COLLANGE.PNG" />
+
+
     <!--<ul class="nav navbar-nav d-md-down-none">
         <li class="nav-item px-3">
             <a class="nav-link" href="#">Dashboard</a>
