@@ -12682,9 +12682,9 @@ hr.transparent {
   overflow:hidden;
 }
 #logout-button{
-	margin-right: 10px;
+	margin-right: 10px !important;
 }
 #user-circle{
-	color: black;
-	font-size: 26px;
+	color: black !important;
+	font-size: 26px !important;
 }
