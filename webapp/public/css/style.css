@@ -12681,7 +12681,16 @@ hr.transparent {
 .no-overflow {
   overflow:hidden;
 }
+<<<<<<< HEAD
 
 #our-logo {
 	height: 90%;
+=======
+#logout-button{
+	margin-right: 10px !important;
+}
+#user-circle{
+	color: black !important;
+	font-size: 26px !important;
+>>>>>>> master
 }

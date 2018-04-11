@@ -19,11 +19,11 @@
     <ul class="nav navbar-nav ml-auto">
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user-circle fa-3x" style="color: black; font-size: 26px;" px"></i>
+                <i id="user-circle" class="fa fa-user-circle fa-3x"></i>
             </a>
         </li>
         <li>
-            <a class="btn btn-danger" href="/?logout"><i class="fa fa-sign-out"></i></a>
+            <a id="logout-button" class="btn btn-danger" href="/?logout"><i class="fa fa-sign-out"></i></a>
         </li> 
     </ul>
     
