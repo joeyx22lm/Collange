@@ -188,7 +188,11 @@
         uploader.on('sending', function(file, xhr, formData){
             alert('sending: ' + file.name);
             alert('credentials: ' + credentials);
-            alert('credentials.this: ' + credentials[file.name]);
+            alert('credentials.this: ' + credentials[file.name][0]['action']);
+            uploader.options.url = credentials[file.name][0]['action'];
+            $.each(credentials[file.name][1], function(index, element){
+                formData.append(index, element);
+            })
         });
 
         uploader.on('queuecomplete', function(e){
