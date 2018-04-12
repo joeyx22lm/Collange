@@ -147,8 +147,6 @@
 </div>
 
 <?php App::buildPageFooter();?>
-
-<script src="/js/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
     $('#processingModal').modal();
