@@ -12674,7 +12674,8 @@ hr.transparent {
 
 
 #our-logo {
-  height: 90%;
+  height: 95%;
+  margin-left: 10px !important;
 }
 .collange-full-width {
   width: 100%;
