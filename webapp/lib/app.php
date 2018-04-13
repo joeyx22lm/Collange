@@ -179,8 +179,7 @@ class S3Handler {
         $formInputs = ['acl' => 'private'];
         $options = [
             $formInputs,
-            ['bucket' => StaticResource::get('ENV_AWS_S3_BUCKET')],
-            ['starts-with', $key, '']
+            ['bucket' => StaticResource::get('ENV_AWS_S3_BUCKET')]
         ];
         $postObject = new Aws\S3\PostObjectV4(
             $client,
