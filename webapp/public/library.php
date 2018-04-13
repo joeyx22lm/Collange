@@ -178,7 +178,6 @@
                 type: 'GET',
                 url: "/api.php?signedKey=POST&mime="+file.type,
                 success: function(data){
-                    alert( "processing - uploading to: " + data);
                     credentials = JSON.parse(data);
                     uploader.options.url = credentials[0]['action'];
                 },
@@ -187,12 +186,10 @@
         });
 
         uploader.on('sending', function(file, xhr, formData){
-            alert('sending: ' + file.name);
-            alert('credentials: ' + credentials);
-            alert('credentials.this: ' + credentials[0]['action']);
-            alert('sending file to: ' + uploader.options.url);
             $.each(credentials[1], function(index, element){
-                formData.append(index, element);
+                if(element != 'key') {
+                    formData.append(index, element);
+                }
             });
         });
 
