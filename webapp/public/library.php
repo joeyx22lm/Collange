@@ -47,8 +47,8 @@
             <li class="breadcrumb-menu d-md-down-none">
                 <div class="btn-group" role="group" aria-label="Button group">
                     <a class="btn" href="#"><i class="icon-speech"></i></a>
-                    <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Dashboard</a>
-                    <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Settings</a>
+                    <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Explore</a>
+                    <a class="btn" href="#"><i class="fa fa-upload"></i> &nbsp;Import Photo</a>
                 </div>
             </li>
         </ol>
@@ -112,6 +112,22 @@
         <!-- /.conainer-fluid -->
     </main>
     
+</div>
+
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Uploading Image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="modal fade" id="processingModal" tabindex="-1" role="dialog" aria-hidden="true">

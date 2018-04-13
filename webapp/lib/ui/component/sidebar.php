@@ -7,7 +7,7 @@
              */
             ?>
             <li class="nav-item">
-                <a class="nav-link" href="/home.php"><i class="icon-speedometer"></i> Dashboard</a>
+                <a class="nav-link" href="/home.php"><i class="icon-speedometer"></i> Explore</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/library.php"><i class="icon-calculator"></i> Library</a>
