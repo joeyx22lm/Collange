@@ -149,29 +149,32 @@
 <?php App::buildPageFooter();?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
-    $('#processingModal').modal();
-    $('#errorModal').modal();
-
-    // Library container.
-    var libraryView = $('#library-view');
-
-    // Store file upload credentials.
-    var credentials = null;
-
-    /**
-     * Start Dropzone.JS
-     */
+    function blurContainer(container, opacity){
+        if(container != undefined){
+            container.css('opacity', opacity);
+        }
+    }
     $(document).ready(function(){
+        $('#processingModal').modal();
+        $('#errorModal').modal();
+
+        // Library container.
+        var libraryView = $('#library-view');
+
+        // Store file upload credentials.
+        var credentials = null;
+
+        /**
+         * Start Dropzone.JS
+         */
         var uploader = new Dropzone("div#library-view", {url: '#'});
-
         uploader.on('dragover', function(e){
-            libraryView.css('opacity', '0.25');
+            blurContainer(libraryView, '0.25');
         });
-
         uploader.on('dragleave', function(e){
-            libraryView.css('opacity', '1');
+            blurContainer(libraryView, '1');
         });
-
+        // Retrieve the upload credentials for this file.
         uploader.on('processing', function(file){
             alert('processing');
             $.ajax({
@@ -184,7 +187,7 @@
                 async:false
             });
         });
-
+        // Apply the proper credentials on this upload.
         uploader.on('sending', function(file, xhr, formData){
             $.each(credentials[1], function(index, element){
                 if(element != 'key') {
@@ -192,13 +195,13 @@
                 }
             });
         });
-
+        // Upload complete.
         uploader.on('queuecomplete', function(e){
             $('#processingModal').modal('hide');
-            libraryView.css('opacity', '1');
+            blurContainer(libraryView, '1');
             alert('upload to: ' + uploader.options.url + ' completed successfully.');
         });
-
+        // Upload error.
         uploader.on('error', function(file, msg, xhr){
             $('#processingModal').modal('hide');
             $('#errorMsg').text(msg);
