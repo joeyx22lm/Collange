@@ -11,7 +11,7 @@ $(function(){
     var result = 'rgba('+r+','+g+','+b+','+opacity/100+')';
     return result;
   }
-  
+
   //Random Numbers
   function random(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);

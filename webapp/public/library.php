@@ -190,7 +190,7 @@
         // Apply the proper credentials on this upload.
         uploader.on('sending', function(file, xhr, formData){
             $.each(credentials[1], function(index, element){
-                if(element != 'key') {
+                if(index != 'key') {
                     formData.append(index, element);
                 }
             });
