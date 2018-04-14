@@ -19,11 +19,13 @@ class PHPLoader {
         // load an array of resources.
         if(is_array($name)){
             foreach($name as $i=>$module){
+                echo 'Require: ' . $module;
                 require_once(self::$modules[$module]);
             }
         }
         // load a single resource.
         else if(isset(self::$modules[$name])){
+            echo 'Require: ' . self::$modules[$name];
             require_once(self::$modules[$name]);
         }
     }
