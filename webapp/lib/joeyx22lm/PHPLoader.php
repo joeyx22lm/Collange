@@ -3,7 +3,7 @@
  * Class PHPLoader
  */
 class PHPLoader {
-    public static $modules;
+    private static $modules;
     private static function exec($resource, $once=true){
         echo 'exec: ' . $resource . "\n";
         if($once) return require_once($resource);
@@ -24,7 +24,9 @@ class PHPLoader {
         // load an array of resources.
         if(is_array($name)){
             foreach($name as $i=>$module){
-                self::exec(self::$modules[$module]);
+                if(isset(self::$modules[$module])) {
+                    self::exec(self::$modules[$module]);
+                }
             }
         }
         // load a single resource.
