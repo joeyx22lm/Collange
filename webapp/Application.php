@@ -29,7 +29,6 @@ PHPLoader::initModule(array(
     // Collange Project - Amazon S3 Functionality.
     'collange:S3Handler'                        =>__DIR__ . '/lib/collange/S3Handler.php'
 ));
-PHPLoader::printModules(true);
 
 
 /**
