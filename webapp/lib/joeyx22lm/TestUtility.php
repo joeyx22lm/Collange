@@ -62,7 +62,6 @@ class UnitTest {
         }
     }
 }
-
 class ExampleUnitTest extends UnitTest {
     // Private function should not get executed.
     private function getValue($val){

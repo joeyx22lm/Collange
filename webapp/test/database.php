@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../lib/database.php');
+require_once(__DIR__ . '/../lib/DBSession.php');
 class DatabaseTest extends UnitTest {
     // Make sure return value of array input is sanitized.
     protected function TestInjectionSanitizeArrayInput(){

@@ -13,7 +13,7 @@ class DBSession {
      * @param string $dbname
      * @return bool
      */
-    public static function setSession($host='', $user='', $pass='', $dbname=''){
+    public static function setSession($host='', $user='', $pass='', $dbname='', $sanitizeInboundRequest=true){
         if(!empty($host)){
             // Handle a ConnectionURL.
             if(empty($user) || empty($pass) || empty($dbname)){
@@ -27,7 +27,16 @@ class DBSession {
             // Handle explicit connection parameters.
             else{
                 self::$session = new mysqli($host, $user, $pass, $dbname);
-                if(self::$session != null && empty(self::$session->connect_error)){
+                if(self::$session != null && empty(self::$session->connect_error)) {
+                    if($sanitizeInboundRequest){
+                        // Sanitize any incoming data at load.
+                        if (isset($_GET) && !empty($_GET)) {
+                            DBSession::sanitizeArrayValues($_GET);
+                        }
+                        if (isset($_POST) && !empty($_POST)) {
+                            DBSession::sanitizeArrayValues($_POST);
+                        }
+                    }
                     return true;
                 }
             }
