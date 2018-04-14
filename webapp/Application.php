@@ -35,7 +35,7 @@ PHPLoader::initModule(array(
  * Initialize all globally required dependencies.
  */
 PHPLoader::loadModule(array(
-    'com.joeyx22lm.jolib-php:UUID.php',
+    'com.joeyx22lm.jolib-php:UUID',
     'com.joeyx22lm.jolib-php:DBSession',
     'com.joeyx22lm.jolib-php:StaticResource',
     'collange:dao:Image',
