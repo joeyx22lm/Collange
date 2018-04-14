@@ -193,7 +193,7 @@
         // Retrieve the upload credentials for this file.
         uploader.on('processing', function(file){
             alert('processing');
-            $.ajax({
+           /* $.ajax({
                 type: 'GET',
                 url: "/api.php?signedKey=POST&mime="+file.type,
                 success: function(data){
@@ -201,15 +201,15 @@
                     //uploader.options.url = credentials[0]['action'];
                 },
                 async:false
-            });
+            });*/
         });
         // Apply the proper credentials on this upload.
         uploader.on('sending', function(file, xhr, formData){
-            $.each(credentials[1], function(index, element){
+           /* $.each(credentials[1], function(index, element){
                 if(index != 'key') {
                     formData.append(index, element);
                 }
-            });
+            });*/
         });
         // Upload complete.
         uploader.on('queuecomplete', function(e){
