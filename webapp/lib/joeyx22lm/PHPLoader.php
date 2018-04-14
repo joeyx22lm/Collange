@@ -23,7 +23,7 @@ class PHPLoader {
     public static function loadModule($name){
         // load an array of resources.
         if(is_array($name)){
-            foreach($name as $i=>$module){
+            foreach($name as $module){
                 if(isset(self::$modules[$module])) {
                     self::exec(self::$modules[$module]);
                 }

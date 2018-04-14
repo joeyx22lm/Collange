@@ -25,7 +25,7 @@ PHPLoader::initModule(array(
     // Collange Project - User Authentication / Session Management.
     'collange:AuthSession'                      =>__DIR__ . '/lib/collange/AuthSession.php',
     // Collange Project - Image Transformation Functionality.
-    'collange:TransformSessionHandler'          =>__DIR__ . '/lib/collange/TransformationSessionHandler.php',
+    'collange:TransformSessionHandler'          =>__DIR__ . '/lib/collange/TransformSessionHandler.php',
     // Collange Project - Amazon S3 Functionality.
     'collange:S3Handler'                        =>__DIR__ . '/lib/collange/S3Handler.php'
 ));
