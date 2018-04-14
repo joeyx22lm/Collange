@@ -183,7 +183,7 @@
         /**
          * Start Dropzone.JS
          */
-        var uploader = new Dropzone("div#library-view", {url: '#'});
+        var uploader = new Dropzone("div#library-view", {url: '/api.php?upload'});
         uploader.on('dragover', function(e){
             blurContainer(libraryView, '0.25');
         });
@@ -198,7 +198,7 @@
                 url: "/api.php?signedKey=POST&mime="+file.type,
                 success: function(data){
                     credentials = JSON.parse(data);
-                    uploader.options.url = credentials[0]['action'];
+                    //uploader.options.url = credentials[0]['action'];
                 },
                 async:false
             });
