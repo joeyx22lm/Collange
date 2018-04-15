@@ -163,5 +163,21 @@ class DBObject {
             return self::getAll(DBSession::getSession(), $x);
         }
     }
+
+    /**
+     * @return bool|mysqli_result
+     */
+    public function save(){
+        if($this->id == null){
+            return false;
+        }
+        $Query = 'UPDATE `'.static::$tableName.'` SET ';
+        $fields = '';
+        foreach(get_object_vars($this) as $field){
+            $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`=\''.DBSession::sanitize($this->{$field}).'\'';
+        }
+        $Query .= $fields . ' WHERE `id`=\'' . $this->id . '\'';
+        return DBSession::getSession()->query($Query);
+    }
 }
 ?>

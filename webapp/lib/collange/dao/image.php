@@ -6,7 +6,28 @@ class Image extends DBObject {
 
     protected $id;
     protected $ownerId;
+    protected $fileName;
+    protected $caption;
+    protected $size;
+    protected $shared;
+    protected $createdDate;
     protected $key;
+    protected $uuid;
+
+    public function __construct($uuid, $ownerId, $fileName, $caption, $size, $shared, $key, $createdDate=null)
+    {
+        if($createdDate == null){
+            $createdDate = time();
+        }
+        $this->ownerId = $ownerId;
+        $this->uuid = $uuid;
+        $this->fileName = $fileName;
+        $this->caption = $caption;
+        $this->size = $size;
+        $this->shared = $shared;
+        $this->createdDate = $createdDate;
+        $this->key = $key;
+    }
 
     public function getId(){
         return $this->id;

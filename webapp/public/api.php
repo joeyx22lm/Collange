@@ -36,19 +36,25 @@ if(isset($_GET['upload'])){
 
         $filename = basename($_FILES['file']['name']);
         $type = strtolower(pathinfo($filename,PATHINFO_EXTENSION));
-        if(!in_array($type, StaticResource::get('upload_allowed_types'))){
+        if(!in_array($type, StaticResource::get('upload_allowed_types'))) {
             http_response_code(400);
             die(StaticResource::get('error_api_upload_filetype'));
         }
 
-        // Upload the user's image.
-        if(!S3Handler::upload(UUID::randomUUID() . ' .' . $type, $_FILES['file']['tmp_name'])){
-            http_response_code(400);
-            die(StaticResource::get('error_api_upload_unknown'));
-        }
+        $imageUUID = UUID::randomUUID();
+        $key = $imageUUID . '.' . $type;
+        $imageRcd = new Image($imageUUID, AuthSession::get('id'), $filename, '', $_FILES['file']['name'], 0, $key);
+        if($imageRcd->save()){
+            // Upload the user's image.
+            if(!S3Handler::upload($key, $_FILES['file']['tmp_name'])){
+                http_response_code(400);
+                die(StaticResource::get('error_api_upload_unknown'));
+            }
 
-        // Upload successful.
-        die();
+            // Upload successful.
+            unlink($_FILES['file']['tmp_name']);
+            die();
+        }
     }
 
     http_response_code(400);
