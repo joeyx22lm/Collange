@@ -60,7 +60,7 @@
                         'ownerId'=>AuthSession::getUser()->id)) as $Image){
                         ?>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                            <image src="https://placehold.it/30x30" style="width:100%;" alt="<?php echo $Image->getFileName();?>"/>
+                            <image src="https://placehold.it/30x30" style="width:100%;" alt="<?php echo json_encode($Image);?>"/>
                         </div>
                         <?php
                     }
