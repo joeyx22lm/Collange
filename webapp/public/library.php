@@ -200,9 +200,12 @@
 
         // Upload complete.
         uploader.on('queuecomplete', function(e){
-            $('#processingModal').modal('hide');
-            blurContainer(libraryView, '1');
-            alert('upload to: ' + uploader.options.url + ' completed successfully.');
+            $.when(function(){
+                $('#processingModal').modal('hide');
+                blurContainer(libraryView, '1');
+            }).then(function(){
+                window.reload();
+            });
         });
         // Upload error.
         uploader.on('error', function(file, msg, xhr){
