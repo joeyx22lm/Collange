@@ -167,14 +167,33 @@ class DBObject {
     /**
      * @return bool|mysqli_result
      */
-    public function save(){
-        if($this->id == null){
-            return false;
-        }
-        $Query = 'UPDATE `'.static::$tableName.'` SET ';
+    private function create(){
         $fields = '';
+        $vals = '';
         foreach(get_object_vars($this) as $field){
-            $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`=\''.DBSession::sanitize($this->{$field}).'\'';
+            $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`';
+            $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($this->{$field}).'\'';
+        }
+        $ret = DBSession::getSession()->query("INSERT INTO `".static::$tableName.'` ('.$fields.') VALUES ('.$vals.")");
+        if($ret){
+            // store primary key, if successful insert.
+            $this->id = DBSession::getSession()->insert_id;
+        }
+        return $ret;
+    }
+
+    /**
+     * @return bool|mysqli_result
+     */
+    public function save()
+    {
+        if ($this->id == null) {
+            return $this->create();
+        }
+        $Query = 'UPDATE `' . static::$tableName . '` SET ';
+        $fields = '';
+        foreach (get_object_vars($this) as $field) {
+            $fields .= (empty($fields) ? '' : ', ') . '`' . $field . '`=\'' . DBSession::sanitize($this->{$field}) . '\'';
         }
         $Query .= $fields . ' WHERE `id`=\'' . $this->id . '\'';
         return DBSession::getSession()->query($Query);
