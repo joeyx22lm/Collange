@@ -44,7 +44,8 @@ if(isset($_GET['upload'])){
         $imageUUID = UUID::randomUUID();
         $key = $imageUUID . '.' . $type;
         $imageRcd = new Image($imageUUID, AuthSession::get('id'), $filename, '', $_FILES['file']['name'], 0, $key);
-        if($imageRcd->save()){
+        $saveResult = $imageRcd->save();
+        if($saveResult){
             // Upload the user's image.
             if(!S3Handler::upload($key, $_FILES['file']['tmp_name'])){
                 http_response_code(400);
@@ -54,7 +55,7 @@ if(isset($_GET['upload'])){
             // Upload successful.
             unlink($_FILES['file']['tmp_name']);
             die();
-        }
+        }else var_dump($saveResult);
     }
 
     http_response_code(400);
