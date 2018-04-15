@@ -50,9 +50,11 @@ class S3Handler {
                 'Key' =>  $key,
                 'SourceFile' => $localpath
             ));
+            return true;
         } catch (S3Exception $e) {
             echo $e->getMessage();
         }
+        return false;
     }
 }
 ?>
