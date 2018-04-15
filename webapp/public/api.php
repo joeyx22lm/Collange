@@ -43,7 +43,7 @@ if(isset($_GET['upload'])){
 
         $imageUUID = UUID::randomUUID();
         $key = $imageUUID . '.' . $type;
-        $imageRcd = new Image($imageUUID, AuthSession::getUser('id'), $filename, '', $_FILES['file']['size'], 0, $key);
+        $imageRcd = new Image($imageUUID, AuthSession::getUser()->id, $filename, '', $_FILES['file']['size'], 0, $key);
         $saveResult = $imageRcd->save();
         if($saveResult){
             // Upload the user's image.
