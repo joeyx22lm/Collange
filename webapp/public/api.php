@@ -41,10 +41,17 @@ if(isset($_GET['upload'])){
             die(StaticResource::get('error_api_upload_filetype'));
         }
 
-        // Include the SDK using the Composer autoloader
-        die('Upload results: ' . S3Handler::upload(UUID::randomUUID() . ' .' . $type, $_FILES['file']['tmp_name']));
+        // Upload the user's image.
+        if(!S3Handler::upload(UUID::randomUUID() . ' .' . $type, $_FILES['file']['tmp_name'])){
+            http_response_code(400);
+            die(StaticResource::get('error_api_upload_unknown'));
+        }
+
+        // Upload successful.
+        die();
     }
-    var_dump($_FILES);
-    die();
+
+    http_response_code(400);
+    die(StaticResource::get('error_api_upload_unknown'));
 }
 ?>

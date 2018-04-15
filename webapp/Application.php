@@ -57,7 +57,8 @@ StaticResource::set(array(
     'ENV_AWS_SECRET'=>$_ENV['AWS_SECRET'],
     'upload_allowed_types'=>array('gif','png' ,'jpg'),
     'error_api_upload_maxsize'=>'Your image must not exceed 10Mb.',
-    'error_api_upload_filetype'=>'Your image must be a GIF, PNG or JPG.'
+    'error_api_upload_filetype'=>'Your image must be a GIF, PNG or JPG.',
+    'error_api_upload_unknown'=>'An unexpected error occurred while uploading your image.'
 ));
 
 
