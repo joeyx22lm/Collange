@@ -10,7 +10,7 @@ PHPLoader::initModule(array(
     // Open Source Library to handle unit test execution.
     'com.joeyx22lm.jolib-php:TestUtility'       =>__DIR__ . '/lib/joeyx22lm/TestUtility.php',
     // Open Source Library to generate unique strings per UUID v4 standard.
-    'com.joeyx22lm.jolib-php:UUID'              =>__DIR__ . '/lib/joeyx22lm/StaticResource.php',
+    'com.joeyx22lm.jolib-php:UUID'              =>__DIR__ . '/lib/joeyx22lm/UUID.php',
     // Open Source Library to handle database session.
     'com.joeyx22lm.jolib-php:DBSession'         => __DIR__ . '/lib/joeyx22lm/DBSession.php',
     // Open Source Library to handle static resources.
