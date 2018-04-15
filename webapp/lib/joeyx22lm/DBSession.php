@@ -173,9 +173,9 @@ class DBObject {
     private function create(){
         $fields = '';
         $vals = '';
-        foreach(get_object_vars($this) as $field){
+        foreach(get_object_vars($this) as $field=>$val){
             $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`';
-            $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($this->{$field}).'\'';
+            $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($val).'\'';
         }
         $queryStr = "INSERT INTO `".static::$tableName.'` ('.$fields.') VALUES ('.$vals.")";
         Log::error($queryStr);
