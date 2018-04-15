@@ -25,6 +25,9 @@ if(isset($_GET['signedKey'])){
  */
 if(isset($_GET['upload'])){
     if(!empty($_FILES['file'])){
+        // Import S3 Handler and Amazon S3 SDK.
+        PHPLoader::loadModule('Collange:S3Handler');
+
         // Check if upload is over 10MB?
         if($_FILES['file']['size'] > 10485760){
             http_response_code(400);
