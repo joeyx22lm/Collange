@@ -43,8 +43,8 @@ if(isset($_GET['upload'])){
 
         // Include the SDK using the Composer autoloader
         if(!S3Handler::upload(UUID::randomUUID() . ' .' . $type, $_FILES['file']['tmp_name'])){
-            http_response_code(400);
-            die('An unexpected error occurred.');
+            //http_response_code(400);
+            //die('An unexpected error occurred.');
         }
     }
     var_dump($_FILES);
