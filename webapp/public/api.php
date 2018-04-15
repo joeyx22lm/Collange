@@ -24,22 +24,27 @@ if(isset($_GET['signedKey'])){
  * Handle User File Uploads
  */
 if(isset($_GET['upload'])){
+    if(!empty($_FILES['file'])){
+        // Check if upload is over 10MB?
+        if($_FILES['file']['size'] > 10485760){
+            http_response_code(400);
+            die(StaticResource::get('error_api_upload_maxsize'));
+        }
+
+        $filename = basename($_FILES['file']['name']);
+        $type = strtolower(pathinfo($filename,PATHINFO_EXTENSION));
+        if(!in_array($type, StaticResource::get('upload_allowed_types'))){
+            http_response_code(400);
+            die(StaticResource::get('error_api_upload_filetype'));
+        }
+
+        // Include the SDK using the Composer autoloader
+        if(!S3Handler::upload(UUID::randomUUID() . ' .' . $type, $_FILES['file']['tmp_name'])){
+            http_response_code(500);
+            die('An unexpected error occurred.');
+        }
+    }
     var_dump($_FILES);
     die();
-    //die(json_encode($_FILES));
-   /* $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-    if(isset($_POST["submit"])) {
-       // $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-        if($check !== false) {
-            echo "File is an image - " . $check["mime"] . ".";
-            $uploadOk = 1;
-        } else {
-            echo "File is not an image.";
-            $uploadOk = 0;
-        }
-    }*/
 }
 ?>

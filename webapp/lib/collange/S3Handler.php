@@ -1,5 +1,6 @@
 <?php
 require_once('../../vendor/autoload.php');
+use Aws\S3\Exception\S3Exception;
 class S3Handler {
     public static $session = null;
     public static function getClient(){
@@ -40,6 +41,18 @@ class S3Handler {
             $expire
         );
         return json_encode(array($postObject->getFormAttributes(), $postObject->getFormInputs()));
+    }
+    public static function upload($key, $localpath){
+        // Include the SDK using the Composer autoloader
+        try {
+            self::getClient()->putObject(array(
+                'Bucket'=>StaticResource::get('ENV_AWS_S3_BUCKET'),
+                'Key' =>  $key,
+                'SourceFile' => $localpath
+            ));
+        } catch (S3Exception $e) {
+            echo $e->getMessage();
+        }
     }
 }
 ?>
