@@ -5,6 +5,7 @@
 class PHPLoader {
     private static $modules;
     private static function exec($resource, $once=true){
+        echo 'Require: ' . $resource;
         if($once) return require_once($resource);
         else return require($resource);
     }
