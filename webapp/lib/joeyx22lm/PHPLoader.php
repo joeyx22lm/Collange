@@ -31,6 +31,8 @@ class PHPLoader {
         // load a single resource.
         else if(isset(self::$modules[$name])){
             self::exec(self::$modules[$name]);
+        }else{
+            die('Unable to load module: ' . $name);
         }
     }
     public static function printModules($die=true){
