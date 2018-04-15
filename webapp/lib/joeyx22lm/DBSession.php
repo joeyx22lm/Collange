@@ -93,6 +93,9 @@ class DBSession {
     }
 }
 class DBObject {
+
+    public $id = null;
+
     /**
      * Convert a raw or JSON-encoded array to
      * an object of the given class name.
@@ -174,7 +177,9 @@ class DBObject {
             $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`';
             $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($this->{$field}).'\'';
         }
-        $ret = DBSession::getSession()->query("INSERT INTO `".static::$tableName.'` ('.$fields.') VALUES ('.$vals.")");
+        $queryStr = "INSERT INTO `".static::$tableName.'` ('.$fields.') VALUES ('.$vals.")";
+        Log::error($queryStr);
+        $ret = DBSession::getSession()->query($queryStr);
         if($ret){
             // store primary key, if successful insert.
             $this->id = DBSession::getSession()->insert_id;

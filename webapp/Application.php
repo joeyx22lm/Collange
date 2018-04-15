@@ -7,6 +7,8 @@ require_once(__DIR__ . '/lib/joeyx22lm/PHPLoader.php');
  * Catalog all application dependencies.
  */
 PHPLoader::initModule(array(
+    // Open Source Library to handle logging.
+    'com.joeyx22lm.jolib-php:Log'    =>__DIR__ . '/lib/joeyx22lm/Log.php',
     // Open Source Library to handle unit test execution.
     'com.joeyx22lm.jolib-php:TestUtility'       =>__DIR__ . '/lib/joeyx22lm/TestUtility.php',
     // Open Source Library to generate unique strings per UUID v4 standard.
@@ -35,6 +37,7 @@ PHPLoader::initModule(array(
  * Initialize all globally required dependencies.
  */
 PHPLoader::loadModule(array(
+    'com.joeyx22lm.jolib-php:Log',
     'com.joeyx22lm.jolib-php:UUID',
     'com.joeyx22lm.jolib-php:DBSession',
     'com.joeyx22lm.jolib-php:StaticResource',
