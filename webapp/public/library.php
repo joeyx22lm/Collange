@@ -204,7 +204,7 @@
                 $('#processingModal').modal('hide');
                 blurContainer(libraryView, '1');
             }).then(function(){
-                window.reload();
+                window.location.reload();
             });
         });
         // Upload error.
