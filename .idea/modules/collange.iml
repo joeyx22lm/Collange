@@ -12,6 +12,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/../../vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/../../vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/../../vendor/predis/predis" />
       <excludeFolder url="file://$MODULE_DIR$/../../vendor/psr/http-message" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -25,6 +26,7 @@
           <root url="file://$MODULE_DIR$/../../vendor/guzzlehttp/promises" />
           <root url="file://$MODULE_DIR$/../../vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/../../vendor/mtdowling/jmespath.php" />
+          <root url="file://$MODULE_DIR$/../../vendor/predis/predis" />
           <root url="file://$MODULE_DIR$/../../vendor/psr/http-message" />
         </CLASSES>
         <JAVADOC />
@@ -35,6 +37,7 @@
           <root url="file://$MODULE_DIR$/../../vendor/guzzlehttp/promises" />
           <root url="file://$MODULE_DIR$/../../vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/../../vendor/mtdowling/jmespath.php" />
+          <root url="file://$MODULE_DIR$/../../vendor/predis/predis" />
           <root url="file://$MODULE_DIR$/../../vendor/psr/http-message" />
         </SOURCES>
       </library>

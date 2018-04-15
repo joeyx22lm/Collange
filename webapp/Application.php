@@ -29,7 +29,9 @@ PHPLoader::initModule(array(
     // Collange Project - Image Transformation Functionality.
     'collange:TransformSessionHandler'          =>__DIR__ . '/lib/collange/TransformSessionHandler.php',
     // Collange Project - Amazon S3 Functionality.
-    'collange:S3Handler'                        =>__DIR__ . '/lib/collange/S3Handler.php'
+    'collange:S3Handler'                        =>__DIR__ . '/lib/collange/S3Handler.php',
+    // Collange Project - Redis Session Handler
+    'collange:RedisHandler'                     =>__DIR__.'/lib/collange/service/RedisHandler.php'
 ));
 
 
@@ -41,6 +43,7 @@ PHPLoader::loadModule(array(
     'com.joeyx22lm.jolib-php:UUID',
     'com.joeyx22lm.jolib-php:DBSession',
     'com.joeyx22lm.jolib-php:StaticResource',
+    'collange:RedisHandler',
     'collange:dao:Image',
     'collange:dao:User',
     'collange:CollangeUI',
@@ -64,6 +67,14 @@ StaticResource::set(array(
     'error_api_upload_unknown'=>'An unexpected error occurred while uploading your image.'
 ));
 
+
+/**
+ * Collange - Initialize Redis Session.
+ */
+if(empty($_ENV['REDIS_URL'])){
+    $_ENV['REDIS_URL'] = 'redis://h:p2197816185994ab90674fecbd655bac992e57780a6da65e944419da20370c47f@ec2-34-206-56-5.compute-1.amazonaws.com:60679';
+}
+RedisHandler::setSession(str_replace('redis://', 'tcp://', $_ENV['REDIS_URL']));
 
 
 /**
