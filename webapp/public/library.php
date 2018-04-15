@@ -55,6 +55,16 @@
         <div class="container-fluid" id="library-view">
             <div class="animated fadeIn">
                 <div class="row">
+                    <?php
+                    foreach(Image::getAll(DBSession::getSession(), array(
+                        'ownerId'=>AuthSession::getUser()->id)) as $Image){
+                        ?>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
+                            <image src="https://placehold.it/30x30" style="width:100%;" alt="<?php echo $Image->getFileName();?>"/>
+                        </div>
+                        <?php
+                    }
+                    ?>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
                         <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
                     </div>
@@ -177,9 +187,6 @@
         // Library container.
         var libraryView = $('#library-view');
 
-        // Store file upload credentials.
-        var credentials = null;
-
         /**
          * Start Dropzone.JS
          */
@@ -190,27 +197,7 @@
         uploader.on('dragleave', function(e){
             blurContainer(libraryView, '1');
         });
-        // Retrieve the upload credentials for this file.
-        uploader.on('processing', function(file){
-            alert('processing');
-           /* $.ajax({
-                type: 'GET',
-                url: "/api.php?signedKey=POST&mime="+file.type,
-                success: function(data){
-                    credentials = JSON.parse(data);
-                    //uploader.options.url = credentials[0]['action'];
-                },
-                async:false
-            });*/
-        });
-        // Apply the proper credentials on this upload.
-        uploader.on('sending', function(file, xhr, formData){
-           /* $.each(credentials[1], function(index, element){
-                if(index != 'key') {
-                    formData.append(index, element);
-                }
-            });*/
-        });
+
         // Upload complete.
         uploader.on('queuecomplete', function(e){
             $('#processingModal').modal('hide');

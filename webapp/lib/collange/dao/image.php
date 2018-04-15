@@ -40,6 +40,10 @@ class Image extends DBObject {
         return $this->ownerId;
     }
 
+    public function getFileName(){
+        return $this->fileName;
+    }
+
     public static function get($x, $y=null){
         return parent::get($x, $y);
     }
