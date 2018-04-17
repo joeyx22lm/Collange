@@ -37,6 +37,8 @@
 <div class="app-body">
     <?php App::buildPageSidebar();?>
 
+    <?php Image::getAll(array(‘shared’ =>‘1’));?>
+
     <!-- Main content -->
     <main class="main">
         <!-- Breadcrumb -->
