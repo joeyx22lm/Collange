@@ -108,15 +108,13 @@ if (isset($_POST['login'])) {
                                     <button type="button" class="btn btn-link px-0">Forgot password?</button>
                                 </div>
                             </div>
+							<div class="card-body text-center">
+								<div>
+									<h2>Sign up</h2>
+									<input type="button" onclick="location.href='register.php';" value="Register Now!" />
+								</div>
+							</div>
                         </form>
-                    </div>
-                    <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
-                        <div class="card-body text-center">
-                            <div>
-                                <h2>Sign up</h2>
-                                <input type="button" onclick="location.href='register.php';" value="Register Now!" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
