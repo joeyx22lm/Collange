@@ -146,8 +146,8 @@
             container.css('opacity', opacity);
         }
     }
-    $(document).ready(function(){
 
+    $(document).ready(function(){
         /**
          * Initialize the modals.
          */
@@ -169,11 +169,10 @@
             $(this).attr('src', $(this).attr('attr-lazysrc')).removeClass('lazy');
         });
 
-
         /**
          * Start Dropzone.JS
          */
-        var uploader = new Dropzone("div#library-view", {url: '/api.php?upload'});
+        var uploader = new Dropzone("main.main", {url: '/api.php?upload'});
         uploader.on('dragover', function(e){
             blurContainer(libraryView, '0.25');
         });
@@ -190,6 +189,7 @@
                 window.location.reload();
             });
         });
+
         // Upload error.
         uploader.on('error', function(file, msg, xhr){
             $('#processingModal').modal('hide');
