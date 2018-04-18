@@ -1,6 +1,6 @@
 <?php
 class ImageHandler {
-    public static function convertImageToJPG($originalImage, $ext){
+    public static function convertImageToJPG($originalImage, $ext, $quality=75){
         $output = '/tmp/'.UUID::randomUUID().'.jpg';
         if (preg_match('/jpg|jpeg/i',$ext))
             // don't convert if we don't need to.
@@ -13,7 +13,7 @@ class ImageHandler {
             $imageTmp=imagecreatefrombmp($originalImage);
         else
             return null;
-        imagejpeg($imageTmp, $output, 100);
+        imagejpeg($imageTmp, $output, $quality);
         imagedestroy($imageTmp);
         unlink($originalImage);
         return $output;
