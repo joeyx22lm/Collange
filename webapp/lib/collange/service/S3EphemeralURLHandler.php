@@ -18,7 +18,7 @@ class S3EphemeralURLHandler extends RedisHandler {
     }
 
     public static function get($key){
-        $val = self::getSession()->hsget(self::$cacheKeyName, $key);
+        $val = self::getSession()->hget(self::$cacheKeyName, $key);
         if(!empty($val)){
             $val = json_decode($val, true);
             if($val['expires'] < time()){
