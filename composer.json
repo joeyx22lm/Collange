@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php", "^7.0.0",
+        "php": "^7.0.0",
         "ext-gd": "*",
         "ext-imagick": "*",
         "aws/aws-sdk-php": "^3.52",
