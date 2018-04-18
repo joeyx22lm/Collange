@@ -24,14 +24,15 @@ if (isset($_POST['register'])) {
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength >= 8){
-              $firstName = "".$POST_['firstname']."";
-              $lastName = "".$POST_['lastname']."";
-              $password = "".$POST_['password']."";
-              $email = "".$POST_['email']."";
+              $firstName = mysql_escape_string($_POST['firstname']);
+              $lastName = mysql_escape_string($_POST['lastname']);
+              $password = mysql_escape_string($_POST['password']);
+              $email = mysql_escape_string($_POST['email']);
 
-              $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('".mysql_escape_string($_POST['password'])."'', '".mysql_escape_string($_POST['email'])."', '".mysql_escape_string($_POST['firstname'])."', '".mysql_escape_string($_POST['lastname'])."')";
+              $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('$password','$email', '$firstName', '$lastName')";
 
               if (DBSession::getSession()->query($sql)) {
+                print "This works";
                 $AuthenticatedUser = User::build($Users[0]);
                }
 
