@@ -104,7 +104,7 @@ if (isset($_POST['register'])) {
             </div>
         </div>
         <?php
-        }else {
+        }else if(!empty(success)){
         ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
