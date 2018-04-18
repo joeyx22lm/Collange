@@ -17,6 +17,7 @@
             transition: opacity 0.3s;
         }
     </style>
+    <script>window.__theme = 'bs4';</script>
 </head>
 <!-- BODY options, add following classes to body to change options
     // Header options
