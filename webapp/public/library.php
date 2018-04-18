@@ -160,6 +160,7 @@
         var libraryView = $('#library-view');
         libraryView.find('img[attr-lazysrc]').each(function(index){
             $(this).attr('src', $(this).attr('attr-lazysrc'));
+            $(this).attr('attr-lazysrc', '');
         });
 
 
