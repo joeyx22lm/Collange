@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             if($_POST['password'] == $_POST['passwordRepeat']){
 
-              $sql = "INSERT INTO user (firstName, lastName, password, email) VALUES ('$_POST['firstname']', '$_POST['lastname']', '$_POST['password']', '$_POST['email']')";
+              $sql = "INSERT INTO `user` (`firstName`, `lastName`, `password`, `email`) VALUES ('$_POST['firstname']', '$_POST['lastname']', '$_POST['password']', '$_POST['email']')";
                 
 
             }else{
