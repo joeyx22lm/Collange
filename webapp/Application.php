@@ -50,7 +50,9 @@ PHPLoader::loadModule(array(
     'collange:dao:User',
     'collange:CollangeUI',
     'collange:AuthSession',
-    'collange:TransformSessionHandler'
+    'collange:TransformSessionHandler',
+    'collange:S3EphemeralURLHandler',
+    'collange:S3Handler'
 ));
 
 
