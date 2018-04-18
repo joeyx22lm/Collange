@@ -16,6 +16,10 @@
             -opacity: 1;
             transition: opacity 0.3s;
         }
+        #modalDropZone {
+            width:400px;
+            height:300px;
+        }
     </style>
 </head>
 <!-- BODY options, add following classes to body to change options
@@ -102,6 +106,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <div class="modal-body" id="modalDropZone">
+
+            </div>
         </div>
     </div>
 </div>
@@ -147,18 +154,12 @@
         }
     }
     $(document).ready(function(){
-        /**
-         * Initialize the modals.
-         */
-        $('#processingModal').modal();
-        $('#errorModal').modal();
-        <?php
-        if($imageCount == 0){
-            ?>$('#uploadModal').modal({show: true});<?php
-        }else{
-            ?>$('#uploadModal').modal();<?php
-        }
-        ?>
+        <?php if($imageCount == 0){ ?>
+            /**
+             * Initialize the upload modal.
+             */
+            $('#uploadModal').modal({show: true});
+        <?php } ?>
 
         /**
          * Lazy-load all of the images.
@@ -171,7 +172,7 @@
         /**
          * Start Dropzone.JS
          */
-        var uploader = new Dropzone("main.main", {url: '/api.php?upload'});
+        var uploader = new Dropzone("#modalDropZone", {url: '/api.php?upload'});
         uploader.on('dragover', function(e){
             blurContainer(libraryView, '0.25');
         });
