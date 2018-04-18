@@ -76,6 +76,20 @@ if (isset($_POST['register'])) {
 
 <body class="app flex-row align-items-center">
   <div class="container"> 
+  <?php
+        // Display the error to the user, if any exist.
+        if(!empty($Error)){
+        ?>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="alert alert-danger collange-full-width" id="loginPageError" role="alert">
+                    <b><?php echo $Error;?></b>
+                </div>
+            </div>
+        </div>
+        <?php
+        }
+        ?>
 
     <div class="row justify-content-center">
       <div class="col-md-6">
