@@ -30,7 +30,6 @@ if (isset($_POST['register'])) {
               $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('$password','$email', '$firstName', '$lastName')";
 
               if (DBSession::getSession()->query($sql)) {
-                $AuthenticatedUser = User::build($Users[0]);
                 $Success = "Account Successfully Created";
                }
                 
@@ -110,7 +109,7 @@ if (isset($_POST['register'])) {
             <div class="col-md-8">
                 <div class="alert alert-success collange-full-width" id="loginPageSuccess" role="alert">
                     <b><?php echo $Success;?></b>
-                    <Button class="btn-primary" onclick="location.href='/';">Return to login</Button>
+                    <Button style="float:right;" class="btn-primary" onclick="location.href='/';">Return to login</Button>
                 </div>
             </div>
         </div>
