@@ -1,3 +1,67 @@
+<?php
+// Load the application libraries.
+require_once('../Application.php');
+
+// Check whether the user has attempted to login.
+$Success = null; 
+$Error = null;
+if (isset($_POST['register'])) {
+
+    // Attempt to retrieve the requested user from the database.
+
+    $Users = User::getAll(array(
+        'email' => $_POST['email']
+    ));
+
+    // Verify the user hasn't already registered.
+
+    if($_POST['firstname'] != '' || $_POST['lastname'] != '') {
+      if ($Users == null && sizeof($Users) == 0) {
+          $AuthenticatedUser = null;
+          $passLength = strlen($_POST['password']);
+
+          if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength >= 8){
+              $firstName = DBSession::sanitize($_POST['firstname']);
+              $lastName = DBSession::sanitize($_POST['lastname']);
+              $password = DBSession::sanitize($_POST['password']);
+              $email = DBSession::sanitize($_POST['email']);
+
+              $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('$password','$email', '$firstName', '$lastName')";
+
+              if (DBSession::getSession()->query($sql)) {
+                $Success = "Account Successfully Created";
+               }
+                
+            }else{  
+              if(passLength < 8){
+                $Error = "Password is to short, please use a longer one";
+              }else{
+                $Error = "Passwords do not match";
+              }
+            }
+            
+          }else {
+            $Error = "Email address is not valid";
+          }
+
+          
+        }else{
+          $Error = "This user already exists";
+        }
+      }else{
+        $Error = "Please enter a first and last name";
+      }
+
+      if($Error == null){
+        $Error = "Unable to create account";
+      }
+   }
+?>
+
+
+
+
 
 
 <!DOCTYPE html>
@@ -27,6 +91,31 @@
 
 <body class="app flex-row align-items-center">
   <div class="container"> 
+  <?php
+        // Display the error to the user, if any exist.
+        if(!empty($Error ) && empty($Success)){
+        ?>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="alert alert-danger collange-full-width" id="loginPageError" role="alert">
+                    <b><?php echo $Error;?></b>
+                </div>
+            </div>
+        </div>
+        <?php
+        }else if(!empty($Success)){
+        ?>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="alert alert-success collange-full-width" id="loginPageSuccess" role="alert">
+                    <b><?php echo $Success;?></b>
+                    <Button style="float:right;" class="btn-primary" onclick="location.href='/';">Return to login</Button>
+                </div>
+            </div>
+        </div>
+        <?php 
+      }
+      ?>
 
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -39,7 +128,14 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="icon-user"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="First Name" name="firstname">
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Last Name" name="lastname">
               </div>
 
               <div class="input-group mb-3">
