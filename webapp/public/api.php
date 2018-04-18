@@ -41,19 +41,25 @@ if(isset($_GET['upload'])){
             die(StaticResource::get('error_api_upload_filetype'));
         }
 
+        // Extract image type and randomize name.
         $imageUUID = UUID::randomUUID();
         $key = $imageUUID . '.' . $type;
+
+        // Make sure the image is a JPG.
+        $location = ImageHandler::convertImageToJPG($_FILES['file']['tmp_name'], $type);
+        $type = 'jpg';
+
         $imageRcd = new Image($imageUUID, AuthSession::getUser()->id, $filename, '', $_FILES['file']['size'], 0, $key, $type);
         $saveResult = $imageRcd->save();
         if($saveResult){
             // Upload the user's image.
-            if(!S3Handler::upload($key, $_FILES['file']['tmp_name'])){
+            if(!S3Handler::upload($key, $location)){
                 http_response_code(400);
                 die(StaticResource::get('error_api_upload_unknown'));
             }
 
             // Upload successful, delete the local file now.
-            unlink($_FILES['file']['tmp_name']);
+            unlink($location);
 
             // Cache a signed url for users to view the image, we're going to need it soon.
             $URL = S3Handler::createSignedGETUrl($key, '+1 hour');
