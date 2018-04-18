@@ -109,8 +109,8 @@ if (isset($_POST['register'])) {
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="alert alert-success collange-full-width" id="loginPageSuccess" role="alert">
-                    <b><?php echo $Error;?></b>
-                    <Button onclick="">Return to login</Button>
+                    <b><?php echo $Success;?></b>
+                    <Button class="btn-primary" onclick="location.href='/';">Return to login</Button>
                 </div>
             </div>
         </div>
