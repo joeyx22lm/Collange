@@ -67,8 +67,8 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="87" column="64" lean-forward="false" selection-start-line="87" selection-start-column="64" selection-end-line="87" selection-end-column="64" />
+            <state relative-caret-position="885">
+              <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1373,13 +1373,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00110" summary="changes">
-      <created>1521779224044</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1521779224044</updated>
-    </task>
     <task id="LOCAL-00111" summary="changes">
       <created>1521779362369</created>
       <option name="number" value="00111" />
@@ -1716,11 +1709,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524093305534</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="EXIF stripping and fix xform sessions.">
+      <created>1524093425927</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1524093425927</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135167000" />
+    <option name="totallyTimeSpent" value="135271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1840,7 +1840,8 @@
     <MESSAGE value="ability to edit an image" />
     <MESSAGE value="convert all images to jpg maybe?" />
     <MESSAGE value="php GD library support @HEROKU?" />
-    <option name="LAST_COMMIT_MESSAGE" value="php GD library support @HEROKU?" />
+    <MESSAGE value="EXIF stripping and fix xform sessions." />
+    <option name="LAST_COMMIT_MESSAGE" value="EXIF stripping and fix xform sessions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2247,8 +2248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="87" column="64" lean-forward="false" selection-start-line="87" selection-start-column="64" selection-end-line="87" selection-end-column="64" />
+        <state relative-caret-position="885">
+          <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
           <folding />
         </state>
       </provider>

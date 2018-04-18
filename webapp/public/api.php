@@ -91,7 +91,7 @@ if(isset($_GET['edit'])){
     }
 
     // If we got here, an error occurred. Redirect back to library.
-    header("Location: /library.php");
+    header("Location: /library.php?error");
     die();
 }
 ?>
