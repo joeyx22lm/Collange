@@ -65,7 +65,7 @@ StaticResource::set(array(
     'ENV_AWS_S3_BUCKET'=>$_ENV['AWS_S3_BUCKET'],
     'ENV_AWS_KEY'=>$_ENV['AWS_KEY'],
     'ENV_AWS_SECRET'=>$_ENV['AWS_SECRET'],
-    'upload_allowed_types'=>array('gif','png' ,'jpg'),
+    'upload_allowed_types'=>array('gif','png' ,'jpg', 'jpeg'),
     'error_api_upload_maxsize'=>'Your image must not exceed 10Mb.',
     'error_api_upload_filetype'=>'Your image must be a GIF, PNG or JPG.',
     'error_api_upload_unknown'=>'An unexpected error occurred while uploading your image.'
