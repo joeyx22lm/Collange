@@ -164,16 +164,15 @@
         // Upload complete.
         uploader.on('queuecomplete', function(e){
             $.when(function(){
-                $('#processingModal').modal('hide');
-                blurContainer(libraryView, '1');
+               // blurContainer(libraryView, '1');
             }).then(function(){
                 window.location.reload();
             });
         });
         // Upload error.
         uploader.on('error', function(file, msg, xhr){
-            $('#processingModal').modal('hide');
-            $('#errorMsg').text(msg);
+            /////$('#processingModal').modal('hide');
+           /// $('#errorMsg').text(msg);
             $('#errorModal').modal('show');
         });
     });
