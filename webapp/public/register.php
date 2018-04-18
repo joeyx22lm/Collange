@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
 
               if (DBSession::getSession()->query($sql)) {
                 $AuthenticatedUser = User::build($Users[0]);
-                $Sucesss = "Account Successfully Created";
+                $Success = "Account Successfully Created";
                }
                 
             }else{  
