@@ -5,7 +5,7 @@ class TransformSessionHandler {
      * Retrieve the transform session data
      * from the AuthSession handler.
      */
-    private static function getSessions(){
+    public static function getSessions(){
         return AuthSession::get('transformSessionData');
     }
 
@@ -13,7 +13,7 @@ class TransformSessionHandler {
      * Set the transform session data
      * via the AuthSession handler.
      */
-    private static function setSessions($val){
+    public static function setSessions($val){
         return AuthSession::set('transformSessionData', $val);
     }
 
