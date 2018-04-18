@@ -160,6 +160,7 @@ class DBObject {
                 while($result = $Q->fetch_array()) $ret[] = $result;
                 return $ret;
             }
+            return array();
         }
 
         else if($x != null){
