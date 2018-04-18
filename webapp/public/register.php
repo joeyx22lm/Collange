@@ -17,14 +17,15 @@ if (isset($_POST['register'])) {
 
     // Verify the user hasn't already registered.
 
-    if($_POST['firstname'] == '' || $_POST['lastname'] == '') {
+    if($_POST['firstname'] != '' || $_POST['lastname'] != '') {
       if ($Users == null && sizeof($Users) == 0) {
           $AuthenticatedUser = null;
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             if($_POST['password'] == $_POST['passwordRepeat']){
 
-              
+              $sql = "INSERT INTO user (firstName, lastName, password, email) VALUES ('$_POST['firstname']', '$_POST['lastname']', '$_POST['password']', '$_POST['email']')";
+                
 
             }else{
               $Error = "Passwords do not match";
