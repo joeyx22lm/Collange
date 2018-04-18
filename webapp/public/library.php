@@ -67,8 +67,10 @@
             <div class="animated fadeIn">
                 <div class="row">
                     <?php
+                    $imageCount = 0;
                     foreach(Image::getAll(DBSession::getSession(), array(
                         'ownerId'=>AuthSession::getUser()->id)) as $Image){
+                        $imageCount++;
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);
                         if($cachedURL == null){
                             $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
@@ -95,13 +97,10 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Uploading Image</h5>
+                <h5 class="modal-title">Upload an Image</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-            </div>
-            <div class="modal-body">
-                ...
             </div>
         </div>
     </div>
@@ -154,7 +153,13 @@
          */
         $('#processingModal').modal();
         $('#errorModal').modal();
-
+        <?php
+        if($imageCount == 0){
+            ?>$('#uploadModal').modal('show');<?php
+        }else{
+            ?>$('#uploadModal').modal();<?php
+        }
+        ?>
 
         /**
          * Lazy-load all of the images.
