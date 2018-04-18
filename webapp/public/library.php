@@ -10,7 +10,7 @@
         .lazy {
             opacity: 0;
         }
-        .dz {
+        .dropzone {
             width:100%;
             height:100%;
             border: 2px dashed #0087F7;
@@ -84,11 +84,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="modalDropZone" class="dz needsclick dz-clickable">
+                <form id="uploadForm" action="/api.php?upload" class="dropzone needsclick dz-clickable">
                     <div class="dz-message">
                         Drop files here or click to upload.
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -133,13 +133,19 @@
         /**
          * Start Dropzone.JS
          */
-        var uploader = new Dropzone("#modalDropZone", {url: '/api.php?upload'});
-        uploader.on('queuecomplete', function(e){
-            window.location.reload();
-        });
-        uploader.on('error', function(file, msg, xhr){
-            $('#errorModal').modal('show');
-        });
+        Dropzone.options.uploadForm = {
+            uploadMultiple: true,
+            parallelUploads: 100,
+            maxFiles: 100,
+            init: function() {
+                this.on("successmultiple", function(files, response) {
+                    window.location.reload();
+                });
+                this.on("errormultiple", function(files, response) {
+                    $('#errorModal').modal('show');
+                });
+            }
+        };
     });
 </script>
 </body>
