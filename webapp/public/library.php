@@ -18,6 +18,10 @@
         .dz-message {
             font-weight:400;
         }
+        .library-card {
+            margin-left:15px;
+            margin-right:15px;
+        }
     </style>
 </head>
 <body class="app header-fixed sidebar-fixed">
@@ -51,7 +55,7 @@
                             S3EphemeralURLHandler::set($Image['key'], $cachedURL);
                         }
                         ?>
-                        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-1" style="padding:0px;">
+                        <div class="library-card card col-lg-3 col-md-4 col-sm-6 col-xs-1" style="padding:0px;">
                             <img attr-lazysrc="<?php echo $cachedURL;?>" class="card-img-top library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
