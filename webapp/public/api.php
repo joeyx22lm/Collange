@@ -49,29 +49,35 @@ if(isset($_GET['upload'])){
         $location = ImageHandler::convertImageToJPG($_FILES['file']['tmp_name'], $type);
         $type = 'jpg';
 
-        $imageRcd = new Image($imageUUID, AuthSession::getUser()->id, $filename, '', $_FILES['file']['size'], 0, $key, $type);
-        $saveResult = $imageRcd->save();
-        if($saveResult){
-            // Upload the user's image.
-            if(!S3Handler::upload($key, $location)){
-                http_response_code(400);
-                die(StaticResource::get('error_api_upload_unknown'));
-            }
+        // Strip any EXIF/PID info from the image.
+        $location = ImageHandler::stripEXIFFromJPEG($location);
 
-            // Upload successful, delete the local file now.
-            unlink($location);
-
-            // Cache a signed url for users to view the image, we're going to need it soon.
-            $URL = S3Handler::createSignedGETUrl($key, '+1 hour');
-            if(!empty($URL)){
-                PHPLoader::loadModule('collange:S3EphemeralURLHandler');
-                if(!S3EphemeralURLHandler::set($key, $URL)){
-                    Log::error('S3EphemeralURL('.$key.'): Error');
-                }else{
-                    Log::info('S3EphemeralURL('.$key.'): ' . $URL);
+        // Make sure the image made it thru all of that conversion.
+        if($location != null){
+            $imageRcd = new Image($imageUUID, AuthSession::getUser()->id, $filename, '', $_FILES['file']['size'], 0, $key, $type);
+            $saveResult = $imageRcd->save();
+            if($saveResult){
+                // Upload the user's image.
+                if(!S3Handler::upload($key, $location)){
+                    http_response_code(400);
+                    die(StaticResource::get('error_api_upload_unknown'));
                 }
+
+                // Upload successful, delete the local file now.
+                unlink($location);
+
+                // Cache a signed url for users to view the image, we're going to need it soon.
+                $URL = S3Handler::createSignedGETUrl($key, '+1 hour');
+                if(!empty($URL)){
+                    PHPLoader::loadModule('collange:S3EphemeralURLHandler');
+                    if(!S3EphemeralURLHandler::set($key, $URL)){
+                        Log::error('S3EphemeralURL('.$key.'): Error');
+                    }else{
+                        Log::info('S3EphemeralURL('.$key.'): ' . $URL);
+                    }
+                }
+                die();
             }
-            die();
         }
     }
 
