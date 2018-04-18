@@ -31,7 +31,9 @@ PHPLoader::initModule(array(
     // Collange Project - Amazon S3 Functionality.
     'collange:S3Handler'                        =>__DIR__ . '/lib/collange/S3Handler.php',
     // Collange Project - Redis Session Handler
-    'collange:RedisHandler'                     =>__DIR__.'/lib/collange/service/RedisHandler.php'
+    'collange:RedisHandler'                     =>__DIR__.'/lib/collange/service/RedisHandler.php',
+    // Collange Project - S3 Signed URL Handler
+    'collange:S3EphemeralURLHandler'            =>__DIR__.'/lib/collange/service/S3EphemeralURLHandler.php'
 ));
 
 

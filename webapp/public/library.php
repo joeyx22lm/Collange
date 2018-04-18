@@ -58,9 +58,14 @@
                     <?php
                     foreach(Image::getAll(DBSession::getSession(), array(
                         'ownerId'=>AuthSession::getUser()->id)) as $Image){
+                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
+                        if($cachedURL == null){
+                            $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
+                            S3EphemeralURLHandler::set($Image['key'], $cachedURL);
+                        }
                         ?>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                            <image src="https://placehold.it/30x30" style="width:100%;" alt="<?php echo json_encode($Image);?>"/>
+                            <image src="<?php echo $cachedURL;?>" style="width:100%;" alt="<?php echo json_encode($Image);?>"/>
                         </div>
                         <?php
                     }

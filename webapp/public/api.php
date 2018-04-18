@@ -56,13 +56,16 @@ if(isset($_GET['upload'])){
             unlink($_FILES['file']['tmp_name']);
 
             // Cache a signed url for users to view the image, we're going to need it soon.
-            $URL = S3Handler::createSignedGETUrl($key);
-            Log::info('S3EphemeralURLMap('.$key.'): ' . $URL);
+            $URL = S3Handler::createSignedGETUrl($key, '+1 hour');
             if(!empty($URL)){
-                RedisHandler::getSession()->hset(StaticResource::get('S3EphemeralURLMap', $key, $URL));
+               if(!S3EphemeralURLHandler::set($key, $URL)){
+                   Log::error('S3EphemeralURL('.$key.'): Error');
+               }else{
+                   Log::info('S3EphemeralURL('.$key.'): ' . $URL);
+               }
             }
             die();
-        }else var_dump($saveResult);
+        }
     }
 
     http_response_code(400);
