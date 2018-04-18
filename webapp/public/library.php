@@ -59,7 +59,7 @@
                 <div class="btn-group" role="group" aria-label="Button group">
                     <a class="btn" href="#"><i class="icon-speech"></i></a>
                     <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Explore</a>
-                    <a class="btn" href="#"><i class="fa fa-upload"></i> &nbsp;Import Photo</a>
+                    <a class="btn" href="#" data-toggle="modal" data-target="#uploadModal"><i class="fa fa-upload"></i> &nbsp;Import Photo</a>
                 </div>
             </li>
         </ol>
@@ -88,52 +88,81 @@
                 </div>
             </div>
         </div>
-        <!-- /.conainer-fluid -->
+        <!-- /.container-fluid -->
     </main>
     
 </div>
 
-<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+<div class="modal fade" id="uploadModal">
+    <div class="modal-dialog">
         <div class="modal-content">
+
+            <!-- Modal Header -->
             <div class="modal-header">
-                <h5 class="modal-title" id="uploadModalTitle">Upload an Image</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="processingModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="processingModal">
+    <div class="modal-dialog">
         <div class="modal-content">
+
+            <!-- Modal Header -->
             <div class="modal-header">
-                <h5 class="modal-title">Uploading Image</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
+
+            <!-- Modal body -->
             <div class="modal-body">
-                ...
+                Modal body..
             </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="errorModal">
+    <div class="modal-dialog">
         <div class="modal-content">
+
+            <!-- Modal Header -->
             <div class="modal-header">
-                <h5 class="modal-title">Upload Error</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
+
+            <!-- Modal body -->
             <div class="modal-body">
-                <b><span class="text-danger" id="errorMsg"></span></b>
+                Modal body..
             </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
         </div>
     </div>
 </div>
