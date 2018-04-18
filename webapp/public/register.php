@@ -20,19 +20,27 @@ if (isset($_POST['register'])) {
     if($_POST['firstname'] != '' || $_POST['lastname'] != '') {
       if ($Users == null && sizeof($Users) == 0) {
           $AuthenticatedUser = null;
+          $passLength = strlen($_POST['password']);
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            if($_POST['password'] == $_POST['passwordRepeat']){
+            if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength> 8){
               $firstName = $POST_['firstname'];
               $lastName = $POST_['lastname'];
               $password = $POST_['password'];
               $email = $POST_['email'];
 
               $sql = "INSERT INTO `user` (`firstName`, `lastName`, `password`, `email`) VALUES ('$firstname', '$lastname', '$password', '$email')";
-                
 
-            }else{
-              $Error = "Passwords do not match";
+              if (DBSession::getSession()->query($sql)) {
+                $AuthenticatedUser = User::build($Users[0]);
+               }
+                
+            }else{  
+              if(passLength < 8){
+                $Error = "Password is to short, please use a longer one";
+              }else{
+                $Error = "Passwords do not match";
+              }
             }
             
           }else {
