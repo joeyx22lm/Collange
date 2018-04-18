@@ -93,11 +93,11 @@
     
 </div>
 
-<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Upload an Image</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Upload an Image</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -155,7 +155,7 @@
         $('#errorModal').modal();
         <?php
         if($imageCount == 0){
-            ?>$('#uploadModal').modal('show');<?php
+            ?>$('#uploadModal').modal({show: true});<?php
         }else{
             ?>$('#uploadModal').modal();<?php
         }
