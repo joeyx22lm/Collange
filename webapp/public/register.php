@@ -32,9 +32,14 @@ if (isset($_POST['register'])) {
               $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('$password', '$email', '$firstName', '$lastName')";
 
               if (DBSession::getSession()->query($sql)) {
-                print "This works";
                 $AuthenticatedUser = User::build($Users[0]);
                }
+
+              if($AuthenticatedUser != null) {
+                $_SESSION['user'] = $AuthenticatedUser;
+                header("Location: /home.php");
+                die();
+              }
                 
             }else{  
               if(passLength < 8){
@@ -48,11 +53,7 @@ if (isset($_POST['register'])) {
             $Error = "Email address is not valid";
           }
 
-          if($AuthenticatedUser != null) {
-              $_SESSION['user'] = $AuthenticatedUser;
-              header("Location: /home.php");
-              die();
-          }
+          
         }else{
           $Error = "This user already exists";
         }
