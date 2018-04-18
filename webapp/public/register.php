@@ -10,38 +10,47 @@ $Error = null;
 if (isset($_POST['register'])) {
 
     // Attempt to retrieve the requested user from the database.
+
     $Users = User::getAll(array(
         'email' => $_POST['email']
     ));
 
     // Verify the user hasn't already registered.
-    if ($Users == null && sizeof($Users) == 0) {
-        $AuthenticatedUser = null;
 
-        if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-          if($_POST['password'] == $_POST['passwordRepeat']){
+    if($_POST['firstname'] == '' || $_POST['lastname']) {
+      if ($Users == null && sizeof($Users) == 0) {
+          $AuthenticatedUser = null;
 
-          }else{
-            $Error = "Passwords do not match";
+          if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            if($_POST['password'] == $_POST['passwordRepeat']){
+              if (DBSession::getSession()->query("INSERT INTO user (firstName, lastName, password, email)
+                VALUES ('$_POST['firstname']', '$_POST['firstname']', '$_POST['lastname']', '$_POST['password']', '$_POST['email'])")) {
+                $AuthenticatedUser = User::build($Users[0]);
+            }
+            }else{
+              $Error = "Passwords do not match";
+            }
+            
+          }else {
+            $Error = "Email address is not valid";
           }
-          
-        }else {
-          $Error = "Email address is not valid";
-        }
 
-        if($AuthenticatedUser != null) {
-            $_SESSION['user'] = $AuthenticatedUser;
-            header("Location: /home.php");
-            die();
+          if($AuthenticatedUser != null) {
+              $_SESSION['user'] = $AuthenticatedUser;
+              header("Location: /home.php");
+              die();
+          }
+        }else{
+          $Error = "This user already exists";
         }
+      }else{
+        $Error = "Please enter a first and last name";
+      }
+
+      if($Error == null){
+        $Error = "Unable to create account";
       }
    }
-
-    // If we got here with no other errors, it must have been either
-    // a bad password or unknown user.
-    if($Error == null){
-      $Error = "Unable to create account";
-    }
 ?>
 
 
@@ -102,7 +111,14 @@ if (isset($_POST['register'])) {
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="icon-user"></i></span>
                 </div>
-                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="First Name" name="firstname">
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="icon-user"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Last Name" name="lastname">
               </div>
 
               <div class="input-group mb-3">
