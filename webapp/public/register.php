@@ -24,10 +24,10 @@ if (isset($_POST['register'])) {
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength >= 8){
-              $firstName = $POST_['firstname'];
-              $lastName = $POST_['lastname'];
-              $password = $POST_['password'];
-              $email = $POST_['email'];
+              $firstName = "".$POST_['firstname']."";
+              $lastName = "".$POST_['lastname']."";
+              $password = "".$POST_['password']."";
+              $email = "".$POST_['email']."";
 
               $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('$password', '$email', '$firstName', '$lastName')";
 
