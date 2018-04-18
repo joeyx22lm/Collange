@@ -17,9 +17,12 @@
             transition: opacity 0.3s;
         }
         .dropzone {
-            width:400px;
-            height:300px;
+            width:100%;
+            height:100%;
             border: 2px dashed #0087F7;
+        }
+        .dz-message {
+            font-weight:400;
         }
     </style>
 </head>
@@ -83,7 +86,7 @@
             </div>
             <div class="modal-body" id="modalDropZone">
                 <form action="/api.php?upload" class="dropzone needsclick dz-clickable">
-                    <div class="dz-message needsclick">
+                    <div class="dz-message">
                         Drop files here or click to upload.
                     </div>
                 </form>
