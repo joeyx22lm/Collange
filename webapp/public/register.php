@@ -29,14 +29,12 @@ if (isset($_POST['register'])) {
               $password = $POST_['password'];
               $email = $POST_['email'];
 
-              $sql = "INSERT INTO user (firstName, lastName, password, email) VALUES ('$firstname', '$lastname', '$password', '$email')";
+              $sql = "INSERT INTO user (firstName, lastName, password, email) VALUES ('$firstName', '$lastName', '$password', '$email')";
 
               if (DBSession::getSession()->query($sql)) {
                 print "This works";
                 $AuthenticatedUser = User::build($Users[0]);
                }
-
-               echo mysql_error(DBSession::getSession());
                 
             }else{  
               if(passLength < 8){
