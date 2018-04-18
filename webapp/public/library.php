@@ -39,9 +39,7 @@
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
                 <div class="btn-group" role="group" aria-label="Button group">
-                    <a class="btn" href="#"><i class="icon-speech"></i></a>
-                    <a class="btn" href="./"><i class="icon-graph"></i> &nbsp;Explore</a>
-                    <a class="btn" href="#"><i class="fa fa-upload"></i> &nbsp;Import Photo</a>
+                    <a class="btn" href="#" data-toggle="modal" data-target="#uploadModal"><i class="fa fa-upload"></i> &nbsp;Import Photos</a>
                 </div>
             </li>
         </ol>

@@ -77,11 +77,11 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+            <state relative-caret-position="291">
+              <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
               <folding>
-                <element signature="e#3249#3256#1#HTML" expanded="true" />
-                <element signature="e#4042#4049#1#HTML" expanded="true" />
+                <element signature="e#3131#3138#1#HTML" expanded="true" />
+                <element signature="e#3924#3931#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1360,13 +1360,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00092" summary="changes">
-      <created>1521770160305</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1521770160305</updated>
-    </task>
     <task id="LOCAL-00093" summary="changes">
       <created>1521770228145</created>
       <option name="number" value="00093" />
@@ -1703,11 +1696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524089094807</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="more dropzone modal events">
+      <created>1524089340154</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1524089340154</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131449000" />
+    <option name="totallyTimeSpent" value="131594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -2193,11 +2193,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+        <state relative-caret-position="291">
+          <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
           <folding>
-            <element signature="e#3249#3256#1#HTML" expanded="true" />
-            <element signature="e#4042#4049#1#HTML" expanded="true" />
+            <element signature="e#3131#3138#1#HTML" expanded="true" />
+            <element signature="e#3924#3931#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
