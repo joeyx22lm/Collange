@@ -16,7 +16,7 @@
             -opacity: 1;
             transition: opacity 0.3s;
         }
-        .dropzone {
+        .dz {
             width:100%;
             height:100%;
             border: 2px dashed #0087F7;
@@ -90,7 +90,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="modalDropZone" class="dropzone needsclick dz-clickable">
+                <div id="modalDropZone" class="dz needsclick dz-clickable">
                     <div class="dz-message">
                         Drop files here or click to upload.
                     </div>
