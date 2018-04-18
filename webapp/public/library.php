@@ -5,7 +5,18 @@
 <html lang="en">
 <head>
     <?php App::buildHtmlHead('My Library');?>
-    <link rel="stylesheet=" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css"/>
+    <style>
+        img[attr-lazysrc] {
+            opacity: 0;
+        }
+        .library-image{
+            width:100%;
+            padding:15px;
+            -opacity: 1;
+            transition: opacity 0.3s;
+        }
+    </style>
 </head>
 <!-- BODY options, add following classes to body to change options
     // Header options
@@ -65,62 +76,11 @@
                         }
                         ?>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                            <image src="<?php echo $cachedURL;?>" style="width:100%;" alt="<?php echo json_encode($Image);?>"/>
+                            <img attr-lazysrc="<?php echo $cachedURL;?>" class="library-image" alt="<?php echo $Image['fileName'];?>"/>
                         </div>
                         <?php
                     }
                     ?>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                        <image src="https://placehold.it/<?php echo rand(500, 2000);?>x<?php echo rand(600, 1200);?>" style="width:100%;"/>
-                    </div>
                 </div>
             </div>
         </div>
@@ -186,11 +146,22 @@
         }
     }
     $(document).ready(function(){
+
+        /**
+         * Initialize the modals.
+         */
         $('#processingModal').modal();
         $('#errorModal').modal();
 
-        // Library container.
+
+        /**
+         * Lazy-load all of the images.
+         */
         var libraryView = $('#library-view');
+        libraryView.find('image[attr-lazysrc!=""]').each(function(index){
+            $(this).attr('src', $(this).attr('attr-lazysrc'));
+        });
+
 
         /**
          * Start Dropzone.JS
