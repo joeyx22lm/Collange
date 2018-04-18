@@ -94,7 +94,7 @@ if (isset($_POST['register'])) {
   <div class="container"> 
   <?php
         // Display the error to the user, if any exist.
-        if(!empty($Error ) && empty(success)){
+        if(!empty($Error ) && empty($Success)){
         ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -104,7 +104,7 @@ if (isset($_POST['register'])) {
             </div>
         </div>
         <?php
-        }else if(!empty(success)){
+        }else if(!empty($Success)){
         ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
