@@ -57,10 +57,17 @@
                             S3EphemeralURLHandler::set($Image['key'], $cachedURL);
                         }
                         ?>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                            <center>
-                                <img attr-lazysrc="<?php echo $cachedURL;?>" class="library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
-                            </center>
+                        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-1">
+                            <img attr-lazysrc="<?php echo $cachedURL;?>" class="card-img-top library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
+                                <p class="card-text"><?php echo $Image['caption'];?></p>
+                                <div class="btn-group" role="group" aria-label="Image Options">
+                                    <a class="btn btn-primary" href="#">Edit Image</a>
+                                    <a class="btn btn-warn" href="#">Sharing</a>
+                                    <a class="btn btn-danger" href="#">Delete Image</a>
+                                </div>
+                            </div>
                         </div>
                         <?php
                     }
