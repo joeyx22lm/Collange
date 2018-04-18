@@ -10,6 +10,7 @@
     ],
     "require": {
         "ext-gd": "*",
+        "ext-imagick": "*",
         "aws/aws-sdk-php": "^3.52",
         "predis/predis": "^1.1.1"
     }
