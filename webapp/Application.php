@@ -33,7 +33,9 @@ PHPLoader::initModule(array(
     // Collange Project - Redis Session Handler
     'collange:RedisHandler'                     =>__DIR__.'/lib/collange/service/RedisHandler.php',
     // Collange Project - S3 Signed URL Handler
-    'collange:S3EphemeralURLHandler'            =>__DIR__.'/lib/collange/service/S3EphemeralURLHandler.php'
+    'collange:S3EphemeralURLHandler'            =>__DIR__.'/lib/collange/service/S3EphemeralURLHandler.php',
+    // Collange Project - Image Handler
+    'collange:ImageHandler'                     =>__DIR__.'/lib/collange/ImageHandler.php'
 ));
 
 
@@ -52,7 +54,8 @@ PHPLoader::loadModule(array(
     'collange:AuthSession',
     'collange:TransformSessionHandler',
     'collange:S3EphemeralURLHandler',
-    'collange:S3Handler'
+    'collange:S3Handler',
+    'collange:ImageHandler'
 ));
 
 
