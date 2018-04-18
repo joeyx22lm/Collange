@@ -64,7 +64,7 @@
                                 <p class="card-text"><?php echo $Image['caption'];?></p>
                                 <div class="btn-group" role="group" aria-label="Image Options">
                                     <a class="btn btn-primary" href="#">Edit Image</a>
-                                    <a class="btn btn-warn" href="#">Sharing Options</a>
+                                    <a class="btn btn-warning" href="#">Sharing Options</a>
                                     <a class="btn btn-danger" href="#">Delete Image</a>
                                 </div>
                             </div>
