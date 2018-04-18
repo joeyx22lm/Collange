@@ -23,13 +23,15 @@ if (isset($_POST['register'])) {
           $passLength = strlen($_POST['password']);
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength> 8){
+            if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength >= 8){
               $firstName = $POST_['firstname'];
               $lastName = $POST_['lastname'];
               $password = $POST_['password'];
               $email = $POST_['email'];
 
               $sql = "INSERT INTO `user` (`firstName`, `lastName`, `password`, `email`) VALUES ('$firstname', '$lastname', '$password', '$email')";
+
+              print "I got to here";
 
               if (DBSession::getSession()->query($sql)) {
                 print "This works";
