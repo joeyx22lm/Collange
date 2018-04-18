@@ -156,10 +156,10 @@
          */
         var uploader = new Dropzone("#modalDropZone", {url: '/api.php?upload'});
         uploader.on('dragover', function(e){
-            blurContainer(libraryView, '0.25');
+            //blurContainer(libraryView, '0.25');
         });
         uploader.on('dragleave', function(e){
-            blurContainer(libraryView, '1');
+            //blurContainer(libraryView, '1');
         });
         // Upload complete.
         uploader.on('queuecomplete', function(e){
