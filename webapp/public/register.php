@@ -29,12 +29,6 @@ if (isset($_POST['register'])) {
           $Error = "Email address is not valid";
         }
 
-        // Check to see if the 
-        
-        // If the authentication logic was successful, mark this
-        // user's session as "authenticated" by populating the
-        // session object with a user record. Additionally,
-        // redirect the user's browser to the dashboard.
         if($AuthenticatedUser != null) {
             $_SESSION['user'] = $AuthenticatedUser;
             header("Location: /home.php");
@@ -48,6 +42,7 @@ if (isset($_POST['register'])) {
       $Error = "Unable to create account";
     }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,20 +71,6 @@ if (isset($_POST['register'])) {
 
 <body class="app flex-row align-items-center">
   <div class="container">
-  <?php
-        // Display the error to the user, if any exist.
-        if(!empty($Error)){
-        ?>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="alert alert-danger collange-full-width" id="loginPageError" role="alert">
-                    <b><?php echo $Error;?></b>
-                </div>
-            </div>
-        </div>
-        <?php
-        }
-        ?>
 
     <div class="row justify-content-center">
       <div class="col-md-6">
