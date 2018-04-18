@@ -19,6 +19,7 @@
         #modalDropZone {
             width:400px;
             height:300px;
+            border: 2px dashed #0087F7;
         }
     </style>
 </head>
