@@ -56,6 +56,7 @@
             <div class="animated fadeIn">
                 <div class="row">
                     <?php
+                    PHPLoader::loadModule('collange:S3EphemeralURLHandler');
                     foreach(Image::getAll(DBSession::getSession(), array(
                         'ownerId'=>AuthSession::getUser()->id)) as $Image){
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);

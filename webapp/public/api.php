@@ -58,11 +58,12 @@ if(isset($_GET['upload'])){
             // Cache a signed url for users to view the image, we're going to need it soon.
             $URL = S3Handler::createSignedGETUrl($key, '+1 hour');
             if(!empty($URL)){
-               if(!S3EphemeralURLHandler::set($key, $URL)){
-                   Log::error('S3EphemeralURL('.$key.'): Error');
-               }else{
-                   Log::info('S3EphemeralURL('.$key.'): ' . $URL);
-               }
+                PHPLoader::loadModule('collange:S3EphemeralURLHandler');
+                if(!S3EphemeralURLHandler::set($key, $URL)){
+                    Log::error('S3EphemeralURL('.$key.'): Error');
+                }else{
+                    Log::info('S3EphemeralURL('.$key.'): ' . $URL);
+                }
             }
             die();
         }
