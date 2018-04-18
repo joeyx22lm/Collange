@@ -16,39 +16,13 @@
             -opacity: 1;
             transition: opacity 0.3s;
         }
-        #modalDropZone {
+        .dropzone {
             width:400px;
             height:300px;
             border: 2px dashed #0087F7;
         }
     </style>
 </head>
-<!-- BODY options, add following classes to body to change options
-    // Header options
-    1. '.header-fixed'					- Fixed Header
-
-    // Brand options
-    1. '.brand-minimized'       - Minimized brand (Only symbol)
-
-    // Sidebar options
-    1. '.sidebar-fixed'					- Fixed Sidebar
-    2. '.sidebar-hidden'				- Hidden Sidebar
-    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
-    4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
-    5. '.sidebar-compact'			  - Compact Sidebar
-
-    // Aside options
-    1. '.aside-menu-fixed'			- Fixed Aside Menu
-    2. '.aside-menu-hidden'			- Hidden Aside Menu
-    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
-
-    // Breadcrumb options
-    1. '.breadcrumb-fixed'			- Fixed Breadcrumb
-
-    // Footer options
-    1. '.footer-fixed'					- Fixed footer
-
-    -->
 <body class="app header-fixed sidebar-fixed">
 <?php echo App::buildPageNavbar();?>
 <div class="app-body">
