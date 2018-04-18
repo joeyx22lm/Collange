@@ -95,22 +95,6 @@
     </div>
 </div>
 
-<div class="modal fade" id="processingModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Uploading Image</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -121,7 +105,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <b><span class="text-danger" id="errorMsg"></span></b>
+                <b><span class="text-danger">An unexpected error occurred while uploading your image.</span></b>
             </div>
         </div>
     </div>
@@ -130,17 +114,13 @@
 <?php App::buildPageFooter();?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
-    function blurContainer(container, opacity){
-        if(container != undefined){
-            container.css('opacity', opacity);
-        }
-    }
     $(document).ready(function(){
         <?php if($imageCount == 0){ ?>
-            /**
-             * Initialize the upload modal.
-             */
-            $('#uploadModal').modal({show: true});
+        /**
+         * Initialize the upload modal if no images
+         * exist in the user's library.
+         */
+        $('#uploadModal').modal({show: true});
         <?php } ?>
 
         /**
@@ -155,24 +135,10 @@
          * Start Dropzone.JS
          */
         var uploader = new Dropzone("#modalDropZone", {url: '/api.php?upload'});
-        uploader.on('dragover', function(e){
-            //blurContainer(libraryView, '0.25');
-        });
-        uploader.on('dragleave', function(e){
-            //blurContainer(libraryView, '1');
-        });
-        // Upload complete.
         uploader.on('queuecomplete', function(e){
-            $.when(function(){
-               // blurContainer(libraryView, '1');
-            }).then(function(){
-                window.location.reload();
-            });
+            window.location.reload();
         });
-        // Upload error.
         uploader.on('error', function(file, msg, xhr){
-            /////$('#processingModal').modal('hide');
-           /// $('#errorMsg').text(msg);
             $('#errorModal').modal('show');
         });
     });
