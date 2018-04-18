@@ -23,10 +23,13 @@ if (isset($_POST['register'])) {
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             if($_POST['password'] == $_POST['passwordRepeat']){
+
               if (DBSession::getSession()->query("INSERT INTO user (firstName, lastName, password, email)
-                VALUES ('$_POST['firstname']', '$_POST['firstname']', '$_POST['lastname']', '$_POST['password']', '$_POST['email'])")) {
+                VALUES ('$_POST['firstname']', '$_POST['firstname']', '$_POST['lastname']', '$_POST['password']', '$_POST['email']);")) {
+                
                 $AuthenticatedUser = User::build($Users[0]);
             }
+
             }else{
               $Error = "Passwords do not match";
             }
