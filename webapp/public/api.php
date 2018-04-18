@@ -52,8 +52,15 @@ if(isset($_GET['upload'])){
                 die(StaticResource::get('error_api_upload_unknown'));
             }
 
-            // Upload successful.
+            // Upload successful, delete the local file now.
             unlink($_FILES['file']['tmp_name']);
+
+            // Cache a signed url for users to view the image, we're going to need it soon.
+            $URL = S3Handler::createSignedGETUrl($key);
+            Log::info('S3EphemeralURLMap('.$key.'): ' . $URL);
+            if(!empty($URL)){
+                RedisHandler::getSession()->hset(StaticResource::get('S3EphemeralURLMap', $key, $URL));
+            }
             die();
         }else var_dump($saveResult);
     }
