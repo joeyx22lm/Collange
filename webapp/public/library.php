@@ -10,12 +10,6 @@
         .lazy {
             opacity: 0;
         }
-        .library-image {
-            width:100%;
-            padding:15px;
-            -opacity: 1;
-            transition: opacity 0.3s;
-        }
         .dz {
             width:100%;
             height:100%;
@@ -57,7 +51,7 @@
                             S3EphemeralURLHandler::set($Image['key'], $cachedURL);
                         }
                         ?>
-                        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-1">
+                        <div class="card col-lg-3 col-md-4 col-sm-6 col-xs-1" style="padding:0px;">
                             <img attr-lazysrc="<?php echo $cachedURL;?>" class="card-img-top library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
