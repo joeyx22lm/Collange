@@ -72,4 +72,22 @@ if(isset($_GET['upload'])){
     http_response_code(400);
     die(StaticResource::get('error_api_upload_unknown'));
 }
+
+
+/**
+ * Initialize an editing session.
+ */
+if(isset($_GET['edit'])){
+    if(!empty($_GET['edit'])){
+        $Image = Image::get(DBSession::getSession(), array(
+            'ownerId'=>AuthSession::getUser()->id,
+            'uuid'=>$_GET['edit'])
+        );
+        if($Image != null){
+
+        }
+    }
+
+    // If we got here, an error occurred. Redirect back to library.
+}
 ?>

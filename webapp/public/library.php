@@ -42,8 +42,8 @@
                 <div class="row">
                     <?php
                     $imageCount = 0;
-                    foreach(Image::getAll(DBSession::getSession(), array(
-                        'ownerId'=>AuthSession::getUser()->id)) as $Image){
+                    $imageQuery = array('ownerId'=>AuthSession::getUser()->id);
+                    foreach(Image::getAll(DBSession::getSession(), $imageQuery) as $Image){
                         $imageCount++;
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);
                         if($cachedURL == null){
