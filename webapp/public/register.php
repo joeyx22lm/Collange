@@ -2,10 +2,8 @@
 // Load the application libraries.
 require_once('../Application.php');
 
-// Initialize new or existing session.
-AuthSession::start();
-
 // Check whether the user has attempted to login.
+$Success = null; 
 $Error = null;
 if (isset($_POST['register'])) {
 
@@ -33,13 +31,8 @@ if (isset($_POST['register'])) {
 
               if (DBSession::getSession()->query($sql)) {
                 $AuthenticatedUser = User::build($Users[0]);
+                $Sucesss = "Account Successfully Created";
                }
-
-              if($AuthenticatedUser != null) {
-                $_SESSION['user'] = $AuthenticatedUser;
-                header("Location: /home.php");
-                die();
-              }
                 
             }else{  
               if(passLength < 8){
@@ -101,7 +94,7 @@ if (isset($_POST['register'])) {
   <div class="container"> 
   <?php
         // Display the error to the user, if any exist.
-        if(!empty($Error)){
+        if(!empty($Error ) && empty(success)){
         ?>
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -111,8 +104,19 @@ if (isset($_POST['register'])) {
             </div>
         </div>
         <?php
-        }
+        }else {
         ?>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="alert alert-success collange-full-width" id="loginPageSuccess" role="alert">
+                    <b><?php echo $Error;?></b>
+                    <Button onclick="">Return to login</Button>
+                </div>
+            </div>
+        </div>
+        <?php 
+      }
+      ?>
 
     <div class="row justify-content-center">
       <div class="col-md-6">
