@@ -18,10 +18,6 @@
         .dz-message {
             font-weight:400;
         }
-        .library-card {
-            margin-left:15px;
-            margin-right:15px;
-        }
     </style>
 </head>
 <body class="app header-fixed sidebar-fixed">
