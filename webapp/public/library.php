@@ -84,12 +84,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" id="modalDropZone">
-                <form action="/api.php?upload" class="dropzone needsclick dz-clickable">
+            <div class="modal-body">
+                <div id="modalDropZone" class="dropzone needsclick dz-clickable">
                     <div class="dz-message">
                         Drop files here or click to upload.
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
