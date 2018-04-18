@@ -17,7 +17,7 @@ if (isset($_POST['register'])) {
 
     // Verify the user hasn't already registered.
 
-    if($_POST['firstname'] == '' || $_POST['lastname']) {
+    if($_POST['firstname'] == '' || $_POST['lastname'] == '') {
       if ($Users == null && sizeof($Users) == 0) {
           $AuthenticatedUser = null;
 
