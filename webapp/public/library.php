@@ -7,10 +7,10 @@
     <?php App::buildHtmlHead('My Library');?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css"/>
     <style>
-        img[attr-lazysrc!=""] {
+        .lazy {
             opacity: 0;
         }
-        img[src!=""] {
+        .library-image {
             width:100%;
             padding:15px;
             -opacity: 1;
@@ -76,7 +76,9 @@
                         }
                         ?>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-1 img-responsive">
-                            <img attr-lazysrc="<?php echo $cachedURL;?>" class="library-image" alt="<?php echo $Image['fileName'];?>"/>
+                            <center>
+                                <img attr-lazysrc="<?php echo $cachedURL;?>" class="library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
+                            </center>
                         </div>
                         <?php
                     }
@@ -159,8 +161,7 @@
          */
         var libraryView = $('#library-view');
         libraryView.find('img[attr-lazysrc]').each(function(index){
-            $(this).attr('src', $(this).attr('attr-lazysrc'));
-            $(this).attr('attr-lazysrc', '');
+            $(this).attr('src', $(this).attr('attr-lazysrc')).removeClass('lazy');
         });
 
 
