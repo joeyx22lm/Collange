@@ -101,13 +101,17 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="uploadModalTitle">Upload an Image</h5>
+                <h5 class="modal-title" id="uploadModalTitle">Import images from your computer</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body" id="modalDropZone">
-
+                <form action="/api.php?upload" class="dropzone needsclick dz-clickable">
+                    <div class="dz-message needsclick">
+                        Drop files here or click to upload.
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -179,7 +183,6 @@
         uploader.on('dragleave', function(e){
             blurContainer(libraryView, '1');
         });
-
         // Upload complete.
         uploader.on('queuecomplete', function(e){
             $.when(function(){
@@ -189,7 +192,6 @@
                 window.location.reload();
             });
         });
-
         // Upload error.
         uploader.on('error', function(file, msg, xhr){
             $('#processingModal').modal('hide');
