@@ -1,47 +1,3 @@
-<?php
-// Load the application libraries.
-require_once('../Application.php');
-
-// Initialize new or existing session.
-AuthSession::start();
-
-// Check whether the user has attempted to login.
-$Error = null;
-if (isset($_POST['register'])) {
-
-    // Attempt to retrieve the requested user from the database.
-    $Users = User::getAll(array(
-        'email' => $_POST['email']
-    ));
-
-    // Verify the user hasn't already registered.
-    if ($Users == null && sizeof($Users) == 0) {
-        $AuthenticatedUser = null;
-
-        if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-          if($_POST['password'] == $_POST['passwordRepeat']){
-
-          }else{
-            $Error = "Passwords do not match";
-          }
-          
-        } else {
-          $Error = "Email address is not valid";
-        }
-
-        if($AuthenticatedUser != null) {
-            $_SESSION['user'] = $AuthenticatedUser;
-            header("Location: /home.php");
-            die();
-        }
-    }
-
-    // If we got here with no other errors, it must have been either
-    // a bad password or unknown user.
-    if($Error == null){
-      $Error = "Unable to create account";
-    }
-?>
 
 
 <!DOCTYPE html>
@@ -70,7 +26,7 @@ if (isset($_POST['register'])) {
 </head>
 
 <body class="app flex-row align-items-center">
-  <div class="container">
+  <div class="container"> 
 
     <div class="row justify-content-center">
       <div class="col-md-6">
