@@ -31,7 +31,9 @@ if (isset($_POST['register'])) {
 
               $sql = "INSERT INTO user (firstName, lastName, password, email) VALUES ('$firstname', '$lastname', '$password', '$email')";
 
-              echo DBSession::getSession();
+              if( DBSession::getSession() ){
+                print 'this is true';
+              }
 
               if (DBSession::getSession()->query($sql)) {
                 print "This works";
