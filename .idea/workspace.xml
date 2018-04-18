@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="Clean up image upload.">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/public/library.php" afterPath="$PROJECT_DIR$/webapp/public/library.php" />
     </list>
@@ -77,12 +77,12 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+            <state relative-caret-position="539">
+              <caret line="78" column="87" lean-forward="false" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
               <folding>
-                <element signature="e#4019#4026#1#HTML" expanded="true" />
-                <element signature="e#4858#4865#1#HTML" expanded="true" />
-                <element signature="e#5434#5441#1#HTML" expanded="true" />
+                <element signature="e#3190#3197#1#HTML" expanded="true" />
+                <element signature="e#4029#4036#1#HTML" expanded="true" />
+                <element signature="e#4605#4612#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1361,20 +1361,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00086" summary="changes">
-      <created>1521769292429</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1521769292429</updated>
-    </task>
-    <task id="LOCAL-00087" summary="changes">
-      <created>1521769388016</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1521769388016</updated>
-    </task>
     <task id="LOCAL-00088" summary="changes">
       <created>1521769509666</created>
       <option name="number" value="00088" />
@@ -1704,11 +1690,25 @@
       <option name="project" value="LOCAL" />
       <updated>1523821416803</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="image upload modal styles">
+      <created>1524088722604</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1524088722605</updated>
+    </task>
+    <task id="LOCAL-00136" summary="image upload modal styles">
+      <created>1524088840870</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1524088840870</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130847000" />
+    <option name="totallyTimeSpent" value="131009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1816,7 +1816,8 @@
     <MESSAGE value="Build UUID functionality and more S3 stuff." />
     <MESSAGE value="Changes to the upload failure, yo?" />
     <MESSAGE value="Clean up image upload." />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up image upload." />
+    <MESSAGE value="image upload modal styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="image upload modal styles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2191,12 +2192,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        <state relative-caret-position="539">
+          <caret line="78" column="87" lean-forward="false" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
           <folding>
-            <element signature="e#4019#4026#1#HTML" expanded="true" />
-            <element signature="e#4858#4865#1#HTML" expanded="true" />
-            <element signature="e#5434#5441#1#HTML" expanded="true" />
+            <element signature="e#3190#3197#1#HTML" expanded="true" />
+            <element signature="e#4029#4036#1#HTML" expanded="true" />
+            <element signature="e#4605#4612#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
