@@ -32,6 +32,7 @@ if (isset($_POST['register'])) {
               $sql = "INSERT INTO `user` (`firstName`, `lastName`, `password`, `email`) VALUES ('$firstname', '$lastname', '$password', '$email')";
 
               if (DBSession::getSession()->query($sql)) {
+                print "This works";
                 $AuthenticatedUser = User::build($Users[0]);
                }
                 
