@@ -10,7 +10,7 @@
         img[attr-lazysrc] {
             opacity: 0;
         }
-        .library-image{
+        img[src!=""] {
             width:100%;
             padding:15px;
             -opacity: 1;
@@ -158,7 +158,7 @@
          * Lazy-load all of the images.
          */
         var libraryView = $('#library-view');
-        libraryView.find('image[attr-lazysrc!=""]').each(function(index){
+        libraryView.find('img[attr-lazysrc!=""]').each(function(index){
             $(this).attr('src', $(this).attr('attr-lazysrc'));
         });
 
