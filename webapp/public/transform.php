@@ -66,6 +66,7 @@ if($Image == null || $cachedURL == null){
                         </div>
                     </div>
                     <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Properties</a>
+                    <a class="btn" href="#"><i class="fa fa-save"></i> &nbsp;Save</a>
                 </div>
             </li>
         </ol>
