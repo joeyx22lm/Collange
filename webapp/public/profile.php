@@ -59,16 +59,21 @@
         <div class="container-fluid" id="explore-view">
             <div class="animated fadeIn">
                 <div class="row">
-					<div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-6 col-md-6 col-sm-6">
-						<div style="margin-top: 10px;">
-							<h5 style="">About the User</h5>
-							<p>This is something about the user</p>
-						</div>
-					</div>	
-				
                     <?php
 
                     if(isset($_GET['id'])){
+
+                    	?>
+
+	                    <div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-6 col-md-6 col-sm-6">
+							<div style="margin-top: 10px;">
+								<h5 style="">About the User</h5>
+								<p>This is something about the user</p>
+							</div>
+						</div>
+
+					<?php
+
                 		echo "<p>{$id}</p>";
 	                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE uuid='$id' ORDER BY `id` DESC");
 	                    while($Image = $ImagesQ->fetch_array()){
