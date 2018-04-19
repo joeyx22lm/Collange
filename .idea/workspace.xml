@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -65,14 +64,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="138" column="2" lean-forward="true" selection-start-line="138" selection-start-column="2" selection-end-line="138" selection-end-column="2" />
+            <state relative-caret-position="510">
+              <caret line="129" column="42" lean-forward="false" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
               <folding>
                 <element signature="e#111#2713#0#PHP" expanded="false" />
                 <element signature="e#2769#3934#0#PHP" expanded="false" />
+                <marker date="1524107468594" expanded="true" signature="4388:4422" ph="UPDATE `image`... " />
+                <marker date="1524107468594" expanded="true" signature="4388:4435" ph="UPDATE `image`... " />
+                <marker date="1524107468594" expanded="true" signature="4388:4452" ph="UPDATE `image`... " />
               </folding>
             </state>
           </provider>
@@ -113,17 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/Application.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="96" column="52" lean-forward="false" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
@@ -135,6 +127,16 @@
                 <marker date="1524107279589" expanded="false" signature="5133:5143" ph="..." />
                 <marker date="1524107279589" expanded="false" signature="5607:5617" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestUtility.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="701">
+              <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -969,10 +971,10 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/navbar.php" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/image.php" />
-        <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/public/api.php" />
       </list>
     </option>
   </component>
@@ -1412,13 +1414,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00176" summary="fix logging">
-      <created>1524098359421</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1524098359421</updated>
-    </task>
     <task id="LOCAL-00177" summary="fix logging">
       <created>1524098376651</created>
       <option name="number" value="00177" />
@@ -1755,11 +1750,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524107223735</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="bold-typed save button">
+      <created>1524107288298</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1524107288298</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146100000" />
+    <option name="totallyTimeSpent" value="146288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1858,7 +1860,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MockUtility" />
     <MESSAGE value="dropzone events" />
     <MESSAGE value="fix xformsession handler" />
     <MESSAGE value="sidebar datetime for edit sessions" />
@@ -1883,7 +1884,8 @@
     <MESSAGE value="clear messaging" />
     <MESSAGE value="boldened type" />
     <MESSAGE value="revisions in transform page" />
-    <option name="LAST_COMMIT_MESSAGE" value="revisions in transform page" />
+    <MESSAGE value="bold-typed save button" />
+    <option name="LAST_COMMIT_MESSAGE" value="bold-typed save button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2116,14 +2118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -2239,17 +2233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="138" column="2" lean-forward="true" selection-start-line="138" selection-start-column="2" selection-end-line="138" selection-end-column="2" />
-          <folding>
-            <element signature="e#111#2713#0#PHP" expanded="false" />
-            <element signature="e#2769#3934#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -2281,6 +2264,28 @@
             <marker date="1524107279589" expanded="false" signature="4658:4668" ph="..." />
             <marker date="1524107279589" expanded="false" signature="5133:5143" ph="..." />
             <marker date="1524107279589" expanded="false" signature="5607:5617" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="129" column="42" lean-forward="false" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
+          <folding>
+            <element signature="e#111#2713#0#PHP" expanded="false" />
+            <element signature="e#2769#3934#0#PHP" expanded="false" />
+            <marker date="1524107468594" expanded="true" signature="4388:4422" ph="UPDATE `image`... " />
+            <marker date="1524107468594" expanded="true" signature="4388:4435" ph="UPDATE `image`... " />
+            <marker date="1524107468594" expanded="true" signature="4388:4452" ph="UPDATE `image`... " />
           </folding>
         </state>
       </provider>

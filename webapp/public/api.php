@@ -122,13 +122,13 @@ if(isset($_GET['sharing'])){
         $Image = $img;
     }
     if($Image != null){
-        $ImageObj = Image::build($Image, Image);
-        if($ImageObj != null){
-            $ImageObj->toggleShared();
-            if($ImageObj->save()){
-                header("Location: /library.php");
-                die();
-            }
+        $new = 1;
+        if($Image['shared']){
+            $new = 0;
+        }
+        if(DBSession::getSession()->query("UPDATE `image` SET `shared`='$new' WHERE `id`='".$Image['id']."'")){
+            header("Location: /library.php");
+            die();
         }
     }
 
