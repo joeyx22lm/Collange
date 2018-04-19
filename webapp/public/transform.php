@@ -143,12 +143,27 @@ if($Revision == null){
             <div class="row">
                 <div class="col-lg-12 img-responsive" id="canvas">
                     <?php
-                    // Check for an eventuuid.
+                    // Check for a pending filter process.
                     if(!empty($Revision['EventUUID'])){
                     ?>
                     <img id="imagecontainer" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
                     <?php
-                    }else{
+                    }
+
+                    // check for a complete, but unsaved filter.
+                    else if(!empty($Revision['key'])) {
+                        $uri = S3EphemeralURLHandler::get($Revision['key']);
+                        if ($uri == null) {
+                            $uri = S3Handler::createSignedGETUrl($Revision['key']);
+                            S3EphemeralURLHandler::set($Revision['key'], $uri);
+                        }
+                        ?>
+                        <img src="<?php echo $uri;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
+                        <?php
+                    }
+
+                    // check for a saved image.
+                    else{
                     ?>
                     <img src="<?php echo $cachedURL;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                     <?php

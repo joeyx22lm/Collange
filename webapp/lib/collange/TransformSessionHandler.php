@@ -65,6 +65,7 @@ class TransformSessionHandler {
                     'imageName'=>$imageName,
                     'imageSize'=>$imageSize,
                     'imageUuid'=>$imageUuid,
+                    'key'=>null
                 )
             )
         );
@@ -105,6 +106,7 @@ class TransformSessionHandler {
             'imageName'=>$Session['originalImageName'],
             'imageSize'=>$Session['originalImageSize'],
             'imageUuid'=>null,
+            'key'=>null
         );
 
         // Store the event.

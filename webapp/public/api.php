@@ -187,18 +187,27 @@ if(isset($_GET['filter'])){
 }
 
 
+/**
+ * Wait for Filter event to complete.
+ * Update the revision session information
+ * and return the image s3 signed URL when done.
+ * 10 Second timeout.
+ */
 if(isset($_GET['loadEventUUID'])){
     if(!empty($_GET['loadEventUUID'])){
         // Verify this user owns the eventid.
         $Session = TransformSessionHandler::getSession($_GET['txId']);
+        $Revision = null;
+        $RevisionKey = null;
         if($Session != null) {
-            $found = false;
             foreach ($Session['events'] as $j => $Event) {
                 if ($Event['EventUUID'] == $_GET['loadEventUUID']) {
-                    $found = true;
+                    $RevisionKey = $j;
+                    $Revision = $Event;
+                    break;
                 }
             }
-            if ($found) {
+            if ($Revision != null) {
                 $start = time();
                 while ((time() - $start) < 10) {
                     PHPLoader::loadModule('collange:TransformImageTransactionHandler');
@@ -212,7 +221,13 @@ if(isset($_GET['loadEventUUID'])){
                             PHPLoader::loadModule('collange:S3EphemeralURLHandler');
                             if (S3EphemeralURLHandler::set($key, $Obj['url'])) {
                                 Log::info('S3EphemeralURL(' . $key . '): ' . $Obj['url']);
-                                die($Obj['url']);
+                                // Update session data.
+                                $Revision['key'] = $key;
+                                $Revision['EventUUID'] = null;
+                                $Session['events'][$RevisionKey] = $Revision;
+                                if(TransformSessionHandler::setSession($Session)){
+                                    die($Obj['url']);
+                                }
                             }
                         }
                     }else sleep(1);
