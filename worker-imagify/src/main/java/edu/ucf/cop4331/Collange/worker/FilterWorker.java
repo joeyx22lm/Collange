@@ -70,7 +70,7 @@ public class FilterWorker {
             FilterCompleteMessage resp = new FilterCompleteMessage(message.transactionId,
                     message.revisionId,
                     message.eventId,
-                    "/filtered/"+ UUID.randomUUID()+".jpg");
+                    "filtered/"+ UUID.randomUUID()+".jpg");
             // Upload the new revision to S3.
             try {
                 AwsS3Handler.putImage(resp.key, newImg);
