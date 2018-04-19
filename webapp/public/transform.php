@@ -215,6 +215,7 @@ else if(!empty($Revision['key'])) {
             var imageUuid = '<?php echo $Image['uuid'];?>';
             var api = '/api.php?filter='+encodeURIComponent(filter);
             api += '&image='+encodeURIComponent(imageUuid);
+            api += '&key='+encodeURIComponent(revision.imageKey);
             api += '&revisionId='+encodeURIComponent(revisionId);
             api += '&txId='+encodeURIComponent(sessionId);
 

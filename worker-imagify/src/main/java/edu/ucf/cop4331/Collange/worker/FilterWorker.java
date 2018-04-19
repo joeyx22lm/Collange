@@ -67,12 +67,12 @@ public class FilterWorker {
                 continue;
             }
 
-            FilterCompleteMessage resp = new FilterCompleteMessage(message.transactionId,
-                    message.revisionId,
-                    message.eventId,
-                    "filtered/"+ UUID.randomUUID()+".jpg");
             // Upload the new revision to S3.
             try {
+                FilterCompleteMessage resp = new FilterCompleteMessage(message.transactionId,
+                        message.revisionId,
+                        message.eventId,
+                        "filtered/"+ UUID.randomUUID()+".jpg");
                 AwsS3Handler.putImage(resp.key, newImg);
                 System.out.println("Filtered Image: " + message.key);
                 // TODO: Mark complete w/ success.
