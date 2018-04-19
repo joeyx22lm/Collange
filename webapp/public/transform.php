@@ -206,6 +206,7 @@ else if(!empty($Revision['key'])) {
         var filterStatus = $('#filterStatus');
         $('.applyfilter[filter-id!=""]').click(function(){
             $('#filteringModal').modal({show: true});
+            $('#filterModalTitle').html('Applying Filter: <b>' + $(this).text() + '</b>');
         });
         $('.applyfilter[filter-id!=""]').click(function(){
             var filter = $(this).attr('filter-id');
