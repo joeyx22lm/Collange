@@ -12690,3 +12690,10 @@ hr.transparent {
 	color: black !important;
 	font-size: 26px !important;
 }
+
+.truncate {
+  width: 95%!important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

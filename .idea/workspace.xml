@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="truncate image names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/style.css" afterPath="$PROJECT_DIR$/webapp/public/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -99,16 +100,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/image.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Application.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/Application.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="930">
               <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
               <folding>
                 <marker date="1524103621148" expanded="false" signature="2580:2592" ph="..." />
@@ -158,6 +149,16 @@
                 <marker date="1524103621148" expanded="false" signature="3979:3989" ph="..." />
                 <marker date="1524103621148" expanded="false" signature="4453:4463" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="12693" column="1" lean-forward="true" selection-start-line="12693" selection-start-column="1" selection-end-line="12693" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,11 +173,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="28" selection-end-column="87" />
+            <state relative-caret-position="430">
+              <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -948,7 +949,6 @@
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/service/predis.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
-        <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ImageHandler.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/user.php" />
@@ -959,12 +959,13 @@
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
         <option value="$PROJECT_DIR$/webapp/Application.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/DateUtility.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
+        <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
       </list>
     </option>
   </component>
@@ -1080,6 +1081,13 @@
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
@@ -1395,13 +1403,6 @@
       <workItem from="1521752324305" duration="31544000" />
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
-    </task>
-    <task id="LOCAL-00159" summary="EXIF stripping and fix xform sessions.">
-      <created>1524093425927</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1524093425927</updated>
     </task>
     <task id="LOCAL-00160" summary="composer GD updates.">
       <created>1524093562170</created>
@@ -1739,11 +1740,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524103417095</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="filters drop down">
+      <created>1524103628882</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1524103628882</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142818000" />
+    <option name="totallyTimeSpent" value="142996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1842,8 +1850,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="php GD library support @HEROKU?" />
-    <MESSAGE value="EXIF stripping and fix xform sessions." />
     <MESSAGE value="composer GD updates." />
     <MESSAGE value="heroku imagik" />
     <MESSAGE value="upgrade version of php for imagick?" />
@@ -1867,7 +1873,9 @@
     <MESSAGE value="transformationsession api" />
     <MESSAGE value="show image on transformation page" />
     <MESSAGE value="clean up the breadcrumbs on the transform page" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up the breadcrumbs on the transform page" />
+    <MESSAGE value="filters drop down" />
+    <MESSAGE value="truncate image names" />
+    <option name="LAST_COMMIT_MESSAGE" value="truncate image names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2050,29 +2058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="12673" column="0" lean-forward="true" selection-start-line="12673" selection-start-column="0" selection-end-line="12673" selection-end-column="0" />
-          <folding>
-            <element signature="e#109263#109463#2" expanded="false" />
-            <element signature="e#109693#109842#2" expanded="false" />
-            <element signature="e#110407#110553#2" expanded="false" />
-            <element signature="e#110912#111078#1" expanded="false" />
-            <element signature="e#125522#125765#2" expanded="false" />
-            <element signature="e#127714#127963#2" expanded="false" />
-            <element signature="e#171432#171622#2" expanded="false" />
-            <element signature="e#171677#171867#2" expanded="false" />
-            <element signature="e#282377#282614#2" expanded="false" />
-            <element signature="e#282702#282939#2" expanded="false" />
-            <element signature="e#290700#291116#2" expanded="false" />
-            <element signature="e#312222#312641#2" expanded="false" />
-            <element signature="e#314520#314939#2" expanded="false" />
-            <element signature="e#315325#315741#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/AuthSession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2220,14 +2205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="28" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
@@ -2267,7 +2244,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="930">
           <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
           <folding>
             <marker date="1524103621148" expanded="false" signature="2580:2592" ph="..." />
@@ -2276,6 +2253,22 @@
             <marker date="1524103621148" expanded="false" signature="3979:3989" ph="..." />
             <marker date="1524103621148" expanded="false" signature="4453:4463" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="12693" column="1" lean-forward="true" selection-start-line="12693" selection-start-column="1" selection-end-line="12693" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="31" column="75" lean-forward="false" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -29,7 +29,7 @@
                     if(isset($_GET['txId']) && $_GET['txId'] == $Session['sessionId']){
                         ?>
                         <li class="nav-item nav-dropdown open">
-                            <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
+                            <a class="nav-link nav-dropdown-toggle truncate" href="#"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
                             <ul class="nav-dropdown-items">
                                 <?php
                                 foreach($Session['events'] as $j=>$Event){
