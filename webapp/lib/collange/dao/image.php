@@ -10,11 +10,10 @@ class Image extends DBObject {
     protected $size;
     protected $shared;
     protected $createdDate;
-    protected $key;
     protected $uuid;
     protected $ext;
 
-    public function __construct($uuid, $ownerId, $fileName, $caption, $size, $shared, $key, $ext, $createdDate=null)
+    public function __construct($uuid, $ownerId, $fileName, $caption, $size, $shared, $ext, $createdDate=null)
     {
         if($createdDate == null){
             $createdDate = time();
@@ -26,8 +25,11 @@ class Image extends DBObject {
         $this->size = $size;
         $this->shared = $shared;
         $this->createdDate = $createdDate;
-        $this->key = $key;
         $this->ext = $ext;
+    }
+
+    public function getKey(){
+        return $this->uuid .'.' . $this->ext;
     }
 
     public function getId(){

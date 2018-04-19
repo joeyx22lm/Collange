@@ -39,7 +39,7 @@ if(isset($_GET['upload'])){
 
         // Make sure the image made it thru all of that conversion.
         if($location != null){
-            $imageRcd = new Image($imageUUID, AuthSession::getUser()->id, $filename, '', $_FILES['file']['size'], 0, $key, $type);
+            $imageRcd = new Image($imageUUID, AuthSession::getUser()->id, $filename, '', $_FILES['file']['size'], 0, $type);
             $saveResult = $imageRcd->save();
             if($saveResult){
                 // Upload the user's image.
