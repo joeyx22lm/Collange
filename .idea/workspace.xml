@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/home.php" afterPath="$PROJECT_DIR$/webapp/public/home.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/profile.php" afterPath="$PROJECT_DIR$/webapp/public/profile.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -163,16 +163,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="S3Handler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -185,13 +175,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="623">
               <caret line="72" column="82" lean-forward="false" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="87" />
               <folding>
                 <marker date="1524171064192" expanded="true" signature="2009:2066" ph="SELECT * FRO... image" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/public/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="613">
+              <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+              <folding>
+                <marker date="1524171319722" expanded="true" signature="190:197" ph="SELECT first... user" />
+                <marker date="1524171319722" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
+                <marker date="1524171319722" expanded="true" signature="190:237" ph="SELECT * FRO... user" />
+                <marker date="1524171319722" expanded="true" signature="190:239" ph="SELECT * FRO... user" />
+                <marker date="1524171319722" expanded="true" signature="466:494" ph="SELECT * FRO... image" />
+                <marker date="1524171319722" expanded="true" signature="466:515" ph="SELECT * FRO... image" />
+                <marker date="1524171319722" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
+                <marker date="1524171319722" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
+                <marker date="1524171319722" expanded="true" signature="708:761" ph="..." />
               </folding>
             </state>
           </provider>
@@ -958,7 +968,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/S3EphemeralURLHandler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AWSS3Handler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AwsS3Handler.java" />
@@ -1009,6 +1018,7 @@
         <option value="$PROJECT_DIR$/webapp/public/register.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/home.php" />
+        <option value="$PROJECT_DIR$/webapp/public/profile.php" />
       </list>
     </option>
   </component>
@@ -1589,13 +1599,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00269" summary="fix user registration">
-      <created>1524158270656</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
-      <option name="project" value="LOCAL" />
-      <updated>1524158270656</updated>
-    </task>
     <task id="LOCAL-00270" summary="fix user registration">
       <created>1524158281574</created>
       <option name="number" value="00270" />
@@ -1932,11 +1935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524170439008</updated>
     </task>
-    <option name="localTasksCounter" value="318" />
+    <task id="LOCAL-00318" summary="user profile stuff">
+      <created>1524171078298</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
+      <option name="project" value="LOCAL" />
+      <updated>1524171078298</updated>
+    </task>
+    <option name="localTasksCounter" value="319" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169351000" />
+    <option name="totallyTimeSpent" value="169602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2035,7 +2045,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix user registration" />
     <MESSAGE value="fix user registration CSS/JS imports" />
     <MESSAGE value="fix sidebar to updated xform session" />
     <MESSAGE value="fix transform page a bit" />
@@ -2060,7 +2069,8 @@
     <MESSAGE value="registration logging" />
     <MESSAGE value="registration sql query" />
     <MESSAGE value="explore breadcrumb" />
-    <option name="LAST_COMMIT_MESSAGE" value="explore breadcrumb" />
+    <MESSAGE value="user profile stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="user profile stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2069,7 +2079,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/test/testutility.php" />
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/sds" />
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/UUID.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -2530,6 +2539,24 @@
           <caret line="72" column="82" lean-forward="false" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="87" />
           <folding>
             <marker date="1524171064192" expanded="true" signature="2009:2066" ph="SELECT * FRO... image" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding>
+            <marker date="1524171319722" expanded="true" signature="190:197" ph="SELECT first... user" />
+            <marker date="1524171319722" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
+            <marker date="1524171319722" expanded="true" signature="190:237" ph="SELECT * FRO... user" />
+            <marker date="1524171319722" expanded="true" signature="190:239" ph="SELECT * FRO... user" />
+            <marker date="1524171319722" expanded="true" signature="466:494" ph="SELECT * FRO... image" />
+            <marker date="1524171319722" expanded="true" signature="466:515" ph="SELECT * FRO... image" />
+            <marker date="1524171319722" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
+            <marker date="1524171319722" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
+            <marker date="1524171319722" expanded="true" signature="708:761" ph="..." />
           </folding>
         </state>
       </provider>

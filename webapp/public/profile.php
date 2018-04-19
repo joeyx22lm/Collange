@@ -1,40 +1,32 @@
 <?php require_once('../Application.php');?>
 <?php AuthSession::protect();
+if(!isset($_GET['user'])){
+    header("Location: /home.php");
+    die();
+}
+$UserQ = DBSession::getSession()->query("SELECT * FROM `user` WHERE `uuid`='$_GET[user]'");
+$User = null;
+$Images = array();
+if($UserQ != null && $UserQ->num_rows > 0) {
+    $User = $UserQ->fetch_array();
+}
+if(empty($User)){
+    header("Location: /home.php");
+    die();
+}
+
+$ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE `ownerId`='$User[id]' AND `shared`='1'");
+if($ImagesQ != null && $ImagesQ->num_rows > 0) {
+    while($Image = $ImagesQ->fetch_array()) {
+        $Images[] = $Image;
+    }
+}
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php App::buildHtmlHead('Dashboard');?>
 </head>
-<!-- BODY options, add following classes to body to change options
-    // Header options
-    1. '.header-fixed'					- Fixed Header
-
-    // Brand options
-    1. '.brand-minimized'       - Minimized brand (Only symbol)
-
-    // Sidebar options
-    1. '.sidebar-fixed'					- Fixed Sidebar
-    2. '.sidebar-hidden'				- Hidden Sidebar
-    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
-    4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
-    5. '.sidebar-compact'			  - Compact Sidebar
-
-    // Aside options
-    1. '.aside-menu-fixed'			- Fixed Aside Menu
-    2. '.aside-menu-hidden'			- Hidden Aside Menu
-    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
-
-    // Breadcrumb options
-    1. '.breadcrumb-fixed'			- Fixed Breadcrumb
-
-    // Footer options
-    1. '.footer-fixed'					- Fixed footer
-
-    -->
 <body class="app header-fixed sidebar-fixed">
 <?php echo App::buildPageNavbar();?>
 <div class="app-body">
@@ -59,22 +51,15 @@
         <div class="container-fluid" id="explore-view">
             <div class="animated fadeIn">
                 <div class="row">
-                    <?php
 
-                    if(isset($_GET['id'])){
-                    	$User = DBSession::getSession()->query("SELECT firstName FROM `user` WHERE uuid='$id'");
-                    	?>
-
-	                    <div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-6 col-md-6 col-sm-6">
-							<div style="margin-top: 10px;">
-								<h5 style=""><?php echo "About {$User}";?></h5>
-								<p>This is something about the user</p>
-							</div>
-						</div>
-
+                    <div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-6 col-md-6 col-sm-6">
+                        <div style="margin-top: 10px;">
+                            <h5 style=""><?php echo $User['firstName'] . ' ' . $User['lastName'];?></h5>
+                            <p>My personal caption</p>
+                        </div>
+                    </div>
 					<?php
-	                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE uuid='$id' ORDER BY `id` DESC");
-	                    while($Image = $ImagesQ->fetch_array()){
+	                    foreach($Images as $i=>$Image){
 	                        $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
 	                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
 	                        if($cachedURL == null){
