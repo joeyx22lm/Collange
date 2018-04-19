@@ -86,7 +86,16 @@
     </main>
 </div>
 <?php App::buildPageFooter();?>
-<!-- Custom scripts required by this view -->
-<script src="js/views/main.js"></script>
+<script>
+    $(document).ready(function(){
+        /**
+         * Lazy-load all of the images.
+         */
+        var libraryView = $('#library-view');
+        libraryView.find('img[attr-lazysrc]').each(function(index){
+            $(this).attr('src', $(this).attr('attr-lazysrc')).removeClass('lazy');
+        });
+    });
+</script>
 </body>
 </html>
