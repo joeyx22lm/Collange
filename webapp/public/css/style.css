@@ -12697,3 +12697,9 @@ hr.transparent {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+.dropdown-menu {
+  max-height:500px;
+  overflow-y:scroll;
+}

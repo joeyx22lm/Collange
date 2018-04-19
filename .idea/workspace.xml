@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="fix xform page + api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/style.css" afterPath="$PROJECT_DIR$/webapp/public/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -67,7 +67,7 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
+            <state relative-caret-position="895">
               <caret line="218" column="30" lean-forward="true" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="39" />
               <folding>
                 <element signature="e#3200#4365#0#PHP" expanded="false" />
@@ -111,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="227" column="76" lean-forward="false" selection-start-line="227" selection-start-column="76" selection-end-line="227" selection-end-column="76" />
+            <state relative-caret-position="631">
+              <caret line="229" column="63" lean-forward="true" selection-start-line="229" selection-start-column="63" selection-end-line="229" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -125,6 +125,16 @@
                 <marker date="1524162477909" expanded="false" signature="5794:5804" ph="..." />
                 <marker date="1524162477909" expanded="false" signature="6268:6278" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="12696" column="19" lean-forward="true" selection-start-line="12696" selection-start-column="19" selection-end-line="12696" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,18 +176,6 @@
               <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
                 <marker date="1524158838195" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="126" column="4" lean-forward="true" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="31" />
-              <folding>
-                <marker date="1524105417009" expanded="true" signature="1450:1503" ph="UPDATE `user`... " />
               </folding>
             </state>
           </provider>
@@ -950,7 +948,6 @@
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/DateUtility.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
-        <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/navbar.php" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/image.php" />
@@ -972,6 +969,7 @@
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -1089,6 +1087,13 @@
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
@@ -1454,13 +1459,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00235" summary="image explore functionality">
-      <created>1524111167091</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
-      <option name="project" value="LOCAL" />
-      <updated>1524111167092</updated>
-    </task>
     <task id="LOCAL-00236" summary="fix dependency">
       <created>1524111223877</created>
       <option name="number" value="00236" />
@@ -1797,11 +1795,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524162377662</updated>
     </task>
-    <option name="localTasksCounter" value="284" />
+    <task id="LOCAL-00284" summary="fix xform page + api">
+      <created>1524162483493</created>
+      <option name="number" value="00284" />
+      <option name="presentableId" value="LOCAL-00284" />
+      <option name="project" value="LOCAL" />
+      <updated>1524162483493</updated>
+    </task>
+    <option name="localTasksCounter" value="285" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161463000" />
+    <option name="totallyTimeSpent" value="161586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2064,14 +2069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="10817" column="16" lean-forward="false" selection-start-line="10817" selection-start-column="16" selection-end-line="10817" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/component/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -2319,7 +2316,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
+        <state relative-caret-position="895">
           <caret line="218" column="30" lean-forward="true" selection-start-line="218" selection-start-column="30" selection-end-line="218" selection-end-column="39" />
           <folding>
             <element signature="e#3200#4365#0#PHP" expanded="false" />
@@ -2332,8 +2329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="227" column="76" lean-forward="false" selection-start-line="227" selection-start-column="76" selection-end-line="227" selection-end-column="76" />
+        <state relative-caret-position="631">
+          <caret line="229" column="63" lean-forward="true" selection-start-line="229" selection-start-column="63" selection-end-line="229" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -2343,6 +2340,14 @@
             <marker date="1524162477909" expanded="false" signature="5794:5804" ph="..." />
             <marker date="1524162477909" expanded="false" signature="6268:6278" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="12696" column="19" lean-forward="true" selection-start-line="12696" selection-start-column="19" selection-end-line="12696" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
