@@ -104,15 +104,15 @@
       <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="471">
+              <caret line="46" column="113" lean-forward="false" selection-start-line="46" selection-start-column="113" selection-end-line="46" selection-end-column="113" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524159632698" expanded="false" signature="4388:4400" ph="..." />
-                <marker date="1524159632698" expanded="false" signature="4805:4815" ph="..." />
-                <marker date="1524159632698" expanded="false" signature="5312:5322" ph="..." />
-                <marker date="1524159632698" expanded="false" signature="5787:5797" ph="..." />
-                <marker date="1524159632698" expanded="false" signature="6261:6271" ph="..." />
+                <marker date="1524159845945" expanded="false" signature="4395:4407" ph="..." />
+                <marker date="1524159845945" expanded="false" signature="4812:4822" ph="..." />
+                <marker date="1524159845945" expanded="false" signature="5319:5329" ph="..." />
+                <marker date="1524159845945" expanded="false" signature="5794:5804" ph="..." />
+                <marker date="1524159845945" expanded="false" signature="6268:6278" ph="..." />
               </folding>
             </state>
           </provider>
@@ -141,7 +141,7 @@
       <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="919">
+            <state relative-caret-position="695">
               <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
               <folding />
             </state>
@@ -220,9 +220,9 @@
       <find>transition</find>
       <find>putmap</find>
       <find>+</find>
-      <find>save</find>
       <find>loadEventUUID</find>
       <find>$Session['image</find>
+      <find>save</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -246,8 +246,8 @@
       <replace>=&gt; &quot;</replace>
       <replace>' =&gt; &quot;</replace>
       <replace>getTransition()</replace>
-      <replace>eent</replace>
       <replace>$Session['originalImage</replace>
+      <replace>eent</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/worker-imagify</dir>
@@ -1438,13 +1438,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00227" summary="session api stuff">
-      <created>1524109072809</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
-      <option name="project" value="LOCAL" />
-      <updated>1524109072809</updated>
-    </task>
     <task id="LOCAL-00228" summary="filter worker queue/map names">
       <created>1524109306134</created>
       <option name="number" value="00228" />
@@ -1781,11 +1774,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524159208480</updated>
     </task>
-    <option name="localTasksCounter" value="276" />
+    <task id="LOCAL-00276" summary="fix transform page a bit">
+      <created>1524159669089</created>
+      <option name="number" value="00276" />
+      <option name="presentableId" value="LOCAL-00276" />
+      <option name="project" value="LOCAL" />
+      <updated>1524159669089</updated>
+    </task>
+    <option name="localTasksCounter" value="277" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158945000" />
+    <option name="totallyTimeSpent" value="159131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -1884,7 +1884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set session should overwrite if a txid was given." />
     <MESSAGE value="reverse the events in the sidebar" />
     <MESSAGE value="fix dropzone init" />
     <MESSAGE value="damn dropzone" />
@@ -1909,7 +1908,8 @@
     <MESSAGE value="fix user registration" />
     <MESSAGE value="fix user registration CSS/JS imports" />
     <MESSAGE value="fix sidebar to updated xform session" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix sidebar to updated xform session" />
+    <MESSAGE value="fix transform page a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix transform page a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2238,14 +2238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
-          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -2313,17 +2305,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        <state relative-caret-position="471">
+          <caret line="46" column="113" lean-forward="false" selection-start-line="46" selection-start-column="113" selection-end-line="46" selection-end-column="113" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1524159632698" expanded="false" signature="4388:4400" ph="..." />
-            <marker date="1524159632698" expanded="false" signature="4805:4815" ph="..." />
-            <marker date="1524159632698" expanded="false" signature="5312:5322" ph="..." />
-            <marker date="1524159632698" expanded="false" signature="5787:5797" ph="..." />
-            <marker date="1524159632698" expanded="false" signature="6261:6271" ph="..." />
+            <marker date="1524159845945" expanded="false" signature="4395:4407" ph="..." />
+            <marker date="1524159845945" expanded="false" signature="4812:4822" ph="..." />
+            <marker date="1524159845945" expanded="false" signature="5319:5329" ph="..." />
+            <marker date="1524159845945" expanded="false" signature="5794:5804" ph="..." />
+            <marker date="1524159845945" expanded="false" signature="6268:6278" ph="..." />
           </folding>
         </state>
       </provider>

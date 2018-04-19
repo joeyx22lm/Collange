@@ -17,7 +17,7 @@ if(empty($TransformSession)){
 
 // Retrieve the current revision.
 $Revision = null;
-foreach($TransformSession['events'] as $i=>$Event){
+foreach(array_reverse($TransformSession['events']) as $i=>$Event){
     if(!isset($_GET['revisionId'])){
         $Revision = $Event;
         break;
@@ -44,7 +44,7 @@ if(!empty($Revision['EventUUID'])){
 // Check if this is a saved image.
 else if(!empty($Revision['imageUuid'])){
     $Image = null;
-    foreach(Image::getAll(DBSession::getSession(), array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid'])) as $img){
+    foreach(Image::getAll(DBSession::getSession(), array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$Revision['imageUuid'])) as $img){
         $img['key'] = $img['uuid'] . '.' . $img['ext'];
         $Image = $img;
         $ImageURL = S3EphemeralURLHandler::get($Image['key']);
