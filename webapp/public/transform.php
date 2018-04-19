@@ -36,6 +36,11 @@ if($Image == null || $cachedURL == null){
 <html lang="en">
 <head>
     <?php App::buildHtmlHead('Transform that image!');?>
+    <style>
+        .bold-typed {
+            font-weight:900;
+        }
+    </style>
 </head>
 <body class="app header-fixed sidebar-fixed">
 <?php echo App::buildPageNavbar();?>
@@ -66,7 +71,17 @@ if($Image == null || $cachedURL == null){
                         </div>
                     </div>
                     <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Properties</a>
+                    <?php
+                    if(true){
+                    ?>
+                    <a class="btn bold-typed" href="#"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
+                    <?php
+                    }else{
+                    ?>
                     <a class="btn" href="#"><i class="fa fa-save"></i> &nbsp;Save</a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </li>
         </ol>
