@@ -59,7 +59,7 @@
                     <?php
                     $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE shared='1' ORDER BY `id` DESC");
                     while($Image = $ImagesQ->fetch_array()){
-                        $Image['key'] = $Image['uuid'] . '.'.$Image['ext'];
+                        $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);
                         if($cachedURL == null){
                             $cachedURL = S3Handler::createSignedGETUrl($Image['key']);

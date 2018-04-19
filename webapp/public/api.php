@@ -49,6 +49,16 @@ if(isset($_GET['upload'])){
                     die(StaticResource::get('error_api_upload_unknown'));
                 }
 
+                // Save a thumbnail version.
+                $thumb = ImageHandler::make_thumb($location);
+                if(!empty($thumb)){
+                    if(!S3Handler::upload($key = $imageUUID . '_thumb.' . $type, $thumb)){
+                        http_response_code(400);
+                        die(StaticResource::get('error_api_upload_unknown'));
+                    }
+                    unlink($thumb);
+                }
+
                 // Upload successful, delete the local file now.
                 unlink($location);
 
