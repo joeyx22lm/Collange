@@ -77,10 +77,10 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state relative-caret-position="487">
+              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding>
-                <marker date="1524099465578" expanded="true" signature="1034:1145" ph="INSERT INTO user... " />
+                <marker date="1524099512543" expanded="true" signature="978:1089" ph="INSERT INTO user... " />
               </folding>
             </state>
           </provider>
@@ -1385,13 +1385,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00133" summary="Changes to the upload failure, yo?">
-      <created>1523768787791</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1523768787791</updated>
-    </task>
     <task id="LOCAL-00134" summary="Clean up image upload.">
       <created>1523821416803</created>
       <option name="number" value="00134" />
@@ -1728,11 +1721,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524099337922</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="redirect after register">
+      <created>1524099475269</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1524099475269</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139218000" />
+    <option name="totallyTimeSpent" value="139266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1831,7 +1831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changes to the upload failure, yo?" />
     <MESSAGE value="Clean up image upload." />
     <MESSAGE value="image upload modal styles" />
     <MESSAGE value="dropzone modal events" />
@@ -1856,7 +1855,8 @@
     <MESSAGE value="fix logging" />
     <MESSAGE value="fix queries" />
     <MESSAGE value="test data?" />
-    <option name="LAST_COMMIT_MESSAGE" value="test data?" />
+    <MESSAGE value="redirect after register" />
+    <option name="LAST_COMMIT_MESSAGE" value="redirect after register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2267,10 +2267,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="46" lean-forward="false" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        <state relative-caret-position="487">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding>
-            <marker date="1524099465578" expanded="true" signature="1034:1145" ph="INSERT INTO user... " />
+            <marker date="1524099512543" expanded="true" signature="978:1089" ph="INSERT INTO user... " />
           </folding>
         </state>
       </provider>

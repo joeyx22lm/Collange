@@ -22,10 +22,10 @@ if (isset($_POST['register'])) {
 
           if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength >= 8){
-              $firstName = DBSession::sanitize($_POST['firstname']);
-              $lastName = DBSession::sanitize($_POST['lastname']);
-              $password = DBSession::sanitize($_POST['password']);
-              $email = DBSession::sanitize($_POST['email']);
+              $firstName = $_POST['firstname'];
+              $lastName = $_POST['lastname'];
+              $password = AuthSession::password_hash($_POST['password']);
+              $email = $_POST['email'];
 
               $sql = "INSERT INTO user(password, email, firstName, lastName) VALUES ('$password','$email', '$firstName', '$lastName')";
 
