@@ -225,17 +225,13 @@ else if(!empty($Revision['key'])) {
                         var url = '/api.php?loadEventUUID='+encodeURIComponent(response.EventUUID)+'&txId=<?php echo $TransformSession['sessionId'];?>';
                         filterProcessAjax = setInterval(function(){
                             $.getJSON(url, function(resp){
-                                if(resp != undefined && resp.image_uri != ''){
+                                if(resp != undefined){
                                     clearInterval(filterProcessAjax);
-                                    $('#imagecontainer').attr('src', atob(resp.uri));
+                                    window.location.href = '/transform.php?txId=<?php echo $TransformSession['sessionId'];?>&revisionId='+resp.revisionId;
                                 }
                             });
                         }, 3000);
                     }
-                    //var revisedSession = '/transform.php?txId='+encodeURIComponent(sessionId);
-                    //revisedSession += '&revisionId='+encodeURIComponent(response.revisionId);
-                    //revisedSession += '&EventUUID='+encodeURIComponent(response.EventUUID);
-                    //window.location.href = revisedSession;
                 });
             });
         });

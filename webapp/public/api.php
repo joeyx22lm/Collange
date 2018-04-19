@@ -226,7 +226,6 @@ if(isset($_GET['loadEventUUID'])){
                                 $Revision['EventUUID'] = null;
                                 $Session['events'][$RevisionKey] = $Revision;
                                 TransformSessionHandler::setSession($Session);
-                                $Obj['uri'] = base64_encode((string)$Obj['image_uri']);
                                 die(json_encode($Obj));
                             }
                         }
