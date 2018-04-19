@@ -68,12 +68,12 @@
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="548">
-              <caret line="228" column="49" lean-forward="false" selection-start-line="228" selection-start-column="49" selection-end-line="228" selection-end-column="49" />
+              <caret line="228" column="52" lean-forward="false" selection-start-line="228" selection-start-column="52" selection-end-line="228" selection-end-column="52" />
               <folding>
                 <element signature="e#3200#4365#0#PHP" expanded="false" />
-                <marker date="1524160209670" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-                <marker date="1524160209670" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-                <marker date="1524160209670" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+                <marker date="1524160279027" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+                <marker date="1524160279027" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+                <marker date="1524160279027" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
               </folding>
             </state>
           </provider>
@@ -1452,13 +1452,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00230" summary="fix 'shared' vs 'sharing' not working in library">
-      <created>1524110090993</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1524110090993</updated>
-    </task>
     <task id="LOCAL-00231" summary="fix 'shared' vs 'sharing' not working in library">
       <created>1524110695695</created>
       <option name="number" value="00231" />
@@ -1795,11 +1788,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524159980688</updated>
     </task>
-    <option name="localTasksCounter" value="279" />
+    <task id="LOCAL-00279" summary="fix xform api">
+      <created>1524160219731</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1524160219731</updated>
+    </task>
+    <option name="localTasksCounter" value="280" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159471000" />
+    <option name="totallyTimeSpent" value="159541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -1900,7 +1900,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix dropzone init" />
     <MESSAGE value="damn dropzone" />
-    <MESSAGE value="fix xform api" />
     <MESSAGE value="fix filterworker" />
     <MESSAGE value="fix async message" />
     <MESSAGE value="added thumbnail support" />
@@ -1923,7 +1922,8 @@
     <MESSAGE value="fix sidebar to updated xform session" />
     <MESSAGE value="fix transform page a bit" />
     <MESSAGE value="semi colon to comma, yo" />
-    <option name="LAST_COMMIT_MESSAGE" value="semi colon to comma, yo" />
+    <MESSAGE value="fix xform api" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix xform api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2333,12 +2333,12 @@
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
-          <caret line="228" column="49" lean-forward="false" selection-start-line="228" selection-start-column="49" selection-end-line="228" selection-end-column="49" />
+          <caret line="228" column="52" lean-forward="false" selection-start-line="228" selection-start-column="52" selection-end-line="228" selection-end-column="52" />
           <folding>
             <element signature="e#3200#4365#0#PHP" expanded="false" />
-            <marker date="1524160209670" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-            <marker date="1524160209670" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-            <marker date="1524160209670" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+            <marker date="1524160279027" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+            <marker date="1524160279027" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+            <marker date="1524160279027" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
           </folding>
         </state>
       </provider>
