@@ -14,6 +14,23 @@ if(empty($TransformSession)){
     header("Location: /library.php");
     die();
 }
+
+// Retrieve image information.
+$Image = null;
+$cachedURL = null;
+foreach(Image::getAll(DBSession::getSession(), array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid'])) as $img){
+    $Image['key'] = $Image['uuid'] . '.' . $Image['ext'];
+    $Image = $img;
+    $cachedURL = S3EphemeralURLHandler::get($Image['key']);
+    if ($cachedURL == null) {
+        $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
+        S3EphemeralURLHandler::set($Image['key'], $cachedURL);
+    }
+}
+if($Image == null || $cachedURL == null){
+    header("Location: /library.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,23 +96,6 @@ if(empty($TransformSession)){
             </div>
             <div class="row">
                 <div class="col-lg-12 img-responsive" id="canvas">
-                    <?php
-                    $Image = null;
-                    $cachedURL = null;
-                    $imageCount = 0;
-                    $imageQuery = array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid']);
-                    foreach(Image::getAll(DBSession::getSession(), $imageQuery) as $img){
-                        $Image['key'] = $Image['uuid'] . '.' . $Image['ext'];
-                        $Image = $img;
-                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
-                        if ($cachedURL == null) {
-                            $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
-                            S3EphemeralURLHandler::set($Image['key'], $cachedURL);
-                        }
-                    }
-
-
-                    ?>
                     <img src="<?php echo $cachedURL;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                 </div>
             </div>
