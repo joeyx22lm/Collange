@@ -190,18 +190,18 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            <state relative-caret-position="703">
+              <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
               <folding>
-                <marker date="1524171319722" expanded="true" signature="190:197" ph="SELECT first... user" />
-                <marker date="1524171319722" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
-                <marker date="1524171319722" expanded="true" signature="190:237" ph="SELECT * FRO... user" />
-                <marker date="1524171319722" expanded="true" signature="190:239" ph="SELECT * FRO... user" />
-                <marker date="1524171319722" expanded="true" signature="466:494" ph="SELECT * FRO... image" />
-                <marker date="1524171319722" expanded="true" signature="466:515" ph="SELECT * FRO... image" />
-                <marker date="1524171319722" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
-                <marker date="1524171319722" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
-                <marker date="1524171319722" expanded="true" signature="708:761" ph="..." />
+                <marker date="1524171353886" expanded="true" signature="190:197" ph="SELECT first... user" />
+                <marker date="1524171353886" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
+                <marker date="1524171353886" expanded="true" signature="190:237" ph="SELECT * FRO... user" />
+                <marker date="1524171353886" expanded="true" signature="190:239" ph="SELECT * FRO... user" />
+                <marker date="1524171353886" expanded="true" signature="466:494" ph="SELECT * FRO... image" />
+                <marker date="1524171353886" expanded="true" signature="466:515" ph="SELECT * FRO... image" />
+                <marker date="1524171353886" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
+                <marker date="1524171353886" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
+                <marker date="1524171353886" expanded="true" signature="708:761" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1599,13 +1599,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00270" summary="fix user registration">
-      <created>1524158281574</created>
-      <option name="number" value="00270" />
-      <option name="presentableId" value="LOCAL-00270" />
-      <option name="project" value="LOCAL" />
-      <updated>1524158281574</updated>
-    </task>
     <task id="LOCAL-00271" summary="fix user registration">
       <created>1524158769891</created>
       <option name="number" value="00271" />
@@ -1942,11 +1935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524171078298</updated>
     </task>
-    <option name="localTasksCounter" value="319" />
+    <task id="LOCAL-00319" summary="profile">
+      <created>1524171344891</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
+      <option name="project" value="LOCAL" />
+      <updated>1524171344891</updated>
+    </task>
+    <option name="localTasksCounter" value="320" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169602000" />
+    <option name="totallyTimeSpent" value="169634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2045,7 +2045,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix user registration CSS/JS imports" />
     <MESSAGE value="fix sidebar to updated xform session" />
     <MESSAGE value="fix transform page a bit" />
     <MESSAGE value="semi colon to comma, yo" />
@@ -2070,7 +2069,8 @@
     <MESSAGE value="registration sql query" />
     <MESSAGE value="explore breadcrumb" />
     <MESSAGE value="user profile stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="user profile stuff" />
+    <MESSAGE value="profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2545,18 +2545,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        <state relative-caret-position="703">
+          <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
           <folding>
-            <marker date="1524171319722" expanded="true" signature="190:197" ph="SELECT first... user" />
-            <marker date="1524171319722" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
-            <marker date="1524171319722" expanded="true" signature="190:237" ph="SELECT * FRO... user" />
-            <marker date="1524171319722" expanded="true" signature="190:239" ph="SELECT * FRO... user" />
-            <marker date="1524171319722" expanded="true" signature="466:494" ph="SELECT * FRO... image" />
-            <marker date="1524171319722" expanded="true" signature="466:515" ph="SELECT * FRO... image" />
-            <marker date="1524171319722" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
-            <marker date="1524171319722" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
-            <marker date="1524171319722" expanded="true" signature="708:761" ph="..." />
+            <marker date="1524171353886" expanded="true" signature="190:197" ph="SELECT first... user" />
+            <marker date="1524171353886" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
+            <marker date="1524171353886" expanded="true" signature="190:237" ph="SELECT * FRO... user" />
+            <marker date="1524171353886" expanded="true" signature="190:239" ph="SELECT * FRO... user" />
+            <marker date="1524171353886" expanded="true" signature="466:494" ph="SELECT * FRO... image" />
+            <marker date="1524171353886" expanded="true" signature="466:515" ph="SELECT * FRO... image" />
+            <marker date="1524171353886" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
+            <marker date="1524171353886" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
+            <marker date="1524171353886" expanded="true" signature="708:761" ph="..." />
           </folding>
         </state>
       </provider>

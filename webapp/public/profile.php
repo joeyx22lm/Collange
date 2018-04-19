@@ -76,9 +76,6 @@ if($ImagesQ != null && $ImagesQ->num_rows > 0) {
 	                        </div>
                         <?php
                      }
-                 }else{
-                 	echo "<p>Error Loading profile page</p>";
-                 }
                     ?>
                 </div>
             </div>
