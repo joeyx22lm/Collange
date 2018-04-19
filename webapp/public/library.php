@@ -94,7 +94,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="upload-form" class="dropzone needsclick dz-clickable">
+                <form action="/api.php?upload" id="upload-form" class="dropzone needsclick dz-clickable">
                     <div class="dz-message">
                         Drop files here or click to upload.
                     </div>
@@ -138,17 +138,6 @@
         var libraryView = $('#library-view');
         libraryView.find('img[attr-lazysrc]').each(function(index){
             $(this).attr('src', $(this).attr('attr-lazysrc')).removeClass('lazy');
-        });
-
-        /**
-         * Start Dropzone.JS
-         */
-        Dropzone.autoDiscover = false;
-        $("#upload-form").dropzone({
-            url: "/api.php?upload",
-            success: function (file, response) {
-                window.location.reload();
-            }
         });
     });
 </script>
