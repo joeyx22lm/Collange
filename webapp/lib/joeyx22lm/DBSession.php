@@ -133,6 +133,8 @@ class DBObject {
             $Q = $x->query("SELECT * FROM `".static::$tableName."` WHERE `".static::$tablePKName."`='$y'");
             if($Q != null && $Q->num_rows > 0){
                 return $Q->fetch_array();
+            }else if(!empty(DBSession::getSession()->error)){
+                Log::error(static::$tableName.'.getAll(id='.$y.'): ' . DBSession::getSession()->error);
             }
         }
 
@@ -159,6 +161,8 @@ class DBObject {
                 $ret = array();
                 while($result = $Q->fetch_array()) $ret[] = $result;
                 return $ret;
+            }else if(!empty(DBSession::getSession()->error)){
+                Log::error(static::$tableName.'.getAll('.json_encode($arr).'): ' . DBSession::getSession()->error);
             }
             return array();
         }
