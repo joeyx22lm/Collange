@@ -77,7 +77,6 @@ public class JedisHandler {
     public String dequeue(String queueName, long sleepPeriod, long timeoutSec){
         if(this.isConnected()) {
             long start = System.currentTimeMillis();
-            QueueMessage msg = null;
             while (System.currentTimeMillis() - start < timeoutSec) {
                 List<String> msg = session.blpop(0, queueName);
                 if (msg != null && msg.size() > 1) {
