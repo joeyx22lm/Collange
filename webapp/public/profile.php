@@ -50,13 +50,6 @@ if($ImagesQ != null && $ImagesQ->num_rows > 0) {
         <div class="container-fluid" id="explore-view">
             <div class="animated fadeIn">
                 <div class="row">
-
-                    <div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-3 col-md-4 col-sm-6 col-xs-1">
-                        <div style="margin-top: 10px;">
-                            <h5 style=""><?php echo $User['firstName'] . ' ' . $User['lastName'];?></h5>
-                            <p>My personal caption</p>
-                        </div>
-                    </div>
 					<?php
 	                    foreach($Images as $i=>$Image){
 	                        $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
