@@ -85,10 +85,13 @@ if(isset($_GET['edit'])){
          */
         TransformSessionHandler::createSession('IMG400012.JPG', '2.4Mb', UUID::randomUUID(), UUID::randomUUID(), '42 mins ago');
         TransformSessionHandler::createSession('IMG400014.JPG', '2.3Mb', UUID::randomUUID(), UUID::randomUUID(), '10 mins ago');
-        $Image = Image::get(DBSession::getSession(), array(
+        $Image = null;
+        foreach(Image::getAll(DBSession::getSession(), array(
             'ownerId'=>AuthSession::getUser()->getId(),
             'uuid'=>$_GET['edit'])
-        );
+        ) as $i=>$img){
+            $Image = $img;
+        }
         if($Image != null){
             if(TransformSessionHandler::createSession($Image['fileName'], $Image['size'], $Image['uuid'])){
                 header("Location: /transform.php?uuid=".$Image['uuid']);
