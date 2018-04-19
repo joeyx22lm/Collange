@@ -1,5 +1,6 @@
 package edu.ucf.cop4331.Collange.worker;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.ucf.cop4331.Collange.service.redis.FilterWorkerQueue;
 import edu.ucf.cop4331.Collange.service.redis.JedisHandler;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
@@ -30,9 +31,19 @@ public class FilterWorker {
 
         while(true) {
             // Attempt to pop a message off the queue.
-            String message = jobQueue.dequeue(FilterWorkerQueue.WaitingQueueRedisIdentifier, 1000, 10000);
-            if(message == null){
+            String msg = jobQueue.dequeue(FilterWorkerQueue.WaitingQueueRedisIdentifier, 1000, 10000);
+            if(msg == null){
                 System.out.println("FilterWorker.DEBUG: Listener timed out while waiting for messages.");
+                continue;
+            }
+            FilterWorkerMessage message = null;
+            try{
+                message = new ObjectMapper().readValue(msg, FilterWorkerMessage.class)
+            }catch(Exception e){
+                System.err.println(e.getMessage());
+                if(e.getCause() != null){
+                    System.err.println(e.getCause().getMessage());
+                }
                 continue;
             }
 
