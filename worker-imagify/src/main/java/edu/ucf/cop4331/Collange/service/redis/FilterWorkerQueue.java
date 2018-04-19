@@ -45,7 +45,9 @@ public class FilterWorkerQueue extends JedisHandler {
     }
 
     public boolean markJobComplete(FilterCompleteMessage result) throws JsonProcessingException {
+        String resp = om.writeValueAsString(result);
+        System.out.println("markJobComplete("+result.eventId+"): " + resp);
         return (session.hmset(CompletedMapRedisIdentifier,
-                ImmutableMap.of(result.eventId, om.writeValueAsString(result))) != null);
+                ImmutableMap.of(result.eventId, resp)) != null);
     }
 }
