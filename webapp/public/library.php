@@ -138,10 +138,10 @@
         Dropzone.options.uploadForm = {
             url: "/api.php?upload",
             init : function(){
-                uploader.on("queuecomplete", function(event) {
+                this.on("queuecomplete", function(event) {
                     window.location.reload();
                 });
-                uploader.on("error", function(event) {
+                this.on("error", function(event) {
                     $('#errorModal').modal('show');
                 });
             }
