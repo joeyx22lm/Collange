@@ -31,6 +31,8 @@ if (isset($_POST['register'])) {
 
               if (DBSession::getSession()->query($sql)) {
                 $Success = "Account Successfully Created";
+                header("Location: /home.php");
+                die();
                }
                 
             }else{  
