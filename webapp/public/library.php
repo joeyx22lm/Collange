@@ -135,17 +135,12 @@
          * Start Dropzone.JS
          */
         Dropzone.autoDiscover = false;
-        Dropzone.options.uploadForm = {
+        $("#uploadForm").dropzone({
             url: "/api.php?upload",
-            init : function(){
-                this.on("queuecomplete", function(event) {
-                    window.location.reload();
-                });
-                this.on("error", function(event) {
-                    $('#errorModal').modal('show');
-                });
+            success: function (file, response) {
+                window.location.reload();
             }
-        };
+        });
     });
 </script>
 </body>
