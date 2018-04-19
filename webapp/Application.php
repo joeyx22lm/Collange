@@ -101,7 +101,10 @@ StaticResource::set(array(
     'error_default'=>'An unexpected error occurred.',
     'error_api_upload_maxsize'=>'Your image must not exceed 10Mb.',
     'error_api_upload_filetype'=>'Your image must be a GIF, PNG or JPG.',
-    'error_api_upload_unknown'=>'An unexpected error occurred while uploading your image.'
+    'error_api_upload_unknown'=>'An unexpected error occurred while uploading your image.',
+
+    'TransformWaitingQueue'=>$_ENV['TransformWaitingQueue'],
+    'TransformResponseMap'=>$_ENV['TransformResponseMap']
 ));
 
 

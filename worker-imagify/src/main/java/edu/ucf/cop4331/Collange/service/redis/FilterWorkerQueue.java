@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class FilterWorkerQueue extends JedisHandler {
 
-    private static final String WaitingQueueRedisIdentifier = "FilterWaitingQueue";
-    private static final String CompletedMapRedisIdentifier = "FilterCompletedMap";
+    private static final String WaitingQueueRedisIdentifier = System.getenv("TransformWaitingQueue");
+    private static final String CompletedMapRedisIdentifier = System.getenv("TransformResponseMap");
 
     public FilterWorkerQueue(JedisHandler context){
         super(context.getSession());
