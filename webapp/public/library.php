@@ -144,7 +144,7 @@
          * Start Dropzone.JS
          */
         Dropzone.autoDiscover = false;
-        $("#uploadForm").dropzone({
+        $("#upload-form").dropzone({
             url: "/api.php?upload",
             success: function (file, response) {
                 window.location.reload();
