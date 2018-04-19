@@ -82,6 +82,8 @@
 	                        </div>
                         <?php
                      }
+                 }else{
+                 	echo "<p>Error Loading profile page</p>";
                  }
                     ?>
                 </div>
