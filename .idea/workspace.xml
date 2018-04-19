@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -64,7 +64,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
@@ -126,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="S3Handler.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="S3Handler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="44" />
+            <state relative-caret-position="852">
+              <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -206,7 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>extends Serializable</find>
       <find>&lt;T implements Serializable&gt;</find>
       <find>print</find>
       <find>private</find>
@@ -236,6 +235,7 @@
       <find>save</find>
       <find>id</find>
       <find>authsess</find>
+      <find>AuthSession::getUser()-&gt;id</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -982,8 +982,8 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
       </list>
     </option>
   </component>
@@ -1549,13 +1549,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00252" summary="mark async job complete">
-      <created>1524115140507</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1524115140507</updated>
-    </task>
     <task id="LOCAL-00253" summary="fix empty directory S3 naming issue">
       <created>1524115168847</created>
       <option name="number" value="00253" />
@@ -1892,11 +1885,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524166690288</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="xform save api">
+      <created>1524166982387</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1524166982387</updated>
+    </task>
+    <option name="localTasksCounter" value="302" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165539000" />
+    <option name="totallyTimeSpent" value="165728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2426,14 +2426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-778">
@@ -2457,6 +2449,14 @@
             <marker date="1524166977718" expanded="true" signature="9747:9994" ph="INSERT INTO `image`... " />
             <marker date="1524166977718" expanded="true" signature="9747:10135" ph="INSERT INTO `image`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
