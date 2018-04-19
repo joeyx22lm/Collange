@@ -259,7 +259,7 @@ else if(!empty($Revision['key'])) {
             });
         });
         $('.saveaction').click(function(){
-            $('.saveModal').modal({show:true});
+            $('#saveModal').modal({show:true});
 
         });
     });
