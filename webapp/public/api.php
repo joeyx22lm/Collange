@@ -87,7 +87,7 @@ if(isset($_GET['edit'])){
         TransformSessionHandler::createSession('IMG400014.JPG', '2.3Mb', UUID::randomUUID(), UUID::randomUUID(), '10 mins ago');
         $Image = null;
         foreach(Image::getAll(DBSession::getSession(), array(
-            'ownerId'=>AuthSession::getUser()->getId(),
+            'ownerId'=>AuthSession::getUser()->id,
             'uuid'=>$_GET['edit'])
         ) as $i=>$img){
             $Image = $img;

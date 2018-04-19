@@ -55,6 +55,9 @@ class MockUtility {
     public static function override($obj, $method, $return){
         return false;
     }
+    public static function verify($obj, $method, $times){
+        return false;
+    }
 }
 class UnitTest {
     public static function runTest(){
