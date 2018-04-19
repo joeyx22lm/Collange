@@ -57,7 +57,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
                                 <p class="card-text"><?php echo $Image['caption'];?></p>
-                                <div class="btn-group" role="group" aria-label="Image Options">
+                                <div class="btn-group" role="group" aria-label="Image Options" style="width:100%;">
                                     <a class="btn btn-primary" href="/api.php?edit=<?php echo $Image['uuid'];?>">Edit Image</a>
                                     <a class="btn btn-warning" href="#">Sharing Options</a>
                                     <a class="btn btn-danger" href="#">Delete Image</a>
