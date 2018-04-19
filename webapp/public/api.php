@@ -225,9 +225,8 @@ if(isset($_GET['loadEventUUID'])){
                                 $Revision['key'] = $key;
                                 $Revision['EventUUID'] = null;
                                 $Session['events'][$RevisionKey] = $Revision;
-                                if(TransformSessionHandler::setSession($Session)){
-                                    die($Obj['url']);
-                                }
+                                TransformSessionHandler::setSession($Session);
+                                die($Obj['url']);
                             }
                         }
                     }else sleep(1);
