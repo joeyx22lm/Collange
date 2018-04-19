@@ -120,6 +120,10 @@
     </div>
 </div>
 
+<div>
+    <a href=“#” image-uuid=“<?php echo imageuuid…” class=“btn btn-danger deleteimage”/>
+</div>
+
 <?php App::buildPageFooter();?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script>
@@ -139,6 +143,17 @@
         libraryView.find('img[attr-lazysrc]').each(function(index){
             $(this).attr('src', $(this).attr('attr-lazysrc')).removeClass('lazy');
         });
+
+        /**
+        * Deletion event listener
+        */
+        <?php
+         $(‘.deleteimage’).click(function(){
+          var imageUuid = $(this).attr(‘image-uuid’);
+            if(imageUuid != undefined){
+
+             }
+          });
     });
 </script>
 </body>
