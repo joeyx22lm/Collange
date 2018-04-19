@@ -227,7 +227,7 @@ else if(!empty($Revision['key'])) {
                             $.getJSON(url, function(resp){
                                 if(resp != undefined && resp.image_uri != ''){
                                     clearInterval(filterProcessAjax);
-                                    $('#imagecontainer').attr('src', resp.image_uri);
+                                    $('#imagecontainer').attr('src', atob(resp.uri));
                                 }
                             });
                         }, 3000);
