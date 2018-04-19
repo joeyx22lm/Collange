@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" afterPath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="924">
-              <caret line="65" column="266" lean-forward="false" selection-start-line="65" selection-start-column="266" selection-end-line="65" selection-end-column="266" />
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -175,7 +174,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="990">
@@ -971,8 +970,8 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/user.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
-        <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
+        <option value="$PROJECT_DIR$/webapp/public/api.php" />
       </list>
     </option>
   </component>
@@ -1385,13 +1384,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00124" summary="changes">
-      <created>1521784116808</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1521784116809</updated>
-    </task>
     <task id="LOCAL-00125" summary="changes">
       <created>1521784373604</created>
       <option name="number" value="00125" />
@@ -1728,11 +1720,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524097297707</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="log aborted uploads.">
+      <created>1524097601525</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1524097601525</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137842000" />
+    <option name="totallyTimeSpent" value="137871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -2225,14 +2224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="65" column="266" lean-forward="false" selection-start-line="65" selection-start-column="266" selection-end-line="65" selection-end-column="266" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -2267,6 +2258,14 @@
             <marker date="1524097593442" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
             <marker date="1524097593442" expanded="true" signature="5652:5653" ph="INSERT INTO `'.static::${$tableName}.'`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

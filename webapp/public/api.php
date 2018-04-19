@@ -63,7 +63,7 @@ if(isset($_GET['upload'])){
             }
         }
     }
-    INSERT INTO `image` (`ownerId`, `fileName`, `caption`, `size`, `shared`, `createdDate`, `key`, `uuid`, `ext`) VALUES ('1', 'collange.png', '', '134216', '0', '1524097400', '95593454-7688-4b11-a5cd-a6ec8f870c95.jpg', '95593454-7688-4b11-a5cd-a6ec8f870c95', 'jpg')
+
     // Something bad happened.. Atleast try to delete their file..
     if(!S3Handler::delete($key)){
         Log::error('API.delete('.$key.'): Error');
