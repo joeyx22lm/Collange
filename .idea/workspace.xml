@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/Application.php" afterPath="$PROJECT_DIR$/webapp/Application.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" />
       <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java" />
+      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -66,83 +67,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="174" column="42" lean-forward="false" selection-start-line="174" selection-start-column="42" selection-end-line="174" selection-end-column="42" />
-              <folding>
-                <element signature="e#2769#3934#0#PHP" expanded="false" />
-                <marker date="1524109027973" expanded="true" signature="4388:4422" ph="UPDATE `image`... " />
-                <marker date="1524109027973" expanded="true" signature="4388:4435" ph="UPDATE `image`... " />
-                <marker date="1524109027973" expanded="true" signature="4388:4452" ph="UPDATE `image`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="S3EphemeralURLHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/S3EphemeralURLHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TransformImageTransactionHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            <state relative-caret-position="75">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-956">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/RedisHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilterWorkerQueue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FilterWorkerQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="77" lean-forward="true" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="98" />
+            <state relative-caret-position="240">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterWorker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding>
-                <marker date="1524107279589" expanded="false" signature="3734:3746" ph="..." />
-                <marker date="1524107279589" expanded="false" signature="4151:4161" ph="..." />
-                <marker date="1524107279589" expanded="false" signature="4658:4668" ph="..." />
-                <marker date="1524107279589" expanded="false" signature="5133:5143" ph="..." />
-                <marker date="1524107279589" expanded="false" signature="5607:5617" ph="..." />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestFilterWorker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JedisHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/JedisHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-247">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,11 +149,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestUtility.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php">
+      <file leaf-file-name="FilterWorkerMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="114" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RGBTransitions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -188,7 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setStaticResource</find>
       <find>traffic &amp;</find>
       <find>timeoutMs</find>
       <find>ms</find>
@@ -218,6 +213,7 @@
       <find>dropdown-toggle::before</find>
       <find>build</find>
       <find>nav-dropdown-toggle::before</find>
+      <find>transition</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -240,6 +236,7 @@
       <replace>src</replace>
       <replace>=&gt; &quot;</replace>
       <replace>' =&gt; &quot;</replace>
+      <replace>getTransition()</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/worker-imagify</dir>
@@ -916,13 +913,10 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/JedisHandler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/S3EphemeralURLHandler.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AWSS3Handler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AwsS3Handler.java" />
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
         <option value="$PROJECT_DIR$/webapp/public/js/Popper.min.js" />
         <option value="$PROJECT_DIR$/webapp/public/ffdsfdsf" />
         <option value="$PROJECT_DIR$/webapp/lib/ui/component/navbar.php" />
@@ -961,7 +955,10 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/Application.php" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java" />
+        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
       </list>
     </option>
   </component>
@@ -1212,6 +1209,19 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="s3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="worker-imagify" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="ucf" type="462c0819:PsiDirectoryNode" />
+              <item name="cop4331" type="462c0819:PsiDirectoryNode" />
+              <item name="Collange" type="462c0819:PsiDirectoryNode" />
+              <item name="worker" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1405,13 +1415,6 @@
       <workItem from="1521752324305" duration="31544000" />
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
-    </task>
-    <task id="LOCAL-00179" summary="fix queries">
-      <created>1524098676198</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1524098676198</updated>
     </task>
     <task id="LOCAL-00180" summary="test data?">
       <created>1524099240558</created>
@@ -1749,11 +1752,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524109072809</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="filter worker queue/map names">
+      <created>1524109306134</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1524109306134</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148111000" />
+    <option name="totallyTimeSpent" value="148766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1761,7 +1771,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1775,6 +1785,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26411074" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36734694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09531417" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1807,7 +1818,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285068" sideWeight="0.49574015" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669684" sideWeight="0.48722044" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26144835" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36734694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09531417" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1852,7 +1862,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix xformsession handler" />
     <MESSAGE value="sidebar datetime for edit sessions" />
     <MESSAGE value="fix xformsession txid url" />
     <MESSAGE value="fix dateutility" />
@@ -1877,7 +1886,8 @@
     <MESSAGE value="revisions in transform page" />
     <MESSAGE value="bold-typed save button" />
     <MESSAGE value="session api stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="session api stuff" />
+    <MESSAGE value="filter worker queue/map names" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter worker queue/map names" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1886,34 +1896,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/worker-imagify/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.298/8032b0e8f8c5b98e2aa3d8013c3118899a367665/aws-java-sdk-s3-1.11.298-sources.jar!/com/amazonaws/services/s3/model/ObjectMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="94" column="11" lean-forward="false" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.298/8032b0e8f8c5b98e2aa3d8013c3118899a367665/aws-java-sdk-s3-1.11.298-sources.jar!/com/amazonaws/services/s3/AmazonS3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35175">
@@ -1925,14 +1907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="71" column="72" lean-forward="false" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2124,14 +2098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="41" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -2253,18 +2219,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/Application.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -2277,11 +2243,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/JedisHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/TestFilterWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="33" column="75" lean-forward="false" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/dto/FilterWorkerMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="77" lean-forward="true" selection-start-line="10" selection-start-column="77" selection-end-line="10" selection-end-column="98" />
+        <state relative-caret-position="240">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

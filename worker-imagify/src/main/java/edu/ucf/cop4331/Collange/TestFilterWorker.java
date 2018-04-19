@@ -1,6 +1,7 @@
 package edu.ucf.cop4331.Collange;
 
 import edu.ucf.cop4331.Collange.imagify.RGBTransitions;
+import edu.ucf.cop4331.Collange.service.redis.FilterWorkerQueue;
 import edu.ucf.cop4331.Collange.service.redis.JedisHandler;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
 import edu.ucf.cop4331.Collange.worker.FilterWorker;
@@ -27,10 +28,13 @@ public class TestFilterWorker extends FilterWorker {
             int max = new Random().nextInt(5);
             for(int i = 0; i < max; i++){
                 try {
-                    boolean result = redisSession.enqueue(FilterWorker.WaitingQueueRedisIdentifier,
-                            new FilterWorkerMessage(Double.toString(new Random().nextInt()),
+                    boolean result = redisSession.enqueue(FilterWorkerQueue.WaitingQueueRedisIdentifier,
+                            new FilterWorkerMessage(
+                                    Double.toString(new Random().nextInt()),
+                                    Double.toString(new Random().nextInt()),
                                     (new Random().nextBoolean() ? "avatar.png" : "avatar.jpg"),
-                                    RGBTransitions.getRandomTransition()),
+                                    Double.toString(new Random().nextInt()),
+                                    RGBTransitions.getRandomTransition().getCanonicalName()),
                             FilterWorkerMessage.class);
                     if(result){
                         System.out.println("TestFilterWorker: Enqueued Successfully");

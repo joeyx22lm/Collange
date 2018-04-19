@@ -1,24 +1,16 @@
 package edu.ucf.cop4331.Collange.worker;
 
-import com.amazonaws.services.s3.model.S3Object;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.ucf.cop4331.Collange.imagify.RGBTransitions;
 import edu.ucf.cop4331.Collange.service.redis.FilterWorkerQueue;
 import edu.ucf.cop4331.Collange.service.redis.JedisHandler;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
 import edu.ucf.cop4331.Collange.service.s3.AwsS3Handler;
-
-import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.nio.Buffer;
 import java.util.UUID;
 
 public class FilterWorker {
 
     protected static final String ENV_REDISURL = "REDIS_URL";
-    protected static final String WaitingQueueRedisIdentifier = "FilterWaitingQueue";
-    protected static final String CompletedQueueRedisIdentifier = "FilterCompletedQueue";
 
     public static void main(String[] args){
         System.out.println("FilterWorker: Initialiing");
@@ -45,19 +37,19 @@ public class FilterWorker {
 
             // Begin processing the message.
             System.out.println(" FilterWorker.INFO: Listener received message\n\tTransaction ID: " + message.transactionId);
-            System.out.println("\timageId: " + message.imageId);
-            System.out.println("\ttransformation: " + message.transition + "\n");
+            System.out.println("\tkey: " + message.key);
+            System.out.println("\ttransformation: " + message.getTransition() + "\n");
 
-            BufferedImage img = AwsS3Handler.getImage(message.imageId);
+            BufferedImage img = AwsS3Handler.getImage(message.key);
             if(img == null){
-                System.out.println("Unable to retrieve image: " + message.imageId);
+                System.out.println("Unable to retrieve image: " + message.key);
                 // TODO: Mark complete w/ error.
                 continue;
             }
 
-            BufferedImage newImg = message.transition.getInstance().filter(img);
+            BufferedImage newImg = message.getTransition().getInstance().filter(img);
             if(newImg == null){
-                System.out.println("Unable to filter image: " + message.imageId);
+                System.out.println("Unable to filter image: " + message.key);
                 // TODO: Mark complete w/ error.
                 continue;
             }
@@ -65,11 +57,11 @@ public class FilterWorker {
             // Upload the new revision to S3.
             try {
                 AwsS3Handler.putImage("/filtered/"+ UUID.randomUUID()+".jpg", newImg);
-                System.out.println("Filtered Image: " + message.imageId);
+                System.out.println("Filtered Image: " + message.key);
                 // TODO: Mark complete w/ success.
             } catch (IOException e) {
                 e.printStackTrace();
-                System.out.println("Unable to upload filtered image: " + message.imageId);
+                System.out.println("Unable to upload filtered image: " + message.key);
                 // TODO: Mark complete w/ error.
                 continue;
             }
