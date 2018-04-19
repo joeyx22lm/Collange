@@ -70,7 +70,7 @@
                                     <?php
                                     }
                                     ?>
-                                    <a class="btn btn-danger" href="#">Delete Image</a>
+                                    <a class="btn btn-danger" image-uuid=“<?php echo imageuuid…”href="#">Delete Image</a>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,12 @@
         /**
         * Deletion event listener
         */
-
+        $(‘.deleteimage’).click(function(){
+                    var imageUuid = $(this).attr(‘image-uuid’);
+                    if(imageUuid != undefined){
+                    
+                    }
+        });
     });
 </script>
 </body>
