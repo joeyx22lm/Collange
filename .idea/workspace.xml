@@ -1742,11 +1742,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143756000" />
+    <option name="totallyTimeSpent" value="143794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1841,7 +1840,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dropzone event fix" />
     <MESSAGE value="fix upload no id bro" />
     <MESSAGE value="log aborted uploads." />
     <MESSAGE value="fix logging" />
@@ -1866,7 +1864,8 @@
     <MESSAGE value="fix truncating image names in sidebar" />
     <MESSAGE value="set array of supported filters as a static resource" />
     <MESSAGE value="dropdown of supported filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="dropdown of supported filters" />
+    <MESSAGE value="cleaned up carrots of truncated images" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up carrots of truncated images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
