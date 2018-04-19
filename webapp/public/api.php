@@ -212,7 +212,7 @@ if(isset($_GET['loadEventUUID'])){
                             PHPLoader::loadModule('collange:S3EphemeralURLHandler');
                             if (S3EphemeralURLHandler::set($key, $Obj['url'])) {
                                 Log::info('S3EphemeralURL(' . $key . '): ' . $Obj['url']);
-                                die(json_encode($Obj));
+                                die($Obj['url']);
                             }
                         }
                     }else sleep(1);
