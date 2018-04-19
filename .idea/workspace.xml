@@ -67,13 +67,13 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="144" column="11" lean-forward="false" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
+            <state relative-caret-position="378">
+              <caret line="135" column="11" lean-forward="false" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#3771#3778#1#HTML" expanded="true" />
-                <element signature="e#4561#4568#1#HTML" expanded="true" />
-                <marker date="1524104994936" expanded="true" signature="3945:4097" ph="..." />
+                <element signature="e#4562#4569#1#HTML" expanded="true" />
+                <marker date="1524105316981" expanded="true" signature="3946:4098" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1029,43 +1029,7 @@
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
               <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="collange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="collange" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="joeyx22lm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
@@ -1394,13 +1358,6 @@
       <workItem from="1521752324305" duration="31544000" />
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
-    </task>
-    <task id="LOCAL-00165" summary="composer.json">
-      <created>1524096084334</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1524096084335</updated>
     </task>
     <task id="LOCAL-00166" summary="dropzone event fix">
       <created>1524096314812</created>
@@ -1738,11 +1695,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524104735543</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="dropzone events?">
+      <created>1524105003090</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1524105003091</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144040000" />
+    <option name="totallyTimeSpent" value="144359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1841,7 +1805,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix upload no id bro" />
     <MESSAGE value="log aborted uploads." />
     <MESSAGE value="fix logging" />
     <MESSAGE value="fix queries" />
@@ -1866,7 +1829,8 @@
     <MESSAGE value="set array of supported filters as a static resource" />
     <MESSAGE value="dropdown of supported filters" />
     <MESSAGE value="cleaned up carrots of truncated images" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up carrots of truncated images" />
+    <MESSAGE value="dropzone events?" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropzone events?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2253,13 +2217,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="144" column="11" lean-forward="false" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
+        <state relative-caret-position="378">
+          <caret line="135" column="11" lean-forward="false" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#3771#3778#1#HTML" expanded="true" />
-            <element signature="e#4561#4568#1#HTML" expanded="true" />
-            <marker date="1524104994936" expanded="true" signature="3945:4097" ph="..." />
+            <element signature="e#4562#4569#1#HTML" expanded="true" />
+            <marker date="1524105316981" expanded="true" signature="3946:4098" ph="..." />
           </folding>
         </state>
       </provider>

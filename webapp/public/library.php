@@ -85,7 +85,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div id="uploadForm" class="dropzone needsclick dz-clickable">
+                <div id="upload-form" class="dropzone needsclick dz-clickable">
                     <div class="dz-message">
                         Drop files here or click to upload.
                     </div>
@@ -134,15 +134,18 @@
         /**
          * Start Dropzone.JS
          */
-        Dropzone.options.uploadForm = false;
         Dropzone.autoDiscover = false;
-        var uploader = new Dropzone("#uploadForm", { url: "/api.php?upload"});
-        uploader.on("queuecomplete", function() {
-            window.location.reload();
-        });
-        uploader.on("error", function() {
-            $('#errorModal').modal('show');
-        });
+        Dropzone.options.uploadForm = {
+            url: "/api.php?upload",
+            init : function(){
+                uploader.on("queuecomplete", function(event) {
+                    window.location.reload();
+                });
+                uploader.on("error", function(event) {
+                    $('#errorModal').modal('show');
+                });
+            }
+        };
     });
 </script>
 </body>
