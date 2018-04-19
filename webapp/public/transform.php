@@ -188,7 +188,7 @@ if($Revision == null){
             $.getJSON('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>&txId=<?php echo $TransformSession['sessionId'];?>', function(resp){
                 if(resp != undefined){
                     clearInterval(loadFilteredImage);
-                    $('#image-container').attr('src', resp.url);
+                    $('#image-container').attr('src', resp);
                 }
             });
         }, 3000);
