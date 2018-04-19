@@ -201,6 +201,7 @@ if(isset($_GET['loadEventUUID'])){
             if ($found) {
                 $start = time();
                 while ((time() - $start) < 10) {
+                    PHPLoader::loadModule('collange:TransformImageTransactionHandler');
                     $Resp = TransformImageResponseHandler::get($_GET['loadEventUUID']);
                     if (!empty($Resp)) {
                         $Obj = json_decode($Resp, true);
