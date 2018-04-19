@@ -189,7 +189,6 @@ else if(!empty($Revision['key'])) {
 </div>
 
 <?php App::buildPageFooter();?>
-<?php App::buildHtmlJS();?>
 
 <script>
     var revision = {
