@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/webapp/public/js/jquery.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -65,21 +64,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
+            <state relative-caret-position="619">
+              <caret line="273" column="110" lean-forward="false" selection-start-line="273" selection-start-column="110" selection-end-line="273" selection-end-column="110" />
               <folding>
                 <element signature="e#3200#4365#0#PHP" expanded="false" />
-                <marker date="1524167198545" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-                <marker date="1524167198545" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-                <marker date="1524167198545" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:10216" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+                <marker date="1524167932335" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+                <marker date="1524167932335" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:10292" ph="INSERT INTO `image`... " />
               </folding>
             </state>
           </provider>
@@ -152,7 +151,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="js.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/js.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -980,10 +979,10 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
-        <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/public/js/jquery.js" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
+        <option value="$PROJECT_DIR$/webapp/public/api.php" />
       </list>
     </option>
   </component>
@@ -1564,13 +1563,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00257" summary="give me filtered image, pls.">
-      <created>1524116682853</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1524116682853</updated>
-    </task>
     <task id="LOCAL-00258" summary="fix dependency issue">
       <created>1524116831852</created>
       <option name="number" value="00258" />
@@ -1907,11 +1899,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524167518531</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="fix jquery, wtf?">
+      <created>1524167771393</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1524167771393</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166301000" />
+    <option name="totallyTimeSpent" value="166462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2010,7 +2009,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="give me filtered image, pls." />
     <MESSAGE value="fix dependency issue" />
     <MESSAGE value="image too big? mans not hot." />
     <MESSAGE value="fix s3 url?" />
@@ -2035,7 +2033,8 @@
     <MESSAGE value="xform save api" />
     <MESSAGE value="try deleting again" />
     <MESSAGE value="fix library" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix library" />
+    <MESSAGE value="fix jquery, wtf?" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jquery, wtf?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2432,24 +2431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
-          <folding>
-            <element signature="e#3200#4365#0#PHP" expanded="false" />
-            <marker date="1524167198545" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-            <marker date="1524167198545" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-            <marker date="1524167198545" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:10216" ph="INSERT INTO `image`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-237">
@@ -2484,6 +2465,24 @@
         <state relative-caret-position="0">
           <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="273" column="110" lean-forward="false" selection-start-line="273" selection-start-column="110" selection-end-line="273" selection-end-column="110" />
+          <folding>
+            <element signature="e#3200#4365#0#PHP" expanded="false" />
+            <marker date="1524167932335" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+            <marker date="1524167932335" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+            <marker date="1524167932335" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:10292" ph="INSERT INTO `image`... " />
+          </folding>
         </state>
       </provider>
     </entry>
