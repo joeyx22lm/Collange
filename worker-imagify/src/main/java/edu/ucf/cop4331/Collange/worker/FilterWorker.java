@@ -38,7 +38,7 @@ public class FilterWorker {
             }
             FilterWorkerMessage message = null;
             try{
-                message = new ObjectMapper().readValue(msg, FilterWorkerMessage.class)
+                message = new ObjectMapper().readValue(msg, FilterWorkerMessage.class);
             }catch(Exception e){
                 System.err.println(e.getMessage());
                 if(e.getCause() != null){
