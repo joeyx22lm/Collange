@@ -35,7 +35,9 @@ PHPLoader::initModule(array(
     // Collange Project - S3 Signed URL Handler
     'collange:S3EphemeralURLHandler'            =>__DIR__.'/lib/collange/service/S3EphemeralURLHandler.php',
     // Collange Project - Image Handler
-    'collange:ImageHandler'                     =>__DIR__.'/lib/collange/ImageHandler.php'
+    'collange:ImageHandler'                     =>__DIR__.'/lib/collange/ImageHandler.php',
+    // Collange Project - DateUtility
+    'collange:DateUtility'                      =>__DIR__.'/lib/collange/DateUtility.php'
 ));
 
 
@@ -55,7 +57,8 @@ PHPLoader::loadModule(array(
     'collange:TransformSessionHandler',
     'collange:S3EphemeralURLHandler',
     'collange:S3Handler',
-    'collange:ImageHandler'
+    'collange:ImageHandler',
+    'collange:DateUtility'
 ));
 
 
