@@ -43,7 +43,8 @@ class TransformSessionHandler {
                 )
             )
         );
-        return self::setSessions($Sessions);
+        self::setSessions($Sessions);
+        return true;
     }
 
     /**
