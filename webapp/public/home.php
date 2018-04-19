@@ -37,8 +37,6 @@
 <div class="app-body">
     <?php App::buildPageSidebar();?>
 
-    <?php Image::getAll(array('shared' =>'1'));?>
-
     <!-- Main content -->
     <main class="main">
         <!-- Breadcrumb -->
@@ -55,21 +53,35 @@
                 </div>
             </li>
         </ol>
-
-        <div class="row">
-                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive" style="padding: 25px 25px 25px 25px">
-                        <img src="https://placehold.it/300x300" class="img-responsive" style="width:100%">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive" style="padding: 25px 25px 25px 25px">
-                        <img src="https://placehold.it/300x300" class="img-responsive" style="width:100%">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive"  style="padding: 25px 25px 25px 25px">
-                        <img src="https://placehold.it/300x300" class="img-responsive" style="width:100%">
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-xs-12 img-responsive"  style="padding: 25px 25px 25px 25px">
-                        <img src="https://placehold.it/300x300" class="img-responsive" style="width:100%">
-                    </div>
+        <div class="container-fluid" id="library-view">
+            <div class="animated fadeIn">
+                <div class="row">
+                    <?php
+                    foreach(Image::getAll(DBSession::getSession(), array('shared'=>'1')) as $i=>$img){
+                        $Image['key'] = $Image['uuid'] . '.'.$Image['ext'];
+                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
+                        if($cachedURL == null){
+                            $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
+                            S3EphemeralURLHandler::set($Image['key'], $cachedURL);
+                        }
+                        ?>
+                        <div class="library-card card col-lg-3 col-md-4 col-sm-6 col-xs-1" style="padding:0px;">
+                            <img attr-lazysrc="<?php echo $cachedURL;?>" class="card-img-top library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
+                                <p class="card-text"><?php echo $Image['caption'];?></p>
+                                <div class="btn-group" role="group" aria-label="Image Options" style="width:100%;">
+                                    <a class="btn btn-primary" href="#">View Profile</a>
+                                    <a class="btn btn-danger" href="#">Report Image</a>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                     }
+                    ?>
                 </div>
+            </div>
+        </div>
     </main>
 </div>
 <?php App::buildPageFooter();?>
