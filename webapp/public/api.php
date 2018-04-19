@@ -66,7 +66,7 @@ if(isset($_GET['upload'])){
 
     // Something bad happened.. Atleast try to delete their file..
     if(!S3Handler::delete($key)){
-        Log::error('API.upload('.$key.'): Unable to delete.');
+        Log::error('API.delete('.$key.'): Error');
     }
 
     http_response_code(400);
