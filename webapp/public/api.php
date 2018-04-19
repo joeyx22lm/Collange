@@ -145,7 +145,7 @@ if(isset($_GET['filter'])){
     $Image = null;
     foreach(Image::getAll(DBSession::getSession(), array(
             'ownerId'=>AuthSession::getUser()->id,
-            'uuid'=>$_GET['sharing'])
+            'uuid'=>$_GET['image'])
     ) as $i=>$img){
         $Image = $img;
     }
@@ -165,7 +165,8 @@ if(isset($_GET['filter'])){
                if(!empty($revId)){
                    die(json_encode(array(
                        'txId'=>$_GET['txId'],
-                       'revisionId'=>$revId
+                       'revisionId'=>$revId,
+                       'EventUUID'=>$EventUUID
                    )));
                }
             }

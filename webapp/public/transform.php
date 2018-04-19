@@ -149,7 +149,25 @@ if($Revision == null){
     </main>
 </div>
 <?php App::buildPageFooter();?>
-<!-- Custom scripts required by this view -->
-<script src="js/views/main.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.applyfilter[filter-id!=""]').click(function(){
+            var sessionId = '<?php echo $TransformSession['sessionId'];?>';
+            var revisionId = '<?php echo $Revision['revisionId'];?>';
+            var imageUuid = '<?php echo $Image['uuid'];?>';
+            var filter = $(this).attr('filter-id');
+            var api = '/api.php?filter='+encodeURIComponent(filter);
+            api += '&image='+encodeURIComponent(imageUuid);
+            api += '&revisionId='+encodeURIComponent(revisionId);
+            api += '&txId='+encodeURIComponent(sessionId);
+            $.getJSON(api, function(response) {
+                var revisedSession = '/transform.php?txId='+encodeURIComponent(sessionId);
+                revisedSession += '&revisionId='+encodeURIComponent(response.revisionId);
+                revisedSession += '&EventUUID='+encodeURIComponent(response.EventUUID);
+                window.location.href = revisedSession;
+            });
+        });
+    });
+</script>
 </body>
 </html>
