@@ -146,7 +146,7 @@ if($Revision == null){
                     // Check for an eventuuid.
                     if(!empty($Revision['EventUUID'])){
                     ?>
-                    <img id="image-container" src="https://placehold.it/1000x1000?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <img id="image-container" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
                     <?php
                     }else{
                     ?>
