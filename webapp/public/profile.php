@@ -60,13 +60,16 @@
             <div class="animated fadeIn">
                 <div class="row">
 					<div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-6 col-md-6 col-sm-6">
-						<h5>About the User</h5>
-						<p>This is something about the user</p>
+						<div style="margin-top: 10px;">
+							<h5 style="">About the User</h5>
+							<p>This is something about the user</p>
+						</div>
 					</div>	
 				
                     <?php
 
                     if(isset($_GET['id'])){
+                		echo "<p>{$id}</p>";
 	                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE uuid='$id' ORDER BY `id` DESC");
 	                    while($Image = $ImagesQ->fetch_array()){
 	                        $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
