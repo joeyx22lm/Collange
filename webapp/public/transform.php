@@ -20,32 +20,6 @@ if(empty($TransformSession)){
 <head>
     <?php App::buildHtmlHead('Transform that image!');?>
 </head>
-<!-- BODY options, add following classes to body to change options
-    // Header options
-    1. '.header-fixed'					- Fixed Header
-
-    // Brand options
-    1. '.brand-minimized'       - Minimized brand (Only symbol)
-
-    // Sidebar options
-    1. '.sidebar-fixed'					- Fixed Sidebar
-    2. '.sidebar-hidden'				- Hidden Sidebar
-    3. '.sidebar-off-canvas'		- Off Canvas Sidebar
-    4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
-    5. '.sidebar-compact'			  - Compact Sidebar
-
-    // Aside options
-    1. '.aside-menu-fixed'			- Fixed Aside Menu
-    2. '.aside-menu-hidden'			- Hidden Aside Menu
-    3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
-
-    // Breadcrumb options
-    1. '.breadcrumb-fixed'			- Fixed Breadcrumb
-
-    // Footer options
-    1. '.footer-fixed'					- Fixed footer
-
-    -->
 <body class="app header-fixed sidebar-fixed">
 <?php echo App::buildPageNavbar();?>
 <div class="app-body">
@@ -105,7 +79,24 @@ if(empty($TransformSession)){
             </div>
             <div class="row">
                 <div class="col-lg-12 img-responsive" id="canvas">
-                    <img src="https://placehold.it/2300x1268&text=<?php echo urlencode($TransformSession['imageName']);?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <?php
+                    $Image = null;
+                    $cachedURL = null;
+                    $imageCount = 0;
+                    $imageQuery = array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid']);
+                    foreach(Image::getAll(DBSession::getSession(), $imageQuery) as $img){
+                        $Image['key'] = $Image['uuid'] . '.' . $Image['ext'];
+                        $Image = $img;
+                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
+                        if ($cachedURL == null) {
+                            $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
+                            S3EphemeralURLHandler::set($Image['key'], $cachedURL);
+                        }
+                    }
+
+
+                    ?>
+                    <img src="<?php echo $cachedURL;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                 </div>
             </div>
         </div>
