@@ -151,10 +151,10 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="811">
+              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding>
-                <marker date="1524158801461" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
+                <marker date="1524158838195" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
               </folding>
             </state>
           </provider>
@@ -163,8 +163,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="68" selection-end-column="11" />
+            <state relative-caret-position="829">
+              <caret line="126" column="4" lean-forward="true" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="31" />
               <folding>
                 <marker date="1524105417009" expanded="true" signature="1450:1503" ph="UPDATE `user`... " />
               </folding>
@@ -1436,13 +1436,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00223" summary="boldened type">
-      <created>1524107008882</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
-      <option name="project" value="LOCAL" />
-      <updated>1524107008882</updated>
-    </task>
     <task id="LOCAL-00224" summary="revisions in transform page">
       <created>1524107223735</created>
       <option name="number" value="00224" />
@@ -1779,11 +1772,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524158769891</updated>
     </task>
-    <option name="localTasksCounter" value="272" />
+    <task id="LOCAL-00272" summary="fix user registration">
+      <created>1524158806935</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1524158806935</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158193000" />
+    <option name="totallyTimeSpent" value="158229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -2307,8 +2307,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="68" selection-end-column="11" />
+        <state relative-caret-position="829">
+          <caret line="126" column="4" lean-forward="true" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="31" />
           <folding>
             <marker date="1524105417009" expanded="true" signature="1450:1503" ph="UPDATE `user`... " />
           </folding>
@@ -2317,10 +2317,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="811">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
           <folding>
-            <marker date="1524158801461" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
+            <marker date="1524158838195" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
           </folding>
         </state>
       </provider>
