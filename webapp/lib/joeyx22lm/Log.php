@@ -49,7 +49,7 @@ class Log {
      */
     public static function warn($str){
         if(self::shouldWarn()){
-            file_put_contents("php://stderr", "ERROR: $str\n");
+            file_put_contents("php://stderr", "WARN: $str\n");
         }
     }
 
@@ -58,7 +58,7 @@ class Log {
      */
     public static function info($str){
         if(self::shouldInfo()){
-            file_put_contents("php://stderr", "ERROR: $str\n");
+            file_put_contents("php://stderr", "INFO: $str\n");
         }
     }
 
@@ -67,7 +67,7 @@ class Log {
      */
     public static function debug($str){
         if(self::shouldDebug()){
-            file_put_contents("php://stderr", "ERROR: $str\n");
+            file_put_contents("php://stderr", "DEBUG: $str\n");
         }
     }
 }
