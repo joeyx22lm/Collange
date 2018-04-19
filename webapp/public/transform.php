@@ -90,7 +90,7 @@ if($Revision == null){
                     <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Properties</a>
                     <?php
                     // If current revision not saved, show bold-typed save button.
-                    if(!$Revision['saved']){
+                    if(!empty($Revision['key'])){
                     ?>
                     <a class="btn bold-typed" href="#"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
                     <?php
@@ -143,23 +143,23 @@ if($Revision == null){
             <div class="row">
                 <div class="col-lg-12 img-responsive" id="canvas">
                     <?php
-                    // Check for a pending filter process.
-                    if(!empty($Revision['EventUUID'])){
+                    // check for a complete, but unsaved filter.
+                    if(!empty($Revision['key'])) {
+                    $uri = S3EphemeralURLHandler::get($Revision['key']);
+                    if ($uri == null) {
+                        $uri = S3Handler::createSignedGETUrl($Revision['key']);
+                        S3EphemeralURLHandler::set($Revision['key'], $uri);
+                    }
                     ?>
-                    <img id="imagecontainer" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <img src="<?php echo $uri;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
                     <?php
                     }
 
-                    // check for a complete, but unsaved filter.
-                    else if(!empty($Revision['key'])) {
-                        $uri = S3EphemeralURLHandler::get($Revision['key']);
-                        if ($uri == null) {
-                            $uri = S3Handler::createSignedGETUrl($Revision['key']);
-                            S3EphemeralURLHandler::set($Revision['key'], $uri);
-                        }
-                        ?>
-                        <img src="<?php echo $uri;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
-                        <?php
+                    // Check for a pending filter process.
+                    else if(!empty($Revision['EventUUID'])){
+                    ?>
+                    <img id="imagecontainer" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <?php
                     }
 
                     // check for a saved image.

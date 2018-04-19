@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="revisions need to remember their images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -113,18 +111,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="157" column="71" lean-forward="false" selection-start-line="157" selection-start-column="71" selection-end-line="157" selection-end-column="71" />
+            <state relative-caret-position="-180">
+              <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="55" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524157699576" expanded="false" signature="3734:3746" ph="..." />
-                <marker date="1524157699576" expanded="false" signature="4151:4161" ph="..." />
-                <marker date="1524157699576" expanded="false" signature="4658:4668" ph="..." />
-                <marker date="1524157699576" expanded="false" signature="5133:5143" ph="..." />
-                <marker date="1524157699576" expanded="false" signature="5607:5617" ph="..." />
+                <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1524157776163" expanded="false" signature="3739:3751" ph="..." />
+                <marker date="1524157776163" expanded="false" signature="4156:4166" ph="..." />
+                <marker date="1524157776163" expanded="false" signature="4663:4673" ph="..." />
+                <marker date="1524157776163" expanded="false" signature="5138:5148" ph="..." />
+                <marker date="1524157776163" expanded="false" signature="5612:5622" ph="..." />
               </folding>
             </state>
           </provider>
@@ -160,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
+            <state relative-caret-position="333">
               <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
               <folding />
             </state>
@@ -191,7 +189,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ms</find>
       <find>QueueMessage&lt;T&gt;</find>
       <find>&lt;T&gt;</find>
       <find>static&lt;T extends Serializable&gt;</find>
@@ -221,6 +218,7 @@
       <find>putmap</find>
       <find>+</find>
       <find>loadEventUUID</find>
+      <find>save</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -964,9 +962,9 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
       </list>
     </option>
   </component>
@@ -1434,13 +1432,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00217" summary="fix logout button">
-      <created>1524105440661</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1524105440661</updated>
-    </task>
     <task id="LOCAL-00218" summary="dropzone events?">
       <created>1524106061117</created>
       <option name="number" value="00218" />
@@ -1777,11 +1768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524157124915</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="revisions need to remember their images">
+      <created>1524157712946</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1524157712946</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157250000" />
+    <option name="totallyTimeSpent" value="157350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -1880,7 +1878,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="session api stuff" />
     <MESSAGE value="filter worker queue/map names" />
     <MESSAGE value="fix 'shared' vs 'sharing' not working in library" />
     <MESSAGE value="image explore functionality" />
@@ -1905,7 +1902,8 @@
     <MESSAGE value="die w/ url" />
     <MESSAGE value="death by url" />
     <MESSAGE value="ability to navigate between revisions" />
-    <option name="LAST_COMMIT_MESSAGE" value="ability to navigate between revisions" />
+    <MESSAGE value="revisions need to remember their images" />
+    <option name="LAST_COMMIT_MESSAGE" value="revisions need to remember their images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2287,14 +2285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -2310,16 +2300,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="157" column="71" lean-forward="false" selection-start-line="157" selection-start-column="71" selection-end-line="157" selection-end-column="71" />
+        <state relative-caret-position="-180">
+          <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="55" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1524157699576" expanded="false" signature="3734:3746" ph="..." />
-            <marker date="1524157699576" expanded="false" signature="4151:4161" ph="..." />
-            <marker date="1524157699576" expanded="false" signature="4658:4668" ph="..." />
-            <marker date="1524157699576" expanded="false" signature="5133:5143" ph="..." />
-            <marker date="1524157699576" expanded="false" signature="5607:5617" ph="..." />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1524157776163" expanded="false" signature="3739:3751" ph="..." />
+            <marker date="1524157776163" expanded="false" signature="4156:4166" ph="..." />
+            <marker date="1524157776163" expanded="false" signature="4663:4673" ph="..." />
+            <marker date="1524157776163" expanded="false" signature="5138:5148" ph="..." />
+            <marker date="1524157776163" expanded="false" signature="5612:5622" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
