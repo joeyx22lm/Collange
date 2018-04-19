@@ -190,6 +190,7 @@ else if(!empty($Revision['key'])) {
 
 
 <?php App::buildPageFooter();?>
+<?php App::buildHtmlJS();?>
 
 
 <script>
