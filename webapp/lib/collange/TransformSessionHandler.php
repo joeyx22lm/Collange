@@ -22,8 +22,18 @@ class TransformSessionHandler {
         if(empty($Sessions)){
             $Sessions = array();
         }
-        $Sessions[] = $val;
-        return self::setSessions($Sessions);
+        if(empty($val['sessionId'])){
+            $Sessions[] = $val;
+            return self::setSessions($Sessions);
+        }else{
+            foreach($Sessions as $key=>$Session) {
+                if ($Session['sessionId'] == $val['sessionId']) {
+                    $Sessions[$key] = $val;
+                    return self::setSessions($Sessions);
+                }
+            }
+        }
+        return null;
     }
 
     /**
