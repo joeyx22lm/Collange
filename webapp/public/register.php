@@ -22,11 +22,11 @@ if (isset($_POST['register'])) {
                     $password = AuthSession::password_hash($_POST['password']);
                     $email = $_POST['email'];
                     $uuid = UUID::randomUUID();
-                    if (DBSession::getSession()->query("INSERT INTO `user` (`uuid`, `password`, `email`, `firstName`, `lastName`) VALUES ('$uuid', $password','$email', '$firstName', '$lastName')")){
+                    if (DBSession::getSession()->query("INSERT INTO `user` (`uuid`, `password`, `email`, `firstName`, `lastName`) VALUES ('$uuid', '$password','$email', '$firstName', '$lastName')")){
                         $Success = "Account Successfully Created";
                         header("Location: /home.php");
                         die();
-                    }
+                    }else Log::error('Unable to save user: ' . DBSession::getSession()->error);
                 }else $Error = "Passwords do not match or are too short";
             }else $Error = "Invalid E-Mail address detected";
         }else $Error = "This user already exists";

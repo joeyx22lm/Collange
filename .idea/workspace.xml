@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/register.php" afterPath="$PROJECT_DIR$/webapp/public/register.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -64,7 +64,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="694">
@@ -84,21 +84,45 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="176" lean-forward="true" selection-start-line="24" selection-start-column="176" selection-end-line="24" selection-end-column="176" />
+              <folding>
+                <marker date="1524169674096" expanded="true" signature="1110:1249" ph="INSERT INTO `user`... " />
+                <marker date="1524169674096" expanded="true" signature="1783:1820" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="1790:1820" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="1889:2710" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="1913:2710" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2079:2321" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2114:2306" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2216:2287" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2427:2710" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2462:2710" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2567:2710" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2870:4747" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2901:4736" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2937:4721" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="2981:4702" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="3022:4679" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="3189:3331" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="3387:3527" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="3583:3716" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="3772:4108" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="3834:3965" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="4164:4513" ph="..." />
+                <marker date="1524169674096" expanded="true" signature="4226:4357" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-778">
               <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransformImageTransactionHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/TransformImageTransactionHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -971,7 +995,6 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
-        <option value="$PROJECT_DIR$/webapp/public/register.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/imagify/RGBTransitions.java" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
@@ -983,6 +1006,7 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
+        <option value="$PROJECT_DIR$/webapp/public/register.php" />
       </list>
     </option>
   </component>
@@ -1563,27 +1587,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00263" summary="death by url">
-      <created>1524117940313</created>
-      <option name="number" value="00263" />
-      <option name="presentableId" value="LOCAL-00263" />
-      <option name="project" value="LOCAL" />
-      <updated>1524117940313</updated>
-    </task>
-    <task id="LOCAL-00264" summary="death by url">
-      <created>1524118139022</created>
-      <option name="number" value="00264" />
-      <option name="presentableId" value="LOCAL-00264" />
-      <option name="project" value="LOCAL" />
-      <updated>1524118139023</updated>
-    </task>
-    <task id="LOCAL-00265" summary="ability to navigate between revisions">
-      <created>1524157124915</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1524157124915</updated>
-    </task>
     <task id="LOCAL-00266" summary="revisions need to remember their images">
       <created>1524157712946</created>
       <option name="number" value="00266" />
@@ -1906,11 +1909,32 @@
       <option name="project" value="LOCAL" />
       <updated>1524168781898</updated>
     </task>
-    <option name="localTasksCounter" value="312" />
+    <task id="LOCAL-00312" summary="remove session on save">
+      <created>1524168895291</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
+      <option name="project" value="LOCAL" />
+      <updated>1524168895291</updated>
+    </task>
+    <task id="LOCAL-00313" summary="registration from">
+      <created>1524169185917</created>
+      <option name="number" value="00313" />
+      <option name="presentableId" value="LOCAL-00313" />
+      <option name="project" value="LOCAL" />
+      <updated>1524169185917</updated>
+    </task>
+    <task id="LOCAL-00314" summary="registration logging">
+      <created>1524169542114</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1524169542114</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167392000" />
+    <option name="totallyTimeSpent" value="168115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2009,9 +2033,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="die w/ url" />
-    <MESSAGE value="death by url" />
-    <MESSAGE value="ability to navigate between revisions" />
     <MESSAGE value="revisions need to remember their images" />
     <MESSAGE value="we don't need saved anymore" />
     <MESSAGE value="fix user registration" />
@@ -2034,7 +2055,10 @@
     <MESSAGE value="logging and errors" />
     <MESSAGE value="save thumbz too" />
     <MESSAGE value="save ability" />
-    <option name="LAST_COMMIT_MESSAGE" value="save ability" />
+    <MESSAGE value="remove session on save" />
+    <MESSAGE value="registration from" />
+    <MESSAGE value="registration logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="registration logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2346,16 +2370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding>
-            <marker date="1524158838195" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="829">
@@ -2482,6 +2496,38 @@
             <marker date="1524168883960" expanded="true" signature="9875:10089" ph="INSERT INTO `image`... " />
             <marker date="1524168883960" expanded="true" signature="9875:10122" ph="INSERT INTO `image`... " />
             <marker date="1524168883960" expanded="true" signature="9875:10818" ph="INSERT INTO `image`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="176" lean-forward="true" selection-start-line="24" selection-start-column="176" selection-end-line="24" selection-end-column="176" />
+          <folding>
+            <marker date="1524169674096" expanded="true" signature="1110:1249" ph="INSERT INTO `user`... " />
+            <marker date="1524169674096" expanded="true" signature="1783:1820" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="1790:1820" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="1889:2710" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="1913:2710" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2079:2321" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2114:2306" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2216:2287" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2427:2710" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2462:2710" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2567:2710" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2870:4747" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2901:4736" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2937:4721" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="2981:4702" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="3022:4679" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="3189:3331" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="3387:3527" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="3583:3716" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="3772:4108" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="3834:3965" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="4164:4513" ph="..." />
+            <marker date="1524169674096" expanded="true" signature="4226:4357" ph="..." />
           </folding>
         </state>
       </provider>
