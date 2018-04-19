@@ -227,7 +227,7 @@ else if(!empty($Revision['key'])) {
                             $.getJSON(url, function(resp){
                                 if(resp != undefined){
                                     clearInterval(filterProcessAjax);
-                                    window.location.href = '/transform.php?txId=<?php echo $TransformSession['sessionId'];?>&revisionId='+resp.revisionId;
+                                    window.location.href = '/transform.php?txId=<?php echo $TransformSession['sessionId'];?>&revisionId='+response.revisionId;
                                 }
                             });
                         }, 3000);
