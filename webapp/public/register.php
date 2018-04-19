@@ -16,7 +16,7 @@ if (isset($_POST['register'])) {
             $AuthenticatedUser = null;
             $passLength = strlen($_POST['password']);
             if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-                if($_POST['password'] == $_POST['passwordRepeat'] ||  $passLength >= 8){
+                if($_POST['password'] == $_POST['passwordRepeat'] &&  $passLength >= 8){
                     $firstName = $_POST['firstname'];
                     $lastName = $_POST['lastname'];
                     $password = AuthSession::password_hash($_POST['password']);
@@ -27,20 +27,11 @@ if (isset($_POST['register'])) {
                         header("Location: /home.php");
                         die();
                     }
-                }else if(passLength < 8) $Error = "Password is to short, please use a longer one";
-                }else $Error = "Passwords do not match";
-            }else $Error = "Email address is not valid";
+                }else $Error = "Passwords do not match or are too short";
+            }else $Error = "Invalid E-Mail address detected";
         }else $Error = "This user already exists";
-    }else $Error = "Please fill in all required fields.";
-}
-?>
-
-
-
-
-
-
-<!DOCTYPE html>
+    } else $Error = "Please fill in all required fields.";
+}?><!DOCTYPE html>
 <html lang="en">
 <head>
 
