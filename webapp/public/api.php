@@ -239,4 +239,12 @@ if(isset($_GET['loadEventUUID'])){
     http_response_code(400);
     die(StaticResource::get('error_default'));
 }
+
+
+/**
+ * Developer session data.
+ */
+if(isset($_GET['developer'])){
+    die(json_encode($_SESSION));
+}
 ?>
