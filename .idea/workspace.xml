@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/dao/image.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/dao/image.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/library.php" afterPath="$PROJECT_DIR$/webapp/public/library.php" />
     </list>
@@ -66,26 +65,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="125" column="34" lean-forward="false" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="645">
+              <caret line="138" column="2" lean-forward="true" selection-start-line="138" selection-start-column="2" selection-end-line="138" selection-end-column="2" />
+              <folding>
+                <element signature="e#111#2713#0#PHP" expanded="false" />
+                <element signature="e#2769#3934#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
+            <state relative-caret-position="424">
+              <caret line="68" column="125" lean-forward="false" selection-start-line="68" selection-start-column="125" selection-end-line="68" selection-end-column="125" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#4330#4337#1#HTML" expanded="true" />
-                <element signature="e#5121#5128#1#HTML" expanded="true" />
-                <marker date="1524106433519" expanded="true" signature="4505:4657" ph="..." />
+                <element signature="e#4338#4345#1#HTML" expanded="true" />
+                <element signature="e#5129#5136#1#HTML" expanded="true" />
+                <marker date="1524106763958" expanded="true" signature="4513:4665" ph="..." />
               </folding>
             </state>
           </provider>
@@ -968,9 +970,9 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/navbar.php" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
-        <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/image.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
+        <option value="$PROJECT_DIR$/webapp/public/library.php" />
       </list>
     </option>
   </component>
@@ -1410,13 +1412,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00172" summary="log aborted uploads.">
-      <created>1524097297707</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1524097297707</updated>
-    </task>
     <task id="LOCAL-00173" summary="log aborted uploads.">
       <created>1524097601525</created>
       <option name="number" value="00173" />
@@ -1753,11 +1748,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524106396471</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="api to toggle image public/private access">
+      <created>1524106679400</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1524106679400</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145502000" />
+    <option name="totallyTimeSpent" value="145600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1856,7 +1858,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test data?" />
     <MESSAGE value="redirect after register" />
     <MESSAGE value="fix password hashes" />
     <MESSAGE value="no longer save image key, it's not needed." />
@@ -1881,11 +1882,12 @@
     <MESSAGE value="dropzone events?" />
     <MESSAGE value="save button" />
     <MESSAGE value="public/private access" />
-    <option name="LAST_COMMIT_MESSAGE" value="public/private access" />
+    <MESSAGE value="api to toggle image public/private access" />
+    <option name="LAST_COMMIT_MESSAGE" value="api to toggle image public/private access" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2236,19 +2238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="63" column="38" lean-forward="true" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4330#4337#1#HTML" expanded="true" />
-            <element signature="e#5121#5128#1#HTML" expanded="true" />
-            <marker date="1524106433519" expanded="true" signature="4505:4657" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -2274,9 +2263,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="125" column="34" lean-forward="false" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="645">
+          <caret line="138" column="2" lean-forward="true" selection-start-line="138" selection-start-column="2" selection-end-line="138" selection-end-column="2" />
+          <folding>
+            <element signature="e#111#2713#0#PHP" expanded="false" />
+            <element signature="e#2769#3934#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="68" column="125" lean-forward="false" selection-start-line="68" selection-start-column="125" selection-end-line="68" selection-end-column="125" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4338#4345#1#HTML" expanded="true" />
+            <element signature="e#5129#5136#1#HTML" expanded="true" />
+            <marker date="1524106763958" expanded="true" signature="4513:4665" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

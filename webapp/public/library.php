@@ -66,7 +66,7 @@
                                     <?php
                                     }else{
                                     ?>
-                                    <a class="btn btn-warning" href="/api.php?sharing=<?php echo $Image['uuid'];?>">Only You</a>
+                                    <a class="btn btn-warning" href="/api.php?sharing=<?php echo $Image['uuid'];?>">No Public Access</a>
                                     <?php
                                     }
                                     ?>

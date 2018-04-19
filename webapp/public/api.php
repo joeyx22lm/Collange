@@ -2,8 +2,9 @@
 require_once('../Application.php');
 AuthSession::protect();
 
+
 /**
- * Handle User File Uploads
+ * [AJAX] Handle User File Uploads
  */
 if(isset($_GET['upload'])){
     // Retain the key attempted, in case we need to abort.
@@ -75,7 +76,7 @@ if(isset($_GET['upload'])){
 
 
 /**
- * Initialize an editing session.
+ * [REDIRECT] Initialize an editing session.
  */
 if(isset($_GET['edit'])){
     if(!empty($_GET['edit'])){
@@ -108,8 +109,9 @@ if(isset($_GET['edit'])){
     die();
 }
 
+
 /**
- * Handle Image public/private toggling.
+ * [REDIRECT] Handle Image public/private toggling.
  */
 if(isset($_GET['sharing'])){
     $Image = null;
