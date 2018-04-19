@@ -69,5 +69,9 @@ class TransformSessionHandler {
     public static function isTransforming(){
         return !empty(self::getSessions());
     }
+
+    public static function getFilters(){
+        return StaticResource::get('filters');
+    }
 }
 ?>
