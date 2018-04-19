@@ -40,6 +40,7 @@ public enum RGBTransitions {
     EightBitColorTransition("EightBitColorTransition", EightBitColorTransition.class),
     CumulativeAverageTransition("Cumulative Average Filter", CumulativeAverageTransition.class),
     SolidBlueTransition("Solid Blue Filter", SolidBlueTransition.class);
+    DimMe("Dim Me", DimMe.class);
 
     private String name;
     private Class<? extends RGBTransition> clazz;
