@@ -96,7 +96,8 @@ StaticResource::set(array(
         'ConwayGameOfLifeTransition' => "Conway Game of Life Filter",
         'EightBitColorTransition' => "EightBitColorTransition",
         'CumulativeAverageTransition' => "Cumulative Average Filter",
-        'SolidBlueTransition' => "Solid Blue Filter"
+        'SolidBlueTransition' => "Solid Blue Filter",
+        'DimMe' => "Dim Me"
     ),
     'error_default'=>'An unexpected error occurred.',
     'error_api_upload_maxsize'=>'Your image must not exceed 10Mb.',
