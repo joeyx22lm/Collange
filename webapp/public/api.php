@@ -79,12 +79,14 @@ if(isset($_GET['upload'])){
  */
 if(isset($_GET['edit'])){
     if(!empty($_GET['edit'])){
-        /**
-         * Transformation Session
-         * TEST DATA
-         */
-        TransformSessionHandler::createSession('IMG400012.JPG', '2.4Mb', UUID::randomUUID(), UUID::randomUUID(), '42 mins ago');
-        TransformSessionHandler::createSession('IMG400014.JPG', '2.3Mb', UUID::randomUUID(), UUID::randomUUID(), '10 mins ago');
+        // Make sure no ongoing session for this image.
+        foreach(TransformSessionHandler::getSessions() as $i=>$Session) {
+            if($Session['imageUuid'] == $_GET['edit']){
+                header("Location: /transform.php?txId=".$Session['imageUuid']);
+                die();
+            }
+        }
+
         $Image = null;
         foreach(Image::getAll(DBSession::getSession(), array(
             'ownerId'=>AuthSession::getUser()->id,
