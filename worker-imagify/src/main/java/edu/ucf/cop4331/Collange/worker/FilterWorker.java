@@ -30,7 +30,7 @@ public class FilterWorker {
 
         while(true) {
             // Attempt to pop a message off the queue.
-            FilterWorkerMessage message = jobQueue.dequeueJob(10, 1000);
+            String message = jobQueue.dequeue(FilterWorkerQueue.WaitingQueueRedisIdentifier, 1000, 10000);
             if(message == null){
                 System.out.println("FilterWorker.DEBUG: Listener timed out while waiting for messages.");
                 continue;
