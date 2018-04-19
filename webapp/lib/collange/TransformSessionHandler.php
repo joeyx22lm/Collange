@@ -59,7 +59,6 @@ class TransformSessionHandler {
                 array(
                     'title'=>"Opened Image",
                     'history'=>$openedTime,
-                    'saved'=>true,
                     'revisionId'=>UUID::randomUUID(),
                     'EventUUID'=>null,
                     'imageName'=>$imageName,
@@ -75,8 +74,14 @@ class TransformSessionHandler {
 
     /**
      * Create a new session, given image info.
+     * @param $sessionId
+     * @param $title
+     * @param null $EventUUID
+     * @param null $revisionId
+     * @param null $openedTime
+     * @return null|string
      */
-    public static function reviseSession($sessionId, $title, $saved, $EventUUID=null, $revisionId=null, $openedTime=null){
+    public static function reviseSession($sessionId, $title, $EventUUID = null, $revisionId = null, $openedTime = null){
         // Attempt to retrieve the session.
         $Session = self::getSession($sessionId);
         if($Session == null){
@@ -100,7 +105,6 @@ class TransformSessionHandler {
         $Session['events'][] = array(
             'title'=>$title,
             'history'=>$openedTime,
-            'saved'=>$saved,
             'revisionId'=>$revisionId,
             'EventUUID'=>$EventUUID,
             'imageName'=>$Session['originalImageName'],

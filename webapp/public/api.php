@@ -171,7 +171,7 @@ if(isset($_GET['filter'])){
                 $filter
             );
             if (!empty($EventUUID)) {
-               $revId = TransformSessionHandler::reviseSession($_GET['txId'], 'Applied ' . $FilterName, false, $EventUUID);
+               $revId = TransformSessionHandler::reviseSession($_GET['txId'], 'Applied ' . $FilterName, $EventUUID);
                if(!empty($revId)){
                    die(json_encode(array(
                        'txId'=>$_GET['txId'],
