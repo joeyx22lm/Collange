@@ -1,6 +1,8 @@
 package edu.ucf.cop4331.Collange.service.redis;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
+import com.google.common.collect.ImmutableMap;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterCompleteMessage;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
 import edu.ucf.cop4331.Collange.worker.FilterWorker;
@@ -42,10 +44,8 @@ public class FilterWorkerQueue extends JedisHandler {
         return null;
     }
 
-    public boolean markJobComplete(String transactionId, FilterCompleteMessage results){
-        return super.putMap(CompletedMapRedisIdentifier,
-                transactionId,
-                results,
-                FilterCompleteMessage.class);
+    public boolean markJobComplete(FilterCompleteMessage result) throws JsonProcessingException {
+        return (session.hmset(CompletedMapRedisIdentifier,
+                ImmutableMap.of(result.eventId, om.writeValueAsString(result))) != null);
     }
 }

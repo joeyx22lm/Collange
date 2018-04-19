@@ -3,6 +3,7 @@ package edu.ucf.cop4331.Collange.worker;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.ucf.cop4331.Collange.service.redis.FilterWorkerQueue;
 import edu.ucf.cop4331.Collange.service.redis.JedisHandler;
+import edu.ucf.cop4331.Collange.service.redis.dto.FilterCompleteMessage;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
 import edu.ucf.cop4331.Collange.service.s3.AwsS3Handler;
 import java.awt.image.BufferedImage;
@@ -66,11 +67,16 @@ public class FilterWorker {
                 continue;
             }
 
+            FilterCompleteMessage resp = new FilterCompleteMessage(message.transactionId,
+                    message.revisionId,
+                    message.eventId,
+                    "/filtered/"+ UUID.randomUUID()+".jpg");
             // Upload the new revision to S3.
             try {
-                AwsS3Handler.putImage("/filtered/"+ UUID.randomUUID()+".jpg", newImg);
+                AwsS3Handler.putImage(resp.key, newImg);
                 System.out.println("Filtered Image: " + message.key);
                 // TODO: Mark complete w/ success.
+                jobQueue.markJobComplete(resp);
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println("Unable to upload filtered image: " + message.key);
