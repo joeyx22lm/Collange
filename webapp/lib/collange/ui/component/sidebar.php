@@ -32,8 +32,7 @@
                             <a class="nav-link nav-dropdown-toggle truncate" href="#"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
                             <ul class="nav-dropdown-items">
                                 <?php
-                                for($i = count($Session['events']);$i>0;$i--){
-                                    $Event = $Session['events'][$i];
+                                foreach(array_reverse($Session['events']) as $j=>$Event){
                                     ?>
                                     <li class="nav-item">
                                         <a class="nav-link no-overflow collange-full-width" href="#"> <?php echo $Event['title'];?> <br /><span class="text-muted"><?php echo DateUtility::getAge($Event['history']);?></span></a>
