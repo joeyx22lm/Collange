@@ -159,13 +159,17 @@ if(isset($_GET['filter'])){
     ) as $i=>$img){
         $Image = $img;
     }
+    if($Image == null && !empty($_GET['key'])){
+        $Image = array();
+        $Image['key'] = $_GET['key'];
+    }
     $filter = $_GET['filter'];
     if($Image != null && !empty($_GET['txId']) && !empty($_GET['revisionId']) && !empty($filter)) {
         $FilterName = StaticResource::get('filters')[$filter];
         if(!empty($FilterName)) {
             PHPLoader::loadModule('collange:TransformImageTransactionHandler');
             $EventUUID = TransformImageRequestHandler::enqueue(
-                $Image['uuid'] . '.' . $Image['ext'],
+                (!empty($Image['key']) ? $Image['key'] : ($Image['uuid'] . '.' . $Image['ext'])),
                 $_GET['txId'],
                 $_GET['revisionId'],
                 $filter
