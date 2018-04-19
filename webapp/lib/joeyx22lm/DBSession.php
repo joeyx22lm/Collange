@@ -182,11 +182,12 @@ class DBObject {
             $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($val).'\'';
         }
         $queryStr = "INSERT INTO `".static::$tableName.'` ('.$fields.') VALUES ('.$vals.")";
-        Log::error($queryStr);
         $ret = DBSession::getSession()->query($queryStr);
         if($ret){
             // store primary key, if successful insert.
             $this->id = DBSession::getSession()->insert_id;
+        }else{
+            Log::error($queryStr . ': ' . DBSession::getSession()->error);
         }
         return $ret;
     }
@@ -208,7 +209,10 @@ class DBObject {
             $fields .= (empty($fields) ? '' : ', ') . '`' . $field . '`=\'' . DBSession::sanitize($this->{$field}) . '\'';
         }
         $Query .= $fields . ' WHERE `id`=\'' . $this->id . '\'';
-        return DBSession::getSession()->query($Query);
+        $ret = DBSession::getSession()->query($Query);
+        if(!$ret){
+            Log::error($Query . ': ' . DBSession::getSession()->error);
+        }
     }
 }
 ?>

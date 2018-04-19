@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" afterPath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -65,7 +64,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="864">
@@ -175,16 +174,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="188" column="19" lean-forward="false" selection-start-line="188" selection-start-column="19" selection-end-line="188" selection-end-column="19" />
+            <state relative-caret-position="870">
+              <caret line="203" column="21" lean-forward="true" selection-start-line="203" selection-start-column="21" selection-end-line="203" selection-end-column="21" />
               <folding>
-                <marker date="1524097593442" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-                <marker date="1524097593442" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524097593442" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
-                <marker date="1524097593442" expanded="true" signature="5652:5653" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+                <marker date="1524098349575" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+                <marker date="1524098349575" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524098349575" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
+                <marker date="1524098349575" expanded="true" signature="5621:5622" ph="INSERT INTO `'.static::${$tableName}.'`... " />
               </folding>
             </state>
           </provider>
@@ -970,9 +969,9 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/user.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
       </list>
     </option>
   </component>
@@ -1393,13 +1392,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00126" summary="changes">
-      <created>1521784767376</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1521784767376</updated>
-    </task>
     <task id="LOCAL-00127" summary="changes">
       <created>1521784903757</created>
       <option name="number" value="00127" />
@@ -1736,11 +1728,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524097627842</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="log aborted uploads.">
+      <created>1524098053256</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1524098053256</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138239000" />
+    <option name="totallyTimeSpent" value="138477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -2233,27 +2232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="188" column="19" lean-forward="false" selection-start-line="188" selection-start-column="19" selection-end-line="188" selection-end-column="19" />
-          <folding>
-            <marker date="1524097593442" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-            <marker date="1524097593442" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524097593442" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
-            <marker date="1524097593442" expanded="true" signature="5652:5653" ph="INSERT INTO `'.static::${$tableName}.'`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -2275,6 +2253,27 @@
         <state relative-caret-position="864">
           <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="203" column="21" lean-forward="true" selection-start-line="203" selection-start-column="21" selection-end-line="203" selection-end-column="21" />
+          <folding>
+            <marker date="1524098349575" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+            <marker date="1524098349575" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524098349575" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
+            <marker date="1524098349575" expanded="true" signature="5621:5622" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+          </folding>
         </state>
       </provider>
     </entry>
