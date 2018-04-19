@@ -70,7 +70,7 @@
                                     <?php
                                     }
                                     ?>
-                                    <a class="btn btn-danger" image-uuid=“<?php echo imageuuid…”href="#">Delete Image</a>
+                                    <a class="btn btn-danger" image-uuid="<?php echo $Image['uuid'];?>" href="#">Delete Image</a>
                                 </div>
                             </div>
                         </div>
