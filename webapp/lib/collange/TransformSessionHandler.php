@@ -37,8 +37,10 @@ class TransformSessionHandler {
             'imageSize'=>$imageSize,
             'imageUuid'=>$imageUuid,
             'events'=>array(
-                'title'=>"Opened Image",
-                'history'=>$openedTime
+                array(
+                    'title'=>"Opened Image",
+                    'history'=>$openedTime
+                )
             )
         );
         return self::setSessions($Sessions);
