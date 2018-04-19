@@ -60,7 +60,7 @@
                                 <div class="btn-group" role="group" aria-label="Image Options" style="width:100%;">
                                     <a class="btn btn-primary" href="/api.php?edit=<?php echo $Image['uuid'];?>">Edit Image</a>
                                     <?php
-                                    if($Image['sharing'] == 1){
+                                    if($Image['shared'] == 1){
                                     ?>
                                     <a class="btn btn-success" href="/api.php?sharing=<?php echo $Image['uuid'];?>">Public Access</a>
                                     <?php
