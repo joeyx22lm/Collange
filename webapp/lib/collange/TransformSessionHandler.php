@@ -37,7 +37,7 @@ class TransformSessionHandler {
             'imageSize'=>$imageSize,
             'imageUuid'=>$imageUuid,
             'events'=>array(
-                'title'=>'Opened Image',
+                'title'=>"Opened Image",
                 'history'=>$openedTime
             )
         );
