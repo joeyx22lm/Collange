@@ -15,25 +15,7 @@ if(empty($TransformSession)){
     die();
 }
 
-// Retrieve image information.
-$Image = null;
-$cachedURL = null;
-foreach(Image::getAll(DBSession::getSession(), array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid'])) as $img){
-    $img['key'] = $img['uuid'] . '.' . $img['ext'];
-    $Image = $img;
-    $cachedURL = S3EphemeralURLHandler::get($Image['key']);
-    if ($cachedURL == null) {
-        $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
-        S3EphemeralURLHandler::set($Image['key'], $cachedURL);
-    }
-}
-if($Image == null || $cachedURL == null){
-    header("Location: /library.php");
-    die();
-}
-
-
-// Retrieve the revision number.
+// Retrieve the current revision.
 $Revision = null;
 foreach($TransformSession['events'] as $i=>$Event){
     if(!isset($_GET['revisionId'])){
@@ -47,6 +29,43 @@ foreach($TransformSession['events'] as $i=>$Event){
 if($Revision == null){
     header("Location: /library.php");
     die();
+}
+
+
+// Retrieve image information.
+$ImageURL = 'https://placehold.it/1000x500?text=Applying+Filter';
+$EventUUID = null;
+
+// Check if we're awaiting a filter process.
+if(!empty($Revision['EventUUID'])){
+    $EventUUID = $Revision['EventUUID'];
+}
+
+// Check if this is a saved image.
+else if(!empty($Revision['imageUuid'])){
+    $Image = null;
+    foreach(Image::getAll(DBSession::getSession(), array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid'])) as $img){
+        $img['key'] = $img['uuid'] . '.' . $img['ext'];
+        $Image = $img;
+        $ImageURL = S3EphemeralURLHandler::get($Image['key']);
+        if ($ImageURL == null) {
+            $ImageURL = S3Handler::createSignedGETUrl($Image['key']);
+            S3EphemeralURLHandler::set($Image['key'], $ImageURL);
+        }
+    }
+    if($Image == null || $ImageURL == null){
+        header("Location: /library.php");
+        die();
+    }
+}
+
+// Check if this filter has been applied, but not saved.
+else if(!empty($Revision['key'])) {
+    $ImageURL = S3EphemeralURLHandler::get($Revision['key']);
+    if ($ImageURL == null) {
+        $ImageURL = S3Handler::createSignedGETUrl($Revision['key']);
+        S3EphemeralURLHandler::set($Revision['key'], $ImageURL);
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -143,33 +162,12 @@ if($Revision == null){
             <div class="row">
                 <div class="col-lg-12 img-responsive" id="canvas">
                     <?php
-                    // check for a complete, but unsaved filter.
-                    if(!empty($Revision['key'])) {
-                    $uri = S3EphemeralURLHandler::get($Revision['key']);
-                    if ($uri == null) {
-                        $uri = S3Handler::createSignedGETUrl($Revision['key']);
-                        S3EphemeralURLHandler::set($Revision['key'], $uri);
+                    $class = 'img';
+                    if(!empty($Revision['EventUUID'])) {
+                        $class .= ' lazy-ajax';
                     }
                     ?>
-                    <img src="<?php echo $uri;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
-                    <?php
-                    }
-
-                    // Check for a pending filter process.
-                    else if(!empty($Revision['EventUUID'])){
-                    ?>
-                    <img id="imagecontainer" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
-                    <?php
-                    }
-
-                    // check for a saved image.
-                    else{
-                    ?>
-                    <img src="<?php echo $cachedURL;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
-                    <?php
-                    }
-                    ?>
-
+                    <img id="imagecontainer" src="<?php echo $ImageURL;?>" class="<?php echo $class;?>" style="margin: 0 auto;width:100%;padding:15px;"/>
                 </div>
             </div>
         </div>

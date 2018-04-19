@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" afterPath="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -89,16 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Log.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="library.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,24 +101,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="55" />
+            <state relative-caret-position="622">
+              <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
               <folding>
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524157776163" expanded="false" signature="3739:3751" ph="..." />
-                <marker date="1524157776163" expanded="false" signature="4156:4166" ph="..." />
-                <marker date="1524157776163" expanded="false" signature="4663:4673" ph="..." />
-                <marker date="1524157776163" expanded="false" signature="5138:5148" ph="..." />
-                <marker date="1524157776163" expanded="false" signature="5612:5622" ph="..." />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1524159632698" expanded="false" signature="4388:4400" ph="..." />
+                <marker date="1524159632698" expanded="false" signature="4805:4815" ph="..." />
+                <marker date="1524159632698" expanded="false" signature="5312:5322" ph="..." />
+                <marker date="1524159632698" expanded="false" signature="5787:5797" ph="..." />
+                <marker date="1524159632698" expanded="false" signature="6261:6271" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="embed.rnc" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/embed.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -965,11 +965,11 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/FilterWorkerQueue.java" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php" />
-        <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/public/register.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
+        <option value="$PROJECT_DIR$/webapp/public/transform.php" />
       </list>
     </option>
   </component>
@@ -991,9 +991,9 @@
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2559" />
-    <option name="y" value="157" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1931" />
+    <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1058" />
   </component>
@@ -1438,13 +1438,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00226" summary="bold-typed save button">
-      <created>1524107475124</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
-      <option name="project" value="LOCAL" />
-      <updated>1524107475124</updated>
-    </task>
     <task id="LOCAL-00227" summary="session api stuff">
       <created>1524109072809</created>
       <option name="number" value="00227" />
@@ -1781,14 +1774,21 @@
       <option name="project" value="LOCAL" />
       <updated>1524158916231</updated>
     </task>
-    <option name="localTasksCounter" value="275" />
+    <task id="LOCAL-00275" summary="fix sidebar to updated xform session">
+      <created>1524159208480</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1524159208480</updated>
+    </task>
+    <option name="localTasksCounter" value="276" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158484000" />
+    <option name="totallyTimeSpent" value="158945000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2559" y="157" width="1920" height="1058" extended-state="0" />
+    <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1884,7 +1884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix dependency" />
     <MESSAGE value="set session should overwrite if a txid was given." />
     <MESSAGE value="reverse the events in the sidebar" />
     <MESSAGE value="fix dropzone init" />
@@ -1909,7 +1908,8 @@
     <MESSAGE value="we don't need saved anymore" />
     <MESSAGE value="fix user registration" />
     <MESSAGE value="fix user registration CSS/JS imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix user registration CSS/JS imports" />
+    <MESSAGE value="fix sidebar to updated xform session" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix sidebar to updated xform session" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1918,13 +1918,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.298/8032b0e8f8c5b98e2aa3d8013c3118899a367665/aws-java-sdk-s3-1.11.298-sources.jar!/com/amazonaws/services/s3/AmazonS3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35175">
-          <caret line="2502" column="11" lean-forward="false" selection-start-line="2502" selection-start-column="11" selection-end-line="2502" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2245,21 +2238,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="145" column="55" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1524157776163" expanded="false" signature="3739:3751" ph="..." />
-            <marker date="1524157776163" expanded="false" signature="4156:4166" ph="..." />
-            <marker date="1524157776163" expanded="false" signature="4663:4673" ph="..." />
-            <marker date="1524157776163" expanded="false" signature="5138:5148" ph="..." />
-            <marker date="1524157776163" expanded="false" signature="5612:5622" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="919">
@@ -2324,6 +2302,29 @@
         <state relative-caret-position="126">
           <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1524159632698" expanded="false" signature="4388:4400" ph="..." />
+            <marker date="1524159632698" expanded="false" signature="4805:4815" ph="..." />
+            <marker date="1524159632698" expanded="false" signature="5312:5322" ph="..." />
+            <marker date="1524159632698" expanded="false" signature="5787:5797" ph="..." />
+            <marker date="1524159632698" expanded="false" signature="6261:6271" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
