@@ -52,7 +52,7 @@ if(isset($_GET['upload'])){
                 // Save a thumbnail version.
                 $thumb = ImageHandler::make_thumb($location);
                 if(!empty($thumb)){
-                    if(!S3Handler::upload($key = $imageUUID . '_thumb.' . $type, $thumb)){
+                    if(!S3Handler::upload($imageUUID . '_thumb.' . $type, $thumb)){
                         http_response_code(400);
                         die(StaticResource::get('error_api_upload_unknown'));
                     }
