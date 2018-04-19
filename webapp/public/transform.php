@@ -174,40 +174,58 @@ else if(!empty($Revision['key'])) {
     </main>
 </div>
 <?php App::buildPageFooter();?>
+
+<div class="modal fade" id="filteringModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="uploadModalTitle">Applying Filter</h5>
+            </div>
+            <div class="modal-body">
+                <i class="fa fa-spinner fa-spin" style="font-size:38px"></i><br />
+                <p id="filterStatus">Queueing your filter request</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     $(document).ready(function(){
+        var filterProcessAjax = null;
+        var filterStatus = $('#filterStatus');
         $('.applyfilter[filter-id!=""]').click(function(){
-            var sessionId = '<?php echo $TransformSession['sessionId'];?>';
-            var revisionId = '<?php echo $Revision['revisionId'];?>';
-            var imageUuid = '<?php echo $Image['uuid'];?>';
-            var filter = $(this).attr('filter-id');
-            var api = '/api.php?filter='+encodeURIComponent(filter);
-            api += '&image='+encodeURIComponent(imageUuid);
-            api += '&revisionId='+encodeURIComponent(revisionId);
-            api += '&txId='+encodeURIComponent(sessionId);
-            $.getJSON(api, function(response) {
-                var revisedSession = '/transform.php?txId='+encodeURIComponent(sessionId);
-                revisedSession += '&revisionId='+encodeURIComponent(response.revisionId);
-                revisedSession += '&EventUUID='+encodeURIComponent(response.EventUUID);
-                window.location.href = revisedSession;
+            $.when(function(e){
+                $('#filteringModal').modal('show');
+            }).then(function(e){
+                var sessionId = '<?php echo $TransformSession['sessionId'];?>';
+                var revisionId = '<?php echo $Revision['revisionId'];?>';
+                var imageUuid = '<?php echo $Image['uuid'];?>';
+                var filter = $(this).attr('filter-id');
+                var api = '/api.php?filter='+encodeURIComponent(filter);
+                api += '&image='+encodeURIComponent(imageUuid);
+                api += '&revisionId='+encodeURIComponent(revisionId);
+                api += '&txId='+encodeURIComponent(sessionId);
+                $.getJSON(api, function(response) {
+                    console.log('filter: ' + response);
+                    filterStatus.text('Filter request has been queued for processing.');
+                    if(response.EventUUID != ''){
+                        var url = '/api.php?loadEventUUID='+encodeURIComponent(response.EventUUID)+'&txId=<?php echo $TransformSession['sessionId'];?>';
+                        filterProcessAjax = setInterval(function(){
+                            $.get(url, function(resp){
+                                if(resp != undefined){
+                                    clearInterval(filterProcessAjax);
+                                    $('#imagecontainer').attr('src', resp);
+                                }
+                            });
+                        }, 3000);
+                    }
+                    //var revisedSession = '/transform.php?txId='+encodeURIComponent(sessionId);
+                    //revisedSession += '&revisionId='+encodeURIComponent(response.revisionId);
+                    //revisedSession += '&EventUUID='+encodeURIComponent(response.EventUUID);
+                    //window.location.href = revisedSession;
+                });
             });
         });
-
-        <?php
-        // Check for an eventuuid.
-        if(!empty($Revision['EventUUID'])){
-        ?>
-        var loadFilteredImage = setInterval(function(){
-            $.get('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>&txId=<?php echo $TransformSession['sessionId'];?>', function(resp){
-                if(resp != undefined){
-                    clearInterval(loadFilteredImage);
-                    $('#imagecontainer').attr('src', resp);
-                }
-            });
-        }, 3000);
-        <?php
-        }
-        ?>
     });
 </script>
 </body>
