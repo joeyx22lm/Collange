@@ -10815,7 +10815,7 @@ base-chart.chart {
     .sidebar .nav-dropdown-toggle::before {
       position: absolute;
       top: 50%;
-      right: 1rem;
+      right: 0.5rem;
       display: block;
       width: 8px;
       height: 8px;

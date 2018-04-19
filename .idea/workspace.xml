@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/css/style.css" afterPath="$PROJECT_DIR$/webapp/public/css/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -129,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="61" column="101" lean-forward="false" selection-start-line="61" selection-start-column="101" selection-end-line="61" selection-end-column="101" />
+            <state relative-caret-position="549">
+              <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
                 <marker date="1524104542234" expanded="false" signature="2761:2773" ph="..." />
                 <marker date="1524104542234" expanded="false" signature="3178:3188" ph="..." />
@@ -145,11 +145,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="12693" column="1" lean-forward="true" selection-start-line="12693" selection-start-column="1" selection-end-line="12693" selection-end-column="9" />
+            <state relative-caret-position="258">
+              <caret line="10817" column="16" lean-forward="false" selection-start-line="10817" selection-start-column="16" selection-end-line="10817" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -188,9 +188,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>30</find>
-      <find>admin@</find>
-      <find>App::</find>
       <find>getStaticResource</find>
       <find>setStaticResource</find>
       <find>traffic &amp;</find>
@@ -218,6 +215,9 @@
       <find>key</find>
       <find>(&quot;</find>
       <find>=&gt; &quot;</find>
+      <find>dropdown-toggle</find>
+      <find>dropdown-toggle::before</find>
+      <find>nav-dropdown-toggle::before</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -956,12 +956,12 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/DateUtility.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
-        <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/sidebar.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/Application.php" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -1395,13 +1395,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00163" summary="composer.json">
-      <created>1524095788065</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1524095788065</updated>
-    </task>
     <task id="LOCAL-00164" summary="composer.json">
       <created>1524095956185</created>
       <option name="number" value="00164" />
@@ -1738,11 +1731,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524104431061</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="dropdown of supported filters">
+      <created>1524104554181</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1524104554181</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143627000" />
+    <option name="totallyTimeSpent" value="143756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1841,7 +1841,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="composer.json" />
     <MESSAGE value="dropzone event fix" />
     <MESSAGE value="fix upload no id bro" />
     <MESSAGE value="log aborted uploads." />
@@ -1866,7 +1865,8 @@
     <MESSAGE value="fix popper.js for bootstrap" />
     <MESSAGE value="fix truncating image names in sidebar" />
     <MESSAGE value="set array of supported filters as a static resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="set array of supported filters as a static resource" />
+    <MESSAGE value="dropdown of supported filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropdown of supported filters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2171,14 +2171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="12693" column="1" lean-forward="true" selection-start-line="12693" selection-start-column="1" selection-end-line="12693" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -2252,8 +2244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="61" column="101" lean-forward="false" selection-start-line="61" selection-start-column="101" selection-end-line="61" selection-end-column="101" />
+        <state relative-caret-position="549">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
             <marker date="1524104542234" expanded="false" signature="2761:2773" ph="..." />
             <marker date="1524104542234" expanded="false" signature="3178:3188" ph="..." />
@@ -2261,6 +2253,14 @@
             <marker date="1524104542234" expanded="false" signature="4160:4170" ph="..." />
             <marker date="1524104542234" expanded="false" signature="4634:4644" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="10817" column="16" lean-forward="false" selection-start-line="10817" selection-start-column="16" selection-end-line="10817" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
