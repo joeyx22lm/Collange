@@ -1,5 +1,6 @@
 package edu.ucf.cop4331.Collange.service.redis;
 
+import com.fasterxml.jackson.databind.JavaType;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterCompleteMessage;
 import edu.ucf.cop4331.Collange.service.redis.dto.FilterWorkerMessage;
 import edu.ucf.cop4331.Collange.worker.FilterWorker;

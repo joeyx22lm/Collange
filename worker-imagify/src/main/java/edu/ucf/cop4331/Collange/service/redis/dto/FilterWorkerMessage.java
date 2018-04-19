@@ -19,6 +19,7 @@ public class FilterWorkerMessage implements Serializable {
         this.revisionId = revisionId;
         this.key = key;
         this.eventId = eventId;
+        this.filter = filter;
     }
 
     public RGBTransitions getTransition(){
