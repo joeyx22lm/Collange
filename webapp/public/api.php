@@ -93,8 +93,9 @@ if(isset($_GET['edit'])){
             $Image = $img;
         }
         if($Image != null){
-            if(TransformSessionHandler::createSession($Image['fileName'], $Image['size'], $Image['uuid'])){
-                header("Location: /transform.php?txId=".$Image['uuid']);
+            $ret = TransformSessionHandler::createSession($Image['fileName'], $Image['size'], $Image['uuid']);
+            if($ret != null){
+                header("Location: /transform.php?txId=".$ret);
                 die();
             }else Log::error('Unable to create TransformSession(Image(uuid='.$_GET['edit'].'))');
         }else Log::error('Unable to retrieve Image(uuid='.$_GET['edit'].')');

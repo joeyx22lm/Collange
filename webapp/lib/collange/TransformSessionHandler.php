@@ -44,7 +44,7 @@ class TransformSessionHandler {
             )
         );
         self::setSessions($Sessions);
-        return true;
+        return $sessionId;
     }
 
     /**
