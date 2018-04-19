@@ -4,7 +4,7 @@ class TransformImageRequestHandler extends RedisHandler {
         $EventUUID = UUID::randomUUID();
         if(self::getSession()->rpush(StaticResource::get('TransformWaitingQueue'), array(
             'key'=>$imagekey,
-            'txId'=>$txId,
+            'transactionId'=>$txId,
             'revisionId'=>$revisionId,
             'filter'=>$filter,
             'eventId'=>$EventUUID
