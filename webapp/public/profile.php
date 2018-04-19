@@ -1,6 +1,9 @@
 <?php require_once('../Application.php');?>
 <?php AuthSession::protect();
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,9 +44,9 @@
     <main class="main">
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
-            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
             <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
+            <li class="breadcrumb-item active">Profile</li>
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
                 <div class="btn-group" role="group" aria-label="Button group">
@@ -56,29 +59,30 @@
         <div class="container-fluid" id="explore-view">
             <div class="animated fadeIn">
                 <div class="row">
+
+
                     <?php
-                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE shared='1' ORDER BY `id` DESC");
-                    while($Image = $ImagesQ->fetch_array()){
-                        $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
-                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
-                        if($cachedURL == null){
-                            $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
-                            S3EphemeralURLHandler::set($Image['key'], $cachedURL);
-                        }
-                        ?>
-                        <div class="library-card card col-lg-3 col-md-4 col-sm-6 col-xs-1" style="padding:0px;">
-                            <img attr-lazysrc="<?php echo $cachedURL;?>" class="card-img-top library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
-                                <p class="card-text"><?php echo $Image['caption'];?></p>
-                                <div class="btn-group" role="group" aria-label="Image Options" style="width:100%;">
-                                    <a class="btn btn-primary" href="#">View Profile</a>
-                                    <a class="btn btn-danger" href="#">Report Image</a>
-                                </div>
-                            </div>
-                        </div>
+
+                    if(isset($_GET['id'])){
+	                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE uuid='$id' ORDER BY `id` DESC");
+	                    while($Image = $ImagesQ->fetch_array()){
+	                        $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
+	                        $cachedURL = S3EphemeralURLHandler::get($Image['key']);
+	                        if($cachedURL == null){
+	                            $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
+	                            S3EphemeralURLHandler::set($Image['key'], $cachedURL);
+	                        }
+	                        ?>
+	                        <div class="library-card card col-lg-3 col-md-4 col-sm-6 col-xs-1" style="padding:0px;">
+	                            <img attr-lazysrc="<?php echo $cachedURL;?>" class="card-img-top library-image lazy" alt="<?php echo $Image['fileName'];?>"/>
+	                            <div class="card-body">
+	                                <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
+	                                <p class="card-text"><?php echo $Image['caption'];?></p>
+	                            </div>
+	                        </div>
                         <?php
                      }
+                 }
                     ?>
                 </div>
             </div>
