@@ -275,7 +275,7 @@ if(isset($_GET['save'])){
                                     unset($Sessions[$k]);
                                 }
                             }
-                            TransformSessionHandler::setSessions($Sessions);
+                            TransformSessionHandler::setSessions(array());
 
                             Log::info("API.save(".$ImageUUID."): success");
                             header("Location: library.php");
