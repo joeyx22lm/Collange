@@ -162,7 +162,7 @@ class DBObject {
                 while($result = $Q->fetch_array()) $ret[] = $result;
                 return $ret;
             }else if(!empty(DBSession::getSession()->error)){
-                Log::error(static::$tableName.'.getAll('.json_encode($arr).'): ' . DBSession::getSession()->error);
+                Log::error(static::$tableName.'.getAll('.'SELECT * FROM `'.static::$tableName.'` WHERE '.$params.'): ' . DBSession::getSession()->error);
             }
             return array();
         }

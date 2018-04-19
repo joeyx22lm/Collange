@@ -155,15 +155,15 @@
       <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="136" column="58" lean-forward="false" selection-start-line="136" selection-start-column="58" selection-end-line="136" selection-end-column="58" />
+            <state relative-caret-position="498">
+              <caret line="164" column="112" lean-forward="false" selection-start-line="164" selection-start-column="112" selection-end-line="164" selection-end-column="112" />
               <folding>
-                <marker date="1524101403700" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-                <marker date="1524101403700" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524101403700" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524101403700" expanded="true" signature="4828:4873" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524101403700" expanded="true" signature="5838:5907" ph="INSERT INTO `${static::$tableName}`... " />
-                <marker date="1524101403700" expanded="true" signature="5965:5966" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+                <marker date="1524101573549" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+                <marker date="1524101573549" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524101573549" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524101573549" expanded="true" signature="4828:4873" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524101573549" expanded="true" signature="5876:5945" ph="INSERT INTO `${static::$tableName}`... " />
+                <marker date="1524101573549" expanded="true" signature="6003:6004" ph="INSERT INTO `'.static::${$tableName}.'`... " />
               </folding>
             </state>
           </provider>
@@ -1365,13 +1365,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00143" summary="buttons">
-      <created>1524089726565</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1524089726565</updated>
-    </task>
     <task id="LOCAL-00144" summary="dropzone broke">
       <created>1524090036933</created>
       <option name="number" value="00144" />
@@ -1708,11 +1701,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524101130789</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="fix xformsession handler">
+      <created>1524101409541</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1524101409541</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140849000" />
+    <option name="totallyTimeSpent" value="141016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -2238,15 +2238,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="136" column="58" lean-forward="false" selection-start-line="136" selection-start-column="58" selection-end-line="136" selection-end-column="58" />
+        <state relative-caret-position="498">
+          <caret line="164" column="112" lean-forward="false" selection-start-line="164" selection-start-column="112" selection-end-line="164" selection-end-column="112" />
           <folding>
-            <marker date="1524101403700" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-            <marker date="1524101403700" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524101403700" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524101403700" expanded="true" signature="4828:4873" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524101403700" expanded="true" signature="5838:5907" ph="INSERT INTO `${static::$tableName}`... " />
-            <marker date="1524101403700" expanded="true" signature="5965:5966" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+            <marker date="1524101573549" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+            <marker date="1524101573549" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524101573549" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524101573549" expanded="true" signature="4828:4873" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524101573549" expanded="true" signature="5876:5945" ph="INSERT INTO `${static::$tableName}`... " />
+            <marker date="1524101573549" expanded="true" signature="6003:6004" ph="INSERT INTO `'.static::${$tableName}.'`... " />
           </folding>
         </state>
       </provider>
