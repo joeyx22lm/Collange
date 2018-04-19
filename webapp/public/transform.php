@@ -47,7 +47,6 @@ if($Image == null || $cachedURL == null){
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/library.php">My Library</a></li>
-            <li class="breadcrumb-item"><a href="/library.php">Photo Album</a></li>
             <li class="breadcrumb-item active"><?php echo $TransformSession['imageName'];?></li>
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
