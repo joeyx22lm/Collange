@@ -200,7 +200,7 @@ else if(!empty($Revision['key'])) {
             <div class="modal-body centered-body">
                 <div class="btn-group" role="group" aria-label="Button group">
                     <a class="btn btn-danger" href="/api.php?save=<?php echo $TransformSession['sessionId'];?>&rId=<?php echo $Revision['revisionId'];?>">
-                        Overwrite <?php echo $TransformSession['originalImageName'];?>
+                        Overwrite Original
                     </a>
                     <a class="btn btn-primary" href="#">
                         Save As
