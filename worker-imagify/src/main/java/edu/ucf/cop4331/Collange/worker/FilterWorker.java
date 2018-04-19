@@ -33,6 +33,7 @@ public class FilterWorker {
             FilterWorkerMessage message = jobQueue.dequeueJob(10, 1000);
             if(message == null){
                 System.out.println("FilterWorker.DEBUG: Listener timed out while waiting for messages.");
+                continue;
             }
 
             // Begin processing the message.
