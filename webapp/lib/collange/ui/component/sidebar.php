@@ -35,7 +35,7 @@
                                 foreach(array_reverse($Session['events']) as $j=>$Event){
                                     ?>
                                     <li class="nav-item">
-                                        <a class="nav-link no-overflow collange-full-width" href="#"> <?php echo $Event['title'];?> <br /><span class="text-muted"><?php echo DateUtility::getAge($Event['history']);?></span></a>
+                                        <a class="nav-link no-overflow collange-full-width" href="/transform.php?txId=<?php echo $Session['sessionId'];?>&revisionId=<?php echo $Event['revisionId'];?>"> <?php echo $Event['title'];?> <br /><span class="text-muted"><?php echo DateUtility::getAge($Event['history']);?></span></a>
                                     </li>
                                     <?php
                                 }

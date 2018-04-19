@@ -52,15 +52,19 @@ class TransformSessionHandler {
         }
         $Sessions[] = array(
             'sessionId'=>$sessionId,
-            'imageName'=>$imageName,
-            'imageSize'=>$imageSize,
-            'imageUuid'=>$imageUuid,
+            'originalImageName'=>$imageName,
+            'originalImageSize'=>$imageSize,
+            'originalImageUuid'=>$imageUuid,
             'events'=>array(
                 array(
                     'title'=>"Opened Image",
                     'history'=>$openedTime,
                     'saved'=>true,
-                    'revisionId'=>UUID::randomUUID()
+                    'revisionId'=>UUID::randomUUID(),
+                    'EventUUID'=>null,
+                    'imageName'=>$imageName,
+                    'imageSize'=>$imageSize,
+                    'imageUuid'=>$imageUuid,
                 )
             )
         );
@@ -97,7 +101,10 @@ class TransformSessionHandler {
             'history'=>$openedTime,
             'saved'=>$saved,
             'revisionId'=>$revisionId,
-            'EventUUID'=>$EventUUID
+            'EventUUID'=>$EventUUID,
+            'imageName'=>$Session['originalImageName'],
+            'imageSize'=>$Session['originalImageSize'],
+            'imageUuid'=>null,
         );
 
         // Store the event.
