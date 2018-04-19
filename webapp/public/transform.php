@@ -114,7 +114,7 @@ else if(!empty($Revision['key'])) {
                     // If current revision not saved, show bold-typed save button.
                     if(!empty($Revision['key'])){
                     ?>
-                    <a class="btn bold-typed" href="/api.php?save=<?php echo $TransformSession['sessionId'];?>&rId=<?php echo $Revision['revisionId'];?>"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
+                    <a class="btn bold-typed saveaction"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
                     <?php
                     }else{
                     ?>
@@ -191,6 +191,26 @@ else if(!empty($Revision['key'])) {
     </div>
 </div>
 
+<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="saveModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="saveModalTitle">Save Filtered Image</h5>
+            </div>
+            <div class="modal-body centered-body">
+                <div class="btn-group" role="group" aria-label="Button group">
+                    <a class="btn btn-danger" href="/api.php?save=<?php echo $TransformSession['sessionId'];?>&rId=<?php echo $Revision['revisionId'];?>">
+                        Overwrite <?php echo $TransformSession['originalImageName'];?>
+                    </a>
+                    <a class="btn btn-primary" href="#">
+                        Save As
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php App::buildPageFooter();?>
 
 <script>
@@ -237,6 +257,10 @@ else if(!empty($Revision['key'])) {
                     }, 3000);
                 }
             });
+        });
+        $('.saveaction').click(function(){
+            $('.saveModal').modal({show:true});
+
         });
     });
 </script>
