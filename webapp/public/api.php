@@ -249,9 +249,8 @@ if(isset($_GET['loadEventUUID'])){
 if(isset($_GET['save'])){
     $sessionId = $_GET['save'];
     $revisionId = $_GET['rId'];
-    $key = $_GET['imageKey'];
-    if(!empty($key) && !empty($revisionId) && !empty($sessionId)){
-        $Session = TransformSessionHandler::getSession($_GET['txId']);
+    if(!empty($revisionId) && !empty($sessionId)){
+        $Session = TransformSessionHandler::getSession($sessionId);
         $Revision = null;
         $RevisionKey = null;
         if($Session != null) {

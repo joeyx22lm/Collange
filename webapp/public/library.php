@@ -70,7 +70,7 @@
                                     <?php
                                     }
                                     ?>
-                                    <a class="btn btn-danger" href="#">Delete Image</a>
+                                    <a class="btn btn-danger" image-uuid="<?php echo $Image['uuid'];?>" href="#">Delete Image</a>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,6 @@
             </div>
         </div>
     </main>
-    
 </div>
 
 <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalTitle" aria-hidden="true">
@@ -144,7 +143,12 @@
         /**
         * Deletion event listener
         */
+        $('.deleteimage').click(function(){
+            var imageUuid = $(this).attr('image-uuid');
+            if(imageUuid != undefined){
 
+            }
+        });
     });
 </script>
 </body>

@@ -70,8 +70,8 @@ class S3Handler {
         $bucket = StaticResource::get('ENV_AWS_S3_BUCKET');
         return self::getClient()->copyObject(array(
             'Bucket'=>$bucket,
-            'Key' =>  $src,
-            'CopySource' => "{$bucket}/{$dest}",
+            'Key' =>  $dest,
+            'CopySource' => "{$bucket}/{$src}",
         ));
     }
 }
