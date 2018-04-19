@@ -49,7 +49,7 @@
                     else{
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="/transform.php?txId=<?php echo $Session['sessionId'];?>"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
+                            <a class="nav-link truncate" href="/transform.php?txId=<?php echo $Session['sessionId'];?>"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
                         </li>
                         <?php
                     }
