@@ -202,8 +202,10 @@ else if(!empty($Revision['key'])) {
         var filterProcessAjax = null;
         var filterStatus = $('#filterStatus');
         $('.applyfilter[filter-id!=""]').click(function(){
-            var filter = $(this).attr('filter-id');
             $('#filteringModal').modal({show: true});
+        });
+        $('.applyfilter[filter-id!=""]').click(function(){
+            var filter = $(this).attr('filter-id');
             var sessionId = '<?php echo $TransformSession['sessionId'];?>';
             var revisionId = '<?php echo $Revision['revisionId'];?>';
             var imageUuid = '<?php echo $Image['uuid'];?>';
@@ -211,6 +213,7 @@ else if(!empty($Revision['key'])) {
             api += '&image='+encodeURIComponent(imageUuid);
             api += '&revisionId='+encodeURIComponent(revisionId);
             api += '&txId='+encodeURIComponent(sessionId);
+
             $.getJSON(api, function(response) {
                 console.log('Filter.response:');
                 console.log(response);
