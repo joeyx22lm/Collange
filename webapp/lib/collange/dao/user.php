@@ -16,11 +16,15 @@ class User extends DBObject {
     protected static $tablePKName='id';     // DB Primary Key field is `id`
     protected static $tablePKType='i';      // DB Primary Key is an integer.
 
+    protected $id;
     protected $firstName;
     protected $lastName;
     protected $email;
     protected $password;
 
+    public function getId(){
+        return $this->id;
+    }
     public function getName($reverse=false){
         return UserUtil::formatName($this->firstName, $this->lastName, $reverse);
     }
