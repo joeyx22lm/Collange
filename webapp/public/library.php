@@ -133,22 +133,11 @@
         /**
          * Start Dropzone.JS
          */
-        Dropzone.options.uploadForm = {
-            uploadMultiple: true,
-            parallelUploads: 100,
-            maxFiles: 100,
-            init: function() {
-                this.on("successmultiple", function(files, response) {
-                    window.location.reload();
-                });
-                this.on("errormultiple", function(files, response) {
-                    $('#errorModal').modal('show');
-                });
-                this.on("queuecomplete", function() {
-                    window.location.reload();
-                });
-            }
-        };
+        $('#uploadForm').on('success', function() {
+            var args = Array.prototype.slice.call(arguments);
+            console.log(args);
+            window.location.reload();
+        });
     });
 </script>
 </body>
