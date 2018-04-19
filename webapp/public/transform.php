@@ -142,7 +142,19 @@ if($Revision == null){
             </div>--->
             <div class="row">
                 <div class="col-lg-12 img-responsive" id="canvas">
+                    <?php
+                    // Check for an eventuuid.
+                    if(!empty($Revision['EventUUID'])){
+                    ?>
+                    <img id="image-container" src="https://placehold.it/1000x1000?text=Applying Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <?php
+                    }else{
+                    ?>
                     <img src="<?php echo $cachedURL;?>" class="img" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <?php
+                    }
+                    ?>
+
                 </div>
             </div>
         </div>
@@ -167,6 +179,21 @@ if($Revision == null){
                 window.location.href = revisedSession;
             });
         });
+
+        <?php
+        // Check for an eventuuid.
+        if(!empty($Revision['EventUUID'])){
+        ?>
+        var loadFilteredImage = setInterval(function(){
+            $.getJSON('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>', function(resp){
+                if(resp != undefined){
+
+                }
+            });
+        }, 3000);
+        <?php
+        }
+        ?>
     });
 </script>
 </body>

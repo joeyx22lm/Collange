@@ -71,7 +71,7 @@ class TransformSessionHandler {
     /**
      * Create a new session, given image info.
      */
-    public static function reviseSession($sessionId, $title, $saved, $revisionId=null, $openedTime=null){
+    public static function reviseSession($sessionId, $title, $saved, $EventUUID=null, $revisionId=null, $openedTime=null){
         // Attempt to retrieve the session.
         $Session = self::getSession($sessionId);
         if($Session == null){
@@ -96,7 +96,8 @@ class TransformSessionHandler {
             'title'=>$title,
             'history'=>$openedTime,
             'saved'=>$saved,
-            'revisionId'=>$revisionId
+            'revisionId'=>$revisionId,
+            'EventUUID'=>null
         );
 
         // Store the event.

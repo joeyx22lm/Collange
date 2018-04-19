@@ -171,7 +171,7 @@ if(isset($_GET['filter'])){
                 $filter
             );
             if (!empty($EventUUID)) {
-               $revId = TransformSessionHandler::reviseSession($_GET['txId'], 'Applied ' . $FilterName, false);
+               $revId = TransformSessionHandler::reviseSession($_GET['txId'], 'Applied ' . $FilterName, false, $EventUUID);
                if(!empty($revId)){
                    die(json_encode(array(
                        'txId'=>$_GET['txId'],
@@ -182,6 +182,34 @@ if(isset($_GET['filter'])){
             }
         }
     }
+    http_response_code(400);
+    die(StaticResource::get('error_default'));
+}
+
+
+if(isset($_GET['loadEventUUID'])){
+    if(!empty($_GET['loadEventUUID'])){
+        // Verify this user owns the eventid.
+        $Session = TransformSessionHandler::getSession($_GET['txId']);
+        if($Session != null) {
+            $found = false;
+            foreach ($Session['events'] as $j => $Event) {
+                if ($Event['EventUUID'] == $_GET['loadEventUUID']) {
+                    $found = true;
+                }
+            }
+            if ($found) {
+                $start = time();
+                while ((time() - $start) < 10) {
+                    $Resp = TransformImageResponseHandler::get($_GET['loadEventUUID']);
+                    if (!empty($Resp)) {
+                        die($Resp);
+                    } else sleep(1);
+                }
+            }
+        }
+    }
+
     http_response_code(400);
     die(StaticResource::get('error_default'));
 }
