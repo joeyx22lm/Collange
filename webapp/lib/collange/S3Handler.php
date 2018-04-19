@@ -45,16 +45,21 @@ class S3Handler {
     public static function upload($key, $localpath){
         // Include the SDK using the Composer autoloader
         try {
-            self::getClient()->putObject(array(
+            return self::getClient()->putObject(array(
                 'Bucket'=>StaticResource::get('ENV_AWS_S3_BUCKET'),
                 'Key' =>  $key,
                 'SourceFile' => $localpath
             ));
-            return true;
         } catch (S3Exception $e) {
             echo $e->getMessage();
         }
         return false;
+    }
+    public static function delete($key){
+        return self::getClient()->eleteObject(array(
+            'Bucket'=>StaticResource::get('ENV_AWS_S3_BUCKET'),
+            'Key' =>  $key,
+        ));
     }
 }
 ?>

@@ -6,6 +6,8 @@ AuthSession::protect();
  * Handle User File Uploads
  */
 if(isset($_GET['upload'])){
+    // Retain the key attempted, in case we need to abort.
+    $key = null;
     if(!empty($_FILES['file'])){
         // Import S3 Handler and Amazon S3 SDK.
         PHPLoader::loadModule('collange:S3Handler');
@@ -30,6 +32,7 @@ if(isset($_GET['upload'])){
         // Make sure the image is a JPG.
         $location = ImageHandler::convertImageToJPG($_FILES['file']['tmp_name'], $type);
         $type = 'jpg';
+        $key = $imageUUID . '.' . $type;
 
         // Strip any EXIF/PID info from the image.
         $location = ImageHandler::stripEXIFFromJPEG($location);
@@ -52,15 +55,18 @@ if(isset($_GET['upload'])){
                 $URL = S3Handler::createSignedGETUrl($key, '+1 hour');
                 if(!empty($URL)){
                     PHPLoader::loadModule('collange:S3EphemeralURLHandler');
-                    if(!S3EphemeralURLHandler::set($key, $URL)){
-                        Log::error('S3EphemeralURL('.$key.'): Error');
-                    }else{
+                    if(S3EphemeralURLHandler::set($key, $URL)){
                         Log::info('S3EphemeralURL('.$key.'): ' . $URL);
                     }
                 }
                 die();
             }
         }
+    }
+
+    // Something bad happened.. Atleast try to delete their file..
+    if(!S3Handler::delete($key)){
+        Log::error('API.upload('.$key.'): Unable to delete.');
     }
 
     http_response_code(400);
