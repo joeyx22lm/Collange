@@ -45,6 +45,17 @@ class TestUtility {
         }
     }
 }
+class MockUtility {
+    public static function mock($obj){
+        //runkit_method_redefine('third_party_library', 'buggy_function', '',
+        //    'return \'good result\''
+        //);
+        return false;
+    }
+    public static function override($obj, $method, $return){
+        return false;
+    }
+}
 class UnitTest {
     public static function runTest(){
         $CurrentTestContext = new static;
