@@ -39,7 +39,7 @@ PHPLoader::initModule(array(
     // Collange Project - DateUtility
     'collange:DateUtility'                      =>__DIR__.'/lib/collange/DateUtility.php',
     // Collange Project - XFormImageQueue
-    'collange:TransformImageTransactionHandler' =>__DIR__.'/lib/service/TransformImageTransactionHandler.php'
+    'collange:TransformImageTransactionHandler' =>__DIR__.'/lib/collange/service/TransformImageTransactionHandler.php'
 ));
 
 
