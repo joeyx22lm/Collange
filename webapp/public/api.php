@@ -203,8 +203,18 @@ if(isset($_GET['loadEventUUID'])){
                 while ((time() - $start) < 10) {
                     $Resp = TransformImageResponseHandler::get($_GET['loadEventUUID']);
                     if (!empty($Resp)) {
-                        die($Resp);
-                    } else sleep(1);
+                        $Obj = json_decode($Resp, true);
+                        // Cache a signed url for users to view the image, we're going to need it soon.
+                        $URL = S3Handler::createSignedGETUrl($Obj['key'], '+1 hour');
+                        if (!empty($URL)) {
+                            PHPLoader::loadModule('collange:S3EphemeralURLHandler');
+                            if (S3EphemeralURLHandler::set($Obj['key'], $URL)) {
+                                Log::info('S3EphemeralURL(' . $Obj['key'] . '): ' . $URL);
+                                $Obj['url'] = $URL;
+                                die(json_encode($Obj));
+                            }
+                        }
+                    }else sleep(1);
                 }
             }
         }

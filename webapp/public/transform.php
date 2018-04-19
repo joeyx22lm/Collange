@@ -185,9 +185,10 @@ if($Revision == null){
         if(!empty($Revision['EventUUID'])){
         ?>
         var loadFilteredImage = setInterval(function(){
-            $.getJSON('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>', function(resp){
+            $.getJSON('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>&txId=<?php echo $TransformSession['sessionId'];?>', function(resp){
                 if(resp != undefined){
-
+                    clearInterval(loadFilteredImage);
+                    $('#image-container').attr('src', resp.url);
                 }
             });
         }, 3000);
