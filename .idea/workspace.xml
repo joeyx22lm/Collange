@@ -161,10 +161,10 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="24" column="85" lean-forward="false" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
               <folding>
-                <marker date="1524158256587" expanded="true" signature="1110:1249" ph="INSERT INTO `user`... " />
+                <marker date="1524158276187" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
               </folding>
             </state>
           </provider>
@@ -1434,13 +1434,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00220" summary="public/private access">
-      <created>1524106396471</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1524106396471</updated>
-    </task>
     <task id="LOCAL-00221" summary="api to toggle image public/private access">
       <created>1524106679400</created>
       <option name="number" value="00221" />
@@ -1777,11 +1770,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524157856430</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="fix user registration">
+      <created>1524158270656</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1524158270656</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157790000" />
+    <option name="totallyTimeSpent" value="157808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -1880,7 +1880,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix 'shared' vs 'sharing' not working in library" />
     <MESSAGE value="image explore functionality" />
     <MESSAGE value="fix dependency" />
     <MESSAGE value="set session should overwrite if a txid was given." />
@@ -1905,7 +1904,8 @@
     <MESSAGE value="ability to navigate between revisions" />
     <MESSAGE value="revisions need to remember their images" />
     <MESSAGE value="we don't need saved anymore" />
-    <option name="LAST_COMMIT_MESSAGE" value="we don't need saved anymore" />
+    <MESSAGE value="fix user registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix user registration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2315,10 +2315,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="360">
+          <caret line="24" column="85" lean-forward="false" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
           <folding>
-            <marker date="1524158256587" expanded="true" signature="1110:1249" ph="INSERT INTO `user`... " />
+            <marker date="1524158276187" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
           </folding>
         </state>
       </provider>
