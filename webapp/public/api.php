@@ -243,6 +243,45 @@ if(isset($_GET['loadEventUUID'])){
     die(StaticResource::get('error_default'));
 }
 
+/**
+ * [REDIRECT] Save a filtered image.
+ */
+if(isset($_GET['save'])){
+    $sessionId = $_GET['save'];
+    $revisionId = $_GET['rId'];
+    $key = $_GET['imageKey'];
+    if(!empty($key) && !empty($revisionId) && !empty($sessionId)){
+        $Session = TransformSessionHandler::getSession($_GET['txId']);
+        $Revision = null;
+        $RevisionKey = null;
+        if($Session != null) {
+            foreach ($Session['events'] as $j => $Event) {
+                if ($Event['revisionId'] == $revisionId) {
+                    $RevisionKey = $j;
+                    $Revision = $Event;
+                    break;
+                }
+            }
+            if($Revision != null){
+                $ImageUUID = UUID::randomUUID();
+                // Move the image away from the filter tmp dir.
+                if(S3Handler::copy($Revision['key'], $ImageUUID.'.jpg')){
+                    if(S3Handler::delete($Revision['key'])){
+                        $q = DBSession::getSession()->query("INSERT INTO `image` (`ownerId`, `fileName`, `size`, `shared`, `createdDate`, `uuid`, `ext`) VALUES ('".AuthSession::getUser()->id."', '".$Session['originalImageName']."', '".$Session['originalImageSize']."', '0', '".time()."', '$ImageUUID', 'jpg')");
+                        if($q){
+                            header("Location: library.php");
+                            die();
+                        }
+                    }else Log::error('API.save().Error: Unable to delete ' . $Revision['key']);
+                }else Log::error('API.save().Error: Unable to copy ' . $Revision['key']);
+            }
+        }
+    }
+    header("Location: library.php?error");
+    die();
+}
+
+
 
 /**
  * Developer session data.

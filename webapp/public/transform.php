@@ -114,11 +114,11 @@ else if(!empty($Revision['key'])) {
                     // If current revision not saved, show bold-typed save button.
                     if(!empty($Revision['key'])){
                     ?>
-                    <a class="btn bold-typed" href="#"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
+                    <a class="btn bold-typed" href="/api.php?save=<?php echo $TransformSession['sessionId'];?>&rId=<?php echo $Revision['revisionId'];?>"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
                     <?php
                     }else{
                     ?>
-                    <a class="btn" href="#"><i class="fa fa-save"></i> &nbsp;Save</a>
+                    <a class="btn" href="/library.php"><i class="fa fa-save"></i> &nbsp;Save</a>
                     <?php
                     }
                     ?>
