@@ -26,7 +26,7 @@ if (isset($_POST['register'])) {
                         $Success = "Account Successfully Created";
                         header("Location: /home.php");
                         die();
-                    }
+                    }else Log::error('Unable to save user: ' . DBSession::getSession()->error);
                 }else $Error = "Passwords do not match or are too short";
             }else $Error = "Invalid E-Mail address detected";
         }else $Error = "This user already exists";
