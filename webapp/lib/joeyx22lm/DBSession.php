@@ -175,10 +175,11 @@ class DBObject {
         $fields = '';
         $vals = '';
         foreach(get_object_vars($this) as $field=>$val){
-            if($field != 'id'){
-                $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`';
-                $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($val).'\'';
+            if($field == 'id'){
+                continue;
             }
+            $fields.=(empty($fields) ? '' : ', ') . '`'.$field.'`';
+            $vals.=(empty($vals) ? '' : ', ') . '\''.DBSession::sanitize($val).'\'';
         }
         $queryStr = "INSERT INTO `".static::$tableName.'` ('.$fields.') VALUES ('.$vals.")";
         Log::error($queryStr);
@@ -201,9 +202,10 @@ class DBObject {
         $Query = 'UPDATE `' . static::$tableName . '` SET ';
         $fields = '';
         foreach (get_object_vars($this) as $field) {
-            if($field != 'id') {
-                $fields .= (empty($fields) ? '' : ', ') . '`' . $field . '`=\'' . DBSession::sanitize($this->{$field}) . '\'';
+            if($field == 'id'){
+                continue;
             }
+            $fields .= (empty($fields) ? '' : ', ') . '`' . $field . '`=\'' . DBSession::sanitize($this->{$field}) . '\'';
         }
         $Query .= $fields . ' WHERE `id`=\'' . $this->id . '\'';
         return DBSession::getSession()->query($Query);

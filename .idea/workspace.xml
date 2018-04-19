@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" afterPath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
       <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,11 +65,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+            <state relative-caret-position="924">
+              <caret line="65" column="266" lean-forward="false" selection-start-line="65" selection-start-column="266" selection-end-line="65" selection-end-column="266" />
               <folding />
             </state>
           </provider>
@@ -164,28 +165,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
+      <file leaf-file-name="Log.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="205" column="13" lean-forward="false" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
-              <folding>
-                <marker date="1524096988548" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-                <marker date="1524096988548" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524096988548" expanded="true" signature="5476:5545" ph="INSERT INTO `${static::$tableName}`... " />
-                <marker date="1524096988548" expanded="true" signature="5634:5635" ph="INSERT INTO `'.static::${$tableName}.'`... " />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
+      <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="990">
+              <caret line="207" column="122" lean-forward="false" selection-start-line="207" selection-start-column="122" selection-end-line="207" selection-end-column="122" />
               <folding>
-                <marker date="1524011511902" expanded="true" signature="1393:1446" ph="UPDATE `user`... " />
+                <marker date="1524097593442" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+                <marker date="1524097593442" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524097593442" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
+                <marker date="1524097593442" expanded="true" signature="5652:5653" ph="INSERT INTO `'.static::${$tableName}.'`... " />
               </folding>
             </state>
           </provider>
@@ -971,9 +970,9 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/user.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
       </list>
     </option>
   </component>
@@ -1386,13 +1385,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00123" summary="changes">
-      <created>1521783252730</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1521783252730</updated>
-    </task>
     <task id="LOCAL-00124" summary="changes">
       <created>1521784116808</created>
       <option name="number" value="00124" />
@@ -1729,11 +1721,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524097269053</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="log aborted uploads.">
+      <created>1524097297707</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1524097297707</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137584000" />
+    <option name="totallyTimeSpent" value="137842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1832,7 +1831,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge branch 'master' of https://github.com/joeyx22lm/Collange&#10;&#10;# Conflicts:&#10;#&#9;.gradle/4.0/fileContent/fileContent.lock&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.bin&#10;#&#9;.gradle/4.0/fileHashes/fileHashes.lock&#10;#&#9;.gradle/4.0/taskHistory/fileSnapshots.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.bin&#10;#&#9;.gradle/4.0/taskHistory/taskHistory.lock&#10;#&#9;worker-imagify/build/libs/worker-imagify-1.0.0.jar&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.MainActivityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.PixelTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/classes/edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.html&#10;#&#9;worker-imagify/build/reports/tests/test/index.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.html&#10;#&#9;worker-imagify/build/reports/tests/test/packages/edu.ucf.cop4331.Collange.imagify.html&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.MainActivityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.GrayScaleTransitionTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PackagedImageExamples.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.PixelTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBTransitionsTest.xml&#10;#&#9;worker-imagify/build/test-results/test/TEST-edu.ucf.cop4331.Collange.imagify.RGBUtilityTest.xml&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin&#10;#&#9;worker-imagify/build/test-results/test/binary/output.bin.idx&#10;#&#9;worker-imagify/build/test-results/test/binary/results.bin" />
     <MESSAGE value="changes" />
     <MESSAGE value="Built the logout functionality." />
     <MESSAGE value="Build UUID functionality and more S3 stuff." />
@@ -1857,7 +1855,8 @@
     <MESSAGE value="composer.json" />
     <MESSAGE value="dropzone event fix" />
     <MESSAGE value="fix upload no id bro" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix upload no id bro" />
+    <MESSAGE value="log aborted uploads." />
+    <option name="LAST_COMMIT_MESSAGE" value="log aborted uploads." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2029,14 +2028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/S3EphemeralURLHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -2190,14 +2181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -2234,27 +2217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="205" column="13" lean-forward="false" selection-start-line="205" selection-start-column="13" selection-end-line="205" selection-end-column="13" />
-          <folding>
-            <marker date="1524096988548" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-            <marker date="1524096988548" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524096988548" expanded="true" signature="5476:5545" ph="INSERT INTO `${static::$tableName}`... " />
-            <marker date="1524096988548" expanded="true" signature="5634:5635" ph="INSERT INTO `'.static::${$tableName}.'`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -2265,9 +2227,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state relative-caret-position="924">
+          <caret line="65" column="266" lean-forward="false" selection-start-line="65" selection-start-column="266" selection-end-line="65" selection-end-column="266" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/dao/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="207" column="122" lean-forward="false" selection-start-line="207" selection-start-column="122" selection-end-line="207" selection-end-column="122" />
+          <folding>
+            <marker date="1524097593442" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+            <marker date="1524097593442" expanded="true" signature="4662:4707" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524097593442" expanded="true" signature="5494:5563" ph="INSERT INTO `${static::$tableName}`... " />
+            <marker date="1524097593442" expanded="true" signature="5652:5653" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+          </folding>
         </state>
       </provider>
     </entry>
