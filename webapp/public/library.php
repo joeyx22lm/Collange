@@ -45,6 +45,7 @@
                     $imageQuery = array('ownerId'=>AuthSession::getUser()->id);
                     foreach(Image::getAll(DBSession::getSession(), $imageQuery) as $Image){
                         $imageCount++;
+                        $Image['key'] = $Image['uuid'] . '.'.$Image['ext'];
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);
                         if($cachedURL == null){
                             $cachedURL = S3Handler::createSignedGETUrl($Image['key']);
