@@ -19,7 +19,7 @@ if(empty($TransformSession)){
 $Image = null;
 $cachedURL = null;
 foreach(Image::getAll(DBSession::getSession(), array('ownerId'=>AuthSession::getUser()->id, 'uuid'=>$TransformSession['imageUuid'])) as $img){
-    $Image['key'] = $Image['uuid'] . '.' . $Image['ext'];
+    $img['key'] = $img['uuid'] . '.' . $img['ext'];
     $Image = $img;
     $cachedURL = S3EphemeralURLHandler::get($Image['key']);
     if ($cachedURL == null) {
