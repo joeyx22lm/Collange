@@ -213,6 +213,7 @@ class DBObject {
         if(!$ret){
             Log::error($Query . ': ' . DBSession::getSession()->error);
         }
+        return $ret;
     }
 }
 ?>
