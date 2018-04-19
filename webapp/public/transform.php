@@ -188,9 +188,7 @@ else if(!empty($Revision['key'])) {
     </div>
 </div>
 
-
 <?php App::buildPageFooter();?>
-
 
 <script>
     var revision = {
@@ -204,39 +202,35 @@ else if(!empty($Revision['key'])) {
         var filterProcessAjax = null;
         var filterStatus = $('#filterStatus');
         $('.applyfilter[filter-id!=""]').click(function(){
+            $('#filteringModal').modal({show: true});
+        });
+        $('.applyfilter[filter-id!=""]').click(function(){
             var filter = $(this).attr('filter-id');
-            $.when(function(e){
-                $('#filteringModal').modal({show: true});
-            }).then(function(e){
-                var sessionId = '<?php echo $TransformSession['sessionId'];?>';
-                var revisionId = '<?php echo $Revision['revisionId'];?>';
-                var imageUuid = '<?php echo $Image['uuid'];?>';
-                var api = '/api.php?filter='+encodeURIComponent(filter);
-                api += '&image='+encodeURIComponent(imageUuid);
-                api += '&revisionId='+encodeURIComponent(revisionId);
-                api += '&txId='+encodeURIComponent(sessionId);
-                $.getJSON(api, function(response) {
-                    console.log('Filter.response:');
-                    console.log(response);
-                    filterStatus.text('Filter request has been queued for processing.');
-                    if(response.EventUUID != ''){
-                        revision.eventUuid = response.EventUUID;
-                        revision.revisionId = response.revisionId;
-                        var url = '/api.php?loadEventUUID='+encodeURIComponent(response.EventUUID)+'&txId=<?php echo $TransformSession['sessionId'];?>';
-                        filterProcessAjax = setInterval(function(){
-                            $.getJSON(url, function(resp){
-                                if(resp != undefined && resp.image_uri != ''){
-                                    clearInterval(filterProcessAjax);
-                                    $('#imagecontainer').attr('src', resp.image_uri);
-                                }
-                            });
-                        }, 3000);
-                    }
-                    //var revisedSession = '/transform.php?txId='+encodeURIComponent(sessionId);
-                    //revisedSession += '&revisionId='+encodeURIComponent(response.revisionId);
-                    //revisedSession += '&EventUUID='+encodeURIComponent(response.EventUUID);
-                    //window.location.href = revisedSession;
-                });
+            var sessionId = '<?php echo $TransformSession['sessionId'];?>';
+            var revisionId = '<?php echo $Revision['revisionId'];?>';
+            var imageUuid = '<?php echo $Image['uuid'];?>';
+            var api = '/api.php?filter='+encodeURIComponent(filter);
+            api += '&image='+encodeURIComponent(imageUuid);
+            api += '&revisionId='+encodeURIComponent(revisionId);
+            api += '&txId='+encodeURIComponent(sessionId);
+
+            $.getJSON(api, function(response) {
+                console.log('Filter.response:');
+                console.log(response);
+                filterStatus.text('Filter request has been queued for processing.');
+                if(response.EventUUID != ''){
+                    revision.eventUuid = response.EventUUID;
+                    revision.revisionId = response.revisionId;
+                    var url = '/api.php?loadEventUUID='+encodeURIComponent(response.EventUUID)+'&txId=<?php echo $TransformSession['sessionId'];?>';
+                    filterProcessAjax = setInterval(function(){
+                        $.getJSON(url, function(resp){
+                            if(resp != undefined){
+                                clearInterval(filterProcessAjax);
+                                window.location.href = '/transform.php?txId=<?php echo $TransformSession['sessionId'];?>&revisionId='+response.revisionId;
+                            }
+                        });
+                    }, 3000);
+                }
             });
         });
     });
