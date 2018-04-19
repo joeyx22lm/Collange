@@ -1,8 +1,8 @@
 <?php
 class DateUtility {
-    public static function getAge($datetime, $full = false){
+    public static function getAge($epoch, $full = false){
         $now = new DateTime;
-        $ago = new DateTime($datetime);
+        $ago = new DateTime("@$epoch");
         $diff = $now->diff($ago);
         $diff->w = floor($diff->d / 7);
         $diff->d -= $diff->w * 7;
