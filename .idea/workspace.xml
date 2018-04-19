@@ -77,8 +77,8 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="409">
+              <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#3771#3778#1#HTML" expanded="true" />
@@ -149,9 +149,15 @@
       <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="328">
+              <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+              <folding>
+                <marker date="1524103621148" expanded="false" signature="2580:2592" ph="..." />
+                <marker date="1524103621148" expanded="false" signature="2997:3007" ph="..." />
+                <marker date="1524103621148" expanded="false" signature="3504:3514" ph="..." />
+                <marker date="1524103621148" expanded="false" signature="3979:3989" ph="..." />
+                <marker date="1524103621148" expanded="false" signature="4453:4463" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1390,13 +1396,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00158" summary="php GD library support @HEROKU?">
-      <created>1524093305534</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1524093305534</updated>
-    </task>
     <task id="LOCAL-00159" summary="EXIF stripping and fix xform sessions.">
       <created>1524093425927</created>
       <option name="number" value="00159" />
@@ -1733,11 +1732,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524103324583</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="clean up the breadcrumbs on the transform page">
+      <created>1524103417095</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1524103417095</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142609000" />
+    <option name="totallyTimeSpent" value="142818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -2248,8 +2254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="52" selection-end-column="25" />
+        <state relative-caret-position="409">
+          <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#3771#3778#1#HTML" expanded="true" />
@@ -2261,9 +2267,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="328">
+          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+          <folding>
+            <marker date="1524103621148" expanded="false" signature="2580:2592" ph="..." />
+            <marker date="1524103621148" expanded="false" signature="2997:3007" ph="..." />
+            <marker date="1524103621148" expanded="false" signature="3504:3514" ph="..." />
+            <marker date="1524103621148" expanded="false" signature="3979:3989" ph="..." />
+            <marker date="1524103621148" expanded="false" signature="4453:4463" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
