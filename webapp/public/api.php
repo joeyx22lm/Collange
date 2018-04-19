@@ -264,7 +264,7 @@ if(isset($_GET['save'])){
             if($Revision != null){
                 $ImageUUID = UUID::randomUUID();
                 // Move the image away from the filter tmp dir.
-                if(S3Handler::copy($Revision['key'], $ImageUUID.'.jpg')){
+                if(S3Handler::copy($Revision['key'], $ImageUUID.'.jpg') && S3Handler::copy($ImageUUID.'.jpg', $ImageUUID.'_thumb.jpg')){
                     if(S3Handler::delete($Revision['key'])){
                         $q = DBSession::getSession()->query("INSERT INTO `image` (`ownerId`, `fileName`, `size`, `shared`, `createdDate`, `uuid`, `ext`) VALUES ('".AuthSession::getUser()->id."', '".$Session['originalImageName']."', '".$Session['originalImageSize']."', '0', '".time()."', '$ImageUUID', 'jpg')");
                         if($q){
