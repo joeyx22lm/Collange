@@ -56,9 +56,13 @@ if($Image == null || $cachedURL == null){
                             <i class="icon-graph"></i> &nbsp;Filters
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <?php
+                            foreach(TransformSessionHandler::getFilters() as $filterApiName=>$filterDisplayName){
+                            ?>
+                                <a class="dropdown-item applyfilter" filter-id="<?php echo $filterApiName;?>"><?php echo $filterDisplayName;?></a>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                     <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Properties</a>
