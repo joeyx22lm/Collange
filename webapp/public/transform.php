@@ -31,6 +31,23 @@ if($Image == null || $cachedURL == null){
     header("Location: /library.php");
     die();
 }
+
+
+// Retrieve the revision number.
+$Revision = null;
+foreach($TransformSession['events'] as $i=>$Event){
+    if(!isset($_GET['revisionId'])){
+        $Revision = $Event;
+        break;
+    }else if($Event['revisionId'] == $_GET['revisionId']){
+        $Revision = $Event;
+        break;
+    }
+}
+if($Revision == null){
+    header("Location: /library.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +89,7 @@ if($Image == null || $cachedURL == null){
                     </div>
                     <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Properties</a>
                     <?php
-                    if(true){
+                    if(){
                     ?>
                     <a class="btn bold-typed" href="#"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
                     <?php

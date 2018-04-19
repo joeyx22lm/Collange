@@ -39,7 +39,8 @@ class TransformSessionHandler {
             'events'=>array(
                 array(
                     'title'=>"Opened Image",
-                    'history'=>$openedTime
+                    'history'=>$openedTime,
+                    'revisionId'=>UUID::randomUUID()
                 )
             )
         );
