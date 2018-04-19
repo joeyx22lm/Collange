@@ -72,7 +72,7 @@
                                 <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
                                 <p class="card-text"><?php echo $Image['caption'];?></p>
                                 <div class="btn-group" role="group" aria-label="Image Options" style="width:100%;">
-                                    <a class="btn btn-primary" href="profile.php">View Profile</a>
+                                    <a class="btn btn-primary" href="#">View Profile</a>
                                     <a class="btn btn-danger" href="#">Report Image</a>
                                 </div>
                             </div>
