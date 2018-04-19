@@ -59,8 +59,11 @@
         <div class="container-fluid" id="explore-view">
             <div class="animated fadeIn">
                 <div class="row">
-
-
+					<div style="text-align: center; float: none; margin: 0 auto;" class="library-card card col-lg-6 col-md-6 col-sm-6">
+						<h5>About the User</h5>
+						<p>This is something about the user</p>
+					</div>	
+				
                     <?php
 
                     if(isset($_GET['id'])){
