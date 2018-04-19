@@ -17,6 +17,15 @@ class TransformSessionHandler {
         return AuthSession::set('transformSessionData', $val);
     }
 
+    public static function setSession($val){
+        $Sessions = self::getSessions();
+        if(empty($Sessions)){
+            $Sessions = array();
+        }
+        $Sessions[] = $val;
+        return self::setSessions($Sessions);
+    }
+
     /**
      * Create a new session, given image info.
      */
@@ -47,6 +56,42 @@ class TransformSessionHandler {
         );
         self::setSessions($Sessions);
         return $sessionId;
+    }
+
+    /**
+     * Create a new session, given image info.
+     */
+    public static function reviseSession($sessionId, $title, $saved, $revisionId=null, $openedTime=null){
+        // Attempt to retrieve the session.
+        $Session = self::getSession($sessionId);
+        if($Session == null){
+            return null;
+        }
+
+        // Make sure we can add events.
+        if($Session['events'] == null){
+            $Session['events'] = array();
+        }
+
+        // Check for defaults.
+        if($revisionId == null){
+            $revisionId = UUID::randomUUID();
+        }
+        if($openedTime == null){
+            $openedTime = time();
+        }
+
+        // Add the requested event.
+        $Session['events'][] = array(
+            'title'=>$title,
+            'history'=>$openedTime,
+            'saved'=>$saved,
+            'revisionId'=>$revisionId
+        );
+
+        // Store the event.
+        self::setSession($Session);
+        return $revisionId;
     }
 
     /**

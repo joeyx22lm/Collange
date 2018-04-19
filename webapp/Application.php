@@ -37,7 +37,9 @@ PHPLoader::initModule(array(
     // Collange Project - Image Handler
     'collange:ImageHandler'                     =>__DIR__.'/lib/collange/ImageHandler.php',
     // Collange Project - DateUtility
-    'collange:DateUtility'                      =>__DIR__.'/lib/collange/DateUtility.php'
+    'collange:DateUtility'                      =>__DIR__.'/lib/collange/DateUtility.php',
+    // Collange Project - XFormImageQueue
+    'collange:TransformImageTransactionHandler' =>__DIR__.'/lib/service/TransformImageTransactionHandler.php'
 ));
 
 
@@ -96,6 +98,7 @@ StaticResource::set(array(
         'CumulativeAverageTransition' => "Cumulative Average Filter",
         'SolidBlueTransition' => "Solid Blue Filter"
     ),
+    'error_default'=>'An unexpected error occurred.',
     'error_api_upload_maxsize'=>'Your image must not exceed 10Mb.',
     'error_api_upload_filetype'=>'Your image must be a GIF, PNG or JPG.',
     'error_api_upload_unknown'=>'An unexpected error occurred while uploading your image.'

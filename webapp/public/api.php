@@ -136,4 +136,42 @@ if(isset($_GET['sharing'])){
     header("Location: /library.php?error");
     die();
 }
+
+
+/**
+ * [AJAX] Apply a filter to an image.
+ */
+if(isset($_GET['filter'])){
+    $Image = null;
+    foreach(Image::getAll(DBSession::getSession(), array(
+            'ownerId'=>AuthSession::getUser()->id,
+            'uuid'=>$_GET['sharing'])
+    ) as $i=>$img){
+        $Image = $img;
+    }
+    $filter = $_GET['filter'];
+    if($Image != null && !empty($_GET['txId']) && !empty($_GET['revisionId']) && !empty($filter)) {
+        $FilterName = StaticResource::get('filters')[$filter];
+        if(!empty($FilterName)) {
+            PHPLoader::loadModule('collange:TransformImageTransactionHandler');
+            $EventUUID = TransformImageRequestHandler::enqueue(
+                $Image['uuid'] . '.' . $Image['ext'],
+                $_GET['txId'],
+                $_GET['revisionId'],
+                $filter
+            );
+            if (!empty($EventUUID)) {
+               $revId = TransformSessionHandler::reviseSession($_GET['txId'], 'Applied ' . $FilterName, false);
+               if(!empty($revId)){
+                   die(json_encode(array(
+                       'txId'=>$_GET['txId'],
+                       'revisionId'=>$revId
+                   )));
+               }
+            }
+        }
+    }
+    http_response_code(400);
+    die(StaticResource::get('error_default'));
+}
 ?>
