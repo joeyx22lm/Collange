@@ -4,8 +4,6 @@
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/transform.php" afterPath="$PROJECT_DIR$/webapp/public/transform.php" />
-      <change beforePath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" afterPath="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -69,14 +67,29 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="173" column="36" lean-forward="true" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
+            <state relative-caret-position="589">
+              <caret line="271" column="21" lean-forward="false" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="21" />
               <folding>
                 <element signature="e#3200#4365#0#PHP" expanded="false" />
-                <marker date="1524165249382" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-                <marker date="1524165249382" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-                <marker date="1524165249382" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+                <marker date="1524166977718" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+                <marker date="1524166977718" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+                <marker date="1524166977718" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+                <marker date="1524166977718" expanded="true" signature="9747:9882" ph="INSERT INTO `image`... " />
+                <marker date="1524166977718" expanded="true" signature="9747:9919" ph="INSERT INTO `image`... " />
+                <marker date="1524166977718" expanded="true" signature="9747:9961" ph="INSERT INTO `image`... " />
+                <marker date="1524166977718" expanded="true" signature="9747:9994" ph="INSERT INTO `image`... " />
+                <marker date="1524166977718" expanded="true" signature="9747:10135" ph="INSERT INTO `image`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-778">
+              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,19 +126,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="S3Handler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="transform.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="216" column="26" lean-forward="false" selection-start-line="216" selection-start-column="26" selection-end-line="216" selection-end-column="26" />
+            <state relative-caret-position="368">
+              <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524164900751" expanded="false" signature="4461:4473" ph="..." />
-                <marker date="1524164900751" expanded="false" signature="4878:4888" ph="..." />
-                <marker date="1524164900751" expanded="false" signature="5385:5395" ph="..." />
-                <marker date="1524164900751" expanded="false" signature="5860:5870" ph="..." />
-                <marker date="1524164900751" expanded="false" signature="6334:6344" ph="..." />
+                <marker date="1524166365660" expanded="true" signature="4304:4310" ph="&amp;nbsp;" />
+                <marker date="1524166365660" expanded="false" signature="4571:4583" ph="..." />
+                <marker date="1524166365660" expanded="true" signature="4659:4736" ph="..." />
+                <marker date="1524166365660" expanded="true" signature="4692:4736" ph="..." />
+                <marker date="1524166365660" expanded="false" signature="4988:4998" ph="..." />
+                <marker date="1524166365660" expanded="false" signature="5495:5505" ph="..." />
+                <marker date="1524166365660" expanded="true" signature="5675:5719" ph="..." />
+                <marker date="1524166365660" expanded="false" signature="5970:5980" ph="..." />
+                <marker date="1524166365660" expanded="true" signature="6150:6194" ph="..." />
+                <marker date="1524166365660" expanded="false" signature="6444:6454" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,26 +167,6 @@
               <folding>
                 <marker date="1524158838195" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollangeUI.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/CollangeUI.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/component/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -181,7 +189,7 @@
             <state relative-caret-position="731">
               <caret line="92" column="11" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
               <folding>
-                <marker date="1524113300354" expanded="true" signature="2128:2185" ph="SELECT * FRO... image" />
+                <marker date="1524166574795" expanded="true" signature="2128:2185" ph="SELECT * FRO... image" />
               </folding>
             </state>
           </provider>
@@ -198,8 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static&lt;T extends Serializable&gt;</find>
-      <find>, Class&lt;T extends Serializable&gt;</find>
       <find>extends Serializable</find>
       <find>&lt;T implements Serializable&gt;</find>
       <find>print</find>
@@ -226,8 +232,10 @@
       <find>+</find>
       <find>$Session['image</find>
       <find>loadEventUUID</find>
-      <find>save</find>
       <find>$Obj['url']</find>
+      <find>save</find>
+      <find>id</find>
+      <find>authsess</find>
     </findStrings>
     <replaceStrings>
       <replace>DBSession::</replace>
@@ -948,7 +956,6 @@
         <option value="$PROJECT_DIR$/webapp/lib/collange/service/predis.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/user.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/DateUtility.php" />
@@ -973,8 +980,9 @@
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
         <option value="$PROJECT_DIR$/webapp/public/css/style.css" />
         <option value="$PROJECT_DIR$/worker-imagify/src/test/java/edu/ucf/cop4331/Collange/imagify/PackagedImageExamples.java" />
-        <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
+        <option value="$PROJECT_DIR$/webapp/public/transform.php" />
+        <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
       </list>
     </option>
@@ -1541,34 +1549,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00248" summary="fix filterworkermessage">
-      <created>1524114031385</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
-      <option name="project" value="LOCAL" />
-      <updated>1524114031385</updated>
-    </task>
-    <task id="LOCAL-00249" summary="fix filterworkermessage">
-      <created>1524114391991</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1524114391991</updated>
-    </task>
-    <task id="LOCAL-00250" summary="fix filterworkermessage">
-      <created>1524114544537</created>
-      <option name="number" value="00250" />
-      <option name="presentableId" value="LOCAL-00250" />
-      <option name="project" value="LOCAL" />
-      <updated>1524114544537</updated>
-    </task>
-    <task id="LOCAL-00251" summary="fixing more?">
-      <created>1524114606014</created>
-      <option name="number" value="00251" />
-      <option name="presentableId" value="LOCAL-00251" />
-      <option name="project" value="LOCAL" />
-      <updated>1524114606014</updated>
-    </task>
     <task id="LOCAL-00252" summary="mark async job complete">
       <created>1524115140507</created>
       <option name="number" value="00252" />
@@ -1884,11 +1864,39 @@
       <option name="project" value="LOCAL" />
       <updated>1524164687913</updated>
     </task>
-    <option name="localTasksCounter" value="297" />
+    <task id="LOCAL-00297" summary="fix xform already filtered images">
+      <created>1524165265883</created>
+      <option name="number" value="00297" />
+      <option name="presentableId" value="LOCAL-00297" />
+      <option name="project" value="LOCAL" />
+      <updated>1524165265883</updated>
+    </task>
+    <task id="LOCAL-00298" summary="xform save api">
+      <created>1524166267717</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1524166267717</updated>
+    </task>
+    <task id="LOCAL-00299" summary="xform save api">
+      <created>1524166567499</created>
+      <option name="number" value="00299" />
+      <option name="presentableId" value="LOCAL-00299" />
+      <option name="project" value="LOCAL" />
+      <updated>1524166567499</updated>
+    </task>
+    <task id="LOCAL-00300" summary="xform save api">
+      <created>1524166690288</created>
+      <option name="number" value="00300" />
+      <option name="presentableId" value="LOCAL-00300" />
+      <option name="project" value="LOCAL" />
+      <updated>1524166690288</updated>
+    </task>
+    <option name="localTasksCounter" value="301" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163903000" />
+    <option name="totallyTimeSpent" value="165539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -1987,8 +1995,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixing more?" />
-    <MESSAGE value="mark async job complete" />
     <MESSAGE value="fix empty directory S3 naming issue" />
     <MESSAGE value="logging pls" />
     <MESSAGE value="give me filtered image, pls." />
@@ -2012,7 +2018,9 @@
     <MESSAGE value="I wanna go fast!" />
     <MESSAGE value="fix xform page js" />
     <MESSAGE value="cleanup filter modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup filter modal" />
+    <MESSAGE value="fix xform already filtered images" />
+    <MESSAGE value="xform save api" />
+    <option name="LAST_COMMIT_MESSAGE" value="xform save api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2219,14 +2227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/service/RedisHandler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2279,14 +2279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -2390,23 +2382,7 @@
         <state relative-caret-position="731">
           <caret line="92" column="11" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
           <folding>
-            <marker date="1524113300354" expanded="true" signature="2128:2185" ph="SELECT * FRO... image" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="216" column="26" lean-forward="false" selection-start-line="216" selection-start-column="26" selection-end-line="216" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1524164900751" expanded="false" signature="4461:4473" ph="..." />
-            <marker date="1524164900751" expanded="false" signature="4878:4888" ph="..." />
-            <marker date="1524164900751" expanded="false" signature="5385:5395" ph="..." />
-            <marker date="1524164900751" expanded="false" signature="5860:5870" ph="..." />
-            <marker date="1524164900751" expanded="false" signature="6334:6344" ph="..." />
+            <marker date="1524166574795" expanded="true" signature="2128:2185" ph="SELECT * FRO... image" />
           </folding>
         </state>
       </provider>
@@ -2429,15 +2405,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="119" column="22" lean-forward="true" selection-start-line="119" selection-start-column="22" selection-end-line="119" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1524166365660" expanded="true" signature="4304:4310" ph="&amp;nbsp;" />
+            <marker date="1524166365660" expanded="false" signature="4571:4583" ph="..." />
+            <marker date="1524166365660" expanded="true" signature="4659:4736" ph="..." />
+            <marker date="1524166365660" expanded="true" signature="4692:4736" ph="..." />
+            <marker date="1524166365660" expanded="false" signature="4988:4998" ph="..." />
+            <marker date="1524166365660" expanded="false" signature="5495:5505" ph="..." />
+            <marker date="1524166365660" expanded="true" signature="5675:5719" ph="..." />
+            <marker date="1524166365660" expanded="false" signature="5970:5980" ph="..." />
+            <marker date="1524166365660" expanded="true" signature="6150:6194" ph="..." />
+            <marker date="1524166365660" expanded="false" signature="6444:6454" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/S3Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-778">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="173" column="36" lean-forward="true" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
+        <state relative-caret-position="589">
+          <caret line="271" column="21" lean-forward="false" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="21" />
           <folding>
             <element signature="e#3200#4365#0#PHP" expanded="false" />
-            <marker date="1524165249382" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-            <marker date="1524165249382" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-            <marker date="1524165249382" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+            <marker date="1524166977718" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+            <marker date="1524166977718" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+            <marker date="1524166977718" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+            <marker date="1524166977718" expanded="true" signature="9747:9882" ph="INSERT INTO `image`... " />
+            <marker date="1524166977718" expanded="true" signature="9747:9919" ph="INSERT INTO `image`... " />
+            <marker date="1524166977718" expanded="true" signature="9747:9961" ph="INSERT INTO `image`... " />
+            <marker date="1524166977718" expanded="true" signature="9747:9994" ph="INSERT INTO `image`... " />
+            <marker date="1524166977718" expanded="true" signature="9747:10135" ph="INSERT INTO `image`... " />
           </folding>
         </state>
       </provider>
