@@ -144,6 +144,9 @@
                 this.on("errormultiple", function(files, response) {
                     $('#errorModal').modal('show');
                 });
+                this.on("queuecomplete", function(files, response) {
+                    window.location.reload();
+                });
             }
         };
     });
