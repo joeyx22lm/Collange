@@ -173,13 +173,12 @@ else if(!empty($Revision['key'])) {
         </div>
     </main>
 </div>
-<?php App::buildPageFooter();?>
 
-<div class="modal fade" id="filteringModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalTitle" aria-hidden="true">
+<div class="modal fade" id="filteringModal" tabindex="-1" role="dialog" aria-labelledby="filterModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="uploadModalTitle">Applying Filter</h5>
+                <h5 class="modal-title" id="filterModalTitle">Applying Filter</h5>
             </div>
             <div class="modal-body">
                 <i class="fa fa-spinner fa-spin" style="font-size:38px"></i><br />
@@ -189,14 +188,25 @@ else if(!empty($Revision['key'])) {
     </div>
 </div>
 
+
+<?php App::buildPageFooter();?>
+
+
 <script>
+    var revision = {
+      sessionId: '<?php echo $TransformSession['sessionId'];?>',
+      revisionId: '<?php echo $Revision['revisionId'];?>',
+      imageUuid: '<?php echo $Revision['imageUuid'];?>',
+      imageKey: '<?php echo $Revision['key'];?>',
+      eventUuid: '<?php echo $Revision['EventUUID'];?>'
+    };
     $(document).ready(function(){
         var filterProcessAjax = null;
         var filterStatus = $('#filterStatus');
         $('.applyfilter[filter-id!=""]').click(function(){
             var filter = $(this).attr('filter-id');
             $.when(function(e){
-                $('#filteringModal').modal('show');
+                $('#filteringModal').modal({show: true});
             }).then(function(e){
                 var sessionId = '<?php echo $TransformSession['sessionId'];?>';
                 var revisionId = '<?php echo $Revision['revisionId'];?>';
@@ -206,9 +216,12 @@ else if(!empty($Revision['key'])) {
                 api += '&revisionId='+encodeURIComponent(revisionId);
                 api += '&txId='+encodeURIComponent(sessionId);
                 $.getJSON(api, function(response) {
-                    console.log('filter: ' + response);
+                    console.log('Filter.response:');
+                    console.log(response);
                     filterStatus.text('Filter request has been queued for processing.');
                     if(response.EventUUID != ''){
+                        revision.eventUuid = response.EventUUID;
+                        revision.revisionId = response.revisionId;
                         var url = '/api.php?loadEventUUID='+encodeURIComponent(response.EventUUID)+'&txId=<?php echo $TransformSession['sessionId'];?>';
                         filterProcessAjax = setInterval(function(){
                             $.get(url, function(resp){

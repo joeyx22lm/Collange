@@ -216,11 +216,11 @@ if(isset($_GET['loadEventUUID'])){
                         $Obj = json_decode($Resp, true);
                         $key = $Obj['key'];
                         // Cache a signed url for users to view the image, we're going to need it soon.
-                        $Obj['url'] = S3Handler::createSignedGETUrl($key, '+1 hour');
-                        if (!empty($Obj['url'])) {
+                        $Obj['image_uri'] = S3Handler::createSignedGETUrl($key, '+1 hour');
+                        if (!empty($Obj['image_uri'])) {
                             PHPLoader::loadModule('collange:S3EphemeralURLHandler');
-                            if (S3EphemeralURLHandler::set($key, $Obj['url'])) {
-                                Log::info('S3EphemeralURL(' . $key . '): ' . $Obj['url']);
+                            if (S3EphemeralURLHandler::set($key, $Obj['image_uri'])) {
+                                Log::info('S3EphemeralURL(' . $key . '): ' . $Obj['image_uri']);
                                 // Update session data.
                                 $Revision['key'] = $key;
                                 $Revision['EventUUID'] = null;
