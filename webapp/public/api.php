@@ -57,9 +57,9 @@ if(isset($_GET['upload'])){
                     PHPLoader::loadModule('collange:S3EphemeralURLHandler');
                     if(S3EphemeralURLHandler::set($key, $URL)){
                         Log::info('S3EphemeralURL('.$key.'): ' . $URL);
+                        die();
                     }
                 }
-                die();
             }
         }
     }

@@ -2,7 +2,9 @@
 require_once('../../vendor/autoload.php');
 use Aws\S3\Exception\S3Exception;
 class S3Handler {
+
     public static $session = null;
+
     public static function getClient(){
         if(self::$session == null){
             self::$session = new Aws\S3\S3Client([
@@ -42,6 +44,7 @@ class S3Handler {
         );
         return json_encode(array($postObject->getFormAttributes(), $postObject->getFormInputs()));
     }
+
     public static function upload($key, $localpath){
         // Include the SDK using the Composer autoloader
         try {
@@ -55,8 +58,9 @@ class S3Handler {
         }
         return false;
     }
+
     public static function delete($key){
-        return self::getClient()->eleteObject(array(
+        return self::getClient()->deleteObject(array(
             'Bucket'=>StaticResource::get('ENV_AWS_S3_BUCKET'),
             'Key' =>  $key,
         ));
