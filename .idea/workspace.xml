@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="fix xformsession handler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" afterPath="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
     </list>
@@ -155,15 +155,15 @@
       <file leaf-file-name="DBSession.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="164" column="112" lean-forward="false" selection-start-line="164" selection-start-column="112" selection-end-line="164" selection-end-column="112" />
+            <state relative-caret-position="494">
+              <caret line="164" column="93" lean-forward="true" selection-start-line="164" selection-start-column="93" selection-end-line="164" selection-end-column="93" />
               <folding>
-                <marker date="1524101573549" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-                <marker date="1524101573549" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524101573549" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524101573549" expanded="true" signature="4828:4873" ph="SELECT * FRO... ${static::$tableName}" />
-                <marker date="1524101573549" expanded="true" signature="5876:5945" ph="INSERT INTO `${static::$tableName}`... " />
-                <marker date="1524101573549" expanded="true" signature="6003:6004" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+                <marker date="1524101696963" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+                <marker date="1524101696963" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524101696963" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524101696963" expanded="true" signature="4831:4876" ph="SELECT * FRO... ${static::$tableName}" />
+                <marker date="1524101696963" expanded="true" signature="5878:5947" ph="INSERT INTO `${static::$tableName}`... " />
+                <marker date="1524101696963" expanded="true" signature="6005:6006" ph="INSERT INTO `'.static::${$tableName}.'`... " />
               </folding>
             </state>
           </provider>
@@ -1365,13 +1365,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00144" summary="dropzone broke">
-      <created>1524090036933</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1524090036933</updated>
-    </task>
     <task id="LOCAL-00145" summary="fixed button">
       <created>1524090061395</created>
       <option name="number" value="00145" />
@@ -1708,11 +1701,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524101409541</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="fix xformsession handler">
+      <created>1524101580865</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1524101580865</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141016000" />
+    <option name="totallyTimeSpent" value="141142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1720,6 +1720,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1757,7 +1758,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2238,15 +2238,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="164" column="112" lean-forward="false" selection-start-line="164" selection-start-column="112" selection-end-line="164" selection-end-column="112" />
+        <state relative-caret-position="494">
+          <caret line="164" column="93" lean-forward="true" selection-start-line="164" selection-start-column="93" selection-end-line="164" selection-end-column="93" />
           <folding>
-            <marker date="1524101573549" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
-            <marker date="1524101573549" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524101573549" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524101573549" expanded="true" signature="4828:4873" ph="SELECT * FRO... ${static::$tableName}" />
-            <marker date="1524101573549" expanded="true" signature="5876:5945" ph="INSERT INTO `${static::$tableName}`... " />
-            <marker date="1524101573549" expanded="true" signature="6003:6004" ph="INSERT INTO `'.static::${$tableName}.'`... " />
+            <marker date="1524101696963" expanded="true" signature="3897:3912" ph="SELECT * FRO... " />
+            <marker date="1524101696963" expanded="true" signature="3897:3943" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524101696963" expanded="true" signature="3897:3973" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524101696963" expanded="true" signature="4831:4876" ph="SELECT * FRO... ${static::$tableName}" />
+            <marker date="1524101696963" expanded="true" signature="5878:5947" ph="INSERT INTO `${static::$tableName}`... " />
+            <marker date="1524101696963" expanded="true" signature="6005:6006" ph="INSERT INTO `'.static::${$tableName}.'`... " />
           </folding>
         </state>
       </provider>

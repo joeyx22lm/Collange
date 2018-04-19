@@ -154,7 +154,7 @@ class DBObject {
         if($x != null && $arr != null && !empty($arr) && is_array($arr)){
             $params = '';
             foreach($arr as $field=>$value){
-                $params .= (empty($params) ? '' : ', ') . "`$field`='$value'";
+                $params .= (empty($params) ? '' : ' AND ') . "`$field`='$value'";
             }
             $Q = $x->query('SELECT * FROM `'.static::$tableName.'` WHERE '.$params);
             if($Q != null && $Q->num_rows > 0){
@@ -166,7 +166,6 @@ class DBObject {
             }
             return array();
         }
-
         else if($x != null){
             return self::getAll(DBSession::getSession(), $x);
         }
