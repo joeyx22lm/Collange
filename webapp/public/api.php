@@ -90,10 +90,11 @@ if(isset($_GET['edit'])){
             'uuid'=>$_GET['edit'])
         );
         if($Image != null){
-            TransformSessionHandler::createSession($Image['fileName'], $Image['size'], $Image['uuid']);
-            header("Location: /transform.php?uuid=".$Image['uuid']);
-            die();
-        }
+            if(TransformSessionHandler::createSession($Image['fileName'], $Image['size'], $Image['uuid'])){
+                header("Location: /transform.php?uuid=".$Image['uuid']);
+                die();
+            }else Log::error('Unable to create TransformSession(Image(uuid='.$_GET['edit'].'))');
+        }else Log::error('Unable to retrieve Image(uuid='.$_GET['edit'].')');
     }
 
     // If we got here, an error occurred. Redirect back to library.
