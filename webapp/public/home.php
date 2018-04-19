@@ -57,7 +57,8 @@
             <div class="animated fadeIn">
                 <div class="row">
                     <?php
-                    foreach(Image::getAll(DBSession::getSession(), array('shared'=>'1')) as $i=>$img){
+                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM image WHERE shared='1' ORDER BY `id` DESC");
+                    while($img = $ImagesQ->fetch_array()){
                         $Image['key'] = $Image['uuid'] . '.'.$Image['ext'];
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);
                         if($cachedURL == null){

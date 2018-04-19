@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="fix 'shared' vs 'sharing' not working in library">
+    <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/webapp/public/home.php" afterPath="$PROJECT_DIR$/webapp/public/home.php" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/library.php" afterPath="$PROJECT_DIR$/webapp/public/library.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -83,9 +82,11 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="220">
+              <caret line="60" column="58" lean-forward="false" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+              <folding>
+                <marker date="1524110932173" expanded="true" signature="2128:2183" ph="SELECT * FRO... image" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1429,13 +1430,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00183" summary="fix password hashes">
-      <created>1524099524663</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1524099524663</updated>
-    </task>
     <task id="LOCAL-00184" summary="fix password hashes">
       <created>1524099660064</created>
       <option name="number" value="00184" />
@@ -1772,11 +1766,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524110695695</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="image explore functionality">
+      <created>1524110873324</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1524110873324</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149677000" />
+    <option name="totallyTimeSpent" value="149746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1875,7 +1876,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix xformsession txid url" />
     <MESSAGE value="fix dateutility" />
     <MESSAGE value="fix library buttons" />
     <MESSAGE value="transformationsession api" />
@@ -1900,7 +1900,8 @@
     <MESSAGE value="session api stuff" />
     <MESSAGE value="filter worker queue/map names" />
     <MESSAGE value="fix 'shared' vs 'sharing' not working in library" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 'shared' vs 'sharing' not working in library" />
+    <MESSAGE value="image explore functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="image explore functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2309,9 +2310,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="79" column="20" lean-forward="false" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="220">
+          <caret line="60" column="58" lean-forward="false" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+          <folding>
+            <marker date="1524110932173" expanded="true" signature="2128:2183" ph="SELECT * FRO... image" />
+          </folding>
         </state>
       </provider>
     </entry>
