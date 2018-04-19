@@ -36,9 +36,8 @@ if($ImagesQ != null && $ImagesQ->num_rows > 0) {
     <main class="main">
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Profile</li>
+            <li class="breadcrumb-item"><a href="/home.php">Explore</a></li>
+            <li class="breadcrumb-item active"><?php echo $User['firstName'] . ' ' . $User['lastName'];?></li>
             <!-- Breadcrumb Menu-->
             <li class="breadcrumb-menu d-md-down-none">
                 <div class="btn-group" role="group" aria-label="Button group">
