@@ -268,9 +268,10 @@ if(isset($_GET['save'])){
                     if(S3Handler::delete($Revision['key'])){
                         $q = DBSession::getSession()->query("INSERT INTO `image` (`ownerId`, `fileName`, `size`, `shared`, `createdDate`, `uuid`, `ext`) VALUES ('".AuthSession::getUser()->id."', '".$Session['originalImageName']."', '".$Session['originalImageSize']."', '0', '".time()."', '$ImageUUID', 'jpg')");
                         if($q){
+                            Log::info("API.save(".$ImageUUID."): success");
                             header("Location: library.php");
                             die();
-                        }
+                        }else Log::error("API.save(".$ImageUUID."): Error - " . DBSession::getSession()->error);
                     }else Log::error('API.save().Error: Unable to delete ' . $Revision['key']);
                 }else Log::error('API.save().Error: Unable to copy ' . $Revision['key']);
             }

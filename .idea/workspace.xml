@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/library.php" afterPath="$PROJECT_DIR$/webapp/public/library.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/api.php" afterPath="$PROJECT_DIR$/webapp/public/api.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -64,21 +64,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
+            <state relative-caret-position="619">
+              <caret line="273" column="110" lean-forward="false" selection-start-line="273" selection-start-column="110" selection-end-line="273" selection-end-column="110" />
               <folding>
                 <element signature="e#3200#4365#0#PHP" expanded="false" />
-                <marker date="1524167198545" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-                <marker date="1524167198545" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-                <marker date="1524167198545" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
-                <marker date="1524167198545" expanded="true" signature="9812:10216" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+                <marker date="1524167932335" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+                <marker date="1524167932335" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
+                <marker date="1524167932335" expanded="true" signature="9812:10292" ph="INSERT INTO `image`... " />
               </folding>
             </state>
           </provider>
@@ -116,15 +116,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="library.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+            <state relative-caret-position="-237">
+              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
               <folding>
                 <element signature="e#4345#4352#1#HTML" expanded="true" />
                 <element signature="e#5162#5169#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/public/js/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="86841" lean-forward="false" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthSession.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/AuthSession.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/js.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,42 +189,6 @@
                 <marker date="1524166365660" expanded="false" signature="5970:5980" ph="..." />
                 <marker date="1524166365660" expanded="true" signature="6150:6194" ph="..." />
                 <marker date="1524166365660" expanded="false" signature="6444:6454" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-              <folding>
-                <marker date="1524158838195" expanded="true" signature="1110:1248" ph="INSERT INTO `user`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="126" column="4" lean-forward="true" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="31" />
-              <folding>
-                <marker date="1524105417009" expanded="true" signature="1450:1503" ph="UPDATE `user`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="92" column="11" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
-              <folding>
-                <marker date="1524166574795" expanded="true" signature="2128:2185" ph="SELECT * FRO... image" />
               </folding>
             </state>
           </provider>
@@ -936,7 +932,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/MainActivity.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/redis/S3EphemeralURLHandler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/service/s3/AWSS3Handler.java" />
         <option value="$PROJECT_DIR$/worker-imagify/build.gradle" />
@@ -962,7 +957,6 @@
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/TestUtility.php" />
         <option value="$PROJECT_DIR$/webapp/lib/joeyx22lm/DBSession.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/DateUtility.php" />
-        <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/ui/component/navbar.php" />
         <option value="$PROJECT_DIR$/webapp/public/index.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/dao/image.php" />
@@ -985,8 +979,10 @@
         <option value="$PROJECT_DIR$/worker-imagify/src/main/java/edu/ucf/cop4331/Collange/worker/FilterWorker.java" />
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/webapp/lib/collange/S3Handler.php" />
-        <option value="$PROJECT_DIR$/webapp/public/api.php" />
         <option value="$PROJECT_DIR$/webapp/public/library.php" />
+        <option value="$PROJECT_DIR$/webapp/public/js/jquery.js" />
+        <option value="$PROJECT_DIR$/webapp/lib/collange/ui/js.php" />
+        <option value="$PROJECT_DIR$/webapp/public/api.php" />
       </list>
     </option>
   </component>
@@ -1111,6 +1107,21 @@
               <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Collange" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Collange" type="b2602c69:ProjectViewProjectNode" />
@@ -1552,20 +1563,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00256" summary="give me filtered image, pls.">
-      <created>1524116410038</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
-      <option name="project" value="LOCAL" />
-      <updated>1524116410038</updated>
-    </task>
-    <task id="LOCAL-00257" summary="give me filtered image, pls.">
-      <created>1524116682853</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1524116682853</updated>
-    </task>
     <task id="LOCAL-00258" summary="fix dependency issue">
       <created>1524116831852</created>
       <option name="number" value="00258" />
@@ -1895,11 +1892,25 @@
       <option name="project" value="LOCAL" />
       <updated>1524167338493</updated>
     </task>
-    <option name="localTasksCounter" value="305" />
+    <task id="LOCAL-00305" summary="fix library">
+      <created>1524167518531</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1524167518531</updated>
+    </task>
+    <task id="LOCAL-00306" summary="fix jquery, wtf?">
+      <created>1524167771393</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1524167771393</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166057000" />
+    <option name="totallyTimeSpent" value="166462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -1998,7 +2009,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="give me filtered image, pls." />
     <MESSAGE value="fix dependency issue" />
     <MESSAGE value="image too big? mans not hot." />
     <MESSAGE value="fix s3 url?" />
@@ -2023,7 +2033,8 @@
     <MESSAGE value="xform save api" />
     <MESSAGE value="try deleting again" />
     <MESSAGE value="fix library" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix library" />
+    <MESSAGE value="fix jquery, wtf?" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jquery, wtf?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2032,7 +2043,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/lib/app.php" />
     <entry file="file://$PROJECT_DIR$/webapp/test/testutility.php" />
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/sds" />
     <entry file="file://$PROJECT_DIR$/webapp/lib/joeyx22lm/UUID.php">
@@ -2071,14 +2081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/AuthSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -2328,14 +2330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/js.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="94" lean-forward="false" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/CollangeUI.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2437,31 +2431,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
+    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="267" column="23" lean-forward="false" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
+        <state relative-caret-position="-237">
+          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding>
-            <element signature="e#3200#4365#0#PHP" expanded="false" />
-            <marker date="1524167198545" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
-            <marker date="1524167198545" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
-            <marker date="1524167198545" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
-            <marker date="1524167198545" expanded="true" signature="9812:10216" ph="INSERT INTO `image`... " />
+            <element signature="e#4345#4352#1#HTML" expanded="true" />
+            <element signature="e#5162#5169#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
+    <entry file="file://$PROJECT_DIR$/webapp/public/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="86841" lean-forward="false" selection-start-line="1" selection-start-column="86841" selection-end-line="1" selection-end-column="86841" />
           <folding>
-            <element signature="e#4345#4352#1#HTML" expanded="true" />
-            <element signature="e#5162#5169#1#HTML" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/AuthSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/lib/collange/ui/js.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="273" column="110" lean-forward="false" selection-start-line="273" selection-start-column="110" selection-end-line="273" selection-end-column="110" />
+          <folding>
+            <element signature="e#3200#4365#0#PHP" expanded="false" />
+            <marker date="1524167932335" expanded="true" signature="4819:4853" ph="UPDATE `image`... " />
+            <marker date="1524167932335" expanded="true" signature="4819:4866" ph="UPDATE `image`... " />
+            <marker date="1524167932335" expanded="true" signature="4819:4883" ph="UPDATE `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:9947" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:9984" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:10026" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:10059" ph="INSERT INTO `image`... " />
+            <marker date="1524167932335" expanded="true" signature="9812:10292" ph="INSERT INTO `image`... " />
           </folding>
         </state>
       </provider>
