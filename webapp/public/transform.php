@@ -146,7 +146,7 @@ if($Revision == null){
                     // Check for an eventuuid.
                     if(!empty($Revision['EventUUID'])){
                     ?>
-                    <img id="image-container" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
+                    <img id="imagecontainer" src="https://placehold.it/1000x500?text=Applying+Filter" class="img lazy-ajax" style="margin: 0 auto;width:100%;padding:15px;"/>
                     <?php
                     }else{
                     ?>
@@ -185,10 +185,10 @@ if($Revision == null){
         if(!empty($Revision['EventUUID'])){
         ?>
         var loadFilteredImage = setInterval(function(){
-            $.getJSON('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>&txId=<?php echo $TransformSession['sessionId'];?>', function(resp){
+            $.get('/api.php?loadEventUUID=<?php echo $Revision['EventUUID'];?>&txId=<?php echo $TransformSession['sessionId'];?>', function(resp){
                 if(resp != undefined){
                     clearInterval(loadFilteredImage);
-                    $('#image-container').attr('src', resp);
+                    $('#imagecontainer').attr('src', resp);
                 }
             });
         }, 3000);
