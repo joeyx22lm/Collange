@@ -39,7 +39,7 @@ public enum RGBTransitions {
     ConwayGameOfLifeTransition("Conway Game of Life Filter", ConwayGameOfLifeTransition.class),
     EightBitColorTransition("EightBitColorTransition", EightBitColorTransition.class),
     CumulativeAverageTransition("Cumulative Average Filter", CumulativeAverageTransition.class),
-    SolidBlueTransition("Solid Blue Filter", SolidBlueTransition.class);
+    SolidBlueTransition("Solid Blue Filter", SolidBlueTransition.class),
     DimMe("Dim Me", DimMe.class);
 
     private String name;
