@@ -250,7 +250,7 @@ if(isset($_GET['save'])){
     $sessionId = $_GET['save'];
     $revisionId = $_GET['rId'];
     if(!empty($revisionId) && !empty($sessionId)){
-        $Session = TransformSessionHandler::getSession($_GET['txId']);
+        $Session = TransformSessionHandler::getSession($sessionId);
         $Revision = null;
         $RevisionKey = null;
         if($Session != null) {
