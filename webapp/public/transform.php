@@ -224,10 +224,10 @@ else if(!empty($Revision['key'])) {
                         revision.revisionId = response.revisionId;
                         var url = '/api.php?loadEventUUID='+encodeURIComponent(response.EventUUID)+'&txId=<?php echo $TransformSession['sessionId'];?>';
                         filterProcessAjax = setInterval(function(){
-                            $.get(url, function(resp){
-                                if(resp != undefined){
+                            $.getJSON(url, function(resp){
+                                if(resp != undefined && resp.image_uri != ''){
                                     clearInterval(filterProcessAjax);
-                                    $('#imagecontainer').attr('src', resp);
+                                    $('#imagecontainer').attr('src', resp.image_uri);
                                 }
                             });
                         }, 3000);
