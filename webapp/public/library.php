@@ -134,16 +134,14 @@
         /**
          * Start Dropzone.JS
          */
+        Dropzone.options.uploadForm = false;
         Dropzone.autoDiscover = false;
-        $("#uploadForm").dropzone({
-            url: "/api.php?upload",
-            addRemoveLinks: true,
-            success: function (file, response) {
-                window.location.reload();
-            },
-            error: function (file, response) {
-                $('#errorModal').modal('show');
-            }
+        var uploader = new Dropzone("#uploadForm", { url: "/api.php?upload"});
+        uploader.on("queuecomplete", function() {
+            window.location.reload();
+        });
+        uploader.on("error", function() {
+            $('#errorModal').modal('show');
         });
     });
 </script>
