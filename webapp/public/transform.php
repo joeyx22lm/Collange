@@ -194,13 +194,13 @@ else if(!empty($Revision['key'])) {
         var filterProcessAjax = null;
         var filterStatus = $('#filterStatus');
         $('.applyfilter[filter-id!=""]').click(function(){
+            var filter = $(this).attr('filter-id');
             $.when(function(e){
                 $('#filteringModal').modal('show');
             }).then(function(e){
                 var sessionId = '<?php echo $TransformSession['sessionId'];?>';
                 var revisionId = '<?php echo $Revision['revisionId'];?>';
                 var imageUuid = '<?php echo $Image['uuid'];?>';
-                var filter = $(this).attr('filter-id');
                 var api = '/api.php?filter='+encodeURIComponent(filter);
                 api += '&image='+encodeURIComponent(imageUuid);
                 api += '&revisionId='+encodeURIComponent(revisionId);
