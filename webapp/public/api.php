@@ -107,4 +107,31 @@ if(isset($_GET['edit'])){
     header("Location: /library.php?error");
     die();
 }
+
+/**
+ * Handle Image public/private toggling.
+ */
+if(isset($_GET['sharing'])){
+    $Image = null;
+    foreach(Image::getAll(DBSession::getSession(), array(
+            'ownerId'=>AuthSession::getUser()->id,
+            'uuid'=>$_GET['sharing'])
+    ) as $i=>$img){
+        $Image = $img;
+    }
+    if($Image != null){
+        $ImageObj = Image::build($Image, Image);
+        if($ImageObj != null){
+            $ImageObj->toggleShared();
+            if($ImageObj->save()){
+                header("Location: /library.php");
+                die();
+            }
+        }
+    }
+
+    // If we got here, an error occurred. Redirect back to library.
+    header("Location: /library.php?error");
+    die();
+}
 ?>

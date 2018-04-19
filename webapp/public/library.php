@@ -62,11 +62,11 @@
                                     <?php
                                     if($Image['sharing'] == 1){
                                     ?>
-                                    <a class="btn btn-success" href="#">Public Access</a>
+                                    <a class="btn btn-success" href="/api.php?sharing=<?php echo $Image['uuid'];?>">Public Access</a>
                                     <?php
                                     }else{
                                     ?>
-                                    <a class="btn btn-warning" href="#">Only You</a>
+                                    <a class="btn btn-warning" href="/api.php?sharing=<?php echo $Image['uuid'];?>">Only You</a>
                                     <?php
                                     }
                                     ?>

@@ -48,6 +48,14 @@ class Image extends DBObject {
         return $this->fileName;
     }
 
+    public function toggleShared(){
+        if($this->shared){
+            $this->shared = 0;
+        }else{
+            $this->shared = 1;
+        }
+    }
+
     public static function get($x, $y=null){
         return parent::get($x, $y);
     }
