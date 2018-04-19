@@ -72,23 +72,14 @@ if (isset($_POST['register'])) {
                         <h1>Register</h1>
                         <p class="text-muted">Create your account</p>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="icon-user"></i></span>
-                            </div>
                             <input type="text" class="form-control" placeholder="First Name" name="firstname">
                         </div>
 
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="icon-user"></i></span>
-                            </div>
                             <input type="text" class="form-control" placeholder="Last Name" name="lastname">
                         </div>
 
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"></span>
-                            </div>
                             <input type="text" name="email" class="form-control" placeholder="Email">
                         </div>
 
