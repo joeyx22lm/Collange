@@ -29,7 +29,7 @@
                     if(isset($_GET['txId']) && $_GET['txId'] == $Session['sessionId']){
                         ?>
                         <li class="nav-item nav-dropdown open">
-                            <a class="nav-link nav-dropdown-toggle truncate" href="#"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
+                            <a class="nav-link nav-dropdown-toggle truncate" href="#"><i class="icon-puzzle"></i> <?php echo $Session['originalImageName'];?></a>
                             <ul class="nav-dropdown-items">
                                 <?php
                                 foreach(array_reverse($Session['events']) as $j=>$Event){
@@ -49,7 +49,7 @@
                     else{
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link truncate" href="/transform.php?txId=<?php echo $Session['sessionId'];?>"><i class="icon-puzzle"></i> <?php echo $Session['imageName'];?></a>
+                            <a class="nav-link truncate" href="/transform.php?txId=<?php echo $Session['sessionId'];?>"><i class="icon-puzzle"></i> <?php echo $Session['originalImageName'];?></a>
                         </li>
                         <?php
                     }
