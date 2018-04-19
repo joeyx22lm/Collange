@@ -76,6 +76,9 @@ else if(!empty($Revision['key'])) {
         .bold-typed {
             font-weight:900;
         }
+        .centered-body {
+            text-align:center;
+        }
     </style>
 </head>
 <body class="app header-fixed sidebar-fixed">
@@ -180,8 +183,8 @@ else if(!empty($Revision['key'])) {
             <div class="modal-header">
                 <h5 class="modal-title" id="filterModalTitle">Applying Filter</h5>
             </div>
-            <div class="modal-body">
-                <i class="fa fa-spinner fa-spin" style="font-size:38px"></i><br />
+            <div class="modal-body centered-body">
+                <i class="fa fa-spinner fa-spin" style="font-size:38px;margin-bottom:10px;"></i><br />
                 <p id="filterStatus">Queueing your filter request</p>
             </div>
         </div>
