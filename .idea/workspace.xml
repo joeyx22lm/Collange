@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="149b8ee1-22b9-494b-942a-59eeee16d89c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/webapp/public/profile.php" afterPath="$PROJECT_DIR$/webapp/public/profile.php" />
+      <change beforePath="$PROJECT_DIR$/webapp/public/home.php" afterPath="$PROJECT_DIR$/webapp/public/home.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/worker-imagify/.gradle/" />
@@ -121,8 +121,8 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="72" column="31" lean-forward="false" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+            <state relative-caret-position="714">
+              <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
               <folding>
                 <element signature="e#4345#4352#1#HTML" expanded="true" />
                 <element signature="e#5162#5169#1#HTML" expanded="true" />
@@ -175,23 +175,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="623">
-              <caret line="72" column="82" lean-forward="false" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="87" />
+              <caret line="72" column="115" lean-forward="false" selection-start-line="72" selection-start-column="115" selection-end-line="72" selection-end-column="115" />
               <folding>
-                <marker date="1524171064192" expanded="true" signature="2009:2066" ph="SELECT * FRO... image" />
+                <marker date="1524171981875" expanded="true" signature="2009:2125" ph="SELECT * FRO... image" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/public/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state relative-caret-position="585">
+              <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
               <folding>
                 <marker date="1524171651981" expanded="true" signature="190:197" ph="SELECT first... user" />
                 <marker date="1524171651981" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
@@ -1017,8 +1017,8 @@
         <option value="$PROJECT_DIR$/webapp/public/transform.php" />
         <option value="$PROJECT_DIR$/webapp/public/register.php" />
         <option value="$PROJECT_DIR$/webapp/public/api.php" />
-        <option value="$PROJECT_DIR$/webapp/public/home.php" />
         <option value="$PROJECT_DIR$/webapp/public/profile.php" />
+        <option value="$PROJECT_DIR$/webapp/public/home.php" />
       </list>
     </option>
   </component>
@@ -1599,13 +1599,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00274" summary="fix user registration CSS/JS imports">
-      <created>1524158916231</created>
-      <option name="number" value="00274" />
-      <option name="presentableId" value="LOCAL-00274" />
-      <option name="project" value="LOCAL" />
-      <updated>1524158916231</updated>
-    </task>
     <task id="LOCAL-00275" summary="fix sidebar to updated xform session">
       <created>1524159208480</created>
       <option name="number" value="00275" />
@@ -1942,11 +1935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524171519514</updated>
     </task>
-    <option name="localTasksCounter" value="323" />
+    <task id="LOCAL-00323" summary="profile">
+      <created>1524171656707</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
+      <option name="project" value="LOCAL" />
+      <updated>1524171656707</updated>
+    </task>
+    <option name="localTasksCounter" value="324" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169922000" />
+    <option name="totallyTimeSpent" value="170245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -2522,31 +2522,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="72" column="31" lean-forward="false" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
-          <folding>
-            <element signature="e#4345#4352#1#HTML" expanded="true" />
-            <element signature="e#5162#5169#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="72" column="82" lean-forward="false" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="87" />
-          <folding>
-            <marker date="1524171064192" expanded="true" signature="2009:2066" ph="SELECT * FRO... image" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="51" column="33" lean-forward="false" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        <state relative-caret-position="585">
+          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding>
             <marker date="1524171651981" expanded="true" signature="190:197" ph="SELECT first... user" />
             <marker date="1524171651981" expanded="true" signature="190:225" ph="SELECT * FRO... user" />
@@ -2557,6 +2536,27 @@
             <marker date="1524171651981" expanded="true" signature="466:528" ph="SELECT * FRO... image" />
             <marker date="1524171651981" expanded="true" signature="466:532" ph="SELECT * FRO... image" />
             <marker date="1524171651981" expanded="true" signature="708:761" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <element signature="e#4345#4352#1#HTML" expanded="true" />
+            <element signature="e#5162#5169#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="72" column="115" lean-forward="false" selection-start-line="72" selection-start-column="115" selection-end-line="72" selection-end-column="115" />
+          <folding>
+            <marker date="1524171981875" expanded="true" signature="2009:2125" ph="SELECT * FRO... image" />
           </folding>
         </state>
       </provider>

@@ -55,7 +55,7 @@
             <div class="animated fadeIn">
                 <div class="row">
                     <?php
-                    $ImagesQ = DBSession::getSession()->query("SELECT * FROM `image` WHERE shared='1' ORDER BY `id` DESC");
+                    $ImagesQ = DBSession::getSession()->query("SELECT i.*, u.uuid as ownerUuid FROM `image` i JOIN `user` u ON u.id=i.ownerId WHERE i.shared='1' ORDER BY i.id DESC");
                     while($Image = $ImagesQ->fetch_array()){
                         $Image['key'] = $Image['uuid'] . '_thumb.'.$Image['ext'];
                         $cachedURL = S3EphemeralURLHandler::get($Image['key']);
@@ -70,7 +70,7 @@
                                 <h5 class="card-title"><?php echo $Image['fileName'];?></h5>
                                 <p class="card-text"><?php echo $Image['caption'];?></p>
                                 <div class="btn-group" role="group" aria-label="Image Options" style="width:100%;">
-                                    <a class='btn btn-primary' href="/profile.php?user=<?php echo AuthSession::getUser()->uuid;?>">View Profile</a>
+                                    <a class='btn btn-primary' href="/profile.php?user=<?php echo $Image['ownerUuid'];?>">View Profile</a>
                                     <a class="btn btn-danger" href="#">Report Image</a>
                                 </div>
                             </div>
