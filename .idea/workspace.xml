@@ -82,10 +82,10 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="89" column="33" lean-forward="false" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+            <state relative-caret-position="486">
+              <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
               <folding>
-                <marker date="1524110986852" expanded="true" signature="2128:2183" ph="SELECT * FRO... image" />
+                <marker date="1524111159634" expanded="true" signature="2128:2183" ph="SELECT * FRO... image" />
               </folding>
             </state>
           </provider>
@@ -1430,13 +1430,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00185" summary="no longer save image key, it's not needed.">
-      <created>1524099779776</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1524099779776</updated>
-    </task>
     <task id="LOCAL-00186" summary="no longer save image key, it's not needed.">
       <created>1524100278777</created>
       <option name="number" value="00186" />
@@ -1773,11 +1766,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524110938231</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary="image explore functionality">
+      <created>1524110992786</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1524110992786</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149799000" />
+    <option name="totallyTimeSpent" value="149911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -2310,10 +2310,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="89" column="33" lean-forward="false" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+        <state relative-caret-position="486">
+          <caret line="93" column="9" lean-forward="false" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
           <folding>
-            <marker date="1524110986852" expanded="true" signature="2128:2183" ph="SELECT * FRO... image" />
+            <marker date="1524111159634" expanded="true" signature="2128:2183" ph="SELECT * FRO... image" />
           </folding>
         </state>
       </provider>

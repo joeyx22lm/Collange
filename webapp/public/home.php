@@ -53,7 +53,7 @@
                 </div>
             </li>
         </ol>
-        <div class="container-fluid" id="library-view">
+        <div class="container-fluid" id="explore-view">
             <div class="animated fadeIn">
                 <div class="row">
                     <?php
@@ -91,8 +91,7 @@
         /**
          * Lazy-load all of the images.
          */
-        var libraryView = $('#library-view');
-        libraryView.find('img[attr-lazysrc]').each(function(index){
+        $('img[attr-lazysrc]').each(function(index){
             $(this).attr('src', $(this).attr('attr-lazysrc')).removeClass('lazy');
         });
     });
