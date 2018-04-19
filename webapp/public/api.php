@@ -268,6 +268,15 @@ if(isset($_GET['save'])){
                     if(S3Handler::delete($Revision['key'])){
                         $q = DBSession::getSession()->query("INSERT INTO `image` (`ownerId`, `fileName`, `size`, `shared`, `createdDate`, `uuid`, `ext`) VALUES ('".AuthSession::getUser()->id."', '".$Session['originalImageName']."', '".$Session['originalImageSize']."', '0', '".time()."', '$ImageUUID', 'jpg')");
                         if($q){
+                            $Sessions = TransformSessionHandler::getSessions();
+                            foreach($Sessions as $k=>$s){
+                                if($s['sessionId'] == $sesisonId){
+                                    $Sessions[$k] = null;
+                                    unset($Sessions[$k]);
+                                }
+                            }
+                            TransformSessionHandler::setSessions($Sessions);
+
                             Log::info("API.save(".$ImageUUID."): success");
                             header("Location: library.php");
                             die();
