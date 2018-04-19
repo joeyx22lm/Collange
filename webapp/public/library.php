@@ -81,7 +81,6 @@
             </div>
         </div>
     </main>
-    
 </div>
 
 <div class="modal fade" id="uploadModal" tabindex="-1" role="dialog" aria-labelledby="uploadModalTitle" aria-hidden="true">
@@ -144,11 +143,11 @@
         /**
         * Deletion event listener
         */
-        $(‘.deleteimage’).click(function(){
-                    var imageUuid = $(this).attr(‘image-uuid’);
-                    if(imageUuid != undefined){
-                    
-                    }
+        $('.deleteimage').click(function(){
+            var imageUuid = $(this).attr('image-uuid');
+            if(imageUuid != undefined){
+
+            }
         });
     });
 </script>

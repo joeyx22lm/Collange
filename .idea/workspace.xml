@@ -119,11 +119,11 @@
       <file leaf-file-name="library.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+            <state relative-caret-position="2220">
+              <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
               <folding>
-                <element signature="e#4350#4357#1#HTML" expanded="true" />
-                <element signature="e#5167#5174#1#HTML" expanded="true" />
+                <element signature="e#4345#4352#1#HTML" expanded="true" />
+                <element signature="e#5162#5169#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1552,13 +1552,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00255" summary="logging pls">
-      <created>1524116143133</created>
-      <option name="number" value="00255" />
-      <option name="presentableId" value="LOCAL-00255" />
-      <option name="project" value="LOCAL" />
-      <updated>1524116143133</updated>
-    </task>
     <task id="LOCAL-00256" summary="give me filtered image, pls.">
       <created>1524116410038</created>
       <option name="number" value="00256" />
@@ -1895,11 +1888,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524167212056</updated>
     </task>
-    <option name="localTasksCounter" value="304" />
+    <task id="LOCAL-00304" summary="fix library">
+      <created>1524167338493</created>
+      <option name="number" value="00304" />
+      <option name="presentableId" value="LOCAL-00304" />
+      <option name="project" value="LOCAL" />
+      <updated>1524167338493</updated>
+    </task>
+    <option name="localTasksCounter" value="305" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165877000" />
+    <option name="totallyTimeSpent" value="166057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1930" y="22" width="1920" height="1058" extended-state="6" />
@@ -1998,7 +1998,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="logging pls" />
     <MESSAGE value="give me filtered image, pls." />
     <MESSAGE value="fix dependency issue" />
     <MESSAGE value="image too big? mans not hot." />
@@ -2023,7 +2022,8 @@
     <MESSAGE value="fix xform already filtered images" />
     <MESSAGE value="xform save api" />
     <MESSAGE value="try deleting again" />
-    <option name="LAST_COMMIT_MESSAGE" value="try deleting again" />
+    <MESSAGE value="fix library" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix library" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2457,11 +2457,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        <state relative-caret-position="2220">
+          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
           <folding>
-            <element signature="e#4350#4357#1#HTML" expanded="true" />
-            <element signature="e#5167#5174#1#HTML" expanded="true" />
+            <element signature="e#4345#4352#1#HTML" expanded="true" />
+            <element signature="e#5162#5169#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
