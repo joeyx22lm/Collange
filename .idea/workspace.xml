@@ -106,8 +106,8 @@
       <file leaf-file-name="TransformSessionHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="405">
+              <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -126,14 +126,14 @@
       <file leaf-file-name="transform.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+            <state relative-caret-position="350">
+              <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
               <folding>
-                <marker date="1524107214058" expanded="false" signature="3632:3644" ph="..." />
-                <marker date="1524107214058" expanded="false" signature="4049:4059" ph="..." />
-                <marker date="1524107214058" expanded="false" signature="4556:4566" ph="..." />
-                <marker date="1524107214058" expanded="false" signature="5031:5041" ph="..." />
-                <marker date="1524107214058" expanded="false" signature="5505:5515" ph="..." />
+                <marker date="1524107279589" expanded="false" signature="3734:3746" ph="..." />
+                <marker date="1524107279589" expanded="false" signature="4151:4161" ph="..." />
+                <marker date="1524107279589" expanded="false" signature="4658:4668" ph="..." />
+                <marker date="1524107279589" expanded="false" signature="5133:5143" ph="..." />
+                <marker date="1524107279589" expanded="false" signature="5607:5617" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1412,13 +1412,6 @@
       <workItem from="1523573517690" duration="272000" />
       <workItem from="1523605167770" duration="2917000" />
     </task>
-    <task id="LOCAL-00175" summary="log aborted uploads.">
-      <created>1524098053256</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1524098053256</updated>
-    </task>
     <task id="LOCAL-00176" summary="fix logging">
       <created>1524098359421</created>
       <option name="number" value="00176" />
@@ -1755,11 +1748,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524107008882</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <task id="LOCAL-00224" summary="revisions in transform page">
+      <created>1524107223735</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1524107223735</updated>
+    </task>
+    <option name="localTasksCounter" value="225" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146035000" />
+    <option name="totallyTimeSpent" value="146100000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -1858,7 +1858,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="no longer save image key, it's not needed." />
     <MESSAGE value="MockUtility" />
     <MESSAGE value="dropzone events" />
     <MESSAGE value="fix xformsession handler" />
@@ -1883,7 +1882,8 @@
     <MESSAGE value="api to toggle image public/private access" />
     <MESSAGE value="clear messaging" />
     <MESSAGE value="boldened type" />
-    <option name="LAST_COMMIT_MESSAGE" value="boldened type" />
+    <MESSAGE value="revisions in transform page" />
+    <option name="LAST_COMMIT_MESSAGE" value="revisions in transform page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2265,22 +2265,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/lib/collange/TransformSessionHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/public/transform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        <state relative-caret-position="350">
+          <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
           <folding>
-            <marker date="1524107214058" expanded="false" signature="3632:3644" ph="..." />
-            <marker date="1524107214058" expanded="false" signature="4049:4059" ph="..." />
-            <marker date="1524107214058" expanded="false" signature="4556:4566" ph="..." />
-            <marker date="1524107214058" expanded="false" signature="5031:5041" ph="..." />
-            <marker date="1524107214058" expanded="false" signature="5505:5515" ph="..." />
+            <marker date="1524107279589" expanded="false" signature="3734:3746" ph="..." />
+            <marker date="1524107279589" expanded="false" signature="4151:4161" ph="..." />
+            <marker date="1524107279589" expanded="false" signature="4658:4668" ph="..." />
+            <marker date="1524107279589" expanded="false" signature="5133:5143" ph="..." />
+            <marker date="1524107279589" expanded="false" signature="5607:5617" ph="..." />
           </folding>
         </state>
       </provider>

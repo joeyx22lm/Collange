@@ -89,7 +89,8 @@ if($Revision == null){
                     </div>
                     <a class="btn" href="#"><i class="icon-settings"></i> &nbsp;Properties</a>
                     <?php
-                    if(){
+                    // If current revision not saved, show bold-typed save button.
+                    if(!$Revision['saved']){
                     ?>
                     <a class="btn bold-typed" href="#"><i class="fa fa-save bold-typed"></i> &nbsp;Save</a>
                     <?php
