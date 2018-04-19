@@ -97,7 +97,7 @@ class TransformSessionHandler {
             'history'=>$openedTime,
             'saved'=>$saved,
             'revisionId'=>$revisionId,
-            'EventUUID'=>null
+            'EventUUID'=>$EventUUID
         );
 
         // Store the event.
