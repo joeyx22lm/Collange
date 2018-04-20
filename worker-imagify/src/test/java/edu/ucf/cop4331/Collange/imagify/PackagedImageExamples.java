@@ -20,7 +20,7 @@ public class PackagedImageExamples {
 
     @Test
     public void applyFiltersOnExamples(){
-        /*for(String example : packagedExamples){
+        for(String example : packagedExamples){
             try {
                 // List to keep track of performance metrics.
                 List<Long> runtimes = new ArrayList<Long>();
@@ -70,6 +70,6 @@ public class PackagedImageExamples {
                 e.printStackTrace();
                 Assert.fail(e.getMessage());
             }
-        }*/
+        }
     }
 }
