@@ -1,5 +1,7 @@
-# Collange
+# UCF COP4331C - Team 20: Image Filter Application
 
+
+# How to build
 This project uses gradle to handle dependencies, building, packaging and testing. Look below for more information on how to package the application.
 
 **How to clean:**
