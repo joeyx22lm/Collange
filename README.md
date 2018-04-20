@@ -1,5 +1,7 @@
 # Collange
 
+This project uses gradle to handle dependencies, building, packaging and testing. Look below for more information on how to package the application.
+
 **How to clean:**
 
 ./gradlew clean
@@ -23,3 +25,12 @@
 **How to dry-run deployment, no unit test execution:**
 
 ./gradlew clean stage -xtest
+
+
+
+# Web Application Worker
+PHP 7.0+ Managed by Composer
+
+
+# Image Filter Worker
+Java 8
