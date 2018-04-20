@@ -19,3 +19,7 @@
 **How to dry-run deployment:**
 
 ./gradlew clean stage
+
+**How to dry-run deployment, no unit test execution:**
+
+./gradlew clean stage -xtest
