@@ -6,6 +6,11 @@ This project seeks to create a web application, which allows users to upload ima
 Look below for build instructions. tl;dr: gradle and composer. gradle manages the parent project and java module, composer manages the PHP module.
 
 
+# Demo
+
+https://collange.herokuapp.com
+
+
 # How to build
 This project uses gradle to handle dependencies, building, packaging and testing. Look below for more information on how to package the application.
 
