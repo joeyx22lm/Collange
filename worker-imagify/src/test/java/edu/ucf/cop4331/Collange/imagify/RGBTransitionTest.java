@@ -4,25 +4,24 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class RGBTransitionTest {
-/*
     @Test
     public void testRGBTransition(){
         // Generate the original image.
         int RED = 5, GREEN = 10, BLUE = 20;
-        Pixel original = new Pixel(0, 0, RED, GREEN, BLUE);
+        Pixel f = new Pixel(0, 0, RED, GREEN, BLUE);
 
         // Build a filter that applies a random but known
         // transformation unto a pixel.
         MockRGBTransition filter = new MockRGBTransition((int)(Math.random()%200));
 
         // Transform the original image.
-        Pixel filtered = new Pixel(0, 0, filter.filterPixel(original));
+        filter.filterPixel(f, 0, 0);
 
         int randomOffset = filter.getRandomSeed();
-        Assert.assertNotNull(filtered);
-        Assert.assertEquals(RED, filtered.getRed()-randomOffset);
-        Assert.assertEquals(GREEN, filtered.getGreen()-randomOffset);
-        Assert.assertEquals(BLUE, filtered.getBlue()-randomOffset);
+        Assert.assertNotNull(f);
+        Assert.assertEquals(RED, f.getRed()-randomOffset);
+        Assert.assertEquals(GREEN, f.getGreen()-randomOffset);
+        Assert.assertEquals(BLUE, f.getBlue()-randomOffset);
     }
 
     /**
@@ -30,7 +29,7 @@ public class RGBTransitionTest {
      * large image of pixels (1000x1000).
      * @param width
      * @param height
-     *
+     */
     private void testMockImageRGBTransition(int width, int height){
         // Build an image of size (width x height).
         Pixel[][] image = new Pixel[width][height];
@@ -53,7 +52,7 @@ public class RGBTransitionTest {
         long startMs = System.currentTimeMillis();
         for(int x = 0; x < width; x++){
             for(int y = 0; y < height; y++){
-                filter.filterPixel(image[x][y]);
+                filter.filterPixel(image[x][y], x, y);
             }
         }
         long endMs = (System.currentTimeMillis() - startMs);
@@ -84,7 +83,7 @@ public class RGBTransitionTest {
      * Mock RGB Transition that modifies a pixel's
      * RGB value by some known value that is
      * generally randomly generated.
-     *
+     */
     public class MockRGBTransition extends RGBTransition {
         private int randomSeed;
 
@@ -97,11 +96,11 @@ public class RGBTransitionTest {
         }
 
         @Override
-        protected int filterPixel(Pixel pxl){
+        protected Pixel filterPixel(Pixel pxl, int x, int y){
             pxl.setRed(pxl.getRed()+this.randomSeed);
             pxl.setGreen(pxl.getGreen()+this.randomSeed);
             pxl.setGreen(pxl.getGreen()+this.randomSeed);
-            return pxl.getRGB();
+            return pxl;
         }
-    }*/
+    }
 }

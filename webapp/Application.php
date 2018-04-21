@@ -112,9 +112,6 @@ StaticResource::set(array(
 /**
  * Collange - Initialize Redis Session.
  */
-if(empty($_ENV['REDIS_URL'])){
-    $_ENV['REDIS_URL'] = 'redis://h:p2197816185994ab90674fecbd655bac992e57780a6da65e944419da20370c47f@ec2-34-206-56-5.compute-1.amazonaws.com:60679';
-}
 RedisHandler::setSession($_ENV['REDIS_URL']);
 
 
