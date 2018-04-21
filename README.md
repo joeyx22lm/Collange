@@ -3,7 +3,7 @@
 
 This project seeks to create a web application, which allows users to upload images and apply unto them one or more precreated image filters. This project is written in both PHP 7.0+ and Java 8, and demonstrates the asynchronous application of filters and transformations unto images. The project in its current state is packaged to be easily deployed in a Heroku pipeline, and scale both web and worker processes dynamically according to load. The PHP web application is served by an Apache buildpack, while the filter worker is Java application, packaged as a runnable Jar. 
 
-Look below for build instructions, tl;dr: gradle and composer. gradle manages the parent project and java module, composer manages the PHP module.
+Look below for build instructions. tl;dr: gradle and composer. gradle manages the parent project and java module, composer manages the PHP module.
 
 
 # How to build
