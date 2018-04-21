@@ -18,26 +18,18 @@ Java 8
 # How to build
 This project uses gradle to handle dependencies, building, packaging and testing. Look below for more information on how to package the application.
 
-**How to clean:**
+**How to see all possible build options/tasks:**
 
-./gradlew clean
+./gradlew tasks
 
 **How to build:**
 
-./gradlew build
+./gradlew clean build
 
 **How to test:**
 
 ./gradlew test
 
-**How to clean, build, test:**
-
-./gradlew clean build test
-
-**How to dry-run deployment:**
+**How to run deployment tasks:**
 
 ./gradlew clean stage
-
-**How to dry-run deployment, no unit test execution:**
-
-./gradlew clean stage -xtest
