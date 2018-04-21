@@ -74,11 +74,6 @@ public class RGBTransitionTest {
         testMockImageRGBTransition(1000, 1000);
     }
 
-    @Test
-    public void test25MPImageRGBTransition(){
-        testMockImageRGBTransition(5000, 5000);
-    }
-
     /**
      * Mock RGB Transition that modifies a pixel's
      * RGB value by some known value that is
