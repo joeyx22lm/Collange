@@ -1,5 +1,6 @@
 # Collange
 #### UCF COP4331C - Image Filter Application, Team 20
+![Build Status](https://gitlab.com/josephorlando11/collange/badges/master/pipeline.svg "Build Status")
 
 This project seeks to create a web application, which allows users to upload images and apply unto them one or more precreated image filters. This project is written in both PHP 7.0+ and Java 8, and demonstrates the asynchronous application of filters and transformations unto images. 
 
